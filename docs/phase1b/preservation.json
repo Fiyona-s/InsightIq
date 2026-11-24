@@ -1,0 +1,37 @@
+{
+  "original_dataset_count": 13,
+  "current_dataset_count": 13,
+  "ids_original_names_row_counts_unchanged": true,
+  "original_catalog_tables_unchanged": {
+    "datasets": true,
+    "analyst_runs": true,
+    "knowledge_state": true,
+    "knowledge_examples": true,
+    "schema_migrations": true,
+    "benchmark_installs": true,
+    "dashboards": true,
+    "evaluation_jobs": true,
+    "saved_charts": true,
+    "ml_experiments": true,
+    "ml_models": true,
+    "ml_predictions": true
+  },
+  "original_storage_files_checked": 97,
+  "original_storage_files_changed": [],
+  "new_dataset_columns": [
+    "archived_at",
+    "archived_reason",
+    "display_name"
+  ],
+  "migration_versions": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "lifecycle_actions_on_original_workspace": 0,
+  "manual_backup": "<project>/.backups/phase1b-pre-migration-20261110T044551Z",
+  "automatic_backup_paths": [
+    "/data/backups/lifecycle-2026-11-10T04-48-26.075356+00-00"
+  ]
+}

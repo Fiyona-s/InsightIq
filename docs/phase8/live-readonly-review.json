@@ -1,0 +1,14 @@
+{
+  "url": "http://localhost:8080",
+  "datasetCount": 13,
+  "originalEvaluationCount": 3,
+  "evaluationResponsesUnchanged": true,
+  "benchmarkResponseUnchanged": true,
+  "evaluationsStarted": 0,
+  "setupCollapsed": true,
+  "offlineDefault": true,
+  "mutatingAPIRequests": [],
+  "browserErrors": [],
+  "preservedKPI": "₹83,79,680.76",
+  "convertCurrencyVisible": true
+}

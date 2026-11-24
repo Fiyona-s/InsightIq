@@ -1,0 +1,69 @@
+{
+  "checks": [
+    {
+      "name": "Preview",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "name": "Columns",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "name": "Data Quality",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "name": "Version History",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "name": "Preview",
+      "width": 768,
+      "violations": []
+    },
+    {
+      "name": "Columns",
+      "width": 768,
+      "violations": []
+    },
+    {
+      "name": "Data Quality",
+      "width": 768,
+      "violations": []
+    },
+    {
+      "name": "Version History",
+      "width": 768,
+      "violations": []
+    },
+    {
+      "name": "Preview",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "name": "Columns",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "name": "Data Quality",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "name": "Version History",
+      "width": 390,
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "stableRowIdsPreserved": true,
+  "originalCellStringsPreserved": true,
+  "invalidSaveVersion": 1,
+  "savedVersion": 2
+}

@@ -1,0 +1,10 @@
+[
+  {"question": "How many orders are there?", "compute": {"op": "count"}},
+  {"question": "What is the total revenue?", "compute": {"op": "sum", "column": "revenue"}},
+  {"question": "What is the average unit price?", "compute": {"op": "mean", "column": "unit_price"}},
+  {"question": "Total revenue by region", "compute": {"op": "sum", "column": "revenue", "by": "region", "order": "desc"}},
+  {"question": "Which 3 products sold the most units?", "compute": {"op": "sum", "column": "quantity", "by": "product", "top": 3, "order": "desc"}},
+  {"question": "Total revenue in the North region", "compute": {"op": "sum", "column": "revenue", "where": [{"column": "region", "is": "North"}]}},
+  {"question": "How many orders had more than 5 units?", "compute": {"op": "count", "column": "order_id", "where": [{"column": "quantity", "gt": 5}]}},
+  {"question": "How many different customers ordered?", "compute": {"op": "nunique", "column": "customer_id"}}
+]

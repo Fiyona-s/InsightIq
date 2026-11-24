@@ -1,0 +1,444 @@
+
+> insightiq@0.1.0 test:e2e:analyst
+> playwright test --config playwright.analyst.config.ts
+
+[WebServer] INFO:     Started server process [9500]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:9528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 44 tests using 1 worker
+
+(node:9529) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] <project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+[WebServer]   warnings.warn(
+[WebServer] 2026-11-12 10:42:51,568 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 314, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:42:51,935 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:42:51,937 INFO Analyst run metrics: {"run_id": "c426b7c0-dcc8-41a7-9d98-bf113e5f2483", "status": "succeeded", "retrieval_latency_ms": 11, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 316, "query_latency_ms": 291, "total_latency_ms": 845}
+  ✓   1 e2e/00-phase3-navigation.spec.ts:36:1 › empty workspace setup uses real progress and shared dataset across all work pages (3.2s)
+[WebServer] 2026-11-12 10:42:56,422 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1321, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:42:56,743 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:42:56,746 INFO Analyst run metrics: {"run_id": "152c9cbc-c856-4d8e-821b-3afceca3167a", "status": "succeeded", "retrieval_latency_ms": 17, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1323, "query_latency_ms": 300, "total_latency_ms": 1679}
+  ✓   2 e2e/00-phase3-navigation.spec.ts:147:1 › dataset switches guard editor drafts, reset AutoML, retain running source and recover from archive (5.0s)
+  ✓   3 e2e/00-phase3-navigation.spec.ts:310:1 › selector and admin disclosure support keyboard search, persistence and responsive layout (437ms)
+  ✓   4 e2e/00-phase3-navigation.spec.ts:347:1 › AutoML running job keeps its original source after a confirmed dataset switch (4.1s)
+  ✓   5 e2e/01-phase4-datasets.spec.ts:29:1 › preview-first import, sticky editing, navigation guards and bounded mobile preview (3.5s)
+  ✓   6 e2e/01-phase4-datasets.spec.ts:175:1 › schema descriptions share Knowledge storage and quality issues remain informational (1.0s)
+  ✓   7 e2e/01-phase4-datasets.spec.ts:233:1 › real forward-only history shows unavailable, pruned and retained snapshots and restores N+1 (1.8s)
+[WebServer] 2026-11-12 10:43:10,703 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1322, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:43:11,023 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:43:11,026 INFO Analyst run metrics: {"run_id": "bf13e5df-5ca9-4df7-9cd4-3999008a385d", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1324, "query_latency_ms": 292, "total_latency_ms": 1676}
+  ✓   8 e2e/01-phase4-datasets.spec.ts:337:1 › archived datasets allow read-only history, and active analysis blocks revision restore (3.2s)
+[WebServer] 2026-11-12 10:43:12,673 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": null, "completion_tokens": null, "total_tokens": null, "estimated_cost_usd": null}
+[WebServer] 2026-11-12 10:43:15,443 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:43:15,759 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:43:15,761 INFO Analyst run metrics: {"run_id": "ea36b0d1-5f00-436d-8b5a-02f3f9ed099c", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 313, "query_latency_ms": 293, "total_latency_ms": 664}
+  ✓   9 e2e/02-phase5-knowledge.spec.ts:6:1 › Phase 5 explicit draft sharing, review, overwrite, counts, examples and archived read-only (7.1s)
+[WebServer] 2026-11-12 10:43:19,703 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 313, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:43:20,014 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:43:20,016 INFO Analyst run metrics: {"run_id": "f2aedb11-864e-4c08-b224-69ac95e7b946", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 314, "query_latency_ms": 287, "total_latency_ms": 648}
+[WebServer] 2026-11-12 10:43:20,620 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:43:20,932 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:43:20,934 INFO Analyst run metrics: {"run_id": "abe57fb6-6590-4b55-becf-0de43ea0b75c", "status": "succeeded", "retrieval_latency_ms": 12, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 314, "query_latency_ms": 287, "total_latency_ms": 657}
+[WebServer] 2026-11-12 10:43:25,740 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:43:26,052 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:43:26,055 INFO Analyst run metrics: {"run_id": "84d0804d-6cea-4fec-aaa7-c6e68822beda", "status": "succeeded", "retrieval_latency_ms": 11, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 314, "query_latency_ms": 289, "total_latency_ms": 656}
+  ✓  10 e2e/03-phase6-dashboards.spec.ts:10:1 › Phase 6 dashboard titles, duplicate decisions, guarded refresh, history, currency, overflow and mobile (10.0s)
+[WebServer] 2026-11-12 10:43:29,663 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:43:29,974 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:43:29,977 INFO Analyst run metrics: {"run_id": "c09ac396-8152-4888-ac94-90d207ed9865", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 314, "query_latency_ms": 287, "total_latency_ms": 648}
+[WebServer] 2026-11-12 10:43:30,860 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 310, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:43:31,166 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:43:31,168 INFO Analyst run metrics: {"run_id": "b9dd1814-b291-42ee-81b2-cf0a073df191", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "query_latency_ms": 285, "total_latency_ms": 646}
+  ✓  11 e2e/03-phase6-dashboards.spec.ts:42:1 › Phase 6 Analyst pin checks duplicates and confirms replacement without altering the library snapshot (2.5s)
+[WebServer] 2026-11-12 10:43:43,606 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:43:43,916 INFO Analyst run metrics: {"run_id": "aebca1e0-8fde-4bd2-a033-3a5a1e4bd33a", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "query_latency_ms": 288, "total_latency_ms": 631}
+[WebServer] 2026-11-12 10:43:44,285 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:43:44,604 INFO Analyst run metrics: {"run_id": "4ba6f4d3-b94a-42a9-a17f-92134ad0496b", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 314, "query_latency_ms": 295, "total_latency_ms": 647}
+  ✓  12 e2e/04-phase8-evaluation.spec.ts:20:1 › results-first offline replay, failure diff, comparison, partial scope and keyboard/mobile review (20.8s)
+  ✓  13 e2e/05-phase9-accessibility.spec.ts:5:1 › Phase 9 axe, keyboard focus and 390/768/1280 responsive review on all nine pages (12.7s)
+  ✓  14 e2e/06-phase9-carry-forward.spec.ts:2:1 › Evaluation browser classifies Fixed Regressed Unchanged and unscored from controlled differing stored verdicts (10.9s)
+[WebServer] 2026-11-12 10:44:16,510 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:44:16,824 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:44:16,827 INFO Analyst run metrics: {"run_id": "4a06758f-80c4-4808-9726-43dbae379b00", "status": "succeeded", "retrieval_latency_ms": 11, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 291, "total_latency_ms": 648}
+[WebServer] 2026-11-12 10:44:17,392 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": null, "completion_tokens": null, "total_tokens": null, "estimated_cost_usd": null}
+  ✓  15 e2e/06-phase9-carry-forward.spec.ts:6:1 › Knowledge Approve all and scalar verified reference becomes Needs re-check after an actual dataset edit (4.4s)
+  ✓  16 e2e/07-product-stage1.spec.ts:6:1 › Stage 1 task navigation, preferences, aliases and unobscured responsive headers (15.9s)
+[WebServer] 2026-11-12 10:44:37,085 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:44:37,400 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:44:37,403 INFO Analyst run metrics: {"run_id": "4e5e693a-9c3f-47be-9d0c-59f983d8f190", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 296, "total_latency_ms": 655}
+  ✓  17 e2e/08-product-stage2-home.spec.ts:5:1 › Stage 2 Home uses active counts and opens the selected real saved question and dashboard without replay (2.8s)
+  ✓  18 e2e/08-product-stage2-home.spec.ts:16:1 › Stage 2 empty Home offers three-step onboarding without fake totals or an unavailable demo (251ms)
+  ✓  19 e2e/09-product-stage3-data.spec.ts:4:1 › Stage 3 four dataset views preserve drafts, Undo, Discard, typed validation, revisions and CSV (5.7s)
+[WebServer] 2026-11-12 10:44:46,392 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:44:46,703 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:44:46,705 INFO Analyst run metrics: {"run_id": "1d180f38-3744-4234-957d-148a45179cd9", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 289, "total_latency_ms": 648}
+  ✓  20 e2e/10-product-stage4-ask.spec.ts:5:1 › Stage 4 answer-first result, single monetary value, accessible details and preserved saving/FX/export (3.9s)
+[WebServer] 2026-11-12 10:44:49,533 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:44:49,855 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:44:49,858 INFO Analyst run metrics: {"run_id": "36e39599-1096-4702-9567-193a66473af2", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 298, "total_latency_ms": 666}
+[WebServer] 2026-11-12 10:44:50,449 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:44:50,764 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:44:50,766 INFO Analyst run metrics: {"run_id": "fd029523-057a-4d6c-b776-5a8db3b7d123", "status": "succeeded", "retrieval_latency_ms": 12, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 289, "total_latency_ms": 654}
+  ✓  21 e2e/11-product-stage5-dashboards.spec.ts:5:1 › Stage 5 View is read-only, Edit preserves auto-save and guards details; currency and exports remain available (5.9s)
+[WebServer] 2026-11-12 10:44:56,799 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1311, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:44:57,113 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:44:57,116 INFO Analyst run metrics: {"run_id": "9663a4fd-ab7e-4590-adb3-94b757762637", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1313, "query_latency_ms": 293, "total_latency_ms": 1657}
+[WebServer] 2026-11-12 10:44:58,974 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:44:59,285 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:44:59,287 INFO Analyst run metrics: {"run_id": "579c9f17-67c4-4144-9561-f16fe290f789", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 288, "total_latency_ms": 646}
+[WebServer] 2026-11-12 10:45:00,436 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:00,457 INFO Analyst run metrics: {"run_id": "e1cd408d-8ade-4db6-b7de-1f0867336da0", "status": "clarification", "retrieval_latency_ms": 11, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "total_latency_ms": 359}
+[WebServer] 2026-11-12 10:45:01,353 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:01,663 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:01,666 INFO Analyst run metrics: {"run_id": "57ac7884-c799-446e-96b1-b8c897089ddd", "status": "succeeded", "retrieval_latency_ms": 12, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 289, "total_latency_ms": 650}
+[WebServer] 2026-11-12 10:45:02,728 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:03,046 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:03,048 INFO Analyst run metrics: {"run_id": "b8b8b660-c16e-4473-9b27-04e0d16f24bf", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 296, "total_latency_ms": 672}
+[WebServer] 2026-11-12 10:45:04,214 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:04,525 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:04,527 INFO Analyst run metrics: {"run_id": "18fd4199-d1ff-416a-9185-17399c1bf3d9", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 289, "total_latency_ms": 653}
+[WebServer] 2026-11-12 10:45:05,576 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:05,897 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:05,904 INFO Analyst run metrics: {"run_id": "115ba49b-55bb-4100-a748-621708ff0d21", "status": "failed", "retrieval_latency_ms": 13, "prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150, "estimated_cost_usd": 0.0002, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 614, "total_latency_ms": 675}
+  ✓  22 e2e/analyst-phase2.spec.ts:7:1 › Phase 2 computed card, follow-ups, clarification, feedback and dashboard pin (11.3s)
+[WebServer] 2026-11-12 10:45:07,075 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:07,385 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:07,388 INFO Analyst run metrics: {"run_id": "7db5594f-e36a-4b18-87f5-8a422985ae2b", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 289, "total_latency_ms": 646}
+[WebServer] 2026-11-12 10:45:08,111 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:08,422 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:08,425 INFO Analyst run metrics: {"run_id": "d4718b6f-b523-4cbd-b8d0-2e88ba4ff22b", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 290, "total_latency_ms": 649}
+  ✓  23 e2e/analyst-phase2.spec.ts:41:1 › switching datasets starts a new thread and requires fresh type confirmation (2.8s)
+[WebServer] 2026-11-12 10:45:09,905 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:10,207 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:10,209 INFO Analyst run metrics: {"run_id": "aa2b890a-7185-487a-8713-8eb4f931daef", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 283, "total_latency_ms": 639}
+  ✓  24 e2e/analyst.spec.ts:6:1 › controlled provider boundary, real typed aggregation, history and CSV export (2.3s)
+[WebServer] 2026-11-12 10:45:12,530 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:12,852 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:13,172 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:13,175 INFO Analyst run metrics: {"run_id": "3d1e1df9-b96e-4edd-9e03-ef3bce287781", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 110, "completion_tokens": 55, "total_tokens": 165, "estimated_cost_usd": 0.00022, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 616, "query_latency_ms": 293, "total_latency_ms": 981}
+  ✓  25 e2e/analyst.spec.ts:85:1 › RAG, live graph repair, actual Recharts, evidence and verified example lifecycle (2.8s)
+  ✓  26 e2e/automl.spec.ts:78:1 › local regression, registry reload, single/batch prediction and real CSV export (7.0s)
+  ✓  27 e2e/automl.spec.ts:227:1 › classification, customer RFM, anomaly scores and chronological forecasting use real local models (16.1s)
+  ✓  28 e2e/automl.spec.ts:354:1 › keyboard-only wizard navigation, suggestions never auto-apply and Advanced reset (4.4s)
+  ✓  29 e2e/automl.spec.ts:431:1 › negative R² and omitted importance use an actual temporary no-signal model (3.3s)
+[WebServer] 2026-11-12 10:45:45,814 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:46,151 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:46,153 INFO Analyst run metrics: {"run_id": "b3e90a2e-7151-4845-8c70-356e3f49d8a3", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 314, "total_latency_ms": 674}
+[WebServer] 2026-11-12 10:45:48,987 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:49,301 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:49,303 INFO Analyst run metrics: {"run_id": "9a5bc4b5-118a-4e91-8fcc-6ab2972d0c82", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 293, "total_latency_ms": 657}
+  ✓  30 e2e/currency-legacy.spec.ts:6:1 › legacy recognized-revenue KPI gains confirmed INR metadata without rewriting its snapshot (4.9s)
+[WebServer] 2026-11-12 10:45:51,111 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:51,417 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:51,419 INFO Analyst run metrics: {"run_id": "1b5129b1-f006-4c4b-964f-fa27487bf306", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 285, "total_latency_ms": 643}
+[WebServer] 2026-11-12 10:45:52,913 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:53,224 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:53,226 INFO Analyst run metrics: {"run_id": "db801211-5dff-4626-b975-e182ba695028", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 290, "total_latency_ms": 650}
+  ✓  31 e2e/currency.spec.ts:6:1 › confirmed INR revenue converts with test-only rates and resets; counts have no currency control (3.9s)
+[WebServer] 2026-11-12 10:45:55,079 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:55,391 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:55,393 INFO Analyst run metrics: {"run_id": "f98c7629-eb62-48fd-a376-bc9f40571b58", "status": "succeeded", "retrieval_latency_ms": 12, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 289, "total_latency_ms": 655}
+  ✓  32 e2e/currency.spec.ts:112:1 › saved monetary bar charts convert axes and reports without changing snapshots (3.5s)
+  ✓  33 e2e/dataset-editor.spec.ts:5:1 › dataset edits persist after refresh and export the saved version (845ms)
+[WebServer] 2026-11-12 10:45:59,617 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:45:59,934 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:45:59,936 INFO Analyst run metrics: {"run_id": "6776698b-7c90-4e1e-8ed6-3933090b8d7a", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 298, "total_latency_ms": 656}
+  ✓  34 e2e/dataset-editor.spec.ts:85:1 › click existing revenue, preserve account 001 and row count, save revision 2, export and query in Analyst (2.4s)
+  ✓  35 e2e/dataset-editor.spec.ts:187:1 › existing cell batches survive sorted pages, invalid input, Escape, Undo, NULL and Cancel (1.5s)
+[WebServer] 2026-11-12 10:46:02,581 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:46:02,900 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:46:02,903 INFO Analyst run metrics: {"run_id": "897e0ceb-4948-4a04-b15f-a746e520be44", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 296, "total_latency_ms": 651}
+  ✓  36 e2e/dataset-lifecycle.spec.ts:5:1 › throwaway datasets: rename, dependency preview, archive/restore, guarded delete and retained history (4.5s)
+  ✓  37 e2e/dataset-lifecycle.spec.ts:44:1 › bulk DELETE confirmation processes only newly created selected fixtures (569ms)
+[WebServer] 2026-11-12 10:46:08,165 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:46:08,466 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:46:08,469 INFO Analyst run metrics: {"run_id": "c740a915-e5cb-46b6-9ba0-1866788cea10", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 286, "total_latency_ms": 637}
+  ✓  38 e2e/phase4.spec.ts:7:1 › dashboard save, layout, filters, reload and exports (4.9s)
+[WebServer] 2026-11-12 10:46:24,605 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:46:24,907 INFO Analyst run metrics: {"run_id": "0692d529-9c6d-4a4e-a78b-717f1fbe5d16", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 283, "total_latency_ms": 624}
+[WebServer] 2026-11-12 10:46:25,294 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:46:25,587 INFO Analyst run metrics: {"run_id": "1ff19088-a02e-46ec-ba0e-118d96f69111", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 277, "total_latency_ms": 616}
+  ✓  39 e2e/phase4.spec.ts:164:1 › controlled evaluation verifies references and records actual comparisons (16.8s)
+  ✓  40 e2e/ui-refinement.spec.ts:14:1 › sidebar collapse preserves the current workspace and keyboard dataset tabs preserve the preview (495ms)
+  ✓  41 e2e/ui-refinement.spec.ts:58:1 › mobile navigation is keyboard accessible, traps focus and restores focus on Escape (205ms)
+  ✓  42 e2e/ui-refinement.spec.ts:90:1 › all nine modules fit desktop tablet and mobile without horizontal overflow (1.9s)
+  ✓  43 e2e/ui-refinement.spec.ts:127:1 › Phase 1A Overview groups counts and filters recent statuses without deleting records (397ms)
+[WebServer] ERROR:root:API failure
+[WebServer]   + Exception Group Traceback (most recent call last):
+[WebServer]   |   File "<project>/.venv/lib/python3.9/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
+[WebServer]   |     yield
+[WebServer]   |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 181, in __call__
+[WebServer]   |     recv_stream.close()
+[WebServer]   |   File "<project>/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 783, in __aexit__
+[WebServer]   |     raise BaseExceptionGroup(
+[WebServer]   | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+[WebServer]   +-+---------------- 1 ----------------
+[WebServer]     | Traceback (most recent call last):
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+[WebServer]     |     await self.app(scope, receive, _send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 181, in __call__
+[WebServer]     |     recv_stream.close()
+[WebServer]     |   File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+[WebServer]     |     self.gen.throw(type, value, traceback)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+[WebServer]     |     raise exc
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 178, in __call__
+[WebServer]     |     response = await self.dispatch_func(request, call_next)
+[WebServer]     |   File "<project>/frontend/../backend/app/main.py", line 177, in bound_upload
+[WebServer]     |     response = await call_next(request)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 156, in call_next
+[WebServer]     |     raise app_exc
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 141, in coro
+[WebServer]     |     await self.app(scope, receive_or_disconnect, send_no_error)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+[WebServer]     |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[WebServer]     |     raise exc
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[WebServer]     |     await app(scope, receive, sender)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+[WebServer]     |     await self.middleware_stack(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+[WebServer]     |     await route.handle(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+[WebServer]     |     await self.app(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+[WebServer]     |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[WebServer]     |     raise exc
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[WebServer]     |     await app(scope, receive, sender)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+[WebServer]     |     response = await f(request)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+[WebServer]     |     raw_response = await run_endpoint_function(
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+[WebServer]     |     return await run_in_threadpool(dependant.call, **values)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+[WebServer]     |     return await anyio.to_thread.run_sync(func)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/anyio/to_thread.py", line 63, in run_sync
+[WebServer]     |     return await get_async_backend().run_sync_in_worker_thread(
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+[WebServer]     |     return await future
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+[WebServer]     |     result = context.run(func, *args)
+[WebServer]     |   File "<project>/frontend/../backend/app/dataset_editor.py", line 192, in rows
+[WebServer]     |     state, header, records, ids = self.read(dataset_id)
+[WebServer]     |   File "<project>/frontend/../backend/app/dataset_editor.py", line 87, in read
+[WebServer]     |     with self.connect(self.root / (str(identifier) + '.duckdb')) as db:
+[WebServer]     |   File "<project>/frontend/../backend/app/main.py", line 119, in connect
+[WebServer]     |     return duckdb.connect(str(path), read_only=read_only, config={
+[WebServer]     | duckdb.duckdb.ConnectionException: Connection Error: Can't open a connection to same database file with a different configuration than existing connections
+[WebServer]     +------------------------------------
+[WebServer] 
+[WebServer] During handling of the above exception, another exception occurred:
+[WebServer] 
+[WebServer] Traceback (most recent call last):
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+[WebServer]     await self.app(scope, receive, _send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 181, in __call__
+[WebServer]     recv_stream.close()
+[WebServer]   File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+[WebServer]     self.gen.throw(type, value, traceback)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+[WebServer]     raise exc
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 178, in __call__
+[WebServer]     response = await self.dispatch_func(request, call_next)
+[WebServer]   File "<project>/frontend/../backend/app/main.py", line 177, in bound_upload
+[WebServer]     response = await call_next(request)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 156, in call_next
+[WebServer]     raise app_exc
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 141, in coro
+[WebServer]     await self.app(scope, receive_or_disconnect, send_no_error)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+[WebServer]     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[WebServer]     raise exc
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[WebServer]     await app(scope, receive, sender)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+[WebServer]     await self.middleware_stack(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+[WebServer]     await route.handle(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+[WebServer]     await self.app(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+[WebServer]     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[WebServer]     raise exc
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[WebServer]     await app(scope, receive, sender)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+[WebServer]     response = await f(request)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+[WebServer]     raw_response = await run_endpoint_function(
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+[WebServer]     return await run_in_threadpool(dependant.call, **values)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+[WebServer]     return await anyio.to_thread.run_sync(func)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/anyio/to_thread.py", line 63, in run_sync
+[WebServer]     return await get_async_backend().run_sync_in_worker_thread(
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+[WebServer]     return await future
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+[WebServer]     result = context.run(func, *args)
+[WebServer]   File "<project>/frontend/../backend/app/dataset_editor.py", line 192, in rows
+[WebServer]     state, header, records, ids = self.read(dataset_id)
+[WebServer]   File "<project>/frontend/../backend/app/dataset_editor.py", line 87, in read
+[WebServer]     with self.connect(self.root / (str(identifier) + '.duckdb')) as db:
+[WebServer]   File "<project>/frontend/../backend/app/main.py", line 119, in connect
+[WebServer]     return duckdb.connect(str(path), read_only=read_only, config={
+[WebServer] duckdb.duckdb.ConnectionException: Connection Error: Can't open a connection to same database file with a different configuration than existing connections
+[WebServer] ERROR:    Exception in ASGI application
+[WebServer]   + Exception Group Traceback (most recent call last):
+[WebServer]   |   File "<project>/.venv/lib/python3.9/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
+[WebServer]   |     yield
+[WebServer]   |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 181, in __call__
+[WebServer]   |     recv_stream.close()
+[WebServer]   |   File "<project>/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 783, in __aexit__
+[WebServer]   |     raise BaseExceptionGroup(
+[WebServer]   | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+[WebServer]   +-+---------------- 1 ----------------
+[WebServer]     | Traceback (most recent call last):
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+[WebServer]     |     result = await app(  # type: ignore[func-returns-value]
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+[WebServer]     |     return await self.app(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+[WebServer]     |     await super().__call__(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+[WebServer]     |     await self.middleware_stack(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+[WebServer]     |     raise exc
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+[WebServer]     |     await self.app(scope, receive, _send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 181, in __call__
+[WebServer]     |     recv_stream.close()
+[WebServer]     |   File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+[WebServer]     |     self.gen.throw(type, value, traceback)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+[WebServer]     |     raise exc
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 178, in __call__
+[WebServer]     |     response = await self.dispatch_func(request, call_next)
+[WebServer]     |   File "<project>/frontend/../backend/app/main.py", line 177, in bound_upload
+[WebServer]     |     response = await call_next(request)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 156, in call_next
+[WebServer]     |     raise app_exc
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 141, in coro
+[WebServer]     |     await self.app(scope, receive_or_disconnect, send_no_error)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+[WebServer]     |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[WebServer]     |     raise exc
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[WebServer]     |     await app(scope, receive, sender)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+[WebServer]     |     await self.middleware_stack(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+[WebServer]     |     await route.handle(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+[WebServer]     |     await self.app(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+[WebServer]     |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[WebServer]     |     raise exc
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[WebServer]     |     await app(scope, receive, sender)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+[WebServer]     |     response = await f(request)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+[WebServer]     |     raw_response = await run_endpoint_function(
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+[WebServer]     |     return await run_in_threadpool(dependant.call, **values)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+[WebServer]     |     return await anyio.to_thread.run_sync(func)
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/anyio/to_thread.py", line 63, in run_sync
+[WebServer]     |     return await get_async_backend().run_sync_in_worker_thread(
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+[WebServer]     |     return await future
+[WebServer]     |   File "<project>/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+[WebServer]     |     result = context.run(func, *args)
+[WebServer]     |   File "<project>/frontend/../backend/app/dataset_editor.py", line 192, in rows
+[WebServer]     |     state, header, records, ids = self.read(dataset_id)
+[WebServer]     |   File "<project>/frontend/../backend/app/dataset_editor.py", line 87, in read
+[WebServer]     |     with self.connect(self.root / (str(identifier) + '.duckdb')) as db:
+[WebServer]     |   File "<project>/frontend/../backend/app/main.py", line 119, in connect
+[WebServer]     |     return duckdb.connect(str(path), read_only=read_only, config={
+[WebServer]     | duckdb.duckdb.ConnectionException: Connection Error: Can't open a connection to same database file with a different configuration than existing connections
+[WebServer]     +------------------------------------
+[WebServer] 
+[WebServer] During handling of the above exception, another exception occurred:
+[WebServer] 
+[WebServer] Traceback (most recent call last):
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+[WebServer]     result = await app(  # type: ignore[func-returns-value]
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+[WebServer]     return await self.app(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+[WebServer]     await super().__call__(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+[WebServer]     await self.middleware_stack(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+[WebServer]     raise exc
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+[WebServer]     await self.app(scope, receive, _send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 181, in __call__
+[WebServer]     recv_stream.close()
+[WebServer]   File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+[WebServer]     self.gen.throw(type, value, traceback)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+[WebServer]     raise exc
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 178, in __call__
+[WebServer]     response = await self.dispatch_func(request, call_next)
+[WebServer]   File "<project>/frontend/../backend/app/main.py", line 177, in bound_upload
+[WebServer]     response = await call_next(request)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 156, in call_next
+[WebServer]     raise app_exc
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 141, in coro
+[WebServer]     await self.app(scope, receive_or_disconnect, send_no_error)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+[WebServer]     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[WebServer]     raise exc
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[WebServer]     await app(scope, receive, sender)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+[WebServer]     await self.middleware_stack(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+[WebServer]     await route.handle(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+[WebServer]     await self.app(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+[WebServer]     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[WebServer]     raise exc
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[WebServer]     await app(scope, receive, sender)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+[WebServer]     response = await f(request)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+[WebServer]     raw_response = await run_endpoint_function(
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+[WebServer]     return await run_in_threadpool(dependant.call, **values)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+[WebServer]     return await anyio.to_thread.run_sync(func)
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/anyio/to_thread.py", line 63, in run_sync
+[WebServer]     return await get_async_backend().run_sync_in_worker_thread(
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+[WebServer]     return await future
+[WebServer]   File "<project>/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+[WebServer]     result = context.run(func, *args)
+[WebServer]   File "<project>/frontend/../backend/app/dataset_editor.py", line 192, in rows
+[WebServer]     state, header, records, ids = self.read(dataset_id)
+[WebServer]   File "<project>/frontend/../backend/app/dataset_editor.py", line 87, in read
+[WebServer]     with self.connect(self.root / (str(identifier) + '.duckdb')) as db:
+[WebServer]   File "<project>/frontend/../backend/app/main.py", line 119, in connect
+[WebServer]     return duckdb.connect(str(path), read_only=read_only, config={
+[WebServer] duckdb.duckdb.ConnectionException: Connection Error: Can't open a connection to same database file with a different configuration than existing connections
+  ✓  44 e2e/workspace.spec.ts:2:1 › real upload, schema, preview, reload and mobile layout (830ms)
+
+  44 passed (3.7m)

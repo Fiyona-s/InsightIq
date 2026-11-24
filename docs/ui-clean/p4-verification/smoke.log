@@ -1,0 +1,20 @@
+[WebServer] INFO:     Started server process [64453]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8002 (Press CTRL+C to quit)
+
+Running 1 test using 1 worker
+
+[WebServer] 2026-11-22 20:33:25,574 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": null, "completion_tokens": null, "total_tokens": null, "estimated_cost_usd": null}
+[WebServer] <project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+[WebServer]   warnings.warn(
+[WebServer] 2026-11-22 20:33:27,553 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-22 20:33:27,867 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-22 20:33:27,871 INFO Analyst run metrics: {"run_id": "035ac08b-2d25-4364-8c79-2bf793bcf3c9", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 313, "query_latency_ms": 291, "total_latency_ms": 803}
+[WebServer] 2026-11-22 20:33:48,140 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 311, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-22 20:33:48,452 INFO Analyst run metrics: {"run_id": "407811d4-6109-4035-a3e6-0b88fbb55a0b", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "query_latency_ms": 287, "total_latency_ms": 632}
+[WebServer] 2026-11-22 20:33:48,808 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-22 20:33:49,123 INFO Analyst run metrics: {"run_id": "80bf1c61-8d59-408a-8761-6c2388f691ce", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 313, "query_latency_ms": 289, "total_latency_ms": 636}
+  ✓  1 e2e/phase9-smoke.spec.ts:5:1 › clean workspace final smoke: edit, knowledge, answer, dashboard FX/export, local ML, offline replay and guarded deletion (28.2s)
+
+  1 passed (29.9s)

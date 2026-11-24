@@ -1,0 +1,276 @@
+{
+  "reviews": [
+    {
+      "route": "overview",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "datasets",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "analyst",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "dashboards",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "automl",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "knowledge",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "evaluation",
+      "width": 1280,
+      "headingTop": 165.390625,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "analytics",
+      "width": 1280,
+      "headingTop": 165.390625,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "traces",
+      "width": 1280,
+      "headingTop": 165.390625,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "settings",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "overview",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "datasets",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "analyst",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "dashboards",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "automl",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "knowledge",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "evaluation",
+      "width": 768,
+      "headingTop": 165.390625,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "analytics",
+      "width": 768,
+      "headingTop": 165.390625,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "traces",
+      "width": 768,
+      "headingTop": 165.390625,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "settings",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "overview",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "datasets",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "analyst",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "dashboards",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "automl",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "knowledge",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "evaluation",
+      "width": 390,
+      "headingTop": 271.78125,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "analytics",
+      "width": 390,
+      "headingTop": 271.78125,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "traces",
+      "width": 390,
+      "headingTop": 271.78125,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "route": "settings",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "preferenceMutatingRequests": []
+}

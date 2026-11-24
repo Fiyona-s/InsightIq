@@ -1,0 +1,12 @@
+
+> insightiq@0.1.0 lint
+> eslint src
+
+
+<project>/frontend/src/components/DatasetEditor.tsx
+  172:18  warning  The ref value 'generation.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'generation.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+  174:6   warning  React Hook useEffect has a missing dependency: 'load'. Either include it or remove the dependency array                                                                                                                                                              react-hooks/exhaustive-deps
+
+✖ 2 problems (0 errors, 2 warnings)
+
+exit 0

@@ -1,0 +1,99 @@
+[
+  {
+    "boundary": "Execution versus correctness",
+    "implementation": [
+      "backend/app/workflow.py",
+      "frontend/src/components/RunTraceDetails.tsx"
+    ],
+    "tests": [
+      "backend/tests/test_knowledge_review.py::test_replay_only_and_no_reference_cannot_create_trusted_example",
+      "backend/tests/test_knowledge_review.py::test_independent_sql_reference_passes_numeric_comparison"
+    ],
+    "scope_and_limits": "Execution and repair establish executability only; independent reference checks establish agreement with the reference, not universal business correctness."
+  },
+  {
+    "boundary": "Feedback versus verification",
+    "implementation": [
+      "backend/app/knowledge_review.py",
+      "frontend/src/components/KnowledgeReview.tsx"
+    ],
+    "tests": [
+      "backend/tests/test_knowledge_review.py::test_stale_drafts_archived_readonly_and_helpful_does_not_promote",
+      "backend/tests/test_knowledge_review.py::test_reference_match_mismatch_approval_revision_and_delete",
+      "frontend/e2e/02-phase5-knowledge.spec.ts"
+    ],
+    "scope_and_limits": "Helpful never approves an example; independent passing check and explicit approval are required. A mistaken reference can agree."
+  },
+  {
+    "boundary": "Snapshots versus current data",
+    "implementation": [
+      "backend/app/dashboard_workspace.py",
+      "frontend/src/components/DashboardPage.tsx"
+    ],
+    "tests": [
+      "backend/tests/test_dashboard_workspace.py::test_failed_refresh_keeps_snapshot_and_document_byte_identical",
+      "backend/tests/test_dashboard_workspace.py::test_refresh_archived_deleted_busy_and_legacy_status",
+      "frontend/e2e/03-phase6-dashboards.spec.ts"
+    ],
+    "scope_and_limits": "Saved results retain data-as-of/source state. Unknown legacy revisions remain unknown. Explicit refresh can fail without replacing the saved result."
+  },
+  {
+    "boundary": "Display FX versus source values",
+    "implementation": [
+      "backend/app/currency.py",
+      "frontend/src/lib/currency.tsx"
+    ],
+    "tests": [
+      "backend/tests/test_currency.py::test_converted_export_retains_originals_and_provenance",
+      "backend/tests/test_dashboard_workspace.py::test_currency_presentation_exports_never_mutate_values_and_pdf_formatted",
+      "backend/tests/test_dashboard_workspace.py::test_currency_unavailable_report_is_explicit_and_keeps_original_snapshot",
+      "frontend/e2e/currency.spec.ts"
+    ],
+    "scope_and_limits": "Confirmed units only; daily reference rates carry provenance and are not live trading quotes. Rate failure retains originals. Explicit converted exports retain original fields; ordinary JSON remains source values."
+  },
+  {
+    "boundary": "Training completion versus predictive quality",
+    "implementation": [
+      "frontend/src/lib/automlPresentation.ts",
+      "backend/app/automl/presentation.py"
+    ],
+    "tests": [
+      "frontend/src/components/AutoMLSummary.test.tsx: compares validation to validation, never fills missing baseline test scores",
+      "frontend/src/components/AutoMLSummary.test.tsx: claims no baseline or improvement when none is stored and explains omitted plots and importance",
+      "backend/tests/test_automl_presentation.py::test_presentation_reads_never_train_or_modify_catalog_and_artifacts",
+      "frontend/e2e/automl.spec.ts"
+    ],
+    "scope_and_limits": "Measured scores and same-scope baselines only; missing measurements remain missing, negative R\u00b2 remains visible. Hints require original source/scope; successful fitting is not a quality certification."
+  },
+  {
+    "boundary": "Reference inventory versus evaluation accuracy",
+    "implementation": [
+      "frontend/src/components/EvaluationWorkspaceResults.tsx",
+      "backend/app/evaluation_presentation.py"
+    ],
+    "tests": [
+      "backend/tests/test_offline_evaluation.py::test_offline_missing_does_not_run_gold_as_prediction_or_invent_accuracy",
+      "backend/tests/test_evaluation_presentation.py::test_fixed_stored_run_scores_identical_and_reads_never_score_or_call_models",
+      "frontend/e2e/14-product-stage8-evaluation.spec.ts"
+    ],
+    "scope_and_limits": "Authored reference inventory is separate from scored predictions. Partial runs show their denominator; missing predictions stay unscored. Controlled fixture scores are not measured live-provider accuracy."
+  },
+  {
+    "boundary": "Outbound data and local scope",
+    "implementation": [
+      "backend/app/provider.py",
+      "backend/app/knowledge_review.py",
+      "frontend/src/components/Analyst.tsx",
+      "frontend/src/components/WorkspaceSettings.tsx",
+      "docs/SECURITY_AND_PRIVACY.md",
+      "compose.yaml"
+    ],
+    "tests": [
+      "backend/tests/test_knowledge_review.py::test_draft_payload_allowlist_and_serialized_messages_exclude_samples_quality_and_rows",
+      "backend/tests/test_dataset_quality.py::test_sample_and_quality_values_do_not_enter_model_context",
+      "frontend/e2e/10-product-stage4-ask.spec.ts",
+      "frontend/scripts/product-stage11-readonly-review.mjs"
+    ],
+    "scope_and_limits": "Local single-user, loopback ports, no authentication/isolation claim. Questions, examples, SQL/errors and computed evidence may contain sensitive values; no automatic masking. Knowledge drafting has a narrower metadata allowlist. No live-provider test was made."
+  }
+]

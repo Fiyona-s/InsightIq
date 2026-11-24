@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "page": "Analytics",
+      "width": 1280,
+      "compactFilters": true
+    },
+    {
+      "page": "Traces",
+      "width": 1280,
+      "selectedRecordedRun": true,
+      "technicalDetailsCollapsed": true
+    },
+    {
+      "page": "Analytics",
+      "width": 768,
+      "compactFilters": true
+    },
+    {
+      "page": "Traces",
+      "width": 768,
+      "selectedRecordedRun": true,
+      "technicalDetailsCollapsed": true
+    },
+    {
+      "page": "Analytics",
+      "width": 390,
+      "compactFilters": true
+    },
+    {
+      "page": "Traces",
+      "width": 390,
+      "selectedRecordedRun": true,
+      "technicalDetailsCollapsed": true
+    }
+  ],
+  "writes": [],
+  "errors": [],
+  "analyticsResponsesUnchanged": true,
+  "historyResponsesUnchanged": true,
+  "preservedKPI": "₹83,79,680.76",
+  "duplicateBadges": 2,
+  "originalQueriesSubmitted": 0,
+  "originalLifecycleActions": 0,
+  "originalScreenshotsCreated": 0
+}

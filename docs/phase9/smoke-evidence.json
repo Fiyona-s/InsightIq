@@ -1,0 +1,11 @@
+{
+  "cleanWorkspace": true,
+  "liveAICalls": 0,
+  "provider": "Controlled MockTransport only",
+  "consoleErrors": [],
+  "pageErrors": [],
+  "originalWorkspaceUsed": false,
+  "workflowCompleted": true,
+  "offlineScoredQuestions": 2,
+  "offlineUnscoredQuestions": 43
+}

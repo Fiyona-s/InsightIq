@@ -1,0 +1,1268 @@
+{
+  "notice": "Actual local ML results on the explicitly selected registered retail dataset. No new LLM/provider/embedding calls. Existing completed regression/classification/clustering training is retained and reused; current-runtime inference and CSV exports are verified for all five tasks. Single-record examples reuse a source row and are not held-out evaluation. IID supervised scores do not establish future forecasting performance.",
+  "verified_at": "2026-11-07T02:41:22.458076+00:00",
+  "run_status": "completed",
+  "dataset": {
+    "id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+    "name": "InsightIQ_Retail_Demo_2400.csv",
+    "rows": 2400,
+    "fingerprint": "7dd307884029160842596c67d51fcdbf690974cd5041a697516830418da6ca9c",
+    "profile_sample": 2400
+  },
+  "experiments": [
+    {
+      "task": "regression",
+      "experiment_id": "dfeddf9f-9e4d-4423-98f1-469b2faf7de5",
+      "configuration": {
+        "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+        "title": "Phase 6 retail \u2014 regression",
+        "task": "regression",
+        "target": "net_revenue_inr",
+        "target_unit": "INR",
+        "features": [
+          {
+            "name": "quantity",
+            "kind": "numeric"
+          },
+          {
+            "name": "unit_price_inr",
+            "kind": "numeric"
+          },
+          {
+            "name": "discount_pct",
+            "kind": "numeric"
+          },
+          {
+            "name": "region",
+            "kind": "categorical"
+          },
+          {
+            "name": "category",
+            "kind": "categorical"
+          },
+          {
+            "name": "sales_channel",
+            "kind": "categorical"
+          }
+        ],
+        "scaler": "standard",
+        "seed": 42,
+        "clusters": 3,
+        "contamination": 0.05,
+        "rfm": null,
+        "forecast": null,
+        "confirm_feature_availability": true
+      },
+      "status": "completed",
+      "duration_seconds": 0.63,
+      "training_reused": true,
+      "rows_used": 2400,
+      "selection_metric": "rmse",
+      "selection_split": "validation",
+      "leaderboard": [
+        {
+          "algorithm": "DummyRegressor",
+          "status": "completed",
+          "training_metrics": {
+            "mae": 2591.0582292804534,
+            "mse": 12355525.412533307,
+            "rmse": 3515.042732675281,
+            "r2": 0.0
+          },
+          "validation_metrics": {
+            "mae": 2604.7770451897045,
+            "mse": 12727733.878017223,
+            "rmse": 3567.59497112792,
+            "r2": -0.0002064005978703598
+          },
+          "test_metrics": null,
+          "fit_seconds": 0.0106,
+          "selected": false,
+          "model_id": "1b7c35a8-7fc8-4b7c-877b-9749573c7366",
+          "error": null
+        },
+        {
+          "algorithm": "LinearRegression",
+          "status": "completed",
+          "training_metrics": {
+            "mae": 1280.8613854197945,
+            "mse": 4076308.807362502,
+            "rmse": 2018.9870745902515,
+            "r2": 0.6700821153888332
+          },
+          "validation_metrics": {
+            "mae": 1316.1491437963937,
+            "mse": 4370982.846057451,
+            "rmse": 2090.6895623352243,
+            "r2": 0.6565071943340138
+          },
+          "test_metrics": null,
+          "fit_seconds": 0.0113,
+          "selected": false,
+          "model_id": "73014769-994b-4468-b0ef-8b99ecaed7c5",
+          "error": null
+        },
+        {
+          "algorithm": "Ridge",
+          "status": "completed",
+          "training_metrics": {
+            "mae": 1280.438936332645,
+            "mse": 4076318.6626723907,
+            "rmse": 2018.9895152457802,
+            "r2": 0.6700813177448999
+          },
+          "validation_metrics": {
+            "mae": 1315.5721420217092,
+            "mse": 4370590.3496322455,
+            "rmse": 2090.595692531735,
+            "r2": 0.6565380385864522
+          },
+          "test_metrics": null,
+          "fit_seconds": 0.0103,
+          "selected": false,
+          "model_id": "b843edd8-a8ed-4cab-a4f1-05f68377ecb6",
+          "error": null
+        },
+        {
+          "algorithm": "RandomForestRegressor",
+          "status": "completed",
+          "training_metrics": {
+            "mae": 650.0966039615867,
+            "mse": 1508648.154930848,
+            "rmse": 1228.2703916202036,
+            "r2": 0.8778968838184338
+          },
+          "validation_metrics": {
+            "mae": 935.702684846309,
+            "mse": 3306887.7498425385,
+            "rmse": 1818.4850150173188,
+            "r2": 0.7401288929238311
+          },
+          "test_metrics": null,
+          "fit_seconds": 0.0482,
+          "selected": false,
+          "model_id": "63f5e910-4d14-4de9-b3f5-5c040d1ba9d7",
+          "error": null
+        },
+        {
+          "algorithm": "HistGradientBoostingRegressor",
+          "status": "completed",
+          "training_metrics": {
+            "mae": 785.9287574725807,
+            "mse": 2123656.222638579,
+            "rmse": 1457.2769889895947,
+            "r2": 0.8281209295652967
+          },
+          "validation_metrics": {
+            "mae": 941.6776542425273,
+            "mse": 3098484.867279114,
+            "rmse": 1760.2513647996739,
+            "r2": 0.756506191431227
+          },
+          "test_metrics": {
+            "mae": 841.0071762831004,
+            "mse": 2038461.5201545788,
+            "rmse": 1427.7470084558324,
+            "r2": 0.8493827246959998
+          },
+          "fit_seconds": 0.0354,
+          "selected": true,
+          "model_id": "d22202c5-429f-444b-a1bb-787a9be832fe",
+          "error": null
+        }
+      ],
+      "model_registry": {
+        "id": "d22202c5-429f-444b-a1bb-787a9be832fe",
+        "experiment_id": "dfeddf9f-9e4d-4423-98f1-469b2faf7de5",
+        "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+        "dataset_fingerprint": "7dd307884029160842596c67d51fcdbf690974cd5041a697516830418da6ca9c",
+        "algorithm": "HistGradientBoostingRegressor",
+        "task": "regression",
+        "created_at": "2026-11-04T03:14:02.759104+00:00",
+        "hyperparameters": {
+          "categorical_features": "from_dtype",
+          "early_stopping": false,
+          "interaction_cst": null,
+          "l2_regularization": 0.0,
+          "learning_rate": 0.1,
+          "loss": "squared_error",
+          "max_bins": 255,
+          "max_depth": null,
+          "max_features": 1.0,
+          "max_iter": 60,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 20,
+          "monotonic_cst": null,
+          "n_iter_no_change": 10,
+          "quantile": null,
+          "random_state": 42,
+          "scoring": "loss",
+          "tol": 1e-07,
+          "validation_fraction": 0.1,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "metrics": {
+          "training": {
+            "mae": 785.9287574725807,
+            "mse": 2123656.222638579,
+            "rmse": 1457.2769889895947,
+            "r2": 0.8281209295652967
+          },
+          "validation": {
+            "mae": 941.6776542425273,
+            "mse": 3098484.867279114,
+            "rmse": 1760.2513647996739,
+            "r2": 0.756506191431227
+          },
+          "test": {
+            "mae": 841.0071762831004,
+            "mse": 2038461.5201545788,
+            "rmse": 1427.7470084558324,
+            "r2": 0.8493827246959998
+          }
+        },
+        "feature_schema": [
+          {
+            "name": "quantity",
+            "kind": "numeric"
+          },
+          {
+            "name": "unit_price_inr",
+            "kind": "numeric"
+          },
+          {
+            "name": "discount_pct",
+            "kind": "numeric"
+          },
+          {
+            "name": "region",
+            "kind": "categorical"
+          },
+          {
+            "name": "category",
+            "kind": "categorical"
+          },
+          {
+            "name": "sales_channel",
+            "kind": "categorical"
+          }
+        ],
+        "selected": true,
+        "selection_metric": "validation rmse",
+        "artifact_path": "automl/models/d22202c5-429f-444b-a1bb-787a9be832fe.joblib",
+        "artifact_sha256": "fe2ebec855c0080801ea5e0f0908d0326149de5a4676af35cd24f9ee3266fd2c",
+        "versions": {
+          "python": "3.12.16",
+          "sklearn": "1.6.1",
+          "numpy": "1.26.4",
+          "scipy": "1.13.1",
+          "joblib": "1.5.3",
+          "automl": "automl-v1.1"
+        },
+        "configuration": {
+          "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+          "title": "Phase 6 retail \u2014 regression",
+          "task": "regression",
+          "target": "net_revenue_inr",
+          "target_unit": "INR",
+          "features": [
+            {
+              "name": "quantity",
+              "kind": "numeric"
+            },
+            {
+              "name": "unit_price_inr",
+              "kind": "numeric"
+            },
+            {
+              "name": "discount_pct",
+              "kind": "numeric"
+            },
+            {
+              "name": "region",
+              "kind": "categorical"
+            },
+            {
+              "name": "category",
+              "kind": "categorical"
+            },
+            {
+              "name": "sales_channel",
+              "kind": "categorical"
+            }
+          ],
+          "scaler": "standard",
+          "seed": 42,
+          "clusters": 3,
+          "contamination": 0.05,
+          "rfm": null,
+          "forecast": null,
+          "confirm_feature_availability": true
+        }
+      },
+      "scope": "Model selection uses validation only. Selected model is evaluated once on untouched test rows; other test metrics are unmeasured. Pipelines remain fitted on training rows only.",
+      "warnings": [],
+      "prediction": {
+        "id": "fd109912-d54f-4110-b8d6-ce3f21acae5f",
+        "row_count": 1,
+        "scope": "User-supplied records; not labeled evaluation.",
+        "export": "/api/automl/predictions/fd109912-d54f-4110-b8d6-ce3f21acae5f/export.csv",
+        "csv_verified": true,
+        "pagination_verified": true,
+        "csv_sha256": "9e5e792be6de01be2b4548e7b548e9ec6c2536f11db42ed12ce36268b3b44984"
+      },
+      "batch_prediction": {
+        "id": "a33e116b-9b4a-4cee-9907-a4b3b3d41eb6",
+        "row_count": 2400,
+        "scope": "Inference on the training dataset; not held-out evaluation.",
+        "export": "/api/automl/predictions/a33e116b-9b4a-4cee-9907-a4b3b3d41eb6/export.csv",
+        "csv_verified": true,
+        "pagination_verified": true,
+        "csv_sha256": "2ed347ee61f693fb9e9afc2d7e59f6217e20e60bea3194d97b519e773f4bbbda"
+      },
+      "split_counts": {
+        "train": 1432,
+        "validation": 489,
+        "test": 479
+      },
+      "restart_verification": {
+        "passed": true,
+        "prediction_id": "0af9dadb-e7e2-4054-a8c7-0ba472fa8ab7",
+        "row_count": 1,
+        "saved_predictions_unchanged": true,
+        "new_predictions_equal_prior": true,
+        "csv_sha256": "9e5e792be6de01be2b4548e7b548e9ec6c2536f11db42ed12ce36268b3b44984"
+      }
+    },
+    {
+      "task": "classification",
+      "experiment_id": "d2711414-1a1f-48be-b6ba-dff273756fc5",
+      "configuration": {
+        "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+        "title": "Phase 6 retail \u2014 classification",
+        "task": "classification",
+        "target": "order_status",
+        "target_unit": null,
+        "features": [
+          {
+            "name": "quantity",
+            "kind": "numeric"
+          },
+          {
+            "name": "unit_price_inr",
+            "kind": "numeric"
+          },
+          {
+            "name": "discount_pct",
+            "kind": "numeric"
+          },
+          {
+            "name": "region",
+            "kind": "categorical"
+          },
+          {
+            "name": "category",
+            "kind": "categorical"
+          },
+          {
+            "name": "sales_channel",
+            "kind": "categorical"
+          }
+        ],
+        "scaler": "standard",
+        "seed": 42,
+        "clusters": 3,
+        "contamination": 0.05,
+        "rfm": null,
+        "forecast": null,
+        "confirm_feature_availability": true
+      },
+      "status": "completed",
+      "duration_seconds": 1.263,
+      "training_reused": true,
+      "rows_used": 2400,
+      "selection_metric": "f1_macro",
+      "selection_split": "validation",
+      "leaderboard": [
+        {
+          "algorithm": "DummyClassifier",
+          "status": "completed",
+          "training_metrics": {
+            "accuracy": 0.8660714285714286,
+            "precision_macro": 0.2886904761904762,
+            "recall_macro": 0.3333333333333333,
+            "f1_macro": 0.30940988835725675,
+            "roc_auc": 0.5
+          },
+          "validation_metrics": {
+            "accuracy": 0.8685344827586207,
+            "precision_macro": 0.28951149425287354,
+            "recall_macro": 0.3333333333333333,
+            "f1_macro": 0.30988081507112647,
+            "roc_auc": 0.5
+          },
+          "test_metrics": null,
+          "fit_seconds": 0.0193,
+          "selected": false,
+          "model_id": "520dc25b-3777-4191-b347-5571d74c6490",
+          "error": null
+        },
+        {
+          "algorithm": "LogisticRegression",
+          "status": "completed",
+          "training_metrics": {
+            "accuracy": 0.3179945054945055,
+            "precision_macro": 0.35627710588450173,
+            "recall_macro": 0.42142183894761215,
+            "f1_macro": 0.24319872417792546,
+            "roc_auc": 0.5864470055634251
+          },
+          "validation_metrics": {
+            "accuracy": 0.32112068965517243,
+            "precision_macro": 0.3397577929835995,
+            "recall_macro": 0.37410881801125706,
+            "f1_macro": 0.23777931944555084,
+            "roc_auc": 0.5112015239228921
+          },
+          "test_metrics": null,
+          "fit_seconds": 0.0236,
+          "selected": false,
+          "model_id": "7c481473-701e-4284-af94-d17608a2399e",
+          "error": null
+        },
+        {
+          "algorithm": "RandomForestClassifier",
+          "status": "completed",
+          "training_metrics": {
+            "accuracy": 0.8914835164835165,
+            "precision_macro": 0.6903408628073816,
+            "recall_macro": 0.8612565365142686,
+            "f1_macro": 0.7493863219778613,
+            "roc_auc": 0.9505482528726624
+          },
+          "validation_metrics": {
+            "accuracy": 0.7758620689655172,
+            "precision_macro": 0.3626918421689664,
+            "recall_macro": 0.3574239948354819,
+            "f1_macro": 0.35940227356068943,
+            "roc_auc": 0.4790644195491831
+          },
+          "test_metrics": {
+            "accuracy": 0.7958333333333333,
+            "precision_macro": 0.2961240310077519,
+            "recall_macro": 0.2975077881619938,
+            "f1_macro": 0.29681429681429683,
+            "roc_auc": 0.5451629211861319
+          },
+          "fit_seconds": 0.0467,
+          "selected": true,
+          "model_id": "beeea7a5-0394-4a73-adf1-461d11971393",
+          "error": null
+        },
+        {
+          "algorithm": "HistGradientBoostingClassifier",
+          "status": "completed",
+          "training_metrics": {
+            "accuracy": 0.7644230769230769,
+            "precision_macro": 0.5641855209842344,
+            "recall_macro": 0.8867220980623043,
+            "f1_macro": 0.6226526983319257,
+            "roc_auc": 0.9525569830431321
+          },
+          "validation_metrics": {
+            "accuracy": 0.5732758620689655,
+            "precision_macro": 0.31789866040630566,
+            "recall_macro": 0.2930460570114386,
+            "f1_macro": 0.28825396825396826,
+            "roc_auc": 0.45012496470398383
+          },
+          "test_metrics": null,
+          "fit_seconds": 0.1157,
+          "selected": false,
+          "model_id": "3e786478-0ef7-4f9a-9d46-86c8b8c088ae",
+          "error": null
+        }
+      ],
+      "model_registry": {
+        "id": "beeea7a5-0394-4a73-adf1-461d11971393",
+        "experiment_id": "d2711414-1a1f-48be-b6ba-dff273756fc5",
+        "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+        "dataset_fingerprint": "7dd307884029160842596c67d51fcdbf690974cd5041a697516830418da6ca9c",
+        "algorithm": "RandomForestClassifier",
+        "task": "classification",
+        "created_at": "2026-11-04T03:14:05.656006+00:00",
+        "hyperparameters": {
+          "bootstrap": true,
+          "ccp_alpha": 0.0,
+          "class_weight": "balanced",
+          "criterion": "gini",
+          "max_depth": 8,
+          "max_features": "sqrt",
+          "max_leaf_nodes": null,
+          "max_samples": null,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 2,
+          "min_samples_split": 2,
+          "min_weight_fraction_leaf": 0.0,
+          "monotonic_cst": null,
+          "n_estimators": 40,
+          "n_jobs": 1,
+          "oob_score": false,
+          "random_state": 42,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "metrics": {
+          "training": {
+            "accuracy": 0.8914835164835165,
+            "precision_macro": 0.6903408628073816,
+            "recall_macro": 0.8612565365142686,
+            "f1_macro": 0.7493863219778613,
+            "roc_auc": 0.9505482528726624
+          },
+          "validation": {
+            "accuracy": 0.7758620689655172,
+            "precision_macro": 0.3626918421689664,
+            "recall_macro": 0.3574239948354819,
+            "f1_macro": 0.35940227356068943,
+            "roc_auc": 0.4790644195491831
+          },
+          "test": {
+            "accuracy": 0.7958333333333333,
+            "precision_macro": 0.2961240310077519,
+            "recall_macro": 0.2975077881619938,
+            "f1_macro": 0.29681429681429683,
+            "roc_auc": 0.5451629211861319
+          }
+        },
+        "feature_schema": [
+          {
+            "name": "quantity",
+            "kind": "numeric"
+          },
+          {
+            "name": "unit_price_inr",
+            "kind": "numeric"
+          },
+          {
+            "name": "discount_pct",
+            "kind": "numeric"
+          },
+          {
+            "name": "region",
+            "kind": "categorical"
+          },
+          {
+            "name": "category",
+            "kind": "categorical"
+          },
+          {
+            "name": "sales_channel",
+            "kind": "categorical"
+          }
+        ],
+        "selected": true,
+        "selection_metric": "validation f1_macro",
+        "artifact_path": "automl/models/beeea7a5-0394-4a73-adf1-461d11971393.joblib",
+        "artifact_sha256": "69a3d148c783a18b3c74d34c0a7368f0fd5b8bce5e34e79813ed32fdd805648a",
+        "versions": {
+          "python": "3.12.16",
+          "sklearn": "1.6.1",
+          "numpy": "1.26.4",
+          "scipy": "1.13.1",
+          "joblib": "1.5.3",
+          "automl": "automl-v1.1"
+        },
+        "configuration": {
+          "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+          "title": "Phase 6 retail \u2014 classification",
+          "task": "classification",
+          "target": "order_status",
+          "target_unit": null,
+          "features": [
+            {
+              "name": "quantity",
+              "kind": "numeric"
+            },
+            {
+              "name": "unit_price_inr",
+              "kind": "numeric"
+            },
+            {
+              "name": "discount_pct",
+              "kind": "numeric"
+            },
+            {
+              "name": "region",
+              "kind": "categorical"
+            },
+            {
+              "name": "category",
+              "kind": "categorical"
+            },
+            {
+              "name": "sales_channel",
+              "kind": "categorical"
+            }
+          ],
+          "scaler": "standard",
+          "seed": 42,
+          "clusters": 3,
+          "contamination": 0.05,
+          "rfm": null,
+          "forecast": null,
+          "confirm_feature_availability": true
+        }
+      },
+      "scope": "Model selection uses validation only. Selected model is evaluated once on untouched test rows; other test metrics are unmeasured. Pipelines remain fitted on training rows only.",
+      "warnings": [
+        "Class imbalance observed. Balanced class weights are used where supported; macro F1 selects the model."
+      ],
+      "prediction": {
+        "id": "d3085e64-77fd-4380-b6c5-9263f2caac06",
+        "row_count": 1,
+        "scope": "User-supplied records; not labeled evaluation.",
+        "export": "/api/automl/predictions/d3085e64-77fd-4380-b6c5-9263f2caac06/export.csv",
+        "csv_verified": true,
+        "pagination_verified": true,
+        "csv_sha256": "c535cdfc685c41f81e67527786de6535ebadbf47d002eedbfc82edb4fedad387"
+      },
+      "split_counts": {
+        "train": 1456,
+        "validation": 464,
+        "test": 480
+      },
+      "restart_verification": {
+        "passed": true,
+        "prediction_id": "3f4b7142-56b0-4a98-99eb-c1c75c03f959",
+        "row_count": 1,
+        "saved_predictions_unchanged": true,
+        "new_predictions_equal_prior": true,
+        "csv_sha256": "c535cdfc685c41f81e67527786de6535ebadbf47d002eedbfc82edb4fedad387"
+      }
+    },
+    {
+      "task": "clustering",
+      "experiment_id": "239cd45e-fa39-4f09-83b1-5604ffa6c43f",
+      "configuration": {
+        "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+        "title": "Phase 6 retail \u2014 clustering",
+        "task": "clustering",
+        "target": null,
+        "target_unit": null,
+        "features": [],
+        "scaler": "standard",
+        "seed": 42,
+        "clusters": 4,
+        "contamination": 0.05,
+        "rfm": {
+          "customer": "customer_id",
+          "date": "order_date",
+          "amount": "net_revenue_inr",
+          "order": "order_id",
+          "reference_date": null
+        },
+        "forecast": null,
+        "confirm_feature_availability": true
+      },
+      "status": "completed",
+      "duration_seconds": 0.424,
+      "training_reused": true,
+      "rows_used": 635,
+      "selection_metric": "Configured algorithm",
+      "selection_split": "descriptive",
+      "leaderboard": [
+        {
+          "algorithm": "KMeans",
+          "status": "completed",
+          "training_metrics": {
+            "silhouette": 0.3194339053976271
+          },
+          "validation_metrics": null,
+          "test_metrics": null,
+          "fit_seconds": 0.0149,
+          "selected": true,
+          "model_id": "e61afd49-0037-4fe0-ae9a-23b150125e9b",
+          "error": null
+        }
+      ],
+      "model_registry": {
+        "id": "e61afd49-0037-4fe0-ae9a-23b150125e9b",
+        "experiment_id": "239cd45e-fa39-4f09-83b1-5604ffa6c43f",
+        "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+        "dataset_fingerprint": "7dd307884029160842596c67d51fcdbf690974cd5041a697516830418da6ca9c",
+        "algorithm": "KMeans",
+        "task": "clustering",
+        "created_at": "2026-11-04T03:14:07.093017+00:00",
+        "hyperparameters": {
+          "algorithm": "lloyd",
+          "copy_x": true,
+          "init": "k-means++",
+          "max_iter": 150,
+          "n_clusters": 4,
+          "n_init": 10,
+          "random_state": 42,
+          "tol": 0.0001,
+          "verbose": 0
+        },
+        "metrics": {
+          "descriptive": {
+            "silhouette": 0.3194339053976271
+          }
+        },
+        "feature_schema": [
+          {
+            "name": "recency_days",
+            "kind": "numeric"
+          },
+          {
+            "name": "frequency",
+            "kind": "numeric"
+          },
+          {
+            "name": "monetary",
+            "kind": "numeric"
+          }
+        ],
+        "selected": true,
+        "selection_metric": "fixed configured algorithm; descriptive metrics only",
+        "artifact_path": "automl/models/e61afd49-0037-4fe0-ae9a-23b150125e9b.joblib",
+        "artifact_sha256": "dd6c2ae8dcd125bc8be9c37cd21b66db9ee39ef76caa58bf022ba12ea49dd3d3",
+        "versions": {
+          "python": "3.12.16",
+          "sklearn": "1.6.1",
+          "numpy": "1.26.4",
+          "scipy": "1.13.1",
+          "joblib": "1.5.3",
+          "automl": "automl-v1.1"
+        },
+        "configuration": {
+          "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+          "title": "Phase 6 retail \u2014 clustering",
+          "task": "clustering",
+          "target": null,
+          "target_unit": null,
+          "features": [],
+          "scaler": "standard",
+          "seed": 42,
+          "clusters": 4,
+          "contamination": 0.05,
+          "rfm": {
+            "customer": "customer_id",
+            "date": "order_date",
+            "amount": "net_revenue_inr",
+            "order": "order_id",
+            "reference_date": null
+          },
+          "forecast": null,
+          "confirm_feature_availability": true
+        }
+      },
+      "scope": "Descriptive clustering on fitted data. Silhouette is internal separation, not prediction accuracy.",
+      "warnings": [],
+      "prediction": {
+        "id": "40825a1f-303e-41dc-abf8-480ebfd029a8",
+        "row_count": 635,
+        "scope": "Inference on the training dataset; not held-out evaluation.",
+        "export": "/api/automl/predictions/40825a1f-303e-41dc-abf8-480ebfd029a8/export.csv",
+        "csv_verified": true,
+        "pagination_verified": true,
+        "csv_sha256": "f4eac8b913e4c3226d5546c35d866a79f8fae1e239729b0a597e37c14c824678"
+      },
+      "rfm": {
+        "reference_date": "2026-10-31T00:00:00",
+        "frequency_definition": "Distinct order IDs per customer",
+        "cluster_profiles": [
+          {
+            "cluster": 0,
+            "count": 197,
+            "features": {
+              "recency_days": 122.61928934010152,
+              "frequency": 2.3401015228426396,
+              "monetary": 5878.892994923857
+            }
+          },
+          {
+            "cluster": 1,
+            "count": 129,
+            "features": {
+              "recency_days": 67.27906976744185,
+              "frequency": 6.325581395348837,
+              "monetary": 26558.582635658917
+            }
+          },
+          {
+            "cluster": 2,
+            "count": 227,
+            "features": {
+              "recency_days": 102.62555066079295,
+              "frequency": 4.2687224669603525,
+              "monetary": 14575.163392070484
+            }
+          },
+          {
+            "cluster": 3,
+            "count": 82,
+            "features": {
+              "recency_days": 475.4634146341463,
+              "frequency": 1.8780487804878048,
+              "monetary": 5938.043780487805
+            }
+          }
+        ],
+        "pca_explained_variance": [
+          0.6653429545342974,
+          0.23781802840731742
+        ]
+      },
+      "restart_verification": {
+        "passed": true,
+        "prediction_id": "98cd7dcd-c214-4222-94c2-da73ef18da08",
+        "row_count": 635,
+        "saved_predictions_unchanged": true,
+        "new_predictions_equal_prior": true,
+        "csv_sha256": "f4eac8b913e4c3226d5546c35d866a79f8fae1e239729b0a597e37c14c824678"
+      }
+    },
+    {
+      "task": "anomaly",
+      "experiment_id": "20343794-1c48-4d07-bb51-87b5180472ff",
+      "configuration": {
+        "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+        "title": "Phase 6 retail \u2014 anomaly",
+        "task": "anomaly",
+        "target": null,
+        "target_unit": null,
+        "features": [
+          {
+            "name": "quantity",
+            "kind": "numeric"
+          },
+          {
+            "name": "unit_price_inr",
+            "kind": "numeric"
+          },
+          {
+            "name": "net_revenue_inr",
+            "kind": "numeric"
+          }
+        ],
+        "scaler": "standard",
+        "seed": 42,
+        "clusters": 3,
+        "contamination": 0.05,
+        "rfm": null,
+        "forecast": null,
+        "confirm_feature_availability": true
+      },
+      "status": "completed",
+      "duration_seconds": 0.424,
+      "training_reused": false,
+      "rows_used": 2400,
+      "selection_metric": "Configured algorithm",
+      "selection_split": "descriptive",
+      "leaderboard": [
+        {
+          "algorithm": "IsolationForest",
+          "status": "completed",
+          "training_metrics": {
+            "flagged_count": 120.0,
+            "flagged_fraction": 0.05
+          },
+          "validation_metrics": null,
+          "test_metrics": null,
+          "fit_seconds": 0.0495,
+          "selected": true,
+          "model_id": "1a7d209d-3847-4cc8-a13d-5bb25a6b36c0",
+          "error": null
+        }
+      ],
+      "model_registry": {
+        "id": "1a7d209d-3847-4cc8-a13d-5bb25a6b36c0",
+        "experiment_id": "20343794-1c48-4d07-bb51-87b5180472ff",
+        "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+        "dataset_fingerprint": "7dd307884029160842596c67d51fcdbf690974cd5041a697516830418da6ca9c",
+        "algorithm": "IsolationForest",
+        "task": "anomaly",
+        "created_at": "2026-11-07T02:41:20.149610+00:00",
+        "hyperparameters": {
+          "bootstrap": false,
+          "contamination": 0.05,
+          "max_features": 1.0,
+          "max_samples": 256,
+          "n_estimators": 60,
+          "n_jobs": 1,
+          "random_state": 42,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "metrics": {
+          "descriptive": {
+            "flagged_count": 120,
+            "flagged_fraction": 0.05
+          }
+        },
+        "feature_schema": [
+          {
+            "name": "quantity",
+            "kind": "numeric"
+          },
+          {
+            "name": "unit_price_inr",
+            "kind": "numeric"
+          },
+          {
+            "name": "net_revenue_inr",
+            "kind": "numeric"
+          }
+        ],
+        "selected": true,
+        "selection_metric": "fixed configured algorithm; descriptive metrics only",
+        "artifact_path": "automl/models/1a7d209d-3847-4cc8-a13d-5bb25a6b36c0.joblib",
+        "artifact_sha256": "83f41165bde9df87b9720add6db5ea8b1499cacf9d5ccf7eee7f0be3ecb086ab",
+        "versions": {
+          "python": "3.12.16",
+          "sklearn": "1.6.1",
+          "numpy": "1.26.4",
+          "scipy": "1.13.1",
+          "joblib": "1.5.3",
+          "automl": "automl-v1.1"
+        },
+        "configuration": {
+          "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+          "title": "Phase 6 retail \u2014 anomaly",
+          "task": "anomaly",
+          "target": null,
+          "target_unit": null,
+          "features": [
+            {
+              "name": "quantity",
+              "kind": "numeric"
+            },
+            {
+              "name": "unit_price_inr",
+              "kind": "numeric"
+            },
+            {
+              "name": "net_revenue_inr",
+              "kind": "numeric"
+            }
+          ],
+          "scaler": "standard",
+          "seed": 42,
+          "clusters": 3,
+          "contamination": 0.05,
+          "rfm": null,
+          "forecast": null,
+          "confirm_feature_availability": true
+        }
+      },
+      "scope": "Unsupervised anomaly flags are not ground-truth fraud labels. No fraud accuracy is measured.",
+      "warnings": [],
+      "prediction": {
+        "id": "f4da329c-0fd6-4f2c-8a1d-cdeb4707429a",
+        "row_count": 2400,
+        "scope": "Inference on the training dataset; not held-out evaluation.",
+        "export": "/api/automl/predictions/f4da329c-0fd6-4f2c-8a1d-cdeb4707429a/export.csv",
+        "csv_verified": true,
+        "pagination_verified": true,
+        "csv_sha256": "1d26b7f3e4bb1b3ddaae1fafaf25ea977c7608f2df79d591f55a6538bac14656"
+      },
+      "restart_verification": {
+        "passed": true,
+        "prediction_id": "bc85e88d-92ac-49c2-9e68-88d045ff86fd",
+        "row_count": 2400,
+        "saved_predictions_unchanged": true,
+        "new_predictions_equal_prior": true,
+        "csv_sha256": "1d26b7f3e4bb1b3ddaae1fafaf25ea977c7608f2df79d591f55a6538bac14656"
+      }
+    },
+    {
+      "task": "forecasting",
+      "experiment_id": "b0d87489-1ffa-43e6-bc8d-014a1bcdebe3",
+      "configuration": {
+        "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+        "title": "Phase 6 retail \u2014 forecasting",
+        "task": "forecasting",
+        "target": null,
+        "target_unit": "INR",
+        "features": [],
+        "scaler": "standard",
+        "seed": 42,
+        "clusters": 3,
+        "contamination": 0.05,
+        "rfm": null,
+        "forecast": {
+          "date_column": "order_date",
+          "measure": "net_revenue_inr",
+          "frequency": "day",
+          "missing_periods": "zero",
+          "horizon": 7,
+          "seasonal_period": 7
+        },
+        "confirm_feature_availability": true
+      },
+      "status": "completed",
+      "duration_seconds": 0.427,
+      "training_reused": false,
+      "rows_used": 668,
+      "selection_metric": "rmse",
+      "selection_split": "earlier chronological backtests",
+      "leaderboard": [
+        {
+          "algorithm": "Naive",
+          "status": "completed",
+          "training_metrics": null,
+          "validation_metrics": {
+            "mae": 5957.303571428572,
+            "rmse": 6918.891635908891,
+            "wape": 0.45206417013285016
+          },
+          "test_metrics": {
+            "mae": 10177.897142857142,
+            "rmse": 12140.148437732194,
+            "wape": 0.45153438061603374
+          },
+          "fit_seconds": 0.0001,
+          "selected": true,
+          "model_id": "7bcd9c79-4e58-4642-9095-e8e496d72c2c",
+          "error": null
+        },
+        {
+          "algorithm": "SeasonalNaive",
+          "status": "completed",
+          "training_metrics": null,
+          "validation_metrics": {
+            "mae": 7414.738571428571,
+            "rmse": 9059.71336769547,
+            "wape": 0.5626602033713537
+          },
+          "test_metrics": null,
+          "fit_seconds": 0.0,
+          "selected": false,
+          "model_id": "85099155-706e-45fa-b2ca-4f635c940233",
+          "error": null
+        },
+        {
+          "algorithm": "LagRidge",
+          "status": "completed",
+          "training_metrics": null,
+          "validation_metrics": {
+            "mae": 5875.849185668722,
+            "rmse": 7034.4285339903545,
+            "wape": 0.445883083528701
+          },
+          "test_metrics": null,
+          "fit_seconds": 0.0085,
+          "selected": false,
+          "model_id": "d22eacdc-829a-4b59-8d7b-dc40446fa8ac",
+          "error": null
+        }
+      ],
+      "model_registry": {
+        "id": "7bcd9c79-4e58-4642-9095-e8e496d72c2c",
+        "experiment_id": "b0d87489-1ffa-43e6-bc8d-014a1bcdebe3",
+        "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+        "dataset_fingerprint": "7dd307884029160842596c67d51fcdbf690974cd5041a697516830418da6ca9c",
+        "algorithm": "Naive",
+        "task": "forecasting",
+        "created_at": "2026-11-07T02:41:21.462622+00:00",
+        "hyperparameters": {
+          "seasonal_period": 7,
+          "horizon": 7,
+          "ridge_alpha": null
+        },
+        "metrics": {
+          "validation_backtests": {
+            "mae": 5957.303571428572,
+            "rmse": 6918.891635908891,
+            "wape": 0.45206417013285016
+          },
+          "test": {
+            "mae": 10177.897142857142,
+            "rmse": 12140.148437732194,
+            "wape": 0.45153438061603374
+          }
+        },
+        "feature_schema": [],
+        "selected": true,
+        "selection_metric": "validation backtest rmse",
+        "artifact_path": "automl/models/7bcd9c79-4e58-4642-9095-e8e496d72c2c.joblib",
+        "artifact_sha256": "ca7df7f9b94c41b7f28126a1493b5da57dc82b39913381b724c1bda276d9f6ad",
+        "versions": {
+          "python": "3.12.16",
+          "sklearn": "1.6.1",
+          "numpy": "1.26.4",
+          "scipy": "1.13.1",
+          "joblib": "1.5.3",
+          "automl": "automl-v1.1"
+        },
+        "configuration": {
+          "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+          "title": "Phase 6 retail \u2014 forecasting",
+          "task": "forecasting",
+          "target": null,
+          "target_unit": "INR",
+          "features": [],
+          "scaler": "standard",
+          "seed": 42,
+          "clusters": 3,
+          "contamination": 0.05,
+          "rfm": null,
+          "forecast": {
+            "date_column": "order_date",
+            "measure": "net_revenue_inr",
+            "frequency": "day",
+            "missing_periods": "zero",
+            "horizon": 7,
+            "seasonal_period": 7
+          },
+          "confirm_feature_availability": true
+        }
+      },
+      "scope": "Selection uses two earlier expanding-window backtests. Only the selected model receives a final chronological test. Deployment artifacts refit on all observed history afterward. No random split or future rolling values.",
+      "warnings": [
+        "No intervals are estimated. Forecasts are point predictions; backtests do not guarantee future accuracy.",
+        "69 missing periods filled by explicit zero policy."
+      ],
+      "prediction": {
+        "id": "62c99517-c30f-4a13-ae1e-943d5737cdad",
+        "row_count": 7,
+        "scope": "Future point forecasts; no intervals.",
+        "export": "/api/automl/predictions/62c99517-c30f-4a13-ae1e-943d5737cdad/export.csv",
+        "csv_verified": true,
+        "pagination_verified": true,
+        "csv_sha256": "77e47a61ded392d2bcd877bc7596541f2fa884f8c87469e4e7ea72f62972f293"
+      },
+      "backtests": [
+        {
+          "algorithm": "Naive",
+          "fold": 1,
+          "scope": "selection validation",
+          "train_end": "2026-10-09",
+          "evaluation_start": "2026-10-10",
+          "evaluation_end": "2026-10-16",
+          "train_count": 647,
+          "horizon": 7,
+          "metrics": {
+            "mae": 4375.755714285716,
+            "rmse": 5673.469934733819,
+            "wape": 0.3610982186107765
+          }
+        },
+        {
+          "algorithm": "Naive",
+          "fold": 2,
+          "scope": "selection validation",
+          "train_end": "2026-10-16",
+          "evaluation_start": "2026-10-17",
+          "evaluation_end": "2026-10-23",
+          "train_count": 654,
+          "horizon": 7,
+          "metrics": {
+            "mae": 7538.851428571428,
+            "rmse": 7972.067601229398,
+            "wape": 0.529484424535419
+          }
+        },
+        {
+          "algorithm": "SeasonalNaive",
+          "fold": 1,
+          "scope": "selection validation",
+          "train_end": "2026-10-09",
+          "evaluation_start": "2026-10-10",
+          "evaluation_end": "2026-10-16",
+          "train_count": 647,
+          "horizon": 7,
+          "metrics": {
+            "mae": 4812.820000000001,
+            "rmse": 6283.807794323439,
+            "wape": 0.39716584790611587
+          }
+        },
+        {
+          "algorithm": "SeasonalNaive",
+          "fold": 2,
+          "scope": "selection validation",
+          "train_end": "2026-10-16",
+          "evaluation_start": "2026-10-17",
+          "evaluation_end": "2026-10-23",
+          "train_count": 654,
+          "horizon": 7,
+          "metrics": {
+            "mae": 10016.657142857144,
+            "rmse": 11165.597709643673,
+            "wape": 0.7035108720877558
+          }
+        },
+        {
+          "algorithm": "LagRidge",
+          "fold": 1,
+          "scope": "selection validation",
+          "train_end": "2026-10-09",
+          "evaluation_start": "2026-10-10",
+          "evaluation_end": "2026-10-16",
+          "train_count": 647,
+          "horizon": 7,
+          "metrics": {
+            "mae": 4083.6314306015433,
+            "rmse": 5690.372659565007,
+            "wape": 0.33699139790620186
+          }
+        },
+        {
+          "algorithm": "LagRidge",
+          "fold": 2,
+          "scope": "selection validation",
+          "train_end": "2026-10-16",
+          "evaluation_start": "2026-10-17",
+          "evaluation_end": "2026-10-23",
+          "train_count": 654,
+          "horizon": 7,
+          "metrics": {
+            "mae": 7668.066940735901,
+            "rmse": 8160.026261900782,
+            "wape": 0.5385597593855209
+          }
+        }
+      ],
+      "filled_period_count": 69,
+      "restart_verification": {
+        "passed": true,
+        "prediction_id": "f1cb716b-e57c-47f1-b218-02bdc44e63c6",
+        "row_count": 7,
+        "saved_predictions_unchanged": true,
+        "new_predictions_equal_prior": true,
+        "csv_sha256": "77e47a61ded392d2bcd877bc7596541f2fa884f8c87469e4e7ea72f62972f293"
+      }
+    }
+  ],
+  "new_provider_calls": 0,
+  "new_embedding_calls": 0,
+  "preserved_before_rollout": {
+    "automl/experiments": [
+      "239cd45e-fa39-4f09-83b1-5604ffa6c43f",
+      "d2711414-1a1f-48be-b6ba-dff273756fc5",
+      "dfeddf9f-9e4d-4423-98f1-469b2faf7de5"
+    ],
+    "automl/models": [
+      "e61afd49-0037-4fe0-ae9a-23b150125e9b",
+      "3e786478-0ef7-4f9a-9d46-86c8b8c088ae",
+      "beeea7a5-0394-4a73-adf1-461d11971393",
+      "7c481473-701e-4284-af94-d17608a2399e",
+      "520dc25b-3777-4191-b347-5571d74c6490",
+      "d22202c5-429f-444b-a1bb-787a9be832fe",
+      "63f5e910-4d14-4de9-b3f5-5c040d1ba9d7",
+      "b843edd8-a8ed-4cab-a4f1-05f68377ecb6",
+      "73014769-994b-4468-b0ef-8b99ecaed7c5",
+      "1b7c35a8-7fc8-4b7c-877b-9749573c7366"
+    ],
+    "automl/predictions": [
+      "8680c251-39f6-4a99-a1fa-bdae65668b15",
+      "e0ddc42b-dcc9-4837-9c91-3ac9e79069bc",
+      "2068caa6-dd34-4fd7-8c68-819461a34158"
+    ]
+  },
+  "restart_verification": "All five selected models reloaded and inferred identically; all pre-restart datasets, registry, predictions, dashboards, evaluations and Analyst history remained unchanged."
+}

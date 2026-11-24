@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "state": "Saved result",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "state": "Saved result",
+      "width": 768,
+      "violations": []
+    },
+    {
+      "state": "Saved result",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "state": "New evaluation",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "state": "New evaluation",
+      "width": 768,
+      "violations": []
+    },
+    {
+      "state": "New evaluation",
+      "width": 390,
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "writes": [],
+  "controlledStoredVerdicts": true,
+  "inventoryNotAccuracy": true,
+  "modeSwitchesSubmitNothing": true,
+  "storedScoresUnchanged": true,
+  "liveAICalls": 0
+}

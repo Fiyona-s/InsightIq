@@ -1,0 +1,38 @@
+{
+  "checks": [
+    {
+      "step": "Task",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "step": "Task",
+      "width": 768,
+      "violations": []
+    },
+    {
+      "step": "Task",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "step": "Configure",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "step": "Configure",
+      "width": 768,
+      "violations": []
+    },
+    {
+      "step": "Configure",
+      "width": 390,
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "trainingPostsOnNavigation": [],
+  "explicitSuggestionRequired": true,
+  "liveAICalls": 0
+}

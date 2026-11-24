@@ -1,0 +1,51 @@
+{
+  "checks": [
+    {
+      "page": "Analytics",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "page": "Analytics",
+      "width": 768,
+      "violations": []
+    },
+    {
+      "page": "Analytics",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "page": "Raw trace",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "page": "Traces",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "page": "Traces",
+      "width": 768,
+      "violations": []
+    },
+    {
+      "page": "Traces",
+      "width": 390,
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "monitoringWrites": [],
+  "realRunStatuses": [
+    "succeeded",
+    "failed",
+    "cancelled",
+    "clarification"
+  ],
+  "missingMetricsBoundary": "Controlled read-only browser response override",
+  "storedRunEvidenceUnchanged": true,
+  "archiveDeleteFixturesOnly": true,
+  "liveAICalls": 0
+}

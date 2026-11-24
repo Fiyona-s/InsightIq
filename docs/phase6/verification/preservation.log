@@ -1,0 +1,55 @@
+{
+  "original_dashboard_payload_byte_identical": true,
+  "checked_at": "2026-11-11T02:21:14.396483+00:00",
+  "manual_backup": "<project>/.backups/phase6-pre-migration-20261111T015616Z",
+  "automatic_pre_ddl_backup": "/data/backups/dashboards-v8-2026-11-11T02-06-44.774273+00-00",
+  "automatic_backup_original_storage_verified": true,
+  "original_dataset_count": 13,
+  "original_run_count": 18,
+  "original_dashboard_count": 1,
+  "preexisting_catalog_tables_unchanged": {
+    "datasets": true,
+    "analyst_runs": true,
+    "knowledge_state": true,
+    "knowledge_examples": true,
+    "benchmark_installs": true,
+    "dashboards": true,
+    "evaluation_jobs": true,
+    "saved_charts": true,
+    "ml_experiments": true,
+    "ml_models": true,
+    "ml_predictions": true,
+    "dataset_references": true,
+    "dataset_audit": true,
+    "analyst_feedback": true,
+    "dataset_revisions": true,
+    "knowledge_drafts": true,
+    "knowledge_review_examples": true
+  },
+  "original_schema_objects_unchanged": true,
+  "added_tables": [
+    "dashboard_widget_snapshots"
+  ],
+  "migration_versions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "original_storage_files_checked": 97,
+  "original_storage_files_changed": [],
+  "added_nonbackup_storage_files": [],
+  "original_revision_snapshot_rows": 0,
+  "original_knowledge_review_rows": {
+    "knowledge_drafts": 0,
+    "knowledge_review_examples": 0,
+    "dashboard_widget_snapshots": 0
+  },
+  "preexisting_lifecycle_audit_entries": 2,
+  "new_lifecycle_entries_on_originals": 0,
+  "original_dashboard_payload_sha256": "eb491ae351a046697295d3f71f9dd6d364637cf0ffc6b02a107c88bf999b6341"
+}

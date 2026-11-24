@@ -1,0 +1,17 @@
+[WebServer] INFO:     Started server process [42961]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:42984) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:42985) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 e2e/ui-refinement.spec.ts:13:1 › sidebar collapse preserves the current workspace and keyboard dataset tabs preserve the preview (483ms)
+  ✓  2 e2e/ui-refinement.spec.ts:57:1 › mobile navigation is keyboard accessible, traps focus and restores focus on Escape (218ms)
+  ✓  3 e2e/ui-refinement.spec.ts:89:1 › all nine modules fit desktop tablet and mobile without horizontal overflow (1.8s)
+  ✓  4 e2e/ui-refinement.spec.ts:124:1 › Phase 1A Overview groups counts and filters recent statuses without deleting records (395ms)
+
+  4 passed (4.5s)

@@ -1,0 +1,17 @@
+
+> insightiq@0.1.0 build
+> tsc -b && vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 2008 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                        0.48 kB │ gzip:   0.34 kB
+dist/assets/index-ZlWGWHGC.css       125.90 kB │ gzip:  25.41 kB
+dist/assets/AutoMLPlots-DdxTeU7D.js   19.15 kB │ gzip:   6.12 kB
+dist/assets/ResultChart-F8U26IZk.js   21.24 kB │ gzip:   6.84 kB
+dist/assets/chartAxis-CRTmYcQd.js    403.77 kB │ gzip: 114.75 kB
+dist/assets/index-BguHOn56.js        496.83 kB │ gzip: 144.16 kB
+
+✓ built in 494ms

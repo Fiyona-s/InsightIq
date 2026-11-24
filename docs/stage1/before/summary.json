@@ -1,0 +1,626 @@
+{
+ "overview@1280": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "12px:W",
+   "12px:My workspace",
+   "11px:Main workspace",
+   "11px:Advanced tools",
+   "12px:Workspace guide",
+   "13px:Home",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace"
+  ],
+  "h1": [
+   "Home"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "datasets@1280": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "12px:W",
+   "12px:My workspace",
+   "11px:Main workspace",
+   "11px:Advanced tools",
+   "12px:Workspace guide",
+   "13px:My Data",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace"
+  ],
+  "h1": [
+   "My Data"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "analyst@1280": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "12px:W",
+   "12px:My workspace",
+   "11px:Main workspace",
+   "11px:Advanced tools",
+   "12px:Workspace guide",
+   "13px:Ask InsightIQ",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace"
+  ],
+  "h1": [
+   "Ask InsightIQ"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "dashboards@1280": {
+  "overflowX": 0,
+  "minFont": 8,
+  "small": [
+   "12px:W",
+   "12px:My workspace",
+   "11px:Main workspace",
+   "11px:Advanced tools",
+   "12px:Workspace guide",
+   "13px:Dashboards",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace"
+  ],
+  "h1": [
+   "Dashboards"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "automl@1280": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "12px:W",
+   "12px:My workspace",
+   "11px:Main workspace",
+   "11px:Advanced tools",
+   "12px:Workspace guide",
+   "13px:Build Models",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace"
+  ],
+  "h1": [
+   "Build Models"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "knowledge@1280": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "12px:W",
+   "12px:My workspace",
+   "11px:Main workspace",
+   "11px:Advanced tools",
+   "12px:Workspace guide",
+   "13px:Knowledge Base",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace"
+  ],
+  "h1": [
+   "Knowledge Base"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "evaluation@1280": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "12px:W",
+   "12px:My workspace",
+   "11px:Main workspace",
+   "11px:Advanced tools",
+   "12px:Workspace guide",
+   "13px:Evaluation Center",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace"
+  ],
+  "h1": [
+   "Evaluation Center"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "analytics@1280": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "12px:W",
+   "12px:My workspace",
+   "11px:Main workspace",
+   "11px:Advanced tools",
+   "12px:Workspace guide",
+   "13px:Run Analytics",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace"
+  ],
+  "h1": [
+   "Run Analytics"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "traces@1280": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "12px:W",
+   "12px:My workspace",
+   "11px:Main workspace",
+   "11px:Advanced tools",
+   "12px:Workspace guide",
+   "13px:Execution Traces",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace"
+  ],
+  "h1": [
+   "Execution Traces"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "settings@1280": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "12px:W",
+   "12px:My workspace",
+   "11px:Main workspace",
+   "11px:Advanced tools",
+   "12px:Workspace guide",
+   "13px:Settings",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace"
+  ],
+  "h1": [
+   "Settings"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "guide@1280": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "12px:W",
+   "12px:My workspace",
+   "11px:Main workspace",
+   "11px:Advanced tools",
+   "12px:Workspace guide",
+   "13px:Workspace guide",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace"
+  ],
+  "h1": [
+   "From CSV to clarity."
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "overview@768": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "13px:Home",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "9px:YO",
+   "12px:Active dataset",
+   "12px:Explore saved charts and repor",
+   "12px:Predict or explore patterns.",
+   "12px:Across this workspace · comple"
+  ],
+  "h1": [
+   "Home"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "datasets@768": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "13px:My Data",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "9px:YO",
+   "12px:Dataset catalog · 1",
+   "12px:2,400 rows · 12 columns",
+   "12px:Download CSV",
+   "13px:Saved · Version 1"
+  ],
+  "h1": [
+   "My Data"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "analyst@768": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "13px:Ask InsightIQ",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "9px:YO",
+   "12px:Check column types",
+   "12px:0 missing · 0 failed conversio",
+   "12px:0 missing · 0 failed conversio",
+   "12px:0 missing · 0 failed conversio"
+  ],
+  "h1": [
+   "Ask InsightIQ"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "dashboards@768": {
+  "overflowX": 0,
+  "minFont": 8,
+  "small": [
+   "13px:Dashboards",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "9px:YO",
+   "12px:New dashboard",
+   "12px:Saved dashboard · 15/11/2026, ",
+   "12px:Export report",
+   "12px:No saved dashboard filters"
+  ],
+  "h1": [
+   "Dashboards"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "automl@768": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "13px:Build Models",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "9px:YO",
+   "11px:Local training · 0 LLM calls",
+   "11px:Select a target column.",
+   "12px:categorical columns",
+   "12px:missing sampled cells"
+  ],
+  "h1": [
+   "Build Models"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "knowledge@768": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "13px:Knowledge Base",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "9px:YO",
+   "12px:12 columns still need descript",
+   "12px:0 metric definitions",
+   "12px:Confirmed column currencies: 0",
+   "12px:Columns 0/12"
+  ],
+  "h1": [
+   "Knowledge Base"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "evaluation@768": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "13px:Evaluation Center",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "9px:YO",
+   "12px:5 verified reference questions",
+   "12px:45 total · 40 pending",
+   "12px:Benchmark inventory, not syste",
+   "12px:Setup and verification"
+  ],
+  "h1": [
+   "Evaluation Center"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "analytics@768": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "13px:Run Analytics",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "9px:YO",
+   "12px:More filters",
+   "12px:Normal user questions",
+   "12px:Failed runs",
+   "12px:Average latency"
+  ],
+  "h1": [
+   "Run Analytics"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "traces@768": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "13px:Execution Traces",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "9px:YO",
+   "12px:What is my total revenue?",
+   "12px:my_shop_sales_2025.csvmy_shop_",
+   "12px:15/11/2026, 13:00:53 · 1 attem",
+   "12px:Show revenue by region"
+  ],
+  "h1": [
+   "Execution Traces"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "settings@768": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "13px:Settings",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "9px:YO",
+   "12px:Filter sample data in My Data ",
+   "12px:Use a smaller sidebar on deskt",
+   "12px:✳ InsightIQ / Intelligence sta",
+   "12px:/"
+  ],
+  "h1": [
+   "Settings"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "guide@768": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "13px:Workspace guide",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "9px:YO",
+   "12px:WORKSPACE GUIDE",
+   "12px:✳ InsightIQ / Intelligence sta",
+   "12px:/",
+   "12px:Local models · Measured intell"
+  ],
+  "h1": [
+   "From CSV to clarity."
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "overview@390": {
+  "overflowX": 0,
+  "minFont": 10,
+  "small": [
+   "13px:Home",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "12px:Active dataset",
+   "12px:Explore saved charts and repor",
+   "12px:Predict or explore patterns.",
+   "12px:Across this workspace · comple",
+   "12px:Answered"
+  ],
+  "h1": [
+   "Home"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "datasets@390": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "13px:My Data",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "12px:Dataset catalog · 1",
+   "12px:2,400 rows · 12 columns",
+   "12px:Download CSV",
+   "13px:Saved · Version 1",
+   "12px:#"
+  ],
+  "h1": [
+   "My Data"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "analyst@390": {
+  "overflowX": 0,
+  "minFont": 10,
+  "small": [
+   "13px:Ask InsightIQ",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "12px:Check column types",
+   "12px:0 missing · 0 failed conversio",
+   "12px:0 missing · 0 failed conversio",
+   "12px:0 missing · 0 failed conversio",
+   "12px:0 missing · 0 failed conversio"
+  ],
+  "h1": [
+   "Ask InsightIQ"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "dashboards@390": {
+  "overflowX": 0,
+  "minFont": 8,
+  "small": [
+   "13px:Dashboards",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "12px:New dashboard",
+   "12px:Saved dashboard · 15/11/2026, ",
+   "12px:Export report",
+   "12px:No saved dashboard filters",
+   "12px:Saved result · data as of 15/1"
+  ],
+  "h1": [
+   "Dashboards"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "automl@390": {
+  "overflowX": 0,
+  "minFont": 10,
+  "small": [
+   "13px:Build Models",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "12px:Local training · 0 LLM calls",
+   "11px:Select a target column.",
+   "12px:categorical columns",
+   "12px:missing sampled cells",
+   "12px:registered rows"
+  ],
+  "h1": [
+   "Build Models"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "knowledge@390": {
+  "overflowX": 0,
+  "minFont": 10,
+  "small": [
+   "13px:Knowledge Base",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "12px:12 columns still need descript",
+   "12px:0 metric definitions",
+   "12px:Confirmed column currencies: 0",
+   "12px:Columns 0/12",
+   "12px:Metric definitions · 0"
+  ],
+  "h1": [
+   "Knowledge Base"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "evaluation@390": {
+  "overflowX": 0,
+  "minFont": 10,
+  "small": [
+   "13px:Evaluation Center",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "12px:5 verified reference questions",
+   "12px:45 total · 40 pending",
+   "12px:Benchmark inventory, not syste",
+   "12px:Setup and verification",
+   "12px:RETAIL-V1"
+  ],
+  "h1": [
+   "Evaluation Center"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "analytics@390": {
+  "overflowX": 0,
+  "minFont": 10,
+  "small": [
+   "13px:Run Analytics",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "12px:More filters",
+   "12px:Normal user questions",
+   "12px:Failed runs",
+   "12px:Average latency",
+   "12px:Runs with recorded retries"
+  ],
+  "h1": [
+   "Run Analytics"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "traces@390": {
+  "overflowX": 0,
+  "minFont": 9,
+  "small": [
+   "13px:Execution Traces",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "12px:What is my total revenue?",
+   "12px:my_shop_sales_2025.csvmy_shop_",
+   "12px:15/11/2026, 13:00:53 · 1 attem",
+   "12px:Show revenue by region",
+   "12px:my_shop_sales_2025.csvmy_shop_"
+  ],
+  "h1": [
+   "Execution Traces"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "settings@390": {
+  "overflowX": 0,
+  "minFont": 10,
+  "small": [
+   "13px:Settings",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "12px:Filter sample data in My Data ",
+   "12px:Use a smaller sidebar on deskt",
+   "12px:✳ InsightIQ / Intelligence sta",
+   "12px:/"
+  ],
+  "h1": [
+   "Settings"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "guide@390": {
+  "overflowX": 0,
+  "minFont": 10,
+  "small": [
+   "13px:Workspace guide",
+   "11px:2,400 rows · 12 columns",
+   "10px:Local workspace",
+   "12px:WORKSPACE GUIDE",
+   "12px:✳ InsightIQ / Intelligence sta",
+   "12px:/"
+  ],
+  "h1": [
+   "From CSV to clarity."
+  ],
+  "axe": [],
+  "errors": []
+ }
+}

@@ -1,0 +1,30 @@
+<project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+........................................................................ [ 22%]
+........................................................................ [ 45%]
+........................................................................ [ 68%]
+........................................................................ [ 91%]
+............................                                             [100%]
+=============================== warnings summary ===============================
+<frozen importlib._bootstrap>:228
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+<frozen importlib._bootstrap>:228
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+<frozen importlib._bootstrap>:228
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 10 durations =============================
+11.35s call     backend/tests/test_phase4.py::test_authored_benchmark_verified_modes_metrics_and_history
+11.18s setup    backend/tests/test_offline_evaluation.py::test_offline_real_replay_empty_results_abstention_and_missing
+10.91s call     backend/tests/test_automl.py::test_real_regression_registry_prediction_persistence_and_input_validation
+10.65s call     backend/tests/test_phase4.py::test_evaluation_limits_cancellation_budget_and_incompatible_dataset
+4.86s call     backend/tests/test_dataset_editor.py::test_cell_revision_updates_analyst_and_automl_without_mutating_past_runs_or_models
+4.14s call     backend/tests/test_dataset_revisions.py::test_restore_does_not_rewrite_models_predictions_or_training_records
+4.02s call     backend/tests/test_automl.py::test_chronological_forecast_baselines_backtests_and_horizon_validation
+4.01s call     backend/tests/test_automl.py::test_model_artifact_integrity_and_deletion
+3.08s call     backend/tests/test_automl.py::test_request_feature_cardinality_size_and_rare_class_limits
+2.76s call     backend/tests/test_automl.py::test_real_binary_and_multiclass_training[3]
+316 passed, 3 warnings in 126.17s (0:02:06)

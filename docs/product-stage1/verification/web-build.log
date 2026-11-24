@@ -1,0 +1,85 @@
+ Image project-web Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 936B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 295B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:22-alpine
+#3 ...
+
+#4 [internal] load metadata for docker.io/nginxinc/nginx-unprivileged:1.27-alpine
+#4 DONE 0.9s
+
+#3 [internal] load metadata for docker.io/library/node:22-alpine
+#3 DONE 0.9s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 58B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/3] FROM docker.io/nginxinc/nginx-unprivileged:1.27-alpine@sha256:65e3e85dbaed8ba248841d9d58a899b6197106c23cb0ff1a132b7bfe0547e4c0
+#6 resolve docker.io/nginxinc/nginx-unprivileged:1.27-alpine@sha256:65e3e85dbaed8ba248841d9d58a899b6197106c23cb0ff1a132b7bfe0547e4c0 done
+#6 DONE 0.0s
+
+#7 [build 1/6] FROM docker.io/library/node:22-alpine@sha256:0e1754758c2df4cfa3e68d59e2e1b7374bb7fd9ea6328eaaacf15cc934af8202
+#7 resolve docker.io/library/node:22-alpine@sha256:0e1754758c2df4cfa3e68d59e2e1b7374bb7fd9ea6328eaaacf15cc934af8202 done
+#7 DONE 0.0s
+
+#8 [internal] load build context
+#8 transferring context: 47.76kB 0.0s done
+#8 DONE 0.0s
+
+#9 [build 2/6] WORKDIR /app
+#9 CACHED
+
+#10 [build 3/6] COPY package*.json ./
+#10 CACHED
+
+#11 [build 4/6] RUN npm ci
+#11 CACHED
+
+#12 [build 5/6] COPY . .
+#12 DONE 0.0s
+
+#13 [build 6/6] RUN npm run build
+#13 0.158 
+#13 0.158 > insightiq@0.1.0 build
+#13 0.158 > tsc -b && vite build
+#13 0.158 
+#13 3.463 vite v8.3.5 building client environment for production...
+#13 3.470 transforming...
+#13 3.980 ✓ 2006 modules transformed.
+#13 4.038 rendering chunks...
+#13 4.081 computing gzip size...
+#13 4.085 dist/index.html                        0.48 kB │ gzip:   0.34 kB
+#13 4.085 dist/assets/index-CGF5Ty94.css       119.36 kB │ gzip:  24.47 kB
+#13 4.085 dist/assets/AutoMLPlots-DBFU4ZEE.js   19.15 kB │ gzip:   6.12 kB
+#13 4.085 dist/assets/ResultChart-NK0vXSU3.js   21.24 kB │ gzip:   6.84 kB
+#13 4.085 dist/assets/chartAxis-Bi9esho-.js    403.77 kB │ gzip: 114.75 kB
+#13 4.085 dist/assets/index-DXU7n5VP.js        490.45 kB │ gzip: 142.70 kB
+#13 4.085 
+#13 4.086 ✓ built in 622ms
+#13 DONE 4.1s
+
+#14 [stage-1 2/3] COPY nginx.conf /etc/nginx/conf.d/default.conf
+#14 CACHED
+
+#15 [stage-1 3/3] COPY --from=build /app/dist /usr/share/nginx/html
+#15 DONE 0.0s
+
+#16 exporting to image
+#16 exporting layers 0.0s done
+#16 exporting manifest sha256:838c1b0fb4b9d5ae0cbae23e14d5cc2ddad7f0497d4b60f77985dacc1b5b64b6 done
+#16 exporting config sha256:bd508b5a5e29cfa4d893824b91807b65e7838b1db3f121c53074e39609b244b5 done
+#16 exporting attestation manifest sha256:d7116fc6566f0e07403cff38720460a38ca9df747c28eeb9c1839e8934d4e0d6 done
+#16 exporting manifest list sha256:bcd51aae7caeff3af7f13c971927009ba8352bbc40ef3f895a85d6db90ed4098 done
+#16 naming to docker.io/library/project-web:latest done
+#16 unpacking to docker.io/library/project-web:latest 0.0s done
+#16 DONE 0.1s
+
+#17 resolving provenance for metadata file
+#17 DONE 0.0s
+ Image project-web Built 

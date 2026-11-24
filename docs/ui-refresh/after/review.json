@@ -1,0 +1,191 @@
+[
+  {
+    "size": "desktop",
+    "module": "Overview",
+    "overflow": false,
+    "height": 1000,
+    "screenshot": "docs/ui-refresh/after/desktop/overview.png"
+  },
+  {
+    "size": "desktop",
+    "module": "Data workspace",
+    "overflow": false,
+    "height": 1206,
+    "screenshot": "docs/ui-refresh/after/desktop/data-workspace.png"
+  },
+  {
+    "size": "desktop",
+    "module": "AI Analyst",
+    "overflow": false,
+    "height": 1000,
+    "screenshot": "docs/ui-refresh/after/desktop/ai-analyst.png"
+  },
+  {
+    "size": "desktop",
+    "module": "Dashboards",
+    "overflow": false,
+    "height": 2113,
+    "screenshot": "docs/ui-refresh/after/desktop/dashboards.png"
+  },
+  {
+    "size": "desktop",
+    "module": "AutoML Studio",
+    "overflow": false,
+    "height": 2072,
+    "screenshot": "docs/ui-refresh/after/desktop/automl-studio.png"
+  },
+  {
+    "size": "desktop",
+    "module": "Knowledge base",
+    "overflow": false,
+    "height": 1000,
+    "screenshot": "docs/ui-refresh/after/desktop/knowledge-base.png"
+  },
+  {
+    "size": "desktop",
+    "module": "Evaluation center",
+    "overflow": false,
+    "height": 1415,
+    "screenshot": "docs/ui-refresh/after/desktop/evaluation-center.png"
+  },
+  {
+    "size": "desktop",
+    "module": "Run analytics",
+    "overflow": false,
+    "height": 1576,
+    "screenshot": "docs/ui-refresh/after/desktop/run-analytics.png"
+  },
+  {
+    "size": "desktop",
+    "module": "Execution traces",
+    "overflow": false,
+    "height": 1056,
+    "screenshot": "docs/ui-refresh/after/desktop/execution-traces.png"
+  },
+  {
+    "size": "tablet",
+    "module": "Overview",
+    "overflow": false,
+    "height": 1180,
+    "screenshot": "docs/ui-refresh/after/tablet/overview.png"
+  },
+  {
+    "size": "tablet",
+    "module": "Data workspace",
+    "overflow": false,
+    "height": 1202,
+    "screenshot": "docs/ui-refresh/after/tablet/data-workspace.png"
+  },
+  {
+    "size": "tablet",
+    "module": "AI Analyst",
+    "overflow": false,
+    "height": 1180,
+    "screenshot": "docs/ui-refresh/after/tablet/ai-analyst.png"
+  },
+  {
+    "size": "tablet",
+    "module": "Dashboards",
+    "overflow": false,
+    "height": 2213,
+    "screenshot": "docs/ui-refresh/after/tablet/dashboards.png"
+  },
+  {
+    "size": "tablet",
+    "module": "AutoML Studio",
+    "overflow": false,
+    "height": 2235,
+    "screenshot": "docs/ui-refresh/after/tablet/automl-studio.png"
+  },
+  {
+    "size": "tablet",
+    "module": "Knowledge base",
+    "overflow": false,
+    "height": 1180,
+    "screenshot": "docs/ui-refresh/after/tablet/knowledge-base.png"
+  },
+  {
+    "size": "tablet",
+    "module": "Evaluation center",
+    "overflow": false,
+    "height": 1428,
+    "screenshot": "docs/ui-refresh/after/tablet/evaluation-center.png"
+  },
+  {
+    "size": "tablet",
+    "module": "Run analytics",
+    "overflow": false,
+    "height": 1645,
+    "screenshot": "docs/ui-refresh/after/tablet/run-analytics.png"
+  },
+  {
+    "size": "tablet",
+    "module": "Execution traces",
+    "overflow": false,
+    "height": 1180,
+    "screenshot": "docs/ui-refresh/after/tablet/execution-traces.png"
+  },
+  {
+    "size": "mobile",
+    "module": "Overview",
+    "overflow": false,
+    "height": 1663,
+    "screenshot": "docs/ui-refresh/after/mobile/overview.png"
+  },
+  {
+    "size": "mobile",
+    "module": "Data workspace",
+    "overflow": false,
+    "height": 1328,
+    "screenshot": "docs/ui-refresh/after/mobile/data-workspace.png"
+  },
+  {
+    "size": "mobile",
+    "module": "AI Analyst",
+    "overflow": false,
+    "height": 1228,
+    "screenshot": "docs/ui-refresh/after/mobile/ai-analyst.png"
+  },
+  {
+    "size": "mobile",
+    "module": "Dashboards",
+    "overflow": false,
+    "height": 3255,
+    "screenshot": "docs/ui-refresh/after/mobile/dashboards.png"
+  },
+  {
+    "size": "mobile",
+    "module": "AutoML Studio",
+    "overflow": false,
+    "height": 3541,
+    "screenshot": "docs/ui-refresh/after/mobile/automl-studio.png"
+  },
+  {
+    "size": "mobile",
+    "module": "Knowledge base",
+    "overflow": false,
+    "height": 1034,
+    "screenshot": "docs/ui-refresh/after/mobile/knowledge-base.png"
+  },
+  {
+    "size": "mobile",
+    "module": "Evaluation center",
+    "overflow": false,
+    "height": 2056,
+    "screenshot": "docs/ui-refresh/after/mobile/evaluation-center.png"
+  },
+  {
+    "size": "mobile",
+    "module": "Run analytics",
+    "overflow": false,
+    "height": 2050,
+    "screenshot": "docs/ui-refresh/after/mobile/run-analytics.png"
+  },
+  {
+    "size": "mobile",
+    "module": "Execution traces",
+    "overflow": false,
+    "height": 955,
+    "screenshot": "docs/ui-refresh/after/mobile/execution-traces.png"
+  }
+]

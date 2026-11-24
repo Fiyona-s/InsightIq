@@ -1,0 +1,212 @@
+[
+ {
+  "screen": "home-empty",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "home-empty",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "home-empty",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "datasets",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "datasets",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "datasets",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "ask",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "ask",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "ask",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "dashboards",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "dashboards",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "dashboards",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "home",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "home",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "home",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "business-definitions",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "business-definitions",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "business-definitions",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "admin-accuracy-check",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "admin-accuracy-check",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "admin-accuracy-check",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "admin-backup-info",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "admin-backup-info",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "admin-backup-info",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "admin-change-history",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "admin-change-history",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "admin-change-history",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ }
+]

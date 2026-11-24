@@ -1,0 +1,32 @@
+{
+  "checks": [
+    {
+      "width": 1280,
+      "sections": true,
+      "advancedCollapsed": true,
+      "draftGenerationStarted": false,
+      "originalKnowledgeSaved": false
+    },
+    {
+      "width": 768,
+      "sections": true,
+      "advancedCollapsed": true,
+      "draftGenerationStarted": false,
+      "originalKnowledgeSaved": false
+    },
+    {
+      "width": 390,
+      "sections": true,
+      "advancedCollapsed": true,
+      "draftGenerationStarted": false,
+      "originalKnowledgeSaved": false
+    }
+  ],
+  "writes": [],
+  "errors": [],
+  "preservedKPI": "₹83,79,680.76",
+  "duplicateBadges": 2,
+  "originalKnowledgeSaves": 0,
+  "originalDraftRequests": 0,
+  "originalScreenshotsCreated": 0
+}

@@ -1,0 +1,29 @@
+{
+  "changed_files_from_recovery_manifest": [
+    "frontend/e2e/01-phase4-datasets.spec.ts",
+    "frontend/src/App.test.tsx",
+    "frontend/src/components/Analyst.test.tsx",
+    "frontend/src/components/ResultChart.tsx",
+    "frontend/src/components/DatasetManager.tsx",
+    "frontend/src/components/DatasetWorkspace.test.tsx",
+    "frontend/src/components/DatasetProfile.tsx",
+    "frontend/src/components/ExecutionTracesPage.tsx",
+    "frontend/src/components/Phase4.test.tsx",
+    "frontend/src/components/KnowledgeReview.tsx",
+    "frontend/src/components/Analyst.tsx",
+    "frontend/src/components/AutoMLStudio.tsx",
+    "frontend/src/components/EvaluationPage.tsx",
+    "frontend/src/components/SaveChartDialog.tsx",
+    "frontend/src/components/DashboardPage.tsx",
+    "frontend/src/components/HomePage.tsx"
+  ],
+  "application_changes_limited_to_copy_manifest": true,
+  "new_files": [
+    "frontend/scripts/product-stage10-readonly-review.mjs",
+    "docs/PRODUCT_STAGE10_REVIEW.md",
+    "docs/product-stage10/"
+  ],
+  "other_modified": [
+    "README.md"
+  ]
+}

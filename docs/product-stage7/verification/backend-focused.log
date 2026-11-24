@@ -1,0 +1,306 @@
+<project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+F.....FFF.FFFF.FF......F..                                               [100%]
+=================================== FAILURES ===================================
+__ test_drafts_excluded_from_retrieval_prompts_and_suggestions_until_approval __
+
+tmp_path = PosixPath('/private/var/folders/8z/9gbpb2vx7xs0fcr6nwj43y_h0000gn/T/pytest-of-user/pytest-76/test_drafts_excluded_from_retr0')
+
+    def test_drafts_excluded_from_retrieval_prompts_and_suggestions_until_approval(tmp_path):
+        client,provider=setup(tmp_path)
+        with client as c:
+            identifier,path=route(c)
+            before=c.app.state.knowledge.documents(identifier)[1]
+            rows=draft(c,path)
+            assert c.get(path).json()['settings']['description']==''
+            docs,fp,_=c.app.state.knowledge.documents(identifier)
+            assert before==fp and 'DRAFT PRIVATE MARKER' not in json.dumps(docs)
+            assert 'DRAFT METRIC MARKER' not in json.dumps(c.app.state.analyst.ux.suggestions(identifier))
+>           run=finish(c,submit(c,identifier));assert run['status']=='succeeded'
+E           AssertionError: assert 'failed' == 'succeeded'
+E             
+E             - succeeded
+E             + failed
+
+backend/tests/test_knowledge_review.py:64: AssertionError
+----------------------------- Captured stderr call -----------------------------
+2026-11-13 21:39:15,076 INFO Analyst run metrics: {"run_id": "3efc5312-5bf2-4dc4-b10f-dc4f7a7a1fa8", "status": "failed", "retrieval_latency_ms": 11, "prompt_tokens": 6, "completion_tokens": 4, "total_tokens": 10, "estimated_cost_usd": 0.01, "model_latency_ms": 0, "query_latency_ms": 549, "total_latency_ms": 642}
+_____ test_metric_guard_execution_and_edit_recheck[DELETE FROM data-False] _____
+
+tmp_path = PosixPath('/private/var/folders/8z/9gbpb2vx7xs0fcr6nwj43y_h0000gn/T/pytest-of-user/pytest-76/test_metric_guard_execution_an0')
+sql = 'DELETE FROM data', passes = False
+
+    @pytest.mark.parametrize('sql,passes',[("DELETE FROM data",False),("SELECT CAST('bad' AS DOUBLE) AS total FROM data",False),("SELECT SUM(TRY_CAST(revenue AS DOUBLE)) AS total FROM data",True)])
+    def test_metric_guard_execution_and_edit_recheck(tmp_path,sql,passes):
+        client,provider=setup(tmp_path)
+        with client as c:
+            _,path=route(c);provider.output['metrics'][0]['sql']=sql
+            row=draft(c,path)[-1];assert row['check']['passed']==passes
+            assert (review(c,path,row).status_code==200)==passes
+            if not passes:
+                content={**row['content'],'name':'Edited count','sql':'SELECT COUNT(*) AS total FROM data'}
+                assert review(c,path,row,action='edit',content=content).status_code==200
+>               assert review(c,path,row).status_code==200
+E               AssertionError: assert 409 == 200
+E                +  where 409 = <Response [409 Conflict]>.status_code
+E                +    where <Response [409 Conflict]> = review(<starlette.testclient.TestClient object at 0x1253f4520>, '/api/datasets/4c30abd8-dfb1-4502-8aee-0cf46ffcc974/knowledge', {'check': {'message': 'Could not be checked. Edit the definition and SQL, then check again.', 'passed': False}, 'conte...name': 'Draft total', 'sql': 'DELETE FROM data'}, 'created_at': '2026-11-13T16:09:16.744942+00:00', 'current': {}, ...})
+
+backend/tests/test_knowledge_review.py:112: AssertionError
+_ test_metric_guard_execution_and_edit_recheck[SELECT CAST('bad' AS DOUBLE) AS total FROM data-False] _
+
+tmp_path = PosixPath('/private/var/folders/8z/9gbpb2vx7xs0fcr6nwj43y_h0000gn/T/pytest-of-user/pytest-76/test_metric_guard_execution_an1')
+sql = "SELECT CAST('bad' AS DOUBLE) AS total FROM data", passes = False
+
+    @pytest.mark.parametrize('sql,passes',[("DELETE FROM data",False),("SELECT CAST('bad' AS DOUBLE) AS total FROM data",False),("SELECT SUM(TRY_CAST(revenue AS DOUBLE)) AS total FROM data",True)])
+    def test_metric_guard_execution_and_edit_recheck(tmp_path,sql,passes):
+        client,provider=setup(tmp_path)
+        with client as c:
+            _,path=route(c);provider.output['metrics'][0]['sql']=sql
+            row=draft(c,path)[-1];assert row['check']['passed']==passes
+            assert (review(c,path,row).status_code==200)==passes
+            if not passes:
+                content={**row['content'],'name':'Edited count','sql':'SELECT COUNT(*) AS total FROM data'}
+                assert review(c,path,row,action='edit',content=content).status_code==200
+>               assert review(c,path,row).status_code==200
+E               assert 409 == 200
+E                +  where 409 = <Response [409 Conflict]>.status_code
+E                +    where <Response [409 Conflict]> = review(<starlette.testclient.TestClient object at 0x1241d8760>, '/api/datasets/21444074-1030-480c-8d0b-0baa6b30fdc5/knowledge', {'check': {'message': 'Could not be checked. Edit the definition and SQL, then check again.', 'passed': False}, 'conte...ELECT CAST('bad' AS DOUBLE) AS total FROM data"}, 'created_at': '2026-11-13T16:09:17.803020+00:00', 'current': {}, ...})
+
+backend/tests/test_knowledge_review.py:112: AssertionError
+_ test_metric_guard_execution_and_edit_recheck[SELECT SUM(TRY_CAST(revenue AS DOUBLE)) AS total FROM data-True] _
+
+tmp_path = PosixPath('/private/var/folders/8z/9gbpb2vx7xs0fcr6nwj43y_h0000gn/T/pytest-of-user/pytest-76/test_metric_guard_execution_an2')
+sql = 'SELECT SUM(TRY_CAST(revenue AS DOUBLE)) AS total FROM data'
+passes = True
+
+    @pytest.mark.parametrize('sql,passes',[("DELETE FROM data",False),("SELECT CAST('bad' AS DOUBLE) AS total FROM data",False),("SELECT SUM(TRY_CAST(revenue AS DOUBLE)) AS total FROM data",True)])
+    def test_metric_guard_execution_and_edit_recheck(tmp_path,sql,passes):
+        client,provider=setup(tmp_path)
+        with client as c:
+            _,path=route(c);provider.output['metrics'][0]['sql']=sql
+>           row=draft(c,path)[-1];assert row['check']['passed']==passes
+E           assert False == True
+
+backend/tests/test_knowledge_review.py:107: AssertionError
+_______ test_replay_only_and_no_reference_cannot_create_trusted_example ________
+
+tmp_path = PosixPath('/private/var/folders/8z/9gbpb2vx7xs0fcr6nwj43y_h0000gn/T/pytest-of-user/pytest-76/test_replay_only_and_no_refere0')
+
+    def test_replay_only_and_no_reference_cannot_create_trusted_example(tmp_path):
+        client,_=setup(tmp_path)
+        with client as c:
+>           identifier,path=route(c);row,run=candidate(c,identifier,path)
+
+backend/tests/test_knowledge_review.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+c = <starlette.testclient.TestClient object at 0x124131190>
+identifier = 'ad221329-f975-4b35-9297-06090a80f7f9'
+path = '/api/datasets/ad221329-f975-4b35-9297-06090a80f7f9/knowledge'
+
+    def candidate(c,identifier,path):
+        run=finish(c,submit(c,identifier,question='Compute revenue for my independently reviewed example',mapping={'revenue':'DOUBLE'}))
+>       assert run['status']=='succeeded',run
+E       AssertionError: {'activity_kind': 'user', 'answer': None, 'attempt_history': [{'attempt': 1, 'context_fingerprint': '51d23b00a2c27f685...d9a44c3d7bd596281c1ff9a851da43', 'error_code': 'sandbox_unavailable', 'execution': 'failed', ...}], 'attempts': 1, ...}
+E       assert 'failed' == 'succeeded'
+E         
+E         - succeeded
+E         + failed
+
+backend/tests/test_knowledge_review.py:44: AssertionError
+----------------------------- Captured stderr call -----------------------------
+2026-11-13 21:39:20,151 INFO Analyst run metrics: {"run_id": "e6001c30-7b76-44da-a159-9be64ed37a8b", "status": "failed", "retrieval_latency_ms": 10, "prompt_tokens": 6, "completion_tokens": 4, "total_tokens": 10, "estimated_cost_usd": 0.01, "model_latency_ms": 0, "query_latency_ms": 265, "total_latency_ms": 293}
+__________ test_reference_match_mismatch_approval_revision_and_delete __________
+
+tmp_path = PosixPath('/private/var/folders/8z/9gbpb2vx7xs0fcr6nwj43y_h0000gn/T/pytest-of-user/pytest-76/test_reference_match_mismatch_0')
+
+    def test_reference_match_mismatch_approval_revision_and_delete(tmp_path):
+        client,_=setup(tmp_path)
+        with client as c:
+>           identifier,path=route(c);row,_=candidate(c,identifier,path)
+
+backend/tests/test_knowledge_review.py:142: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+c = <starlette.testclient.TestClient object at 0x124db5e80>
+identifier = '96261e5c-86e9-491b-90b0-e477881e726c'
+path = '/api/datasets/96261e5c-86e9-491b-90b0-e477881e726c/knowledge'
+
+    def candidate(c,identifier,path):
+        run=finish(c,submit(c,identifier,question='Compute revenue for my independently reviewed example',mapping={'revenue':'DOUBLE'}))
+>       assert run['status']=='succeeded',run
+E       AssertionError: {'activity_kind': 'user', 'answer': None, 'attempt_history': [{'attempt': 1, 'context_fingerprint': 'f90f88ebe5dc63ef9...9e18bed773a7c1b3a8c8a2eb55daeb', 'error_code': 'sandbox_unavailable', 'execution': 'failed', ...}], 'attempts': 1, ...}
+E       assert 'failed' == 'succeeded'
+E         
+E         - succeeded
+E         + failed
+
+backend/tests/test_knowledge_review.py:44: AssertionError
+----------------------------- Captured stderr call -----------------------------
+2026-11-13 21:39:20,570 INFO Analyst run metrics: {"run_id": "f4757145-efda-4611-a9dd-a66381773ebb", "status": "failed", "retrieval_latency_ms": 10, "prompt_tokens": 6, "completion_tokens": 4, "total_tokens": 10, "estimated_cost_usd": 0.01, "model_latency_ms": 0, "query_latency_ms": 264, "total_latency_ms": 292}
+___________ test_independent_sql_reference_passes_numeric_comparison ___________
+
+tmp_path = PosixPath('/private/var/folders/8z/9gbpb2vx7xs0fcr6nwj43y_h0000gn/T/pytest-of-user/pytest-76/test_independent_sql_reference0')
+
+    def test_independent_sql_reference_passes_numeric_comparison(tmp_path):
+        client,_=setup(tmp_path)
+        with client as c:
+>           identifier,path=route(c);row,_=candidate(c,identifier,path)
+
+backend/tests/test_knowledge_review.py:160: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+c = <starlette.testclient.TestClient object at 0x12528fd00>
+identifier = '66fdcbab-9081-4598-9589-3e017d3ab6f7'
+path = '/api/datasets/66fdcbab-9081-4598-9589-3e017d3ab6f7/knowledge'
+
+    def candidate(c,identifier,path):
+        run=finish(c,submit(c,identifier,question='Compute revenue for my independently reviewed example',mapping={'revenue':'DOUBLE'}))
+>       assert run['status']=='succeeded',run
+E       AssertionError: {'activity_kind': 'user', 'answer': None, 'attempt_history': [{'attempt': 1, 'context_fingerprint': '1c26fab6b5192828a...f32338432fcf44a623ac9b0a926cd2', 'error_code': 'sandbox_unavailable', 'execution': 'failed', ...}], 'attempts': 1, ...}
+E       assert 'failed' == 'succeeded'
+E         
+E         - succeeded
+E         + failed
+
+backend/tests/test_knowledge_review.py:44: AssertionError
+----------------------------- Captured stderr call -----------------------------
+2026-11-13 21:39:21,005 INFO Analyst run metrics: {"run_id": "1e484e8e-4808-4fc3-85af-1a7d31522af1", "status": "failed", "retrieval_latency_ms": 43, "prompt_tokens": 6, "completion_tokens": 4, "total_tokens": 10, "estimated_cost_usd": 0.01, "model_latency_ms": 0, "query_latency_ms": 266, "total_latency_ms": 327}
+_______ test_stale_drafts_archived_readonly_and_helpful_does_not_promote _______
+
+tmp_path = PosixPath('/private/var/folders/8z/9gbpb2vx7xs0fcr6nwj43y_h0000gn/T/pytest-of-user/pytest-76/test_stale_drafts_archived_rea0')
+
+    def test_stale_drafts_archived_readonly_and_helpful_does_not_promote(tmp_path):
+        client,_=setup(tmp_path)
+        with client as c:
+>           identifier,path=route(c);rows=draft(c,path);row,run=candidate(c,identifier,path)
+
+backend/tests/test_knowledge_review.py:169: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+c = <starlette.testclient.TestClient object at 0x124eedd00>
+identifier = 'baa40082-8266-41d6-ac0a-949a39e32e1b'
+path = '/api/datasets/baa40082-8266-41d6-ac0a-949a39e32e1b/knowledge'
+
+    def candidate(c,identifier,path):
+        run=finish(c,submit(c,identifier,question='Compute revenue for my independently reviewed example',mapping={'revenue':'DOUBLE'}))
+>       assert run['status']=='succeeded',run
+E       AssertionError: {'activity_kind': 'user', 'answer': None, 'attempt_history': [{'attempt': 1, 'context_fingerprint': 'af01c46d8cc5702b5...dd331d37d9d5532085b16374e340a8', 'error_code': 'sandbox_unavailable', 'execution': 'failed', ...}], 'attempts': 1, ...}
+E       assert 'failed' == 'succeeded'
+E         
+E         - succeeded
+E         + failed
+
+backend/tests/test_knowledge_review.py:44: AssertionError
+----------------------------- Captured stderr call -----------------------------
+2026-11-13 21:39:21,748 INFO Analyst run metrics: {"run_id": "82388ed2-5cf1-41c0-b4a8-694d04a35015", "status": "failed", "retrieval_latency_ms": 10, "prompt_tokens": 6, "completion_tokens": 4, "total_tokens": 10, "estimated_cost_usd": 0.01, "model_latency_ms": 0, "query_latency_ms": 265, "total_latency_ms": 295}
+_______ test_legacy_rows_preserved_excluded_and_explicit_reverification ________
+
+tmp_path = PosixPath('/private/var/folders/8z/9gbpb2vx7xs0fcr6nwj43y_h0000gn/T/pytest-of-user/pytest-76/test_legacy_rows_preserved_exc0')
+
+    def test_legacy_rows_preserved_excluded_and_explicit_reverification(tmp_path):
+        from sqlalchemy.orm import Session
+        from app.knowledge import stamp
+        client,_=setup(tmp_path)
+        with client as c:
+            identifier,path=route(c);key=str(uuid4());legacy={'question':'My legacy record question','sql':'SELECT COUNT(*) AS total FROM data'}
+            k=c.app.state.knowledge
+            with Session(k.engine) as session:
+                session.add(k.Example(id=key,workspace_id=k.workspace_id,dataset_id=identifier,payload=json.dumps(legacy)));session.commit()
+            rows=overview(c,path)['examples'];assert rows[0]['id']==key and rows[0]['status']=='legacy'
+            assert not any(d['kind']=='example' for d in k.documents(identifier)[0])
+            result=c.post(path+'/legacy/'+key+'/reverify');assert result.status_code==200,result.text
+            row=result.json();assert row['status']=='candidate'
+>           assert check(c,path,row,expected={'columns':[{'name':'total','type':'BIGINT'}],'rows':[[4]],'row_count':1}).json()['check']['passed']
+E           assert False
+
+backend/tests/test_knowledge_review.py:212: AssertionError
+__________ test_benchmark_dataset_and_benchmark_qa_always_outside_rag __________
+
+tmp_path = PosixPath('/private/var/folders/8z/9gbpb2vx7xs0fcr6nwj43y_h0000gn/T/pytest-of-user/pytest-76/test_benchmark_dataset_and_ben0')
+
+    def test_benchmark_dataset_and_benchmark_qa_always_outside_rag(tmp_path):
+        from app.benchmark import authored_cases
+        from sqlalchemy.orm import Session
+        client,_=setup(tmp_path)
+        with client as c:
+>           identifier,path=route(c);row,run=candidate(c,identifier,path);service=c.app.state.knowledge.review
+
+backend/tests/test_knowledge_review.py:223: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+c = <starlette.testclient.TestClient object at 0x125168ee0>
+identifier = '9e6ecbb6-6a76-49a5-b768-61e5a9a7e43f'
+path = '/api/datasets/9e6ecbb6-6a76-49a5-b768-61e5a9a7e43f/knowledge'
+
+    def candidate(c,identifier,path):
+        run=finish(c,submit(c,identifier,question='Compute revenue for my independently reviewed example',mapping={'revenue':'DOUBLE'}))
+>       assert run['status']=='succeeded',run
+E       AssertionError: {'activity_kind': 'user', 'answer': None, 'attempt_history': [{'attempt': 1, 'context_fingerprint': '340153db9db2bfbeb...b681a1b3ad09d516beef4a05c7d585', 'error_code': 'sandbox_unavailable', 'execution': 'failed', ...}], 'attempts': 1, ...}
+E       assert 'failed' == 'succeeded'
+E         
+E         - succeeded
+E         + failed
+
+backend/tests/test_knowledge_review.py:44: AssertionError
+----------------------------- Captured stderr call -----------------------------
+2026-11-13 21:39:22,806 INFO Analyst run metrics: {"run_id": "9c9470d0-6e71-4d20-9959-44bae47a2719", "status": "failed", "retrieval_latency_ms": 11, "prompt_tokens": 6, "completion_tokens": 4, "total_tokens": 10, "estimated_cost_usd": 0.01, "model_latency_ms": 0, "query_latency_ms": 267, "total_latency_ms": 295}
+__________ test_sample_and_quality_values_do_not_enter_model_context ___________
+
+tmp_path = PosixPath('/private/var/folders/8z/9gbpb2vx7xs0fcr6nwj43y_h0000gn/T/pytest-of-user/pytest-76/test_sample_and_quality_values0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x124be4a90>
+
+    def test_sample_and_quality_values_do_not_enter_model_context(tmp_path,monkeypatch):
+        import httpx
+        from app.provider import LLMProvider
+        monkeypatch.setenv('LLM_API_KEY','controlled-no-live-key')
+        monkeypatch.setenv('LLM_MODEL','controlled-prompt-verification')
+        monkeypatch.setenv('LLM_BASE_URL','https://controlled.invalid/v1')
+        captured=[]
+        def transport(request):
+            payload=json.loads(request.content)
+            captured.append(payload)
+            name=payload['response_format']['json_schema']['name']
+            result={'fact_ids':['f1']} if name=='evidence_selection' else {'sql':'SELECT SUM(revenue) AS total FROM data','clarification':None,'explanation':'Controlled aggregate.'}
+            return httpx.Response(200,json={'choices':[{'finish_reason':'stop','message':{'content':json.dumps(result)}}],'usage':{'prompt_tokens':10,'completion_tokens':5,'total_tokens':15}})
+        provider=LLMProvider(httpx.MockTransport(transport));embed=ControlledEmbedding()
+        with TestClient(create_app(tmp_path,provider=provider,embedder=embed)) as c:
+            path=upload(c,'account,revenue\nPRIVATE-PROFILE-SENTINEL,10\nOTHER-PROFILE-SENTINEL,20\n');identifier=path.split('/')[-1]
+            assert c.get(path+'/quality').status_code==200
+            samples=c.get(path+'/profile-details').json()['columns'][0]['samples']
+            assert samples==['PRIVATE-PROFILE-SENTINEL','OTHER-PROFILE-SENTINEL']
+            assert captured==[], 'Viewing schema/quality must not call the model.'
+>           run=submit(c,identifier,mapping={'revenue':'DOUBLE'});assert finish(c,run)['status']=='succeeded'
+E           AssertionError: assert 'failed' == 'succeeded'
+E             
+E             - succeeded
+E             + failed
+
+backend/tests/test_dataset_quality.py:82: AssertionError
+----------------------------- Captured stderr call -----------------------------
+2026-11-13 21:39:24,930 INFO LLM request metrics: {"model": "controlled-prompt-verification", "provider_model": "controlled-prompt-verification", "model_latency_ms": 0, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": null}
+2026-11-13 21:39:25,202 INFO Analyst run metrics: {"run_id": "edf6713e-d412-4e7c-b460-4ccbdc6c4f50", "status": "failed", "retrieval_latency_ms": 9, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": null, "model": "controlled-prompt-verification", "provider_model": "controlled-prompt-verification", "model_latency_ms": 1, "query_latency_ms": 266, "total_latency_ms": 293}
+=============================== warnings summary ===============================
+<frozen importlib._bootstrap>:228
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+<frozen importlib._bootstrap>:228
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+<frozen importlib._bootstrap>:228
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED backend/tests/test_knowledge_review.py::test_drafts_excluded_from_retrieval_prompts_and_suggestions_until_approval
+FAILED backend/tests/test_knowledge_review.py::test_metric_guard_execution_and_edit_recheck[DELETE FROM data-False]
+FAILED backend/tests/test_knowledge_review.py::test_metric_guard_execution_and_edit_recheck[SELECT CAST('bad' AS DOUBLE) AS total FROM data-False]
+FAILED backend/tests/test_knowledge_review.py::test_metric_guard_execution_and_edit_recheck[SELECT SUM(TRY_CAST(revenue AS DOUBLE)) AS total FROM data-True]
+FAILED backend/tests/test_knowledge_review.py::test_replay_only_and_no_reference_cannot_create_trusted_example
+FAILED backend/tests/test_knowledge_review.py::test_reference_match_mismatch_approval_revision_and_delete
+FAILED backend/tests/test_knowledge_review.py::test_independent_sql_reference_passes_numeric_comparison
+FAILED backend/tests/test_knowledge_review.py::test_stale_drafts_archived_readonly_and_helpful_does_not_promote
+FAILED backend/tests/test_knowledge_review.py::test_legacy_rows_preserved_excluded_and_explicit_reverification
+FAILED backend/tests/test_knowledge_review.py::test_benchmark_dataset_and_benchmark_qa_always_outside_rag
+FAILED backend/tests/test_dataset_quality.py::test_sample_and_quality_values_do_not_enter_model_context
+11 failed, 15 passed, 3 warnings in 12.16s

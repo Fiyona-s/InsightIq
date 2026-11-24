@@ -1,0 +1,465 @@
+[WebServer] INFO:     Started server process [20766]
+
+[WebServer] INFO:     Waiting for application startup.
+
+[WebServer] INFO:     Application startup complete.
+
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+
+
+Running 74 tests using 1 worker
+
+[1/74] e2e/00-phase3-navigation.spec.ts:37:1 › empty workspace setup uses real progress and shared dataset across all work pages
+[WebServer] <project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+[WebServer]   warnings.warn(
+
+[WebServer] 2026-11-23 10:09:38,653 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:09:38,982 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:09:38,986 INFO Analyst run metrics: {"run_id": "fd747c94-163b-4017-9895-e718632ea635", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 294, "total_latency_ms": 804}
+
+[2/74] e2e/00-phase3-navigation.spec.ts:142:1 › dataset switches guard editor drafts, reset AutoML, retain running source and recover from archive
+[WebServer] 2026-11-23 10:09:43,554 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1311, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:09:43,871 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:09:43,874 INFO Analyst run metrics: {"run_id": "19c7a353-2a1e-49a8-bc57-1300c3f16af9", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1313, "query_latency_ms": 293, "total_latency_ms": 1648}
+
+[3/74] e2e/00-phase3-navigation.spec.ts:307:1 › selector and admin disclosure support keyboard search, persistence and responsive layout
+[4/74] e2e/00-phase3-navigation.spec.ts:351:1 › AutoML running job keeps its original source after a confirmed dataset switch
+[5/74] e2e/00-stage5-accuracy-empty.spec.ts:10:1 › Accuracy check empty state explains 0 of 45; the live check button only opens Live mode
+[6/74] e2e/01-phase4-datasets.spec.ts:38:1 › preview-first import, sticky editing, navigation guards and bounded mobile preview
+[7/74] e2e/01-phase4-datasets.spec.ts:184:1 › schema descriptions share Knowledge storage and quality issues remain informational
+[8/74] e2e/01-phase4-datasets.spec.ts:230:1 › real forward-only history shows unavailable, pruned and retained snapshots and restores N+1
+[9/74] e2e/01-phase4-datasets.spec.ts:335:1 › archived datasets allow read-only history, and active analysis blocks revision restore
+[WebServer] 2026-11-23 10:10:09,903 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:10:10,200 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:10:10,204 INFO Analyst run metrics: {"run_id": "2f4a6bfd-341d-41b5-971a-78c2f18c9965", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1313, "query_latency_ms": 277, "total_latency_ms": 1633}
+
+[10/74] e2e/02-phase5-knowledge.spec.ts:6:1 › Phase 5 explicit draft sharing, review, overwrite, counts, examples and archived read-only
+[WebServer] 2026-11-23 10:10:12,439 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": null, "completion_tokens": null, "total_tokens": null, "estimated_cost_usd": null}
+
+[WebServer] 2026-11-23 10:10:14,984 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:10:15,278 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:10:15,281 INFO Analyst run metrics: {"run_id": "87270aad-c228-42f2-bf36-ddc11f1006f2", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 274, "total_latency_ms": 627}
+
+[11/74] e2e/03-phase6-dashboards.spec.ts:10:1 › Phase 6 dashboard titles, duplicate decisions, guarded refresh, history, currency, overflow and mobile
+[WebServer] 2026-11-23 10:10:18,682 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 302, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:10:18,992 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:10:18,995 INFO Analyst run metrics: {"run_id": "4230214d-458f-4adb-b1aa-f126ceee7043", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 304, "query_latency_ms": 286, "total_latency_ms": 628}
+
+[WebServer] 2026-11-23 10:10:19,598 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:10:19,905 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:10:19,909 INFO Analyst run metrics: {"run_id": "90cf726b-a721-439e-9a67-45774bda64e2", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 283, "total_latency_ms": 638}
+
+[WebServer] 2026-11-23 10:10:24,837 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:10:25,138 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:10:25,141 INFO Analyst run metrics: {"run_id": "a1c65558-24cd-42a6-a3f1-7a99b523cefc", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 279, "total_latency_ms": 624}
+
+[12/74] e2e/03-phase6-dashboards.spec.ts:42:1 › Phase 6 Analyst pin checks duplicates and confirms replacement without altering the library snapshot
+[WebServer] 2026-11-23 10:10:28,735 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:10:29,030 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:10:29,033 INFO Analyst run metrics: {"run_id": "db4915a7-231a-4fd9-b7e1-e916b8499f35", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 276, "total_latency_ms": 617}
+
+[WebServer] 2026-11-23 10:10:29,962 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:10:30,273 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:10:30,277 INFO Analyst run metrics: {"run_id": "fae2ae23-b4d0-49c4-a57f-947d5992c7f1", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 288, "total_latency_ms": 641}
+
+[13/74] e2e/04-phase8-evaluation.spec.ts:25:1 › results-first offline replay, failure diff, comparison, partial scope and keyboard/mobile review
+[WebServer] 2026-11-23 10:10:32,307 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:10:32,595 INFO Analyst run metrics: {"run_id": "032d364a-271b-4c99-ab7c-4c7f1313dabe", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 272, "total_latency_ms": 603}
+
+[WebServer] 2026-11-23 10:10:32,928 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:10:33,216 INFO Analyst run metrics: {"run_id": "4e97fe6f-af1f-4ccf-ac76-d0efcf5b652d", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 271, "total_latency_ms": 603}
+
+[14/74] e2e/05-phase9-accessibility.spec.ts:5:1 › Phase 9 axe, keyboard focus and 390/768/1280 responsive review on all nine pages
+[15/74] e2e/06-phase9-carry-forward.spec.ts:7:1 › Evaluation browser classifies Fixed Regressed Unchanged and unscored from controlled differing stored verdicts
+[16/74] e2e/06-phase9-carry-forward.spec.ts:11:1 › Knowledge Approve all and scalar verified reference becomes Needs re-check after an actual dataset edit
+[WebServer] 2026-11-23 10:11:04,630 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:11:04,925 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:11:04,928 INFO Analyst run metrics: {"run_id": "c13ed67b-ddc2-4b62-b3fc-7a2f0ec6780a", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 276, "total_latency_ms": 618}
+
+[WebServer] 2026-11-23 10:11:05,533 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": null, "completion_tokens": null, "total_tokens": null, "estimated_cost_usd": null}
+
+[17/74] e2e/07-product-stage1.spec.ts:7:1 › Stage 1 task navigation, preferences, aliases and unobscured responsive headers
+[18/74] e2e/08-product-stage2-home.spec.ts:5:1 › Stage 2 Home uses active counts and opens the selected real saved question and dashboard without replay
+[WebServer] 2026-11-23 10:11:24,809 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:11:25,130 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:11:25,133 INFO Analyst run metrics: {"run_id": "1de36a29-3873-48d8-9378-ced09ce62f2f", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 298, "total_latency_ms": 649}
+
+[19/74] e2e/08-product-stage2-home.spec.ts:16:1 › Stage 2 empty Home offers three-step onboarding without fake totals or an unavailable demo
+[20/74] e2e/09-product-stage3-data.spec.ts:5:1 › Stage 3 four dataset views preserve drafts, Undo, Discard, typed validation, revisions and CSV
+[21/74] e2e/10-product-stage4-ask.spec.ts:5:1 › Stage 4 answer-first result, single monetary value, accessible details and preserved saving/FX/export
+[WebServer] 2026-11-23 10:11:35,701 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 301, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:11:35,991 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:11:35,994 INFO Analyst run metrics: {"run_id": "f8652da3-d153-4c44-9c1d-37c644978550", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 302, "query_latency_ms": 273, "total_latency_ms": 615}
+
+[22/74] e2e/11-product-stage5-dashboards.spec.ts:6:1 › Stage 5 View is read-only, Edit preserves auto-save and guards details; currency and exports remain available
+[WebServer] 2026-11-23 10:11:38,621 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:11:38,936 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:11:38,940 INFO Analyst run metrics: {"run_id": "390d5817-f7d4-4f4a-9f70-00b7f1effd60", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 292, "total_latency_ms": 639}
+
+[WebServer] 2026-11-23 10:11:39,536 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:11:39,853 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:11:39,856 INFO Analyst run metrics: {"run_id": "811e6a89-be4d-467e-aef9-f19afa291673", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 292, "total_latency_ms": 649}
+
+[23/74] e2e/12-product-stage6-models.spec.ts:5:1 › Stage 6 task goals, optional suggestions, essential setup and responsive wizard do not train on navigation
+[24/74] e2e/13-product-stage7-knowledge.spec.ts:5:1 › Stage 7 knowledge sections preserve confirmed metadata, explicit saves, shared descriptions and dataset revisions
+[25/74] e2e/14-product-stage8-evaluation.spec.ts:6:1 › Stage 8 separates reference inventory from actual scores and keeps new evaluation explicit and responsive
+[26/74] e2e/15-product-stage9-monitoring.spec.ts:7:1 › Stage 9 real operational filters, keyboard traces, missing metrics and retained historical source labels
+[WebServer] 2026-11-23 10:12:01,785 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:12:02,088 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:12:02,091 INFO Analyst run metrics: {"run_id": "b605b7af-8b06-42b4-bee9-74b6f0bb02df", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 280, "total_latency_ms": 629}
+
+[WebServer] 2026-11-23 10:12:02,694 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:12:03,013 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 304, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:12:03,020 INFO Analyst run metrics: {"run_id": "5fc66244-cd3f-4444-a590-7fb3685a52b6", "status": "failed", "retrieval_latency_ms": 9, "prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150, "estimated_cost_usd": 0.0002, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 613, "total_latency_ms": 655}
+
+[WebServer] 2026-11-23 10:12:03,300 INFO Analyst run metrics: {"run_id": "c7f4a18c-0dc8-4baf-859b-d4be7c3a7307", "status": "cancelled", "retrieval_latency_ms": 11, "total_latency_ms": 19}
+
+[WebServer] 2026-11-23 10:12:03,749 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:12:03,762 INFO Analyst run metrics: {"run_id": "35cd03ed-fbde-42ea-a35a-c861be3dc243", "status": "clarification", "retrieval_latency_ms": 8, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "total_latency_ms": 338}
+
+[27/74] e2e/16-product-stage12-final.spec.ts:5:1 › Stage 12 final responsive landmarks, keyboard entry, expanded privacy disclosure and visual record
+[28/74] e2e/17-fix3a-confirmed-types.spec.ts:6:1 › confirmed column types survive leaving and returning to Ask; changing one requires confirming again
+[WebServer] 2026-11-23 10:12:18,520 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:12:18,846 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:12:18,850 INFO Analyst run metrics: {"run_id": "a1a4fe6e-bb17-439f-9b3d-73750b10c521", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 303, "total_latency_ms": 655}
+
+[29/74] e2e/18-stage2-projects.spec.ts:11:1 › a project isolates datasets, questions, dashboards and admin views; archive and delete are safe
+[WebServer] 2026-11-23 10:12:20,721 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:12:21,032 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:12:21,036 INFO Analyst run metrics: {"run_id": "ed577c39-c3bf-4566-b056-2bc7526f5d97", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 288, "total_latency_ms": 641}
+
+[30/74] e2e/20-stage3-after-captures.spec.ts:41:1 › Stage 3 after-state screens: axe, overflow and text size at 390/768/1280
+[WebServer] 2026-11-23 10:12:30,810 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:12:31,120 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:12:31,123 INFO Analyst run metrics: {"run_id": "c60eba23-ffad-4fc5-9e07-e5afbf6f38f6", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 287, "total_latency_ms": 634}
+
+[WebServer] 2026-11-23 10:12:31,723 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:12:32,035 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:12:32,038 INFO Analyst run metrics: {"run_id": "5a708683-615f-447b-8f6d-811a7ef8eba5", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 287, "total_latency_ms": 644}
+
+[WebServer] 2026-11-23 10:12:38,434 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:12:38,751 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:12:38,754 INFO Analyst run metrics: {"run_id": "090aaaa8-baed-418e-a826-62d7fa876d29", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 310, "query_latency_ms": 294, "total_latency_ms": 649}
+
+[31/74] e2e/21-stage3-final-features.spec.ts:15:1 › nothing is money or a percentage until the owner confirms it; confirming shows $ and % and can be changed or converted
+[WebServer] 2026-11-23 10:13:23,293 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:13:23,621 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:13:23,625 INFO Analyst run metrics: {"run_id": "00cea11b-f9cc-4492-b0ba-f80378d19ce1", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 307, "total_latency_ms": 658}
+
+[WebServer] 2026-11-23 10:13:24,936 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 302, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:13:25,230 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:13:25,233 INFO Analyst run metrics: {"run_id": "1634f612-b1a7-4b21-9c94-921e33aaa7b1", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 304, "query_latency_ms": 274, "total_latency_ms": 623}
+
+[32/74] e2e/21-stage3-final-features.spec.ts:61:1 › a dataset whose numbers were never confirmed shows bare numbers
+[WebServer] 2026-11-23 10:13:26,155 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:13:26,454 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:13:26,458 INFO Analyst run metrics: {"run_id": "bd6dfa10-ba5b-4c82-8c4d-c81df207163a", "status": "succeeded", "retrieval_latency_ms": 8, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 278, "total_latency_ms": 627}
+
+[33/74] e2e/21-stage3-final-features.spec.ts:80:1 › Settings changes only the currency offered when the owner marks money
+[34/74] e2e/21-stage3-final-features.spec.ts:90:1 › Business definitions: two tabs, one primary button, currency on each column row
+[35/74] e2e/21-stage3-final-features.spec.ts:103:1 › Predictions warns about leakage before training and after a suspiciously perfect score
+[36/74] e2e/21-stage3-final-features.spec.ts:122:1 › Run again on current data: a new answer in the same chat, no AI call
+[WebServer] 2026-11-23 10:13:32,418 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 303, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:13:32,717 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:13:32,720 INFO Analyst run metrics: {"run_id": "beaa39d6-97fa-47e0-a3cd-c590f122a271", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "query_latency_ms": 279, "total_latency_ms": 623}
+
+[37/74] e2e/22-stage4-after-captures.spec.ts:47:1 › Stage 4: Predictions in three steps, the data-driven leakage warning, and Business definitions in two tabs
+[38/74] e2e/23-stage5-current-captures.spec.ts:35:1 › Stage 5 current state: every Admin page and the hidden notice
+[WebServer] 2026-11-23 10:13:58,309 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:13:58,326 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:13:58,650 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:13:58,653 INFO Analyst run metrics: {"run_id": "4aa772a4-92c4-43da-9254-ed20ba4f0ee4", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 316, "total_latency_ms": 666}
+
+[WebServer] 2026-11-23 10:13:58,656 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 0, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:13:58,659 INFO Analyst run metrics: {"run_id": "7587a2f4-c8ed-48e0-ac0c-afdba9a7a38b", "status": "succeeded", "retrieval_latency_ms": 5, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 301, "total_latency_ms": 651}
+
+[39/74] e2e/24-stage5-admin.spec.ts:35:1 › Stage 5 after state: every Admin page, the hidden notice and the new pages
+[WebServer] 2026-11-23 10:14:29,277 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:14:29,290 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:14:29,629 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:14:29,633 INFO Analyst run metrics: {"run_id": "80d9cbc7-63bb-4403-9a5d-0aff24a98b63", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 326, "total_latency_ms": 678}
+
+[WebServer] 2026-11-23 10:14:29,641 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 0, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:14:29,644 INFO Analyst run metrics: {"run_id": "a0523f2b-58b8-43ed-80bc-7f314bbcd672", "status": "succeeded", "retrieval_latency_ms": 5, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 312, "total_latency_ms": 674}
+
+[40/74] e2e/25-stage6-fixes.spec.ts:40:1 › sample data is whatever the owner marks: mark, hide, select all samples, bulk archive
+[41/74] e2e/25-stage6-fixes.spec.ts:93:1 › metric calculations are approved one at a time; the API refuses them in approve-all
+[WebServer] 2026-11-23 10:15:03,739 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": null, "completion_tokens": null, "total_tokens": null, "estimated_cost_usd": null}
+
+[42/74] e2e/25-stage6-fixes.spec.ts:118:1 › display currency is remembered per dashboard; no selector without a confirmed currency
+[WebServer] 2026-11-23 10:15:07,064 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:15:07,374 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:15:07,378 INFO Analyst run metrics: {"run_id": "cb43b150-b020-44a6-821a-3ed1f5e9b927", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 288, "total_latency_ms": 635}
+
+[WebServer] 2026-11-23 10:15:07,998 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:15:08,308 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:15:08,311 INFO Analyst run metrics: {"run_id": "f0accb13-cc40-45f6-9e58-c4188c388b73", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 286, "total_latency_ms": 636}
+
+[43/74] e2e/25-stage6-fixes.spec.ts:161:1 › a chart saved before change tracking says so in plain words
+[WebServer] 2026-11-23 10:15:11,804 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:15:12,111 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:15:12,115 INFO Analyst run metrics: {"run_id": "dce5e851-8e28-4d9f-ac9c-34810838060b", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 285, "total_latency_ms": 631}
+
+[44/74] e2e/25-stage6-fixes.spec.ts:181:1 › verified example: three explicit steps, single value by default, safeguards never pre-ticked or combined
+[WebServer] 2026-11-23 10:15:15,001 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:15:15,312 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:15:15,315 INFO Analyst run metrics: {"run_id": "b5fa2546-c8a5-4bd4-9377-07b9928cbdac", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 285, "total_latency_ms": 635}
+
+[45/74] e2e/26-stage7-demo-script.spec.ts:40:1 › 5-minute demo script: upload, first answer, pin, dashboard and PDF, predictions, definitions, admin area
+[WebServer] 2026-11-23 10:15:24,553 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:15:24,865 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:15:24,869 INFO Analyst run metrics: {"run_id": "8f4c7835-d7ce-4c93-9867-8f86abfd0498", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 287, "total_latency_ms": 644}
+
+[WebServer] 2026-11-23 10:15:28,356 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:15:28,663 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:15:28,667 INFO Analyst run metrics: {"run_id": "8d59834f-86cf-48ca-a042-41046efd36f3", "status": "succeeded", "retrieval_latency_ms": 11, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 283, "total_latency_ms": 640}
+
+[46/74] e2e/27-stage7-followup.spec.ts:25:1 › Datasets shows only 'Loading' while the list loads, then the table, and never the import panel
+[47/74] e2e/27-stage7-followup.spec.ts:39:1 › an empty project still offers the import panel once loading has finished
+[48/74] e2e/analyst-phase2.spec.ts:7:1 › Phase 2 computed card, follow-ups, clarification, feedback and dashboard pin
+[WebServer] 2026-11-23 10:15:53,739 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1310, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:15:54,065 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:15:54,068 INFO Analyst run metrics: {"run_id": "0c5e5353-50ea-43e8-8d0b-ae40b873df71", "status": "succeeded", "retrieval_latency_ms": 8, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1312, "query_latency_ms": 300, "total_latency_ms": 1659}
+
+[WebServer] 2026-11-23 10:15:55,785 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:15:56,091 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:15:56,095 INFO Analyst run metrics: {"run_id": "e0ddc861-f60a-499c-a8be-8acdf9b21cbc", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 282, "total_latency_ms": 637}
+
+[WebServer] 2026-11-23 10:15:57,265 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:15:57,275 INFO Analyst run metrics: {"run_id": "dcb602f5-00c4-4737-9c6d-36946eb8ea9f", "status": "clarification", "retrieval_latency_ms": 7, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "total_latency_ms": 333}
+
+[WebServer] 2026-11-23 10:15:58,189 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:15:58,493 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:15:58,496 INFO Analyst run metrics: {"run_id": "0c65af31-906e-4eb0-b633-08d094a5250e", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 281, "total_latency_ms": 633}
+
+[WebServer] 2026-11-23 10:15:59,593 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:15:59,892 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:15:59,896 INFO Analyst run metrics: {"run_id": "5bf1b7ee-c452-42d3-bc04-8256288b0830", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 279, "total_latency_ms": 635}
+
+[WebServer] 2026-11-23 10:16:01,187 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:01,491 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:16:01,495 INFO Analyst run metrics: {"run_id": "10ca2368-9562-4635-8500-8f0e3dc9b54a", "status": "succeeded", "retrieval_latency_ms": 11, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "query_latency_ms": 281, "total_latency_ms": 636}
+
+[WebServer] 2026-11-23 10:16:02,549 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 303, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:02,871 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:02,879 INFO Analyst run metrics: {"run_id": "9e2267e2-10d7-4be8-993d-d934bae3b86d", "status": "failed", "retrieval_latency_ms": 16, "prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150, "estimated_cost_usd": 0.0002, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 611, "total_latency_ms": 663}
+
+[49/74] e2e/analyst-phase2.spec.ts:41:1 › switching datasets starts a new thread and requires fresh type confirmation
+[WebServer] 2026-11-23 10:16:04,744 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 303, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:05,044 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:16:05,047 INFO Analyst run metrics: {"run_id": "e85895a6-e881-4d22-ace1-cf93d1b78d2b", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 304, "query_latency_ms": 277, "total_latency_ms": 621}
+
+[WebServer] 2026-11-23 10:16:05,766 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:06,075 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:16:06,079 INFO Analyst run metrics: {"run_id": "869c94cd-fd3f-42c8-8a27-1f9c4cc51e39", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 310, "query_latency_ms": 284, "total_latency_ms": 637}
+
+[50/74] e2e/analyst.spec.ts:7:1 › controlled provider boundary, real typed aggregation, history and CSV export
+[WebServer] 2026-11-23 10:16:07,630 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:07,938 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:16:07,943 INFO Analyst run metrics: {"run_id": "576b2881-9d53-465b-8c8d-4a15e4c346cb", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 285, "total_latency_ms": 638}
+
+[51/74] e2e/analyst.spec.ts:87:1 › RAG, live graph repair, actual Recharts, evidence and verified example lifecycle
+[WebServer] 2026-11-23 10:16:09,716 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:10,040 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:10,342 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:16:10,345 INFO Analyst run metrics: {"run_id": "cdde6fe5-ffac-46eb-b407-54aa6a106c9d", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 110, "completion_tokens": 55, "total_tokens": 165, "estimated_cost_usd": 0.00022, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 616, "query_latency_ms": 281, "total_latency_ms": 954}
+
+[52/74] e2e/automl.spec.ts:80:1 › local regression, registry reload, single/batch prediction and real CSV export
+[53/74] e2e/automl.spec.ts:233:1 › classification, customer RFM, anomaly scores and chronological forecasting use real local models
+[54/74] e2e/automl.spec.ts:358:1 › keyboard-only wizard navigation, suggestions never auto-apply and Advanced reset
+[55/74] e2e/automl.spec.ts:435:1 › negative R² and omitted importance use an actual temporary no-signal model
+[56/74] e2e/currency-legacy.spec.ts:7:1 › legacy recognized-revenue KPI gains confirmed INR metadata without rewriting its snapshot
+[WebServer] 2026-11-23 10:16:50,805 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:51,117 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:16:51,120 INFO Analyst run metrics: {"run_id": "f3432ac3-a393-423e-9cf7-5c922de8e88e", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 292, "total_latency_ms": 643}
+
+[WebServer] 2026-11-23 10:16:53,459 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:53,770 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:16:53,774 INFO Analyst run metrics: {"run_id": "c765f99a-3343-4b02-b8f2-bf1dab5828fe", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 290, "total_latency_ms": 646}
+
+[57/74] e2e/currency.spec.ts:7:1 › confirmed INR revenue converts with test-only rates and resets; counts have no currency control
+[WebServer] 2026-11-23 10:16:55,623 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:55,948 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:16:55,951 INFO Analyst run metrics: {"run_id": "33d4a599-93a7-4cbd-91cf-7269fea980d1", "status": "succeeded", "retrieval_latency_ms": 8, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 303, "total_latency_ms": 655}
+
+[WebServer] 2026-11-23 10:16:57,374 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:57,675 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:16:57,678 INFO Analyst run metrics: {"run_id": "0b08f9ba-5acd-42d1-92f5-68918734a57a", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 279, "total_latency_ms": 632}
+
+[58/74] e2e/currency.spec.ts:110:1 › saved monetary bar charts convert axes and reports without changing snapshots
+[WebServer] 2026-11-23 10:16:59,042 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 302, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:16:59,339 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:16:59,343 INFO Analyst run metrics: {"run_id": "4004818a-2480-443c-921f-c4a5fdb89db1", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 303, "query_latency_ms": 278, "total_latency_ms": 622}
+
+[59/74] e2e/dataset-editor.spec.ts:5:1 › dataset edits persist after refresh and export the saved version
+[60/74] e2e/dataset-editor.spec.ts:86:1 › click existing revenue, preserve account 001 and row count, save revision 2, export and query in Analyst
+[WebServer] 2026-11-23 10:17:03,376 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:17:03,684 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:17:03,689 INFO Analyst run metrics: {"run_id": "ae981bb7-36d5-47fa-a7db-6a5622ec746f", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 285, "total_latency_ms": 639}
+
+[61/74] e2e/dataset-editor.spec.ts:189:1 › existing cell batches survive sorted pages, invalid input, Escape, Undo, NULL and Cancel
+[62/74] e2e/dataset-lifecycle.spec.ts:5:1 › throwaway datasets: rename, dependency preview, archive/restore, guarded delete and retained history
+[WebServer] 2026-11-23 10:17:06,484 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:17:06,796 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:17:06,799 INFO Analyst run metrics: {"run_id": "4d805b2b-389c-4185-a3bd-0e35b1a1b475", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 289, "total_latency_ms": 634}
+
+[63/74] e2e/dataset-lifecycle.spec.ts:48:1 › bulk DELETE confirmation processes only newly created selected fixtures
+[64/74] e2e/phase4.spec.ts:8:1 › dashboard save, layout, filters, reload and exports
+[WebServer] 2026-11-23 10:17:11,094 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 303, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:17:11,405 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:17:11,408 INFO Analyst run metrics: {"run_id": "9229e439-d789-4051-831e-655b01ee6088", "status": "succeeded", "retrieval_latency_ms": 7, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "query_latency_ms": 285, "total_latency_ms": 636}
+
+[65/74] e2e/phase4.spec.ts:160:1 › controlled evaluation verifies references and records actual comparisons
+[WebServer] 2026-11-23 10:17:25,984 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:17:26,287 INFO Analyst run metrics: {"run_id": "8d6bb886-2f5a-4870-a1d1-3a083612e1aa", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 282, "total_latency_ms": 620}
+
+[WebServer] 2026-11-23 10:17:26,667 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:17:26,970 INFO Analyst run metrics: {"run_id": "6206e78e-06e0-45d3-b2c3-848f354a0b8d", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 281, "total_latency_ms": 619}
+
+[66/74] e2e/ui-refinement.spec.ts:15:1 › sidebar collapse preserves the current workspace and keyboard dataset tabs preserve the preview
+[67/74] e2e/ui-refinement.spec.ts:59:1 › mobile navigation is keyboard accessible, traps focus and restores focus on Escape
+[68/74] e2e/ui-refinement.spec.ts:91:1 › all nine modules fit desktop tablet and mobile without horizontal overflow
+[69/74] e2e/ui-refinement.spec.ts:127:1 › Phase 1A Overview groups counts and filters recent statuses without deleting records
+[70/74] e2e/workspace.spec.ts:2:1 › real upload, schema, preview, reload and mobile layout
+[71/74] e2e/19-stage3-journey.spec.ts:11:3 › new owner journey › new project → upload → first answer → pin to a NEW dashboard → PDF, in under 5 minutes with no help text
+[WebServer] 2026-11-23 10:17:37,712 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:17:38,031 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:17:38,034 INFO Analyst run metrics: {"run_id": "a001c716-89b5-4d55-a7e7-7e08c8575322", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 296, "total_latency_ms": 648}
+
+[72/74] e2e/19-stage3-journey.spec.ts:127:1 › dashboards: every redesigned control is still reachable (click paths listed in STAGE3_REVIEW)
+[WebServer] 2026-11-23 10:17:40,080 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:17:40,384 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:17:40,388 INFO Analyst run metrics: {"run_id": "6867dadf-b25f-4991-9029-d4a13494ba29", "status": "succeeded", "retrieval_latency_ms": 6, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 281, "total_latency_ms": 630}
+
+[WebServer] 2026-11-23 10:17:40,998 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:17:41,310 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:17:41,314 INFO Analyst run metrics: {"run_id": "097ea4f7-32b1-4f74-96a0-3d9e5a3c829c", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 289, "total_latency_ms": 645}
+
+[73/74] e2e/19-stage3-journey.spec.ts:207:1 › Ask: suggestions never total a percentage column or quote column names, and the pin dialog cannot save without the Pin click
+[74/74] e2e/19-stage3-journey.spec.ts:223:1 › answers are kept with their question and technical details are one Settings switch away
+[WebServer] 2026-11-23 10:17:45,045 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+
+[WebServer] 2026-11-23 10:17:45,338 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+
+[WebServer] 2026-11-23 10:17:45,342 INFO Analyst run metrics: {"run_id": "da0ac65e-6858-40c8-af73-84596daa03b4", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 276, "total_latency_ms": 622}
+
+  74 passed (8.2m)

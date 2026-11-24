@@ -1,0 +1,8 @@
+# Backs up one company (the instance name after the @ is the company name). Install, adjust the path, then:
+#   systemctl enable --now iq-backup@acme.timer
+[Unit]
+Description=InsightIQ encrypted backup for company %i
+
+[Service]
+Type=oneshot
+ExecStart=/opt/insightiq/deploy/scripts/backup-company.sh --name %i

@@ -1,0 +1,48 @@
+<project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+........................................................................ [ 13%]
+........................................................................ [ 26%]
+........................................................................ [ 40%]
+........................................................................ [ 53%]
+........................................................................ [ 66%]
+........................................................................ [ 80%]
+........................................................................ [ 93%]
+...................................                                      [100%]
+=============================== warnings summary ===============================
+<frozen importlib._bootstrap>:228
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+<frozen importlib._bootstrap>:228
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+<frozen importlib._bootstrap>:228
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 25 durations =============================
+12.08s call     tests/test_phase4.py::test_authored_benchmark_verified_modes_metrics_and_history
+11.47s setup    tests/test_offline_evaluation.py::test_offline_real_replay_empty_results_abstention_and_missing
+11.39s setup    tests/test_evaluation_presentation.py::test_fixed_stored_run_scores_identical_and_reads_never_score_or_call_models
+10.96s call     tests/test_phase4.py::test_evaluation_limits_cancellation_budget_and_incompatible_dataset
+10.78s call     tests/test_automl.py::test_real_regression_registry_prediction_persistence_and_input_validation
+5.90s call     tests/test_dataset_editor.py::test_cell_revision_updates_analyst_and_automl_without_mutating_past_runs_or_models
+4.23s call     tests/test_dataset_revisions.py::test_restore_does_not_rewrite_models_predictions_or_training_records
+4.03s call     tests/test_automl.py::test_model_artifact_integrity_and_deletion
+4.01s call     tests/test_analyst.py::test_provider_request_contract_usage_and_errors
+4.01s call     tests/test_automl.py::test_chronological_forecast_baselines_backtests_and_horizon_validation
+3.54s call     tests/test_stage2_projects.py::test_08_automl_items_are_scoped
+3.30s call     tests/test_automl.py::test_request_feature_cardinality_size_and_rare_class_limits
+3.22s call     tests/test_dashboard_workspace.py::test_history_retains_only_three_prior_snapshots_and_bulk_failure_isolated
+3.09s call     tests/test_automl.py::test_isolation_forest_real_scores_distribution_and_no_fraud_claim
+2.96s call     tests/test_automl.py::test_real_binary_and_multiclass_training[2]
+2.95s call     tests/test_automl.py::test_real_binary_and_multiclass_training[3]
+2.91s call     tests/test_automl.py::test_kmeans_rfm_pca_and_customer_batch_prediction
+2.36s call     tests/test_analyst.py::test_active_query_cancellation_and_hard_deadline
+2.24s call     tests/test_phase3.py::test_real_local_embeddings_if_provisioned
+1.97s call     tests/test_analyst_ux.py::test_thread_bounded_three_turns_and_dataset_isolation
+1.67s call     tests/test_analyst.py::test_worker_limits_timeout_cancel_and_revalidation
+1.64s call     tests/test_automl_presentation.py::test_presentation_reads_never_train_or_modify_catalog_and_artifacts
+1.53s call     tests/test_automl_presentation.py::test_legacy_missing_split_hints_and_archived_prediction_admission
+1.36s call     tests/test_knowledge_review.py::test_reference_match_mismatch_approval_revision_and_delete
+1.29s call     tests/test_stage3_saved_answers.py::test_only_the_newest_answers_are_kept
+539 passed, 3 warnings in 238.50s (0:03:58)

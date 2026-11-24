@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "width": 1280,
+      "tabs": [
+        "Preview",
+        "Columns",
+        "Data Quality",
+        "Version History"
+      ],
+      "previewOnly": true
+    },
+    {
+      "width": 768,
+      "tabs": [
+        "Preview",
+        "Columns",
+        "Data Quality",
+        "Version History"
+      ],
+      "previewOnly": true
+    },
+    {
+      "width": 390,
+      "tabs": [
+        "Preview",
+        "Columns",
+        "Data Quality",
+        "Version History"
+      ],
+      "previewOnly": true
+    }
+  ],
+  "writes": [],
+  "errors": [],
+  "preservedKPI": "₹83,79,680.76",
+  "duplicateBadges": 2,
+  "originalScreenshotsCreated": 0,
+  "originalEdits": 0
+}

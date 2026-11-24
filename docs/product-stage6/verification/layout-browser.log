@@ -1,0 +1,18 @@
+
+> insightiq@0.1.0 test:e2e:analyst
+> playwright test --config playwright.analyst.config.ts --grep Stage 6 task
+
+[WebServer] INFO:     Started server process [21644]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:21666) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:21667) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 e2e/12-product-stage6-models.spec.ts:5:1 › Stage 6 task goals, optional suggestions, essential setup and responsive wizard do not train on navigation (2.4s)
+
+  1 passed (4.2s)

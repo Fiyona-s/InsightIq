@@ -1,0 +1,50 @@
+[
+  {
+    "chart_type": "kpi",
+    "source_rows": 2400,
+    "source_columns": 12,
+    "source_csv_bytes": 164728,
+    "result_rows": 1,
+    "refreshes": 6,
+    "retained_prior": 3,
+    "current_snapshot_records": 1,
+    "retained_records": 4,
+    "record_payload_bytes": [
+      1430,
+      1430,
+      1430,
+      1430
+    ],
+    "total_snapshot_payload_bytes": 5720,
+    "prior_snapshot_payload_bytes": 4290,
+    "catalog_allocated_growth_bytes": 4096,
+    "refresh_audits": 6,
+    "model_generation_calls": 1,
+    "model_calls_for_refresh": 0,
+    "original_source_bytes_unchanged": true
+  },
+  {
+    "chart_type": "bar",
+    "source_rows": 2400,
+    "source_columns": 12,
+    "source_csv_bytes": 164728,
+    "result_rows": 12,
+    "refreshes": 6,
+    "retained_prior": 3,
+    "current_snapshot_records": 1,
+    "retained_records": 4,
+    "record_payload_bytes": [
+      1816,
+      1816,
+      1816,
+      1816
+    ],
+    "total_snapshot_payload_bytes": 7264,
+    "prior_snapshot_payload_bytes": 5448,
+    "catalog_allocated_growth_bytes": 4096,
+    "refresh_audits": 6,
+    "model_generation_calls": 1,
+    "model_calls_for_refresh": 0,
+    "original_source_bytes_unchanged": true
+  }
+]

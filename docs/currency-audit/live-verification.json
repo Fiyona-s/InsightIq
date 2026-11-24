@@ -1,0 +1,773 @@
+{
+  "base": "http://127.0.0.1:8080",
+  "verified_at": "2026-11-09T11:54:05.979Z",
+  "quotes": [
+    {
+      "source_currency": "INR",
+      "target_currency": "USD",
+      "rate": "0.010639",
+      "rate_source": "Frankfurter daily reference",
+      "effective_date": "2026-11-09",
+      "fetched_at": "2026-11-09T11:54:07.294471+00:00",
+      "historical": false,
+      "original_amounts": [
+        "1"
+      ],
+      "converted_amounts": [
+        "0.010639"
+      ],
+      "original_value": "8379680.760000008",
+      "expected_display": "$89,151.42"
+    },
+    {
+      "source_currency": "INR",
+      "target_currency": "EUR",
+      "rate": "0.0095082",
+      "rate_source": "Frankfurter daily reference",
+      "effective_date": "2026-11-09",
+      "fetched_at": "2026-11-09T11:54:08.045767+00:00",
+      "historical": false,
+      "original_amounts": [
+        "1"
+      ],
+      "converted_amounts": [
+        "0.0095082"
+      ],
+      "original_value": "8379680.760000008",
+      "expected_display": "€79,675.68"
+    },
+    {
+      "source_currency": "INR",
+      "target_currency": "USD",
+      "rate": "0.010639",
+      "rate_source": "Frankfurter daily reference",
+      "effective_date": "2026-11-09",
+      "fetched_at": "2026-11-09T11:54:07.294471+00:00",
+      "historical": false,
+      "original_amounts": [
+        "1"
+      ],
+      "converted_amounts": [
+        "0.010639"
+      ],
+      "original_value": "3085360.139999999",
+      "expected_display": "$32,825.15"
+    }
+  ],
+  "analyst": [
+    {
+      "prompt_version": "sql-grounding-v2",
+      "prompt_hash": "8d771a581b6070c28b5f7cdc7d1854c4a31175f98bdd55e5599b4557ff2952af",
+      "workflow_version": "bounded-repair-v2",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "context_fingerprint": "f682156715859b67d6950efc85ffb6a926fce6b9bf536cc2470a12638b891d91",
+          "sql": "SELECT SUM(net_revenue_inr) AS total_recognized_revenue_inr FROM data",
+          "outcome": "succeeded",
+          "validation": "passed",
+          "execution": "succeeded",
+          "error_code": null
+        }
+      ],
+      "events": [
+        {
+          "id": 1,
+          "step": "retrieve_context",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:10.358566+00:00",
+          "attempt": 0,
+          "summary": "Starting retrieve context."
+        },
+        {
+          "id": 2,
+          "step": "retrieve_context",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:13.405874+00:00",
+          "attempt": 0,
+          "summary": "Retrieved 6 dataset-scoped documents."
+        },
+        {
+          "id": 3,
+          "step": "plan",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:13.408288+00:00",
+          "attempt": 0,
+          "summary": "Starting plan."
+        },
+        {
+          "id": 4,
+          "step": "plan",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:13.409519+00:00",
+          "attempt": 0,
+          "summary": "Use only the selected dataset, confirmed types and explicit definitions. Validate every attempt; execute at most 1000 result rows."
+        },
+        {
+          "id": 5,
+          "step": "generate_sql",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:13.411533+00:00",
+          "attempt": 0,
+          "summary": "Starting generate sql."
+        },
+        {
+          "id": 6,
+          "step": "generate_sql",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:13.412849+00:00",
+          "attempt": 1,
+          "summary": "Generating a candidate query from the question and authorized schema."
+        },
+        {
+          "id": 7,
+          "step": "generate_sql",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:14.304972+00:00",
+          "attempt": 1,
+          "summary": "Candidate SQL received; execution requires validation."
+        },
+        {
+          "id": 8,
+          "step": "validate",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:14.311744+00:00",
+          "attempt": 1,
+          "summary": "Starting validate."
+        },
+        {
+          "id": 9,
+          "step": "validate",
+          "status": "passed",
+          "timestamp": "2026-11-09T11:54:14.317088+00:00",
+          "attempt": 1,
+          "summary": "Read-only SQL, relation scope, column references, functions and explicit types passed validation."
+        },
+        {
+          "id": 10,
+          "step": "execute",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:14.321572+00:00",
+          "attempt": 1,
+          "summary": "Starting execute."
+        },
+        {
+          "id": 11,
+          "step": "execute",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:14.323589+00:00",
+          "attempt": 1,
+          "summary": "Executing validated SQL in the isolated read-only DuckDB worker."
+        },
+        {
+          "id": 12,
+          "step": "execute",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:14.451217+00:00",
+          "attempt": 1,
+          "summary": "1 actual rows returned. Empty results are valid."
+        },
+        {
+          "id": 13,
+          "step": "chart",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:14.453123+00:00",
+          "attempt": 1,
+          "summary": "Starting chart."
+        },
+        {
+          "id": 14,
+          "step": "chart",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:14.454777+00:00",
+          "attempt": 1,
+          "summary": "Validated chart choices against actual result types, rows, cardinality, finite values and null handling."
+        },
+        {
+          "id": 15,
+          "step": "explain",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:14.458460+00:00",
+          "attempt": 1,
+          "summary": "Starting explain."
+        },
+        {
+          "id": 16,
+          "step": "explain",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:15.425589+00:00",
+          "attempt": 1,
+          "summary": "Computed evidence and grounded every displayed narrative statement to a known fact ID."
+        },
+        {
+          "id": 17,
+          "step": "finish",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:15.432230+00:00",
+          "attempt": 1,
+          "summary": "Starting finish."
+        },
+        {
+          "id": 18,
+          "step": "finish",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:15.434214+00:00",
+          "attempt": 1,
+          "summary": "Workflow completed; metadata and event history retained. Result rows expire after 10 minutes."
+        },
+        {
+          "id": 19,
+          "step": "finish",
+          "status": "succeeded",
+          "timestamp": "2026-11-09T11:54:15.436545+00:00",
+          "attempt": 1,
+          "summary": "Run reached terminal state."
+        }
+      ],
+      "attempts": 1,
+      "current_step": "finish",
+      "retrieval": {
+        "status": "ready",
+        "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+        "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+        "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+        "embedding_model": "sentence-transformers:daa3ad087dec355b301b5395164c2b3bdf09f89bae1844d7b6e61d03c60e2115",
+        "documents": [
+          {
+            "id": "12aab7035c0e27d7c7aec366",
+            "kind": "metric",
+            "title": "Total Recognized Revenue",
+            "text": "Sum of net_revenue_inr. It already accounts for quantity and discounts. Cancelled and returned orders contribute zero.\nUser-defined metric SQL (untrusted reference): \nSELECT\n    SUM(TRY_CAST(net_revenue_inr AS DOUBLE)) AS total_revenue\nFROM data;\n",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+            "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+            "provenance": {
+              "source": "explicit user metric definition",
+              "updated_at": "2026-11-09T11:54:06.312037+00:00",
+              "semantic_verification": "user-defined, not independently certified"
+            },
+            "score": 0.6783037185668945,
+            "reason": "Rank 1 by normalized embedding cosine similarity within the selected dataset; metric context."
+          },
+          {
+            "id": "acf67e59bc883d0c3ae7d601",
+            "kind": "column",
+            "title": "net_revenue_inr",
+            "text": "Column \"net_revenue_inr\" on data; SQL type DOUBLE; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: DOUBLE, not a business meaning. Final recognized order revenue in INR after quantity and discount adjustments; zero for Cancelled and Returned orders.",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+            "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+            "provenance": {
+              "source": "DuckDB DESCRIBE + full-column profile",
+              "column": "net_revenue_inr",
+              "schema_signature": "3852b78b5d909435071ac77f86c143166d8d431f3e66bda84b2410c4b179e882",
+              "mapping_signature": "65cd4948864707000ec3d38be4c260ec948b4347ba158dbea7a89fb6e72e4f29",
+              "description_source": "user"
+            },
+            "score": 0.5481430292129517,
+            "reason": "Rank 2 by normalized embedding cosine similarity within the selected dataset; column context."
+          },
+          {
+            "id": "0b86336422099d57752d9caa",
+            "kind": "dataset",
+            "title": "InsightIQ_Retail_Demo_2400.csv",
+            "text": "Dataset InsightIQ_Retail_Demo_2400.csv. Authorized SQL relation: data. 2400 rows. This dataset contains 2,400 synthetic retail sales transactions from January 2025 to October 2026. Each row represents one order and includes order ID, order date, customer ID, product category, product name, sales region, sales channel, quantity, unit price in INR, discount percentage, order status, and net revenue in INR. It is used to analyze recognized revenue, product performance, regional sales, monthly trends, and order statuses. The net_revenue_inr column already accounts for quantity and discount and is zero for cancelled and returned orders. Revenue values are in Indian rupees (INR), not profit.",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+            "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+            "provenance": {
+              "source": "catalog + user definition",
+              "updated_at": "2026-11-09T11:54:06.312037+00:00",
+              "schema_signature": "3852b78b5d909435071ac77f86c143166d8d431f3e66bda84b2410c4b179e882"
+            },
+            "score": 0.5068285465240479,
+            "reason": "Rank 3 by normalized embedding cosine similarity within the selected dataset; dataset context."
+          },
+          {
+            "id": "69e447f6dee9b98cd62272a4",
+            "kind": "column",
+            "title": "unit_price_inr",
+            "text": "Column \"unit_price_inr\" on data; SQL type VARCHAR; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: DOUBLE, not a business meaning. Selling price per unit in INR, before discount.",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+            "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+            "provenance": {
+              "source": "DuckDB DESCRIBE + full-column profile",
+              "column": "unit_price_inr",
+              "schema_signature": "3852b78b5d909435071ac77f86c143166d8d431f3e66bda84b2410c4b179e882",
+              "mapping_signature": "65cd4948864707000ec3d38be4c260ec948b4347ba158dbea7a89fb6e72e4f29",
+              "description_source": "user"
+            },
+            "score": 0.40096455812454224,
+            "reason": "Rank 4 by normalized embedding cosine similarity within the selected dataset; column context."
+          },
+          {
+            "id": "cfd6a4bfb9b3c35992ee1313",
+            "kind": "column",
+            "title": "quantity",
+            "text": "Column \"quantity\" on data; SQL type VARCHAR; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: BIGINT, not a business meaning. Number of units purchased.",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+            "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+            "provenance": {
+              "source": "DuckDB DESCRIBE + full-column profile",
+              "column": "quantity",
+              "schema_signature": "3852b78b5d909435071ac77f86c143166d8d431f3e66bda84b2410c4b179e882",
+              "mapping_signature": "65cd4948864707000ec3d38be4c260ec948b4347ba158dbea7a89fb6e72e4f29",
+              "description_source": "user"
+            },
+            "score": 0.3168438673019409,
+            "reason": "Rank 5 by normalized embedding cosine similarity within the selected dataset; column context."
+          },
+          {
+            "id": "e041cb0c3badd5349f7d76f0",
+            "kind": "column",
+            "title": "discount_pct",
+            "text": "Column \"discount_pct\" on data; SQL type VARCHAR; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: BIGINT, not a business meaning. Discount percentage applied to an order.",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+            "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+            "provenance": {
+              "source": "DuckDB DESCRIBE + full-column profile",
+              "column": "discount_pct",
+              "schema_signature": "3852b78b5d909435071ac77f86c143166d8d431f3e66bda84b2410c4b179e882",
+              "mapping_signature": "65cd4948864707000ec3d38be4c260ec948b4347ba158dbea7a89fb6e72e4f29",
+              "description_source": "user"
+            },
+            "score": 0.2859523892402649,
+            "reason": "Rank 6 by normalized embedding cosine similarity within the selected dataset; column context."
+          }
+        ],
+        "warning": null,
+        "rebuilt": true
+      },
+      "chart_spec": {
+        "kind": "kpi",
+        "x": null,
+        "y": 0,
+        "title": "total_recognized_revenue_inr",
+        "null_policy": "omit_with_count",
+        "zero_baseline": true
+      },
+      "evidence_count": 7,
+      "activity_kind": "user",
+      "pipeline": "agentic",
+      "result_digest": "5497bfe35fdbf629f48ae3de2befac527a50609899ed01e502f93b9967f3e652",
+      "schema_signature": "3852b78b5d909435071ac77f86c143166d8d431f3e66bda84b2410c4b179e882",
+      "id": "8ac34181-8e81-4c47-b3bf-b296b46bd4d7",
+      "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+      "dataset_name": "InsightIQ_Retail_Demo_2400.csv",
+      "question": "What is the total recognized revenue? Sum net_revenue_inr and use the alias total_recognized_revenue_inr.",
+      "status": "succeeded",
+      "created_at": "2026-11-09T11:54:10.103473+00:00",
+      "completed_at": "2026-11-09T11:54:15.436446+00:00",
+      "sql": "SELECT SUM(net_revenue_inr) AS total_recognized_revenue_inr FROM data",
+      "executed_sql": "SELECT SUM(net_revenue_inr) AS total_recognized_revenue_inr FROM data",
+      "explanation": "Calculates the total recognized revenue by summing the net_revenue_inr column across all rows in the data table and returns it with the alias total_recognized_revenue_inr.",
+      "answer": "total_recognized_revenue_inr: INR 83,79,680.76",
+      "clarification": null,
+      "error": null,
+      "error_code": null,
+      "type_mapping": {
+        "net_revenue_inr": "DOUBLE"
+      },
+      "conversions": [
+        {
+          "column": "net_revenue_inr",
+          "type": "DOUBLE",
+          "missing": 0,
+          "failed": 0
+        }
+      ],
+      "metrics": {
+        "model": "openai/gpt-oss-120b",
+        "provider_model": "openai/gpt-oss-120b",
+        "model_latency_ms": 1856,
+        "retrieval_latency_ms": 3020,
+        "query_latency_ms": 121,
+        "total_latency_ms": 5326,
+        "prompt_tokens": 3933,
+        "completion_tokens": 395,
+        "total_tokens": 4328,
+        "estimated_cost_usd": 0.00082695
+      },
+      "result_metadata": {
+        "columns": [
+          {
+            "money": {
+              "currency": "INR",
+              "mixed": false
+            },
+            "name": "total_recognized_revenue_inr",
+            "type": "DOUBLE"
+          }
+        ],
+        "row_count": 1
+      },
+      "results_available": true
+    },
+    {
+      "prompt_version": "sql-grounding-v2",
+      "prompt_hash": "8d771a581b6070c28b5f7cdc7d1854c4a31175f98bdd55e5599b4557ff2952af",
+      "workflow_version": "bounded-repair-v2",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "context_fingerprint": "4dfb1d9d202213f4aae8f565d3c975219565bf831c3bdb6a79a0874aedc1ec21",
+          "sql": "SELECT COUNT(*) AS order_count FROM data",
+          "outcome": "succeeded",
+          "validation": "passed",
+          "execution": "succeeded",
+          "error_code": null
+        }
+      ],
+      "events": [
+        {
+          "id": 1,
+          "step": "retrieve_context",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:16.328921+00:00",
+          "attempt": 0,
+          "summary": "Starting retrieve context."
+        },
+        {
+          "id": 2,
+          "step": "retrieve_context",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:16.396755+00:00",
+          "attempt": 0,
+          "summary": "Retrieved 6 dataset-scoped documents."
+        },
+        {
+          "id": 3,
+          "step": "plan",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:16.398658+00:00",
+          "attempt": 0,
+          "summary": "Starting plan."
+        },
+        {
+          "id": 4,
+          "step": "plan",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:16.400170+00:00",
+          "attempt": 0,
+          "summary": "Use only the selected dataset, confirmed types and explicit definitions. Validate every attempt; execute at most 1000 result rows."
+        },
+        {
+          "id": 5,
+          "step": "generate_sql",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:16.401709+00:00",
+          "attempt": 0,
+          "summary": "Starting generate sql."
+        },
+        {
+          "id": 6,
+          "step": "generate_sql",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:16.403077+00:00",
+          "attempt": 1,
+          "summary": "Generating a candidate query from the question and authorized schema."
+        },
+        {
+          "id": 7,
+          "step": "generate_sql",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:17.675572+00:00",
+          "attempt": 1,
+          "summary": "Candidate SQL received; execution requires validation."
+        },
+        {
+          "id": 8,
+          "step": "validate",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:17.682398+00:00",
+          "attempt": 1,
+          "summary": "Starting validate."
+        },
+        {
+          "id": 9,
+          "step": "validate",
+          "status": "passed",
+          "timestamp": "2026-11-09T11:54:17.687022+00:00",
+          "attempt": 1,
+          "summary": "Read-only SQL, relation scope, column references, functions and explicit types passed validation."
+        },
+        {
+          "id": 10,
+          "step": "execute",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:17.689499+00:00",
+          "attempt": 1,
+          "summary": "Starting execute."
+        },
+        {
+          "id": 11,
+          "step": "execute",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:17.691196+00:00",
+          "attempt": 1,
+          "summary": "Executing validated SQL in the isolated read-only DuckDB worker."
+        },
+        {
+          "id": 12,
+          "step": "execute",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:17.813932+00:00",
+          "attempt": 1,
+          "summary": "1 actual rows returned. Empty results are valid."
+        },
+        {
+          "id": 13,
+          "step": "chart",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:17.817596+00:00",
+          "attempt": 1,
+          "summary": "Starting chart."
+        },
+        {
+          "id": 14,
+          "step": "chart",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:17.819204+00:00",
+          "attempt": 1,
+          "summary": "Validated chart choices against actual result types, rows, cardinality, finite values and null handling."
+        },
+        {
+          "id": 15,
+          "step": "explain",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:17.820466+00:00",
+          "attempt": 1,
+          "summary": "Starting explain."
+        },
+        {
+          "id": 16,
+          "step": "explain",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:18.187074+00:00",
+          "attempt": 1,
+          "summary": "Computed evidence and grounded every displayed narrative statement to a known fact ID. Narrative selection unavailable or rejected. Showing Python-computed facts only."
+        },
+        {
+          "id": 17,
+          "step": "finish",
+          "status": "running",
+          "timestamp": "2026-11-09T11:54:18.193612+00:00",
+          "attempt": 1,
+          "summary": "Starting finish."
+        },
+        {
+          "id": 18,
+          "step": "finish",
+          "status": "completed",
+          "timestamp": "2026-11-09T11:54:18.195643+00:00",
+          "attempt": 1,
+          "summary": "Workflow completed; metadata and event history retained. Result rows expire after 10 minutes."
+        },
+        {
+          "id": 19,
+          "step": "finish",
+          "status": "succeeded",
+          "timestamp": "2026-11-09T11:54:18.198184+00:00",
+          "attempt": 1,
+          "summary": "Run reached terminal state."
+        }
+      ],
+      "attempts": 1,
+      "current_step": "finish",
+      "retrieval": {
+        "status": "ready",
+        "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+        "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+        "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+        "embedding_model": "sentence-transformers:daa3ad087dec355b301b5395164c2b3bdf09f89bae1844d7b6e61d03c60e2115",
+        "documents": [
+          {
+            "id": "0b86336422099d57752d9caa",
+            "kind": "dataset",
+            "title": "InsightIQ_Retail_Demo_2400.csv",
+            "text": "Dataset InsightIQ_Retail_Demo_2400.csv. Authorized SQL relation: data. 2400 rows. This dataset contains 2,400 synthetic retail sales transactions from January 2025 to October 2026. Each row represents one order and includes order ID, order date, customer ID, product category, product name, sales region, sales channel, quantity, unit price in INR, discount percentage, order status, and net revenue in INR. It is used to analyze recognized revenue, product performance, regional sales, monthly trends, and order statuses. The net_revenue_inr column already accounts for quantity and discount and is zero for cancelled and returned orders. Revenue values are in Indian rupees (INR), not profit.",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+            "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+            "provenance": {
+              "source": "catalog + user definition",
+              "updated_at": "2026-11-09T11:54:06.312037+00:00",
+              "schema_signature": "3852b78b5d909435071ac77f86c143166d8d431f3e66bda84b2410c4b179e882"
+            },
+            "score": 0.2823205590248108,
+            "reason": "Rank 1 by normalized embedding cosine similarity within the selected dataset; dataset context."
+          },
+          {
+            "id": "6bba26460f65f5d644b4a511",
+            "kind": "column",
+            "title": "order_id",
+            "text": "Column \"order_id\" on data; SQL type VARCHAR; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: VARCHAR, not a business meaning. Unique identifier for each retail order.",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+            "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+            "provenance": {
+              "source": "DuckDB DESCRIBE + full-column profile",
+              "column": "order_id",
+              "schema_signature": "3852b78b5d909435071ac77f86c143166d8d431f3e66bda84b2410c4b179e882",
+              "mapping_signature": "65cd4948864707000ec3d38be4c260ec948b4347ba158dbea7a89fb6e72e4f29",
+              "description_source": "user"
+            },
+            "score": 0.262786328792572,
+            "reason": "Rank 2 by normalized embedding cosine similarity within the selected dataset; column context."
+          },
+          {
+            "id": "cc410ff8c9aa7d9adac7e320",
+            "kind": "column",
+            "title": "order_status",
+            "text": "Column \"order_status\" on data; SQL type VARCHAR; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: VARCHAR, not a business meaning. Order fulfillment status: Completed, Cancelled, or Returned.",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+            "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+            "provenance": {
+              "source": "DuckDB DESCRIBE + full-column profile",
+              "column": "order_status",
+              "schema_signature": "3852b78b5d909435071ac77f86c143166d8d431f3e66bda84b2410c4b179e882",
+              "mapping_signature": "65cd4948864707000ec3d38be4c260ec948b4347ba158dbea7a89fb6e72e4f29",
+              "description_source": "user"
+            },
+            "score": 0.22000883519649506,
+            "reason": "Rank 3 by normalized embedding cosine similarity within the selected dataset; column context."
+          },
+          {
+            "id": "96b170d6b67853d463e13de4",
+            "kind": "column",
+            "title": "customer_id",
+            "text": "Column \"customer_id\" on data; SQL type VARCHAR; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: VARCHAR, not a business meaning. Identifier of the customer who placed the order.",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+            "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+            "provenance": {
+              "source": "DuckDB DESCRIBE + full-column profile",
+              "column": "customer_id",
+              "schema_signature": "3852b78b5d909435071ac77f86c143166d8d431f3e66bda84b2410c4b179e882",
+              "mapping_signature": "65cd4948864707000ec3d38be4c260ec948b4347ba158dbea7a89fb6e72e4f29",
+              "description_source": "user"
+            },
+            "score": 0.18586723506450653,
+            "reason": "Rank 4 by normalized embedding cosine similarity within the selected dataset; column context."
+          },
+          {
+            "id": "dbb098062311adfbe6908626",
+            "kind": "column",
+            "title": "order_date",
+            "text": "Column \"order_date\" on data; SQL type VARCHAR; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: DATE, not a business meaning. Date when the order was placed, in YYYY-MM-DD format.",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+            "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+            "provenance": {
+              "source": "DuckDB DESCRIBE + full-column profile",
+              "column": "order_date",
+              "schema_signature": "3852b78b5d909435071ac77f86c143166d8d431f3e66bda84b2410c4b179e882",
+              "mapping_signature": "65cd4948864707000ec3d38be4c260ec948b4347ba158dbea7a89fb6e72e4f29",
+              "description_source": "user"
+            },
+            "score": 0.1613749861717224,
+            "reason": "Rank 5 by normalized embedding cosine similarity within the selected dataset; column context."
+          },
+          {
+            "id": "12aab7035c0e27d7c7aec366",
+            "kind": "metric",
+            "title": "Total Recognized Revenue",
+            "text": "Sum of net_revenue_inr. It already accounts for quantity and discounts. Cancelled and returned orders contribute zero.\nUser-defined metric SQL (untrusted reference): \nSELECT\n    SUM(TRY_CAST(net_revenue_inr AS DOUBLE)) AS total_revenue\nFROM data;\n",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+            "fingerprint": "8d40236317d30bf0b27a6e58619a1b6223fd050c07464109366418e6607b7e8f",
+            "provenance": {
+              "source": "explicit user metric definition",
+              "updated_at": "2026-11-09T11:54:06.312037+00:00",
+              "semantic_verification": "user-defined, not independently certified"
+            },
+            "score": 0.15873543918132782,
+            "reason": "Rank 6 by normalized embedding cosine similarity within the selected dataset; metric context."
+          }
+        ],
+        "warning": null,
+        "rebuilt": false
+      },
+      "chart_spec": {
+        "kind": "kpi",
+        "x": null,
+        "y": 0,
+        "title": "order_count",
+        "null_policy": "omit_with_count",
+        "zero_baseline": true
+      },
+      "evidence_count": 7,
+      "activity_kind": "user",
+      "pipeline": "agentic",
+      "result_digest": "ec9f3329001b7cc11032191504a564effcef0a46b654c2da5f8fe9c743fbbdd3",
+      "schema_signature": "3852b78b5d909435071ac77f86c143166d8d431f3e66bda84b2410c4b179e882",
+      "id": "a14a802f-b0fd-44e5-90e8-54c81eb66801",
+      "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+      "dataset_name": "InsightIQ_Retail_Demo_2400.csv",
+      "question": "How many orders are there?",
+      "status": "succeeded",
+      "created_at": "2026-11-09T11:54:16.319907+00:00",
+      "completed_at": "2026-11-09T11:54:18.198038+00:00",
+      "sql": "SELECT COUNT(*) AS order_count FROM data",
+      "executed_sql": "SELECT COUNT(*) AS order_count FROM data",
+      "explanation": "Counts the total number of rows in the data table, representing the total number of orders.",
+      "answer": "order_count: 2400",
+      "clarification": null,
+      "error": null,
+      "error_code": null,
+      "type_mapping": {
+        "net_revenue_inr": "DOUBLE"
+      },
+      "conversions": [
+        {
+          "column": "net_revenue_inr",
+          "type": "DOUBLE",
+          "missing": 0,
+          "failed": 0
+        }
+      ],
+      "metrics": {
+        "model": "openai/gpt-oss-120b",
+        "provider_model": "openai/gpt-oss-120b",
+        "model_latency_ms": 1271,
+        "retrieval_latency_ms": 17,
+        "query_latency_ms": 117,
+        "total_latency_ms": 1875,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null,
+        "estimated_cost_usd": null
+      },
+      "result_metadata": {
+        "columns": [
+          {
+            "name": "order_count",
+            "type": "BIGINT"
+          }
+        ],
+        "row_count": 1
+      },
+      "results_available": true
+    }
+  ],
+  "currency_basis": {
+    "dataset_id": "4d7cb8c8-9300-401f-a864-b29f89920559",
+    "description": "This dataset contains 2,400 synthetic retail sales transactions from January 2025 to October 2026. Each row represents one order and includes order ID, order date, customer ID, product category, product name, sales region, sales channel, quantity, unit price in INR, discount percentage, order status, and net revenue in INR. It is used to analyze recognized revenue, product performance, regional sales, monthly trends, and order statuses. The net_revenue_inr column already accounts for quantity and discount and is zero for cancelled and returned orders. Revenue values are in Indian rupees (INR), not profit.",
+    "column_definition": "Final recognized order revenue in INR after quantity and discount adjustments; zero for Cancelled and Returned orders."
+  },
+  "original_value": "8379680.760000008",
+  "usd_display": "$89,151.42",
+  "eur_display": "€79,675.68",
+  "exports": {
+    "raw_csv_unchanged": true,
+    "converted_csv": true,
+    "json_retains_original": true,
+    "pdf": true
+  },
+  "reload_display": "₹83,79,680.76",
+  "success": true
+}

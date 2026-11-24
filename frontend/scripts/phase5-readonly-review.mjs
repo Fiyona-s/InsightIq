@@ -1,0 +1,14 @@
+import {chromium,expect} from '@playwright/test';
+import fs from 'node:fs';
+const browser=await chromium.launch({channel:'chrome'}),page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
+const mutations=[],errors=[],draftRequests=[];
+page.on('request',r=>{if(r.url().includes('/api/')&&!['GET','HEAD','OPTIONS'].includes(r.method()))mutations.push({method:r.method(),path:new URL(r.url()).pathname});if(r.url().endsWith('/knowledge/drafts')&&r.method()==='POST')draftRequests.push(r.url());});page.on('pageerror',e=>errors.push(e.message));
+const datasets=await(await page.request.get('http://localhost:8080/api/datasets?include_archived=true')).json(),charts=await(await page.request.get('http://localhost:8080/api/saved-charts')).json();expect(datasets).toHaveLength(13);
+const source=charts.find(c=>Object.keys(c.currency_metadata||{}).length>0),active=datasets.find(d=>d.id===source.dataset_id&&!d.archived_at);expect(active).toBeTruthy();
+await page.addInitScript(id=>localStorage.setItem('insightiq-active-dataset-v1',JSON.stringify({id,mru:[id]})),active.id);
+await page.goto('http://localhost:8080/#knowledge');await expect(page.locator('main h1')).toHaveText('Knowledge base.');await expect(page.getByRole('heading',{name:'Knowledge completeness'})).toBeVisible();await expect(page.getByRole('button',{name:'Draft with AI',exact:true})).toBeVisible();await expect(page.getByText('No drafts yet.')).toBeVisible();await page.waitForLoadState('networkidle');
+const view=await(await page.request.get(`http://localhost:8080/api/datasets/${active.id}/knowledge/review`)).json();expect(view.drafts).toHaveLength(0);expect(view.examples.every(e=>e.legacy&&e.status==='legacy')).toBe(true);
+await page.screenshot({path:'../docs/phase5/live-readonly-knowledge.png',fullPage:true});
+await page.getByRole('button',{name:'Dashboards',exact:true}).click();await expect(page.locator('.result-kpi strong')).toHaveText('₹83,79,680.76');await expect(page.getByRole('button',{name:'Convert Currency',exact:true}).first()).toBeVisible();
+expect(mutations).toEqual([]);expect(errors).toEqual([]);expect(draftRequests).toEqual([]);
+const result={url:'http://localhost:8080',datasetCount:datasets.length,activeDataset:active.id,reviewDrafts:view.drafts.length,legacyExamples:view.examples.length,knowledgeCompletenessVisible:true,draftButtonVisible:true,draftRequests:0,preservedKPI:'₹83,79,680.76',currencyControlVisible:true,mutatingAPIRequests:mutations,browserErrors:errors};fs.writeFileSync('../docs/phase5/live-readonly-review.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));await browser.close();

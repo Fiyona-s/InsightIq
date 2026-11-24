@@ -1,0 +1,58 @@
+
+> insightiq@0.1.0 test:e2e:analyst
+> playwright test --config playwright.analyst.config.ts --grep Stage 9 real
+
+[WebServer] INFO:     Started server process [38950]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:38987) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:38988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] <project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+[WebServer]   warnings.warn(
+[WebServer] 2026-11-13 22:49:43,578 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-13 22:49:43,916 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-13 22:49:43,919 INFO Analyst run metrics: {"run_id": "d4b7b15c-f9dd-4f79-a598-94ba0efa4161", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 314, "query_latency_ms": 303, "total_latency_ms": 832}
+[WebServer] 2026-11-13 22:49:44,302 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-13 22:49:44,626 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-13 22:49:44,637 INFO Analyst run metrics: {"run_id": "c3cd5b43-0818-4016-95a3-e1e1cb08d600", "status": "failed", "retrieval_latency_ms": 10, "prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150, "estimated_cost_usd": 0.0002, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 619, "total_latency_ms": 664}
+[WebServer] 2026-11-13 22:49:44,902 INFO Analyst run metrics: {"run_id": "eb12b403-68e8-4d28-8b07-cac5b4138d46", "status": "cancelled", "retrieval_latency_ms": 13, "total_latency_ms": 34}
+[WebServer] 2026-11-13 22:49:45,340 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-13 22:49:45,364 INFO Analyst run metrics: {"run_id": "151fafeb-a5fa-440c-8f8d-0fc23d46c4d5", "status": "clarification", "retrieval_latency_ms": 11, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 313, "total_latency_ms": 364}
+  ✘  1 e2e/15-product-stage9-monitoring.spec.ts:3:1 › Stage 9 real operational filters, keyboard traces, missing metrics and retained historical source labels (9.1s)
+
+
+  1) e2e/15-product-stage9-monitoring.spec.ts:3:1 › Stage 9 real operational filters, keyboard traces, missing metrics and retained historical source labels 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByRole('list', { name: 'Recorded steps' }).getByRole('button').last()
+    Expected: "true"
+    Received: "false"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" getByRole('list', { name: 'Recorded steps' }).getByRole('button').last() with timeout 5000ms
+      - waiting for getByRole('list', { name: 'Recorded steps' }).getByRole('button').last()
+        14 × locator resolved to <button aria-pressed="false" aria-controls=":r3:">…</button>
+           - unexpected value "false"
+
+
+      13 |  await page.goto('/#traces');await page.getByLabel('Trace dataset').selectOption(d.id);await expect(page.locator('.trace-history .trace-run')).toHaveCount(4);await expect(page.getByRole('region',{name:'Run trace details'})).toContainText('needs clarification');await expect(page.getByText('Estimated cost (USD)').locator('..')).toContainText('Unknown');await expect(page.getByText('Attempts',{exact:true}).locator('..')).toContainText('Unknown');
+      14 |  const history=page.getByRole('region',{name:'Recorded runs'});const historyButtons=history.locator('.trace-run');await historyButtons.first().focus();await page.keyboard.press('ArrowDown');await expect(historyButtons.nth(1)).toBeFocused();await page.keyboard.press('Enter');await expect(page.locator('.trace-inspection h2')).toBeFocused();await expect(page.getByRole('region',{name:'Run trace details'})).toContainText('The saved run is marked cancelled.');await page.getByRole('button',{name:'Back to run history'}).click();await expect(historyButtons.nth(1)).toBeFocused();
+    > 15 |  await page.getByLabel('Trace status').selectOption('failed');await expect(history.locator('.trace-run')).toHaveCount(1);const steps=page.getByRole('list',{name:'Recorded steps'}).getByRole('button');expect(await steps.count()).toBeGreaterThan(1);await steps.first().focus();await page.keyboard.press('End');await expect(steps.last()).toBeFocused();await page.keyboard.press('Enter');await expect(steps.last()).toHaveAttribute('aria-pressed','true');await page.getByText('Technical details',{exact:true}).click();await page.getByText('Recorded trace JSON',{exact:true}).click();await expect(page.locator('.trace-technical')).toContainText('DELETE FROM data');const rawAxe=await new AxeBuilder({page}).analyze();expect(rawAxe.violations).toEqual([]);checks.push({page:'Raw trace',width:1280,violations:rawAxe.violations});await page.screenshot({path:'../docs/product-stage9/after/raw-failure.png',fullPage:true});await page.getByText('Technical details',{exact:true}).click();
+         |                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+      16 |  for(const width of [1280,768,390]){await page.setViewportSize({width,height:1000});await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);const axe=await new AxeBuilder({page}).analyze();expect(axe.violations).toEqual([]);checks.push({page:'Traces',width,violations:axe.violations});await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:`../docs/product-stage9/after/traces-${width}.png`,fullPage:true})}
+      17 |  expect(writes).toEqual([]);expect((await page.request.post('/api/datasets/'+d.id+'/archive')).ok()).toBe(true);await page.reload();await page.getByLabel('Trace dataset').selectOption(d.id);await expect(page.getByText('Archived dataset · historical run')).toBeVisible();await page.screenshot({path:'../docs/product-stage9/after/archived-source.png',fullPage:true});expect((await page.request.post('/api/datasets/'+d.id+'/restore')).ok()).toBe(true);const removed=await page.request.delete('/api/datasets/'+d.id,{data:{confirm_name:d.name,acknowledge_dependencies:true}});expect(removed.status()).toBe(204);await page.reload();await expect(page.locator('.trace-history [title="Deleted dataset (stage9-monitoring.csv)"]').first()).toBeVisible();await page.screenshot({path:'../docs/product-stage9/after/deleted-source.png',fullPage:true});
+      18 |  const after=await Promise.all([success,failure,cancelled,clarification].map(async r=>stable(await(await page.request.get('/api/analyst/runs/'+r.id)).json())));expect(after).toEqual(before);expect(errors).toEqual([]);fs.writeFileSync('../docs/product-stage9/browser-review.json',JSON.stringify({checks,errors,monitoringWrites:writes,realRunStatuses:[success.status,failure.status,cancelled.status,clarification.status],missingMetricsBoundary:'Controlled read-only browser response override',storedRunEvidenceUnchanged:true,archiveDeleteFixturesOnly:true,liveAICalls:0},null,2));
+        at <project>/frontend/e2e/15-product-stage9-monitoring.spec.ts:15:412
+
+    Error Context: test-results/15-product-stage9-monitori-a551c-ed-historical-source-labels/error-context.md
+
+  1 failed
+    e2e/15-product-stage9-monitoring.spec.ts:3:1 › Stage 9 real operational filters, keyboard traces, missing metrics and retained historical source labels 

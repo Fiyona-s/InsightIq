@@ -1,0 +1,22 @@
+{
+  "changed_files_from_recovery_manifest": [
+    "frontend/playwright.analyst.config.ts",
+    "frontend/e2e/phase4.spec.ts",
+    "frontend/e2e/phase9-smoke.spec.ts",
+    "frontend/e2e/ui.ts",
+    "frontend/e2e/00-phase3-navigation.spec.ts",
+    "frontend/e2e/04-phase8-evaluation.spec.ts",
+    "frontend/src/workspace.css",
+    "frontend/src/components/EvaluationPage.tsx",
+    "frontend/src/components/OfflineAndTraces.test.tsx"
+  ],
+  "new_files": [
+    "frontend/e2e/14-product-stage8-evaluation.spec.ts",
+    "frontend/scripts/product-stage8-readonly-review.mjs",
+    "docs/PRODUCT_STAGE8_REVIEW.md",
+    "docs/product-stage8/"
+  ],
+  "other_modified": [
+    "README.md"
+  ]
+}

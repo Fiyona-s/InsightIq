@@ -1,0 +1,17 @@
+
+> insightiq@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 <project>/frontend
+
+
+ Test Files  27 passed (27)
+      Tests  189 passed (189)
+   Start at  21:43:39
+   Duration  5.46s (tests 56%, environment 25%, import 8%, setup 7%, transform 2%)
+
+Environment  jsdom was created 27 times · 9.67s total, 25% of tracked time
+             create it once per worker with pool: 'vmThreads' (keeps per-file isolation) or isolate: false (shares it across files)
+             learn more: https://vitest.dev/guide/improving-performance#test-environments
+

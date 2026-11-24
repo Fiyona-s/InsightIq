@@ -1,0 +1,40 @@
+# One company's front door, REAL HTTPS configuration. Certificates come from Let's Encrypt automatically and need
+# PUBLIC_HOST to be a public domain pointing at this machine with ports 80 and 443 reachable. That path was NOT exercised
+# in the A5 build (no public domain was available); the same file without HSTS and with Caddy's own test CA is Caddyfile.local.
+{
+	admin localhost:2019
+	servers {
+		protocols h1 h2                 # no HTTP/3: only TCP 80 and 443 are published
+	}
+	auto_https disable_redirects        # the redirect below is written out so it also works behind another port mapping
+}
+
+http://{$PUBLIC_HOST}:80 {
+	redir https://{$PUBLIC_HOST}{$PUBLIC_PORT_SUFFIX}{uri} permanent
+}
+
+{$PUBLIC_HOST}:443 {
+	encode zstd gzip
+
+	header {
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "no-referrer"
+		X-Frame-Options "DENY"
+		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+		Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+		Strict-Transport-Security "max-age=31536000"
+		-Server
+	}
+
+	handle /api/* {
+		request_body {
+			max_size 110MB
+		}
+		reverse_proxy api:8000 {
+			flush_interval -1
+		}
+	}
+	handle {
+		reverse_proxy web:8080
+	}
+}

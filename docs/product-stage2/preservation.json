@@ -1,0 +1,26 @@
+{
+  "catalog_byte_values_unchanged": true,
+  "storage_files_unchanged": 102,
+  "catalog_sha256": "df364c618eae163eb6d6eccbfc726f3872122ff03f23aa4841accd60435c08f3",
+  "counts": {
+    "analyst_feedback": 0,
+    "analyst_runs": 18,
+    "benchmark_installs": 1,
+    "dashboard_widget_snapshots": 0,
+    "dashboards": 1,
+    "dataset_audit": 2,
+    "dataset_references": 0,
+    "dataset_revisions": 0,
+    "datasets": 13,
+    "evaluation_jobs": 3,
+    "knowledge_drafts": 0,
+    "knowledge_examples": 1,
+    "knowledge_review_examples": 0,
+    "knowledge_state": 9,
+    "ml_experiments": 6,
+    "ml_models": 19,
+    "ml_predictions": 14,
+    "saved_charts": 3,
+    "schema_migrations": 9
+  }
+}

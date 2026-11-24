@@ -1,0 +1,65 @@
+
+> insightiq@0.1.0 test
+> vitest run --reporter=dot
+
+
+ RUN  v5.1.0 <project>/frontend
+
+·····················································stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+···stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+·stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+··stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+stderr | src/components/DatasetLifecycle.test.tsx > gates bulk deletion with DELETE and reports isolated outcomes
+Encountered two children with the same key, `test-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+···················································································
+
+ Test Files  20 passed (20)
+      Tests  142 passed (142)
+   Start at  07:28:27
+   Duration  3.42s (tests 57%, environment 23%, setup 8%, import 8%, transform 3%)
+
+    Isolate  20 workers spawned · ~391ms startup each (spawn + environment, per file)
+             at least ~478ms faster with isolate: false — reuses workers across files instead of one per file
+

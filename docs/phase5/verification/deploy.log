@@ -1,0 +1,159 @@
+ Image project-web Building 
+ Image project-api Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 951B done
+#1 DONE 0.0s
+
+#2 [api internal] load build definition from Dockerfile
+#2 transferring dockerfile: 519B done
+#2 DONE 0.0s
+
+#3 [web internal] load build definition from Dockerfile
+#3 transferring dockerfile: 295B done
+#3 DONE 0.0s
+
+#4 [web internal] load metadata for docker.io/library/node:22-alpine
+#4 ...
+
+#5 [web internal] load metadata for docker.io/nginxinc/nginx-unprivileged:1.27-alpine
+#5 DONE 0.9s
+
+#6 [api internal] load metadata for docker.io/library/python:3.12-slim
+#6 DONE 0.9s
+
+#4 [web internal] load metadata for docker.io/library/node:22-alpine
+#4 DONE 0.9s
+
+#7 [api internal] load .dockerignore
+#7 transferring context: 72B done
+#7 DONE 0.0s
+
+#8 [web internal] load .dockerignore
+#8 transferring context: 58B done
+#8 DONE 0.0s
+
+#9 [web build 1/6] FROM docker.io/library/node:22-alpine@sha256:0e1754758c2df4cfa3e68d59e2e1b7374bb7fd9ea6328eaaacf15cc934af8202
+#9 resolve docker.io/library/node:22-alpine@sha256:0e1754758c2df4cfa3e68d59e2e1b7374bb7fd9ea6328eaaacf15cc934af8202 0.0s done
+#9 DONE 0.0s
+
+#10 [web stage-1 1/3] FROM docker.io/nginxinc/nginx-unprivileged:1.27-alpine@sha256:65e3e85dbaed8ba248841d9d58a899b6197106c23cb0ff1a132b7bfe0547e4c0
+#10 resolve docker.io/nginxinc/nginx-unprivileged:1.27-alpine@sha256:65e3e85dbaed8ba248841d9d58a899b6197106c23cb0ff1a132b7bfe0547e4c0 0.0s done
+#10 DONE 0.0s
+
+#11 [api 1/9] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+#11 resolve docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b 0.0s done
+#11 DONE 0.0s
+
+#12 [api internal] load build context
+#12 transferring context: 27.08kB done
+#12 DONE 0.0s
+
+#13 [web internal] load build context
+#13 transferring context: 18.35kB done
+#13 DONE 0.0s
+
+#14 [api 2/9] RUN apt-get update && apt-get install -y --no-install-recommends libseccomp2 && rm -rf /var/lib/apt/lists/*
+#14 CACHED
+
+#15 [api 3/9] WORKDIR /app
+#15 CACHED
+
+#16 [api 4/9] COPY requirements.txt .
+#16 CACHED
+
+#17 [api 5/9] RUN pip install --no-cache-dir -r requirements.txt
+#17 CACHED
+
+#18 [web build 2/6] WORKDIR /app
+#18 CACHED
+
+#19 [web build 3/6] COPY package*.json ./
+#19 CACHED
+
+#20 [web build 4/6] RUN npm ci
+#20 CACHED
+
+#21 [api 6/9] COPY app ./app
+#21 DONE 0.0s
+
+#22 [web build 5/6] COPY . .
+#22 DONE 0.0s
+
+#23 [api 7/9] COPY scripts ./scripts
+#23 DONE 0.0s
+
+#24 [api 8/9] COPY benchmarks ./benchmarks
+#24 DONE 0.0s
+
+#25 [api 9/9] RUN useradd --create-home insight && mkdir /data && chown insight:insight /data
+#25 DONE 0.1s
+
+#26 [web build 6/6] RUN npm run build
+#26 ...
+
+#27 [api] exporting to image
+#27 exporting layers 0.0s done
+#27 exporting manifest sha256:7f80fb2bb01fc60a3a9b6bccbdd07f3b1c09f840dd809cc40fd4132d1bffd652 done
+#27 exporting config sha256:1e71bc0b4940704eea3495f5a1cfd9bbdf0114785b0384948aaac42f948ce04a done
+#27 exporting attestation manifest sha256:d036ebdaaefd79406ee9b8aa6e31c37b531b14c301ebbe671585587114410d49 done
+#27 exporting manifest list sha256:febffd12af32a23dc48e33b4d17fa3b2fd59672e209c3161bf4d4051128b306e done
+#27 naming to docker.io/library/project-api:latest done
+#27 unpacking to docker.io/library/project-api:latest 0.0s done
+#27 DONE 0.1s
+
+#26 [web build 6/6] RUN npm run build
+#26 0.168 
+#26 0.168 > insightiq@0.1.0 build
+#26 0.168 > tsc -b && vite build
+#26 0.168 
+#26 ...
+
+#28 [api] resolving provenance for metadata file
+#28 DONE 0.0s
+
+#26 [web build 6/6] RUN npm run build
+#26 2.597 vite v8.3.5 building client environment for production...
+#26 2.603 transforming...
+#26 3.001 ✓ 1994 modules transformed.
+#26 3.043 rendering chunks...
+#26 3.083 computing gzip size...
+#26 3.087 dist/index.html                        0.41 kB │ gzip:   0.29 kB
+#26 3.087 dist/assets/index-D_aVdnUd.css       111.95 kB │ gzip:  23.18 kB
+#26 3.087 dist/assets/AutoMLPlots-D_q6ZxYy.js   19.13 kB │ gzip:   6.10 kB
+#26 3.087 dist/assets/ResultChart--Zo2qh_F.js   21.27 kB │ gzip:   6.83 kB
+#26 3.087 dist/assets/chartAxis-DR4QF2F8.js    403.78 kB │ gzip: 114.69 kB
+#26 3.087 dist/assets/index-DoDmjXnh.js        439.00 kB │ gzip: 128.66 kB
+#26 3.087 
+#26 3.087 ✓ built in 490ms
+#26 DONE 3.1s
+
+#29 [web stage-1 2/3] COPY nginx.conf /etc/nginx/conf.d/default.conf
+#29 CACHED
+
+#30 [web stage-1 3/3] COPY --from=build /app/dist /usr/share/nginx/html
+#30 DONE 0.0s
+
+#31 [web] exporting to image
+#31 exporting layers 0.0s done
+#31 exporting manifest sha256:64c750588faad3209a84b2b4f9e1dc1e9ec800d4b22584a591b36a421a5b06dd done
+#31 exporting config sha256:dc1454447d5e82b3f693f9349c4b1874ca41fee883e0858b84d222bff3a02be3 done
+#31 exporting attestation manifest sha256:8dedab2108890cbf1139c2b0fdfa9688523fa067ec4744711ee57304673e12e6 done
+#31 exporting manifest list sha256:b2730ffda64f7e9451ee5f5b90e33802ec8de775245d2d34523d944a02651d1a done
+#31 naming to docker.io/library/project-web:latest done
+#31 unpacking to docker.io/library/project-web:latest done
+#31 DONE 0.1s
+
+#32 [web] resolving provenance for metadata file
+#32 DONE 0.0s
+ Image project-api Built 
+ Image project-web Built 
+ Container project-api-1 Recreate 
+ Container project-api-1 Recreated 
+ Container project-web-1 Recreate 
+ Container project-web-1 Recreated 
+ Container project-api-1 Starting 
+ Container project-api-1 Started 
+ Container project-api-1 Waiting 
+ Container project-api-1 Healthy 
+ Container project-web-1 Starting 
+ Container project-web-1 Started 

@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "width": 1280,
+      "composer": true,
+      "noDuplicateWelcome": true,
+      "questionSubmitted": false
+    },
+    {
+      "width": 768,
+      "composer": true,
+      "noDuplicateWelcome": true,
+      "questionSubmitted": false
+    },
+    {
+      "width": 390,
+      "composer": true,
+      "noDuplicateWelcome": true,
+      "questionSubmitted": false
+    }
+  ],
+  "writes": [],
+  "errors": [],
+  "preservedKPI": "₹83,79,680.76",
+  "duplicateBadges": 2,
+  "originalQuestionsSubmitted": 0,
+  "originalScreenshotsCreated": 0
+}

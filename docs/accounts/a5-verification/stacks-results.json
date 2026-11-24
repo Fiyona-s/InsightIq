@@ -1,0 +1,406 @@
+{
+ "passed": 80,
+ "failed": 0,
+ "checks": [
+  {
+   "check": "A: provision-company.sh ran to the end with the owner password typed at a terminal",
+   "ok": true,
+   "detail": "crets/restic_password to your OFFLINE store now (see docs/OPERATIONS_HOSTED.md). Without totp_key\r\n     enrolled owners cannot sign in; without restic_password the backups cannot be opened. Neither is inside the backups.\r\n  2. The owner signs in, chooses a new password and sets up two-step sign-in.\r"
+  },
+  {
+   "check": "A: the transcript contains no secret and not the typed password",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "A: secrets are private files (dir 700, files 400)",
+   "ok": true,
+   "detail": "['0o700', '0o400']"
+  },
+  {
+   "check": "A: company.env (settings) holds no secret",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "A: the key is a valid Fernet key (32 bytes, url-safe base64)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "B: provisioned with the controlled AI provider and the browser-test users",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "A: plain HTTP is redirected to HTTPS, path and query kept",
+   "ok": true,
+   "detail": "(301, 'https://a.localhost:8443/some/page?x=1')"
+  },
+  {
+   "check": "A: HTTPS answers and the certificate chain is valid against the stack's own test CA",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "A: without that CA the certificate is NOT trusted (it is a test CA, not a public one)",
+   "ok": true,
+   "detail": "curl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, plea"
+  },
+  {
+   "check": "A: headers on the page",
+   "ok": true,
+   "detail": "{'accept-ranges': 'bytes', 'cache-control': 'no-cache', 'content-security-policy': \"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-a"
+  },
+  {
+   "check": "A: headers on the API answer",
+   "ok": true,
+   "detail": "{'cache-control': 'private, no-store', 'content-security-policy': \"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\","
+  },
+  {
+   "check": "A: headers on the error page",
+   "ok": true,
+   "detail": "{'cache-control': 'private, no-store', 'content-security-policy': \"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\","
+  },
+  {
+   "check": "A: no HSTS on the local configuration (HSTS is only in the real-HTTPS Caddyfile)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "A: HTTP/3 is not advertised (only TCP 80 and 443 are published)",
+   "ok": true,
+   "detail": "None"
+  },
+  {
+   "check": "B: plain HTTP is redirected to HTTPS, path and query kept",
+   "ok": true,
+   "detail": "(301, 'https://b.localhost:9443/some/page?x=1')"
+  },
+  {
+   "check": "B: HTTPS answers and the certificate chain is valid against the stack's own test CA",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "B: without that CA the certificate is NOT trusted (it is a test CA, not a public one)",
+   "ok": true,
+   "detail": "curl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, plea"
+  },
+  {
+   "check": "B: headers on the page",
+   "ok": true,
+   "detail": "{'accept-ranges': 'bytes', 'cache-control': 'no-cache', 'content-security-policy': \"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-a"
+  },
+  {
+   "check": "B: headers on the API answer",
+   "ok": true,
+   "detail": "{'cache-control': 'private, no-store', 'content-security-policy': \"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\","
+  },
+  {
+   "check": "B: headers on the error page",
+   "ok": true,
+   "detail": "{'cache-control': 'private, no-store', 'content-security-policy': \"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\","
+  },
+  {
+   "check": "B: no HSTS on the local configuration (HSTS is only in the real-HTTPS Caddyfile)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "B: HTTP/3 is not advertised (only TCP 80 and 443 are published)",
+   "ok": true,
+   "detail": "None"
+  },
+  {
+   "check": "A: the owner signs in through the proxy (first sign-in: new password and two-step setup are still required)",
+   "ok": true,
+   "detail": "(200, '{\"email\":\"owner-a@example.com\",\"display_name\":\"Owner A\",\"role\":\"owner\",\"company\":\"tsta\",\"must_change_password\":true,\"mus')"
+  },
+  {
+   "check": "A: the session cookie is Secure, HttpOnly and SameSite=Lax",
+   "ok": true,
+   "detail": " HttpOnly; Max-Age=604800; Path=/; SameSite=lax; Secure"
+  },
+  {
+   "check": "A: sign-in with a foreign Origin is refused (the stated public address is the only one accepted)",
+   "ok": true,
+   "detail": "403"
+  },
+  {
+   "check": "A: sign-in with plain-http Origin is refused (the stated public address is the only one accepted)",
+   "ok": true,
+   "detail": "403"
+  },
+  {
+   "check": "B: a request with a session but no Origin is refused (403) and the session survives",
+   "ok": true,
+   "detail": "403"
+  },
+  {
+   "check": "B: the same request from the stated public address is accepted (sign-out works)",
+   "ok": true,
+   "detail": "200"
+  },
+  {
+   "check": "B: an analyst signs in through the proxy",
+   "ok": true,
+   "detail": "(200, '{\"email\":\"analyst@example.com\",\"display_name\":\"Analyst\",\"role\":\"analyst\",\"company\":\"Acme Shop\",\"must')"
+  },
+  {
+   "check": "A: A's session is known on A",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "B: B's session is known on B",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "B: A's session cookie means nothing on B (no user)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "A: B's session cookie means nothing on A (no user)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "B: A's cookie is refused on a data route of B (401)",
+   "ok": true,
+   "detail": "401"
+  },
+  {
+   "check": "A: B's cookie is refused on a data route of A (401)",
+   "ok": true,
+   "detail": "401"
+  },
+  {
+   "check": "A and B have different keys and different data volumes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "each company has its own data volume",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "the two helper clients have different addresses",
+   "ok": true,
+   "detail": "('172.29.10.131', '172.29.10.132')"
+  },
+  {
+   "check": "client 1 is slowed (429) after repeated failures, whoever it tries to sign in as",
+   "ok": true,
+   "detail": "['401', '401', '429', '429']"
+  },
+  {
+   "check": "client 2, behind the same proxy, is NOT affected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "a spoofed X-Forwarded-For sent to the proxy does not reset client 1's count (the proxy replaces it)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "a spoofed X-Forwarded-For sent straight to the app (not from the proxy) is ignored: still client 1's count",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "and straight to the app, client 2 is counted as itself, not as the spoofed address",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "the internal network has no route out (a container on it cannot reach the internet)",
+   "ok": true,
+   "detail": "000curl: (7) Failed to connect to 1.1.1.1 port 443 after 0 ms: Could not connect to server\n"
+  },
+  {
+   "check": "the security log records the real client addresses, not the proxy's",
+   "ok": true,
+   "detail": "['172.29.10.131', '172.29.10.132']"
+  },
+  {
+   "check": "A: only Caddy publishes ports, and only 80 and 443 (api and web publish nothing)",
+   "ok": true,
+   "detail": "{'caddy': {'443/tcp': [{'HostIp': '', 'HostPort': '8443'}], '80/tcp': [{'HostIp': '', 'HostPort': '8081'}]}, 'web': {}, 'api': {}}"
+  },
+  {
+   "check": "A: the internal network is marked internal",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "B: only Caddy publishes ports, and only 80 and 443 (api and web publish nothing)",
+   "ok": true,
+   "detail": "{'caddy': {'443/tcp': [{'HostIp': '', 'HostPort': '9443'}], '80/tcp': [{'HostIp': '', 'HostPort': '9081'}]}, 'web': {}, 'api': {}}"
+  },
+  {
+   "check": "B: the internal network is marked internal",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "A/caddy: read-only root, all capabilities dropped, no-new-privileges, limits, healthy",
+   "ok": true,
+   "detail": "{'ReadonlyRootfs': True, 'CapDrop': ['ALL'], 'Memory': 268435456, 'NanoCpus': 500000000, 'PidsLimit': 128}"
+  },
+  {
+   "check": "A/caddy: runs as a non-root user (uid 65532)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "A/web: read-only root, all capabilities dropped, no-new-privileges, limits, healthy",
+   "ok": true,
+   "detail": "{'ReadonlyRootfs': True, 'CapDrop': ['ALL'], 'Memory': 134217728, 'NanoCpus': 250000000, 'PidsLimit': 64}"
+  },
+  {
+   "check": "A/web: runs as a non-root user (uid 101)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "A/api: read-only root, all capabilities dropped, no-new-privileges, limits, healthy",
+   "ok": true,
+   "detail": "{'ReadonlyRootfs': True, 'CapDrop': ['ALL'], 'Memory': 2147483648, 'NanoCpus': 1000000000, 'PidsLimit': 256}"
+  },
+  {
+   "check": "A/api: runs as a non-root user (uid 501)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "A/api: the root file system cannot be written; only /tmp (memory) and /data are writable",
+   "ok": true,
+   "detail": "touch: cannot touch '/app/x': Read-only file system\ntouch: cannot touch '/etc/x': Read-only file system\ntmp-ok\n"
+  },
+  {
+   "check": "A/api: the key is not in the container environment, only its file path",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "A: the key is not in any container definition, image definition or image history",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "A/api: the key file is readable by the app and is a mounted secret",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "refuses to start: no public address",
+   "ok": true,
+   "detail": "(2, 'Refusing to start: AUTH_ALLOWED_ORIGINS must name the public address (for example https://company.example) when APP_ENV=production.\\n')"
+  },
+  {
+   "check": "refuses to start: no trusted proxy",
+   "ok": true,
+   "detail": "(2, 'Refusing to start: AUTH_TRUSTED_PROXIES must name the reverse proxy when APP_ENV=production, or every person would share one address for lockouts.\\n')"
+  },
+  {
+   "check": "refuses to start: no key file setting",
+   "ok": true,
+   "detail": "(2, 'Refusing to start: AUTH_TOTP_KEY is not set, so owners could not sign in with the second step.\\n')"
+  },
+  {
+   "check": "refuses to start: key file missing",
+   "ok": true,
+   "detail": "(2, 'AUTH_TOTP_KEY_FILE (/run/secrets/totp_key) cannot be read: No such file or directory.\\n')"
+  },
+  {
+   "check": "refuses to start: login off in production",
+   "ok": true,
+   "detail": "(2, 'Refusing to start: AUTH_MODE=off is not allowed when APP_ENV=production.\\n')"
+  },
+  {
+   "check": "refuses to start: key as an environment value",
+   "ok": true,
+   "detail": "(2, 'Refusing to start: in hosted mode AUTH_TOTP_KEY must come from a secret file (AUTH_TOTP_KEY_FILE), not an environment value.\\n')"
+  },
+  {
+   "check": "refuses to start: http public address",
+   "ok": true,
+   "detail": "(2, \"Refusing to start: AUTH_ALLOWED_ORIGINS entries must be exact https addresses, not 'http://x.example'.\\n\")"
+  },
+  {
+   "check": "and with every setting present it starts (stopped by the 8-second timeout, not by an error)",
+   "ok": true,
+   "detail": "(124, 'unning on http://0.0.0.0:8000 (Press CTRL+C to quit)\\nINFO:     Shutting down\\nINFO:     Waiting for application shutdown.\\nINFO:     Application shutdown complete.\\nINFO:     Finished server process [7]\\n')"
+  },
+  {
+   "check": "the hosted browser suite (13 tests + 2 policy tests) passes through the proxy",
+   "ok": true,
+   "detail": "osted-stack-csp.spec.ts:13:1 \u203a the policy is sent on pages and API answers, and the guard really detects a violation (107ms)\n  \u2713  15 e2e/hosted-stack-csp.spec.ts:30:1 \u203a every owner screen, an answer with its chart, and the exports run under the policy without a violation (27.6s)\n\n  15 passed (1.4m)\n"
+  },
+  {
+   "check": "B: a backup of the running company completes (app paused only during the copy) and the repository checks out",
+   "ok": true,
+   "detail": " checked; snapshots now:\nID        Time                 Host  Tags          Size\n------------------------------------------------------------\nf3bb00a4  2026-11-22 08:37:42  tstb  company=tstb  1.784 MiB\n------------------------------------------------------------\nTimestamps shown in UTC\n1 snapshots\n"
+  },
+  {
+   "check": "B: the app is running again after the backup",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "B: the repository is encrypted (no plain catalog header, no plain user email in it)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "B: the TOTP key is NOT inside the backup it protects (every restored file searched)",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "B: RESTORE DRILL: volume destroyed, restored from restic, files and catalog content identical",
+   "ok": true,
+   "detail": "2. backing up (restic, encrypted)\n3. DESTROYING the data volume iq-tstb_data\n4. restoring from the backup\n5. fingerprinting the restored volume\nfiles: 8 before, 8 after, identical: True\ncatalog content hash: 904c23b34f707a10... before, 904c23b34f707a10... after, identical: True\n6. starting the app a"
+  },
+  {
+   "check": "B: after the restore the app starts and the analyst signs in with the same password",
+   "ok": true,
+   "detail": "(200, '{\"email\":\"analyst@example.com\",\"display_name\":\"Analyst\",\"role\":\"analyst\",\"company\":\"Acme Shop\",\"must')"
+  },
+  {
+   "check": "B: update.sh backs up first, rebuilds, restarts and the stack is healthy again",
+   "ok": true,
+   "detail": "-11-22 08:37:59  tstb  company=tstb  1.784 MiB\n------------------------------------------------------------\nTimestamps shown in UTC\n2 snapshots\nbuilt insightiq-hosted-api:local and insightiq-hosted-web:local\nupdated tstb: now API_IMAGE=insightiq-hosted-api:local WEB_IMAGE=insightiq-hosted-web:local\n"
+  },
+  {
+   "check": "B: still signs in after the update",
+   "ok": true,
+   "detail": "200"
+  },
+  {
+   "check": "tsta: delete-company.sh finished and said what it did and did not remove",
+   "ok": true,
+   "detail": "q-tsta_data Removing \n Volume iq-tsta_caddy_config Removing \n Network iq-tsta_edge Removing \n Volume iq-tsta_caddy_data Removing \n Volume iq-tsta_data Removed \n Volume iq-tsta_caddy_data Removed \n Volume iq-tsta_caddy_config Removed \n Network iq-tsta_edge Removed \n Network iq-tsta_internal Removed \n"
+  },
+  {
+   "check": "tstb: delete-company.sh finished and said what it did and did not remove",
+   "ok": true,
+   "detail": "q-tstb_data Removing \n Volume iq-tstb_caddy_data Removing \n Volume iq-tstb_caddy_config Removing \n Network iq-tstb_edge Removing \n Volume iq-tstb_caddy_config Removed \n Volume iq-tstb_data Removed \n Volume iq-tstb_caddy_data Removed \n Network iq-tstb_internal Removed \n Network iq-tstb_edge Removed \n"
+  },
+  {
+   "check": "nothing of either company is left: volumes, containers, networks, folders",
+   "ok": true,
+   "detail": "([], [])"
+  },
+  {
+   "check": "the development app container and its volume were not touched (same container id and start time; volume still there)",
+   "ok": true,
+   "detail": "('cb6f6867d755a51c5298f3d711f7191bfd09ce99d65b50edb966adbc95e446ed 2026-11-21T15:55:50.019467341Z', 'cb6f6867d755a51c5298f3d711f7191bfd09ce99d65b50edb966adbc95e446ed 2026-11-21T15:55:50.019467341Z')"
+  }
+ ]
+}

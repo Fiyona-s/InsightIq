@@ -1,0 +1,103 @@
+A5 local stack run: two companies through Caddy over HTTPS (test CA)
+
+1. Provisioning
+  [PASS] A: provision-company.sh ran to the end with the owner password typed at a terminal
+  [PASS] A: the transcript contains no secret and not the typed password
+  [PASS] A: secrets are private files (dir 700, files 400)
+  [PASS] A: company.env (settings) holds no secret
+  [PASS] A: the key is a valid Fernet key (32 bytes, url-safe base64)
+  [PASS] B: provisioned with the controlled AI provider and the browser-test users
+
+2A. Stack A (https://a.localhost:8443)
+  [PASS] A: plain HTTP is redirected to HTTPS, path and query kept
+  [PASS] A: HTTPS answers and the certificate chain is valid against the stack's own test CA
+  [PASS] A: without that CA the certificate is NOT trusted (it is a test CA, not a public one)
+  [PASS] A: headers on the page
+  [PASS] A: headers on the API answer
+  [PASS] A: headers on the error page
+  [PASS] A: no HSTS on the local configuration (HSTS is only in the real-HTTPS Caddyfile)
+  [PASS] A: HTTP/3 is not advertised (only TCP 80 and 443 are published)
+
+2B. Stack B (https://b.localhost:9443)
+  [PASS] B: plain HTTP is redirected to HTTPS, path and query kept
+  [PASS] B: HTTPS answers and the certificate chain is valid against the stack's own test CA
+  [PASS] B: without that CA the certificate is NOT trusted (it is a test CA, not a public one)
+  [PASS] B: headers on the page
+  [PASS] B: headers on the API answer
+  [PASS] B: headers on the error page
+  [PASS] B: no HSTS on the local configuration (HSTS is only in the real-HTTPS Caddyfile)
+  [PASS] B: HTTP/3 is not advertised (only TCP 80 and 443 are published)
+  [PASS] A: the owner signs in through the proxy (first sign-in: new password and two-step setup are still required)
+  [PASS] A: the session cookie is Secure, HttpOnly and SameSite=Lax
+  [PASS] A: sign-in with a foreign Origin is refused (the stated public address is the only one accepted)
+  [PASS] A: sign-in with plain-http Origin is refused (the stated public address is the only one accepted)
+  [PASS] B: a request with a session but no Origin is refused (403) and the session survives
+  [PASS] B: the same request from the stated public address is accepted (sign-out works)
+  [PASS] B: an analyst signs in through the proxy
+
+3. One company cannot use the other's session
+  [PASS] A: A's session is known on A
+  [PASS] B: B's session is known on B
+  [PASS] B: A's session cookie means nothing on B (no user)
+  [PASS] A: B's session cookie means nothing on A (no user)
+  [PASS] B: A's cookie is refused on a data route of B (401)
+  [PASS] A: B's cookie is refused on a data route of A (401)
+  [PASS] A and B have different keys and different data volumes
+  [PASS] each company has its own data volume
+
+4. Per-client throttle behind the proxy (two helper containers with different addresses on A's internal network)
+  [PASS] the two helper clients have different addresses
+  [PASS] client 1 is slowed (429) after repeated failures, whoever it tries to sign in as
+  [PASS] client 2, behind the same proxy, is NOT affected
+  [PASS] a spoofed X-Forwarded-For sent to the proxy does not reset client 1's count (the proxy replaces it)
+  [PASS] a spoofed X-Forwarded-For sent straight to the app (not from the proxy) is ignored: still client 1's count
+  [PASS] and straight to the app, client 2 is counted as itself, not as the spoofed address
+  [PASS] the internal network has no route out (a container on it cannot reach the internet)
+  [PASS] the security log records the real client addresses, not the proxy's
+
+5. What is published, and how the containers run (stack A, the real image)
+  [PASS] A: only Caddy publishes ports, and only 80 and 443 (api and web publish nothing)
+  [PASS] A: the internal network is marked internal
+  [PASS] B: only Caddy publishes ports, and only 80 and 443 (api and web publish nothing)
+  [PASS] B: the internal network is marked internal
+  [PASS] A/caddy: read-only root, all capabilities dropped, no-new-privileges, limits, healthy
+  [PASS] A/caddy: runs as a non-root user (uid 65532)
+  [PASS] A/web: read-only root, all capabilities dropped, no-new-privileges, limits, healthy
+  [PASS] A/web: runs as a non-root user (uid 101)
+  [PASS] A/api: read-only root, all capabilities dropped, no-new-privileges, limits, healthy
+  [PASS] A/api: runs as a non-root user (uid 501)
+  [PASS] A/api: the root file system cannot be written; only /tmp (memory) and /data are writable
+  [PASS] A/api: the key is not in the container environment, only its file path
+  [PASS] A: the key is not in any container definition, image definition or image history
+  [PASS] A/api: the key file is readable by the app and is a mounted secret
+
+6. The app refuses to start on missing or unsafe hosted settings (real image, one-shot)
+  [PASS] refuses to start: no public address
+  [PASS] refuses to start: no trusted proxy
+  [PASS] refuses to start: no key file setting
+  [PASS] refuses to start: key file missing
+  [PASS] refuses to start: login off in production
+  [PASS] refuses to start: key as an environment value
+  [PASS] refuses to start: http public address
+  [PASS] and with every setting present it starts (stopped by the 8-second timeout, not by an error)
+
+7. The hosted browser suite through B's proxy (Chrome, HTTPS, strict Content-Security-Policy)
+  [PASS] the hosted browser suite (13 tests + 2 policy tests) passes through the proxy
+
+8. Encrypted backup (restic), restore drill, update
+  [PASS] B: a backup of the running company completes (app paused only during the copy) and the repository checks out
+  [PASS] B: the app is running again after the backup
+  [PASS] B: the repository is encrypted (no plain catalog header, no plain user email in it)
+  [PASS] B: the TOTP key is NOT inside the backup it protects (every restored file searched)
+  [PASS] B: RESTORE DRILL: volume destroyed, restored from restic, files and catalog content identical
+  [PASS] B: after the restore the app starts and the analyst signs in with the same password
+  [PASS] B: update.sh backs up first, rebuilds, restarts and the stack is healthy again
+  [PASS] B: still signs in after the update
+
+9. Delete both companies
+  [PASS] tsta: delete-company.sh finished and said what it did and did not remove
+  [PASS] tstb: delete-company.sh finished and said what it did and did not remove
+  [PASS] nothing of either company is left: volumes, containers, networks, folders
+  [PASS] the development app container and its volume were not touched (same container id and start time; volume still there)
+
+80 checks passed, 0 failed

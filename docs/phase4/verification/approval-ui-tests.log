@@ -1,0 +1,23 @@
+
+ RUN  v5.1.0 <project>/frontend
+
+ ✓ src/components/DatasetWorkspace.test.tsx > renders deterministic quality counts and bounded examples as plain text in a disclosure 63ms
+ ✓ src/components/DatasetWorkspace.test.tsx > refreshes quality after revision changes 6ms
+ ✓ src/components/DatasetWorkspace.test.tsx > shows inferred profile without reformatting leading zeros and saves through the description bridge 54ms
+ ✓ src/components/DatasetWorkspace.test.tsx > keeps archived profile descriptions read only 5ms
+ ✓ src/components/DatasetWorkspace.test.tsx > offers history actions only for a retained snapshot 16ms
+ ✓ src/components/DatasetWorkspace.test.tsx > renders paginated read-only snapshot preview with exact strings 20ms
+ ✓ src/components/DatasetWorkspace.test.tsx > blocks restore when read-only or unsaved: archived=false 6ms
+ ✓ src/components/DatasetWorkspace.test.tsx > blocks restore when read-only or unsaved: archived=true 6ms
+ ✓ src/components/DatasetWorkspace.test.tsx > requires confirmation, lists impacts and creates a new revision without changing source history 30ms
+ ✓ src/components/DatasetWorkspace.test.tsx > honors active-job blocks from dependency inspection 15ms
+ ✓ src/components/DatasetWorkspace.test.tsx > keeps hash-verification failures visible and does not report a successful restore 25ms
+ ✓ src/components/DatasetWorkspace.test.tsx > has one edit-mode switch, only shows editing hints while on, and keeps archived cells disabled 10ms
+ ✓ src/components/DatasetWorkspace.test.tsx > uses a compact import modal when datasets exist and preserves CSV validation 60ms
+ ✓ src/components/DatasetWorkspace.test.tsx > keeps the large import drop zone in an empty workspace 7ms
+
+ Test Files  1 passed (1)
+      Tests  14 passed (14)
+   Start at  21:32:30
+   Duration  780ms (tests 45%, environment 28%, import 10%, setup 10%, transform 7%)
+

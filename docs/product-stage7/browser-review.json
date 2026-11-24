@@ -1,0 +1,23 @@
+{
+  "checks": [
+    {
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "entryWrites": [],
+  "draftOrRetrievalCalls": 0,
+  "sharedDescriptions": true,
+  "sourceBytesAndRevisionsUnchanged": true,
+  "confirmedCurrenciesUnchanged": true,
+  "liveAICalls": 0
+}

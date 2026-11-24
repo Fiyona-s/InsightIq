@@ -1,0 +1,1319 @@
+[
+  {
+    "file": "frontend/src/App.tsx",
+    "lines": 497,
+    "exports": [
+      "App"
+    ],
+    "headings": [
+      "\n                    ",
+      "\n                    Datasets",
+      "\n                    Your datasets ",
+      "A closer look at your data",
+      "From CSV to clarity.",
+      "Import dataset"
+    ],
+    "disclosures": [
+      "Dataset catalog \u00b7 "
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/datasetProfileApi.ts",
+    "lines": 102,
+    "exports": [
+      "ColumnProfile",
+      "DatasetProfile",
+      "QualitySummary",
+      "Revision",
+      "RevisionHistory",
+      "RevisionPreview",
+      "datasetProfileApi"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/main.tsx",
+    "lines": 11,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/datasetLifecycleApi.ts",
+    "lines": 15,
+    "exports": [
+      "Dependency",
+      "Dependencies",
+      "Confirmation",
+      "Outcome",
+      "lifecycleApi"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/phase4api.ts",
+    "lines": 393,
+    "exports": [
+      "QueryResult",
+      "Filter",
+      "SavedChart",
+      "Widget",
+      "Dashboard",
+      "DashboardSummary",
+      "Analytics",
+      "BenchmarkCase",
+      "Benchmark",
+      "EvaluationRate",
+      "ComparisonDetails",
+      "EvaluationMetrics",
+      "Evaluation",
+      "phase4Api"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/knowledgeReviewApi.ts",
+    "lines": 18,
+    "exports": [
+      "Draft",
+      "Example",
+      "Review",
+      "reviewApi"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/App.test.tsx",
+    "lines": 166,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "loads the real catalog and preview, and exposes schema",
+      "uploads an actual multipart file and selects the returned dataset",
+      "shows server errors and recovers on refresh",
+      "opens the implemented dashboard empty state",
+      "renders a header-only dataset as a valid empty result",
+      "preserves unsaved cell edits while switching between Schema and Data preview"
+    ]
+  },
+  {
+    "file": "frontend/src/Routes.test.tsx",
+    "lines": 62,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "maps every sidebar module to its own page and keeps Analyst separate from Execution Traces"
+    ]
+  },
+  {
+    "file": "frontend/src/index.css",
+    "lines": 3567,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/test-setup.ts",
+    "lines": 4,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/api.ts",
+    "lines": 314,
+    "exports": [
+      "Money",
+      "ResultColumn",
+      "ColumnInfo",
+      "Dataset",
+      "Preview",
+      "api",
+      "AnalysisType",
+      "ProfileColumn",
+      "TypeProfile",
+      "SQLAttempt",
+      "AnalystRun",
+      "AnalystResults",
+      "analystApi",
+      "AgentEvent",
+      "Retrieval",
+      "ChartKind",
+      "ChartSpec",
+      "ChartData",
+      "EvidenceFact",
+      "Analysis",
+      "KnowledgeSettings",
+      "KnowledgeInfo",
+      "insightApi"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/datasetEditorApi.ts",
+    "lines": 33,
+    "exports": [
+      "DatasetRow",
+      "DatasetRevision",
+      "DatasetRows",
+      "DatasetEditBatch",
+      "datasetEditorApi"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/dashboardWorkspaceApi.ts",
+    "lines": 13,
+    "exports": [
+      "Attachment",
+      "Previous",
+      "dashboardWorkspaceApi"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/automlapi.ts",
+    "lines": 268,
+    "exports": [
+      "MLTask",
+      "MLFeature",
+      "MLColumn",
+      "MLProfile",
+      "MLConfiguration",
+      "MLMetrics",
+      "MLCandidate",
+      "MLPlots",
+      "MLResult",
+      "MLExperiment",
+      "MLModel",
+      "MLPrediction",
+      "MLInputSchema",
+      "MLInputValidation",
+      "automlApi"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/workspace.css",
+    "lines": 2339,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/analystUXApi.ts",
+    "lines": 4,
+    "exports": [
+      "Suggestion",
+      "Feedback",
+      "analystUXApi"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/ResultDataTable.tsx",
+    "lines": 5,
+    "exports": [
+      "ResultDataTable"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/UnitConfirmation.tsx",
+    "lines": 12,
+    "exports": [
+      "UnitConfirmation"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/KnowledgeReview.test.tsx",
+    "lines": 55,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "requests a draft only after explicit sharing confirmation and supports keyboard",
+      "requires an explicit Replace choice for human text and keeps side-by-side values",
+      "edits and checks a failed metric before approval and can reject",
+      "confirms the eligible approve-all count",
+      "shows archived knowledge read-only without a draft action",
+      "shows loading, empty and provider errors",
+      "requires an independent reference and confirmation before deleting an example"
+    ]
+  },
+  {
+    "file": "frontend/src/components/AutoMLSummary.test.tsx",
+    "lines": 137,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "compares validation to validation, never fills missing baseline test scores",
+      "claims no baseline or improvement when none is stored and explains omitted plots and importance",
+      "renders recorded classification metrics and importance method without inventing a plot",
+      "suggests from profile facts for all tasks and gives precise disabled reasons",
+      "reports measured class imbalance at the explicit two-to-one boundary"
+    ]
+  },
+  {
+    "file": "frontend/src/components/Phase3.test.tsx",
+    "lines": 298,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "renders actual KPI, compatible switching and traceable evidence",
+      "surfaces analysis and chart errors without fabricating a chart",
+      "offers explicit candidate proposal without treating feedback as verification",
+      "shows scoped retrieval scores, provenance and unavailable embeddings",
+      "renders retry details and escapes SQL as text",
+      "streams steps, handles reconnect/error state, completion and cleanup",
+      "falls back when EventSource is unavailable",
+      "loads and edits knowledge through typed API calls"
+    ]
+  },
+  {
+    "file": "frontend/src/components/AnalyticsPage.tsx",
+    "lines": 483,
+    "exports": [
+      "AnalyticsPage",
+      "Overview"
+    ],
+    "headings": [
+      "\n            Performance &amp; errors",
+      "Attempt distribution",
+      "Error categories",
+      "Recent matching runs",
+      "\n            Overview",
+      "Recent user activity",
+      "Recent run latency"
+    ],
+    "disclosures": [
+      "More metrics &amp; coverage",
+      "Executed SQL"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/AutoMLPlots.tsx",
+    "lines": 241,
+    "exports": [
+      "AutoMLPlots"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/AnalystFeedback.tsx",
+    "lines": 10,
+    "exports": [
+      "AnalystFeedback"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/DashboardWorkspaceControls.tsx",
+    "lines": 45,
+    "exports": [
+      "WidgetTitle",
+      "DashboardMenu",
+      "DuplicateDialog",
+      "DashboardCurrency"
+    ],
+    "headings": [
+      "Possible duplicate"
+    ],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/Analyst.test.tsx",
+    "lines": 309,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "submits a real API contract, polls, shows executed SQL and results",
+      "requires explicit confirmation for proposed numeric mappings",
+      "shows provider failure without fabricating a result",
+      "shows submission errors and allows retry",
+      "inspects persisted history and labels expired rows",
+      "renders valid empty results and clarifications separately",
+      "cancels an active run through the API",
+      "guides an empty workspace to real import",
+      "loads earlier persisted runs using history pagination",
+      "shows clarification without executing or inventing rows"
+    ]
+  },
+  {
+    "file": "frontend/src/components/AutoMLSummary.tsx",
+    "lines": 116,
+    "exports": [
+      "AutoMLSummary"
+    ],
+    "headings": [
+      "What the measured results mean"
+    ],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/DatasetHistory.tsx",
+    "lines": 381,
+    "exports": [
+      "DatasetHistory"
+    ],
+    "headings": [
+      "Revision history",
+      "Revision ",
+      "\n            Restore revision "
+    ],
+    "disclosures": [
+      "Audit sources"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/ResultChart.tsx",
+    "lines": 247,
+    "exports": [
+      "ResultChart"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "_"
+    ]
+  },
+  {
+    "file": "frontend/src/components/DashboardWorkspaceControls.test.tsx",
+    "lines": 37,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "inline title saves with Enter, validates, cancels with Escape and resets",
+      "overflow keyboard arrows and Escape return focus",
+      "duplicate choices are explicit Replace, Add anyway or Cancel",
+      "display currency fetches one quote per pair, resets without mutating rows",
+      "rate failure is visible and unconfirmed values stay unconverted"
+    ]
+  },
+  {
+    "file": "frontend/src/components/EvaluationWorkspaceResults.tsx",
+    "lines": 445,
+    "exports": [
+      "EvaluationWorkspaceResults"
+    ],
+    "headings": [
+      "\n          ",
+      "By ",
+      "Incorrect and unscored questions",
+      "\n              ",
+      "Predicted SQL",
+      "Stored-output row diff"
+    ],
+    "disclosures": [
+      "Technical details"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/Phase3Navigation.test.tsx",
+    "lines": 250,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "groups everyday, science and admin navigation with an accessible persisted disclosure",
+      "always expands and highlights the active admin page",
+      "supports old bookmark names and canonical route aliases for every page",
+      "derives setup steps from non-sample active datasets, viewed profiles, completed runs and saved charts",
+      "shows real progress, persists dismissal and allows showing the guide again",
+      "hides the guide automatically when all real steps are complete",
+      "does not nag an existing workspace with non-sample activity",
+      "requires an explicit page-only benchmark choice and leaves global selection unchanged",
+      "suppresses automatic onboarding for deliberate saved answers and pinned dashboards even when the source filename is a demo",
+      "does not count a saved library chart as pinned until it belongs to a dashboard",
+      "still shows setup for sample datasets without completed questions and pinned charts"
+    ]
+  },
+  {
+    "file": "frontend/src/components/SetupGuide.tsx",
+    "lines": 197,
+    "exports": [
+      "setupSteps",
+      "SetupGuide"
+    ],
+    "headings": [
+      "Get started"
+    ],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/EvaluationRunComparison.tsx",
+    "lines": 161,
+    "exports": [
+      "EvaluationRunComparison"
+    ],
+    "headings": [
+      "Compare stored runs"
+    ],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/DatasetManager.tsx",
+    "lines": 41,
+    "exports": [
+      "DatasetManager"
+    ],
+    "headings": [
+      "A fresh workspace"
+    ],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/FilterEditor.tsx",
+    "lines": 137,
+    "exports": [
+      "FilterEditor"
+    ],
+    "headings": [],
+    "disclosures": [
+      "\n        "
+    ],
+    "tests": [
+      ","
+    ]
+  },
+  {
+    "file": "frontend/src/components/DatasetWorkspace.test.tsx",
+    "lines": 381,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "renders deterministic quality counts and bounded examples as plain text in a disclosure",
+      "refreshes quality after revision changes",
+      "shows inferred profile without reformatting leading zeros and saves through the description bridge",
+      "keeps archived profile descriptions read only",
+      "offers history actions only for a retained snapshot",
+      "renders paginated read-only snapshot preview with exact strings",
+      "requires confirmation, lists impacts and creates a new revision without changing source history",
+      "honors active-job blocks from dependency inspection",
+      "keeps hash-verification failures visible and does not report a successful restore",
+      "has one edit-mode switch, only shows editing hints while on, and keeps archived cells disabled",
+      "uses a compact import modal when datasets exist and preserves CSV validation",
+      "keeps the large import drop zone in an empty workspace",
+      "audit sources keep historical NULL distinct from readable legacy JSON and current local sources"
+    ]
+  },
+  {
+    "file": "frontend/src/components/EvaluationWorkspace.test.tsx",
+    "lines": 235,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "never counts unscored questions as correct or incorrect and shows exact denominators and small groups",
+      "failure tags come only from stored scorer reasons with the No reason recorded fallback",
+      "filters outcome difficulty type reason and text while keeping stored metrics unchanged",
+      "drawer shows stored outputs SQL diff truncation and technical disclosure; traps focus Escape returns focus",
+      "compares only matching versions sets and scoring; overlap is explicit with fixed regressed unchanged and unscored categories",
+      "refuses non-comparable runs with a visible reason and no deltas or trend chart",
+      "partial scopes never claim benchmark overall accuracy",
+      "keeps recorded execution error text collapsed under Technical details"
+    ]
+  },
+  {
+    "file": "frontend/src/components/DatasetProfile.tsx",
+    "lines": 172,
+    "exports": [
+      "DatasetProfile"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/ExecutionTracesPage.tsx",
+    "lines": 321,
+    "exports": [
+      "ExecutionTracesPage"
+    ],
+    "headings": [
+      "\n            Execution traces",
+      "Run history",
+      "Select a recorded run"
+    ],
+    "disclosures": [
+      "\n                    "
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/DatasetEditor.test.tsx",
+    "lines": 298,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "clicks an existing preview cell, saves only its UUID update, refreshes version/profile and preserves leading zeros",
+      "commits multiple cell edits with Tab/Enter, counts cells and undoes one complete edit",
+      "Escape cancels the active buffer and editing back to the original removes the net change",
+      "keeps invalid values after rejected saves, then saves a corrected value without adding rows",
+      "retains UUID-targeted edits across pagination and sorting in one batch",
+      "keeps explicit NULL distinct from empty text and commits the last focused input on Save",
+      "Cancel discards a pending input and committed edits without making a save request",
+      "commits at Tab boundaries and restores a visible keyboard focus target"
+    ]
+  },
+  {
+    "file": "frontend/src/components/Phase4.test.tsx",
+    "lines": 408,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "loads persisted dashboard output and saves resize and reorder changes",
+      "creates a dashboard from a meaningful empty state",
+      "reports dashboard loading errors without fabricated content",
+      "refresh errors retain visible snapshot data and expose report exports",
+      "requires explicit result persistence consent before saving an Analyst snapshot",
+      "applies actual filter contracts and resets them",
+      "requires paid-call confirmation and displays exact usage ceilings",
+      "blocks paid evaluation when pricing is unknown",
+      "filters persisted analytics and labels correctness as unmeasured"
+    ]
+  },
+  {
+    "file": "frontend/src/components/EditableDatasetCell.tsx",
+    "lines": 119,
+    "exports": [
+      "displayCell",
+      "EditableDatasetCell"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/EvaluationDiagnostics.tsx",
+    "lines": 346,
+    "exports": [
+      "EvaluationRow",
+      "ResultFilter",
+      "matchesResult",
+      "useEvaluationRows",
+      "EvaluationResultFilter",
+      "formatRate",
+      "EvaluationResearchSummary",
+      "EvaluationCaseDetails"
+    ],
+    "headings": [
+      "Research summary",
+      "Generated SQL",
+      "Reference SQL",
+      "Predicted result",
+      "Expected result"
+    ],
+    "disclosures": [
+      "\n          Independent cause reviews \u00b7 ",
+      "SQL attempt outcomes"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/DatasetQuality.tsx",
+    "lines": 119,
+    "exports": [
+      "DatasetQuality"
+    ],
+    "headings": [],
+    "disclosures": [
+      "Review details"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/WorkspaceStates.tsx",
+    "lines": 5,
+    "exports": [
+      "LoadingState",
+      "EmptyState",
+      "ErrorState"
+    ],
+    "headings": [],
+    "disclosures": [
+      "View details"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/KnowledgeReview.tsx",
+    "lines": 72,
+    "exports": [
+      "KnowledgeReview"
+    ],
+    "headings": [
+      "Data sharing",
+      "Review drafts"
+    ],
+    "disclosures": [
+      "Verified examples "
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/Analyst.tsx",
+    "lines": 574,
+    "exports": [
+      "Analyst"
+    ],
+    "headings": [
+      "\n            Ask your data",
+      "Start with your data",
+      "Dataset context",
+      "Ask a question about your data",
+      "We couldn\u2019t finish this question",
+      "A little more context will help"
+    ],
+    "disclosures": [
+      "Analysis types",
+      "\n                Recent runs ",
+      "View details",
+      "Clarification details",
+      "SQL"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/AnalystResultCard.tsx",
+    "lines": 34,
+    "exports": [
+      "AnalystResultCard"
+    ],
+    "headings": [],
+    "disclosures": [
+      "Data table",
+      "SQL",
+      "How this was calculated",
+      "Technical details"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/DatasetEditor.tsx",
+    "lines": 597,
+    "exports": [
+      "DatasetEditor"
+    ],
+    "headings": [],
+    "disclosures": [
+      "Column types"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/RunInsights.tsx",
+    "lines": 123,
+    "exports": [
+      "SQLCode",
+      "RetrievalPanel",
+      "WorkflowInspector"
+    ],
+    "headings": [],
+    "disclosures": [
+      "\n        Retrieved context",
+      "Provenance",
+      "\n          Agent workflow "
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/AutoMLStudio.tsx",
+    "lines": 2094,
+    "exports": [
+      "AutoMLStudio"
+    ],
+    "headings": [
+      "\n            AutoML Studio",
+      "Your next model starts with data",
+      "\n            ",
+      "\n                      Configure",
+      "Features \u00b7 ",
+      "Dataset readiness",
+      "Target distribution",
+      "Model registry &amp; predictions",
+      "Generate a prediction",
+      "Prediction results",
+      "Saved experiments"
+    ],
+    "disclosures": [
+      "Advanced settings",
+      "Training limits",
+      "Column quality &amp; fingerprint",
+      "How models are evaluated",
+      "\n                            Model schema, metrics &amp; provenance\n                          ",
+      "\n                      Saved prediction exports \u00b7"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/EvaluationDiagnostics.test.tsx",
+    "lines": 281,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "filters correct, incorrect, execution failures and genuinely unevaluated selected cases",
+      "keeps NULL correctness unscored and distinguishes execution failures from ordinary mismatches",
+      "shows aliases as an observed contract mismatch with SQL, retrieval, latency, tokens and unknown legacy prompt provenance",
+      "reports every research percentage with its sample size and leaves zero-denominator abstention unknown",
+      "labels historical effort and cost separately from new offline replay"
+    ]
+  },
+  {
+    "file": "frontend/src/components/AutoMLResults.tsx",
+    "lines": 249,
+    "exports": [
+      "mlValue",
+      "MLTable",
+      "AutoMLResults"
+    ],
+    "headings": [
+      "Model comparison",
+      "\n        ",
+      "Confusion matrix \u2014 actual rows, predicted columns",
+      "Cluster characteristics \u2014 original feature summaries",
+      "Highest-scoring rows and feature context",
+      "Chronological backtesting"
+    ],
+    "disclosures": [
+      "All candidate metrics by evaluation split",
+      "Reproducibility &amp; split details"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/ActiveDatasetSelector.tsx",
+    "lines": 138,
+    "exports": [
+      "ActiveDatasetSelector"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/EvaluationPage.tsx",
+    "lines": 1157,
+    "exports": [
+      "EvaluationPage"
+    ],
+    "headings": [
+      "\n            Check answer accuracy",
+      "No evaluation results yet",
+      "Evaluation uses the controlled retail benchmark dataset",
+      "Run evaluation",
+      "Select questions",
+      "\n                        ",
+      "Difficulty breakdown",
+      "Run history"
+    ],
+    "disclosures": [
+      "Setup and verification",
+      "About this benchmark",
+      "Matching rules",
+      "Scoring methodology",
+      "Detailed diagnostics and exports",
+      "\n                        ",
+      "Review error causes independently"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/KnowledgeEditor.tsx",
+    "lines": 412,
+    "exports": [
+      "KnowledgeEditor"
+    ],
+    "headings": [
+      "\n            Knowledge base",
+      "Knowledge completeness",
+      "Business context"
+    ],
+    "disclosures": [
+      "Column descriptions ",
+      "Source currencies ",
+      "Business metrics ",
+      "Search knowledge"
+    ],
+    "tests": [
+      " ",
+      " "
+    ]
+  },
+  {
+    "file": "frontend/src/components/Sidebar.tsx",
+    "lines": 210,
+    "exports": [
+      "modules",
+      "Sidebar"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/OfflineAndTraces.test.tsx",
+    "lines": 319,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "defaults to zero-cost offline mode without prices or a paid authorization checkbox",
+      "keeps paid generation separate and gated after selecting paid mode",
+      "shows actual saved-replay outputs and their source independently of reference verification",
+      "renders history and trace diagnostics without mounting an Analyst question composer",
+      "filters loaded trace history and gives actionable errors",
+      "formats Y-axis labels without rounding data, dropping small values, or collapsing a narrow large range"
+    ]
+  },
+  {
+    "file": "frontend/src/components/DatasetLifecycle.test.tsx",
+    "lines": 35,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "renames inline, validates, warns on duplicates, and Escape cancels",
+      "Escape cancels without saving",
+      "filters archives, persists sample toggle, and selects only visible rows",
+      "requires exact single confirmation and dependency acknowledgement",
+      "disables single delete for active jobs and warns explicitly about the benchmark",
+      "gates bulk deletion with DELETE and reports isolated outcomes",
+      "uses bulk confirmation even when the bulk bar has one selected dataset"
+    ]
+  },
+  {
+    "file": "frontend/src/components/AutoMLStudio.test.tsx",
+    "lines": 507,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "requires registered data and never starts training automatically",
+      "profiles data, excludes identifiers/outcomes, and requires target and feature availability confirmation",
+      "renders task-specific controls and RFM roles without irrelevant target/feature controls",
+      "submits confirmed configuration, polls actual job state and displays measured held-out results",
+      "validates explicit prediction action and shows saved-model output/CSV without fabricating accuracy",
+      "reports backend failures and permits a clear retry without showing invented model scores",
+      "cancels a queued or running experiment and keeps terminal state explicit",
+      "selects the completed model after a delayed registry refresh",
+      "wizard gates suggestions, preserves Back state, focuses headings and resets Advanced defaults",
+      "recovers a running job from history into Train without submitting training"
+    ]
+  },
+  {
+    "file": "frontend/src/components/SaveChartDialog.tsx",
+    "lines": 154,
+    "exports": [
+      "SaveChartDialog"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/DatasetName.tsx",
+    "lines": 13,
+    "exports": [
+      "DatasetName"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/useRunEvents.ts",
+    "lines": 47,
+    "exports": [
+      "useRunEvents"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/DashboardPage.tsx",
+    "lines": 826,
+    "exports": [
+      "ResultTable",
+      "DashboardPage"
+    ],
+    "headings": [
+      "\n            Dashboards",
+      "Build your decision workspace",
+      "Your canvas is ready",
+      "Add a saved chart",
+      "Add context"
+    ],
+    "disclosures": [
+      "Description",
+      "Saved result \u00b7 data as of ",
+      "Layout",
+      "View details",
+      "\n                                Exact result rows \u00b7 ",
+      "Evidence &amp; provenance",
+      "Saved chart library \u00b7 "
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/DialogAccessibility.tsx",
+    "lines": 12,
+    "exports": [
+      "DialogAccessibility"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/OfflineEvaluationResults.tsx",
+    "lines": 216,
+    "exports": [
+      "OfflineEvaluationResults"
+    ],
+    "headings": [
+      "Saved prediction replay"
+    ],
+    "disclosures": [
+      "Saved prediction and trace"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/AnalystFeedback.test.tsx",
+    "lines": 9,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "stores Helpful separately and allows changing to Not helpful with an optional reason",
+      "shows persisted feedback without submitting another vote"
+    ]
+  },
+  {
+    "file": "frontend/src/components/DatasetLifecycleDialog.tsx",
+    "lines": 51,
+    "exports": [
+      "DatasetLifecycleDialog"
+    ],
+    "headings": [
+      "Results"
+    ],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/components/ui/button.tsx",
+    "lines": 33,
+    "exports": [
+      "ButtonProps",
+      "Button"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/lib/activeDataset.tsx",
+    "lines": 446,
+    "exports": [
+      "ACTIVE_KEY",
+      "readLocal",
+      "writeLocal",
+      "restoreDataset",
+      "selectorDatasets",
+      "SwitchGuard",
+      "ActiveDatasetContext",
+      "useActiveDataset",
+      "useDatasetGuard",
+      "ActiveDatasetProvider"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/lib/currencyControls.test.tsx",
+    "lines": 221,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "keeps tables and KPI in sync, switches from originals, resets and reports provider failures",
+      "hides controls for counts and requests confirmation for unknown source",
+      "presents readable numeric KPIs while retaining the original value",
+      "keeps the INR display and disables conversion during a provider outage"
+    ]
+  },
+  {
+    "file": "frontend/src/lib/chartAxis.ts",
+    "lines": 41,
+    "exports": [
+      "numericAxis"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/lib/currency.test.tsx",
+    "lines": 40,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "formats USD, INR, locales, negatives, zero, null and JPY",
+      "retains nonmonetary and unknown units",
+      "multiplies exact decimal originals across target switches",
+      "formats the audited full-precision INR and USD amount without changing it"
+    ]
+  },
+  {
+    "file": "frontend/src/lib/activeDataset.test.tsx",
+    "lines": 172,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "restores an available active ID",
+      "uses the most recently used available dataset when the saved dataset was deleted",
+      "excludes archived datasets from restore and falls back to recency",
+      "handles invalid JSON and denied browser storage",
+      "hides samples while retaining the active sample and excluding archived datasets",
+      "searches display and original names",
+      "renders a searchable selector with metadata, tooltip, keyboard selection and persisted active ID",
+      "guards selection, preserves source on Cancel and changes it only after approval",
+      "notifies and recovers from a stale stored ID without mutating the catalog"
+    ]
+  },
+  {
+    "file": "frontend/src/lib/navigation.ts",
+    "lines": 36,
+    "exports": [
+      "pageLabels",
+      "pageLabel",
+      "pageRoutes",
+      "bookmarkedPage"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/lib/formatters.test.ts",
+    "lines": 26,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "handles invalid and finite values safely",
+      "preserves full decimal and integer precision",
+      "uses confirmed currency grouping",
+      "formats boundaries and trims compact decimals",
+      "keeps axis labels unique and domains above data without mutation",
+      "handles empty and invalid chart series",
+      "retains filename extensions and does not rename"
+    ]
+  },
+  {
+    "file": "frontend/src/lib/finalPolish.test.tsx",
+    "lines": 13,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "scalar entry uses the existing typed table shape and preserves decimal/integer strings",
+      "legacy unit confirmation and change never modify stored model values or call the backend",
+      "unit presentation works when browser storage is unavailable",
+      "date formatting does not manufacture an epoch for unrecorded timestamps",
+      "formatter and terminology scan rejects component locale calls and direct unformatted numeric JSX counters"
+    ]
+  },
+  {
+    "file": "frontend/src/lib/analystPresentation.ts",
+    "lines": 30,
+    "exports": [
+      "humanLabel",
+      "answerSentence",
+      "findings",
+      "calculationSteps",
+      "errorReason"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/lib/utils.ts",
+    "lines": 5,
+    "exports": [
+      "cn"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/lib/analystPresentation.test.ts",
+    "lines": 10,
+    "exports": [],
+    "headings": [],
+    "disclosures": [],
+    "tests": [
+      "formats a scalar without inferring currency from names",
+      "handles empty and NULL results without inventing zero",
+      "describes grouped results and only produces a source-linked top finding",
+      "never repeats a scalar in findings or exposes citation jargon",
+      "uses honest actionable error reasons without exposing technical details"
+    ]
+  },
+  {
+    "file": "frontend/src/lib/scalarExpected.ts",
+    "lines": 14,
+    "exports": [
+      "scalarExpected"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/lib/evaluationPresentation.ts",
+    "lines": 136,
+    "exports": [
+      "EvaluationRow",
+      "EvaluationPresentation",
+      "selectedRows",
+      "outcome",
+      "reasons",
+      "tally",
+      "scopeLabel",
+      "compareRuns"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/lib/currency.tsx",
+    "lines": 322,
+    "exports": [
+      "currencies",
+      "Quote",
+      "setCurrencyQuotes",
+      "useCurrency",
+      "multiply",
+      "displayMoney",
+      "CurrencyControls"
+    ],
+    "headings": [],
+    "disclosures": [
+      "Locale &amp; historical date"
+    ],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/lib/filenames.ts",
+    "lines": 9,
+    "exports": [
+      "middleEllipsis"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/lib/formatters.ts",
+    "lines": 74,
+    "exports": [
+      "CompactUnit",
+      "FormatOptions",
+      "compactUnit",
+      "formatNumber",
+      "formatCurrency",
+      "formatAxisTick",
+      "formatDate"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/lib/datasetNames.tsx",
+    "lines": 11,
+    "exports": [
+      "DatasetReference",
+      "displayName",
+      "DatasetNamesProvider",
+      "useDatasetNames"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  },
+  {
+    "file": "frontend/src/lib/automlPresentation.ts",
+    "lines": 173,
+    "exports": [
+      "mlSteps",
+      "taskSupport",
+      "taskSuggestions",
+      "resultNarrative",
+      "baselineComparison"
+    ],
+    "headings": [],
+    "disclosures": [],
+    "tests": []
+  }
+]

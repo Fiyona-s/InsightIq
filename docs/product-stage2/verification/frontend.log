@@ -1,0 +1,16 @@
+
+> insightiq@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 <project>/frontend
+
+
+ Test Files  25 passed (25)
+      Tests  175 passed (175)
+   Start at  08:40:17
+   Duration  4.40s (tests 58%, environment 23%, setup 8%, import 7%, transform 3%)
+
+    Isolate  25 workers spawned · ~296ms startup each (spawn + environment, per file)
+             at least ~526ms faster with isolate: false — reuses workers across files instead of one per file
+

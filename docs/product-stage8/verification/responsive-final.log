@@ -1,0 +1,18 @@
+
+> insightiq@0.1.0 test:e2e:analyst
+> playwright test --config playwright.analyst.config.ts --grep Stage 8 separates
+
+[WebServer] INFO:     Started server process [33468]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:33496) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:33497) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 e2e/14-product-stage8-evaluation.spec.ts:2:1 › Stage 8 separates reference inventory from actual scores and keeps new evaluation explicit and responsive (13.8s)
+
+  1 passed (16.0s)

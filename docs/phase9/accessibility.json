@@ -1,0 +1,191 @@
+[
+  {
+    "route": "overview",
+    "width": 1280,
+    "keyboardVisited": 27,
+    "mainControlsVisited": 10,
+    "violations": []
+  },
+  {
+    "route": "datasets",
+    "width": 1280,
+    "keyboardVisited": 79,
+    "mainControlsVisited": 53,
+    "violations": []
+  },
+  {
+    "route": "analyst",
+    "width": 1280,
+    "keyboardVisited": 15,
+    "mainControlsVisited": 8,
+    "violations": []
+  },
+  {
+    "route": "dashboards",
+    "width": 1280,
+    "keyboardVisited": 31,
+    "mainControlsVisited": 7,
+    "violations": []
+  },
+  {
+    "route": "automl",
+    "width": 1280,
+    "keyboardVisited": 3,
+    "mainControlsVisited": 3,
+    "violations": []
+  },
+  {
+    "route": "knowledge",
+    "width": 1280,
+    "keyboardVisited": 38,
+    "mainControlsVisited": 12,
+    "violations": []
+  },
+  {
+    "route": "evaluation",
+    "width": 1280,
+    "keyboardVisited": 63,
+    "mainControlsVisited": 56,
+    "violations": []
+  },
+  {
+    "route": "analytics",
+    "width": 1280,
+    "keyboardVisited": 42,
+    "mainControlsVisited": 17,
+    "violations": []
+  },
+  {
+    "route": "traces",
+    "width": 1280,
+    "keyboardVisited": 46,
+    "mainControlsVisited": 38,
+    "violations": []
+  },
+  {
+    "route": "overview",
+    "width": 768,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "datasets",
+    "width": 768,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "analyst",
+    "width": 768,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "dashboards",
+    "width": 768,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "automl",
+    "width": 768,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "knowledge",
+    "width": 768,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "evaluation",
+    "width": 768,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "analytics",
+    "width": 768,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "traces",
+    "width": 768,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "overview",
+    "width": 390,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "datasets",
+    "width": 390,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "analyst",
+    "width": 390,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "dashboards",
+    "width": 390,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "automl",
+    "width": 390,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "knowledge",
+    "width": 390,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "evaluation",
+    "width": 390,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "analytics",
+    "width": 390,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  },
+  {
+    "route": "traces",
+    "width": 390,
+    "keyboardVisited": 0,
+    "mainControlsVisited": 0,
+    "violations": []
+  }
+]

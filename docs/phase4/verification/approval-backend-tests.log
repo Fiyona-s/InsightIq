@@ -1,0 +1,48 @@
+<project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.3.5, pluggy-1.6.0 -- <project>/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: <project>
+plugins: anyio-4.12.1, langsmith-0.4.37
+collecting ... collected 26 items
+
+backend/tests/test_dataset_revisions.py::test_import_save_restore_exact_strings_and_immutable_snapshots PASSED [  3%]
+backend/tests/test_dataset_revisions.py::test_restore_preconditions_do_not_mutate_live_data[values0] PASSED [  7%]
+backend/tests/test_dataset_revisions.py::test_restore_preconditions_do_not_mutate_live_data[values1] PASSED [ 11%]
+backend/tests/test_dataset_revisions.py::test_restore_preconditions_do_not_mutate_live_data[values2] PASSED [ 15%]
+backend/tests/test_dataset_revisions.py::test_hash_mismatch_aborts_before_live_change PASSED [ 19%]
+backend/tests/test_dataset_revisions.py::test_copy_failure_aborts_and_does_not_remove_prior_snapshots PASSED [ 23%]
+backend/tests/test_dataset_revisions.py::test_archive_read_only_delete_removes_snapshots PASSED [ 26%]
+backend/tests/test_dataset_revisions.py::test_retention_prunes_oldest_and_protects_in_progress PASSED [ 30%]
+backend/tests/test_dataset_revisions.py::test_restore_blocks_active_jobs[Analyst] PASSED [ 34%]
+backend/tests/test_dataset_revisions.py::test_restore_blocks_active_jobs[MLExperiment] PASSED [ 38%]
+backend/tests/test_dataset_revisions.py::test_restore_blocks_active_jobs[Evaluation] PASSED [ 42%]
+backend/tests/test_dataset_revisions.py::test_restore_preserves_historical_runs_and_snapshot_payloads PASSED [ 46%]
+backend/tests/test_dataset_revisions.py::test_first_post_migration_save_has_no_fabricated_legacy_snapshot PASSED [ 50%]
+backend/tests/test_dataset_revisions.py::test_pending_commit_recovers_without_touching_other_revisions PASSED [ 53%]
+backend/tests/test_dataset_revisions.py::test_restore_verifies_the_copied_bytes_before_changing_metadata PASSED [ 57%]
+backend/tests/test_dataset_revisions.py::test_pending_older_commit_recovers_after_a_later_revision PASSED [ 61%]
+backend/tests/test_dataset_revisions.py::test_existing_snapshot_cannot_be_overwritten PASSED [ 65%]
+backend/tests/test_dataset_revisions.py::test_default_retention_keeps_twenty_snapshots PASSED [ 69%]
+backend/tests/test_dataset_revisions.py::test_migration_fails_closed_when_backup_fails PASSED [ 73%]
+backend/tests/test_dataset_revisions.py::test_restore_does_not_rewrite_models_predictions_or_training_records PASSED [ 76%]
+backend/tests/test_dataset_quality.py::test_quality_counts_duplicates_type_issues_and_bounded_examples PASSED [ 80%]
+backend/tests/test_dataset_quality.py::test_cache_invalidation_save_restore_no_raw_cache_rows PASSED [ 84%]
+backend/tests/test_dataset_quality.py::test_description_bridge_preserves_other_knowledge_and_is_bidirectional PASSED [ 88%]
+backend/tests/test_dataset_quality.py::test_sample_and_quality_values_do_not_enter_model_context PASSED [ 92%]
+backend/tests/test_dataset_quality.py::test_examples_are_truncated_and_cache_is_bounded PASSED [ 96%]
+backend/tests/test_dataset_quality.py::test_header_only_single_row_and_all_null PASSED [100%]
+
+=============================== warnings summary ===============================
+<frozen importlib._bootstrap>:228
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+<frozen importlib._bootstrap>:228
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+<frozen importlib._bootstrap>:228
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 26 passed, 3 warnings in 9.91s ========================

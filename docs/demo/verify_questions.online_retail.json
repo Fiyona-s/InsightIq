@@ -1,0 +1,151 @@
+{
+  "purpose": "Ten business questions with an independent pandas answer, to compare by hand with InsightIQ. InsightIQ was NOT run on them. This is a record on one file, not a measure of accuracy.",
+  "dataset": {
+    "file": "online-retail.csv",
+    "source": "first and only sheet of 'Online Retail 2.xlsx' converted to CSV without changes (541,909 data rows, 8 columns: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country)",
+    "sha256_of_csv": "50e9f56b0ee4bd0662a397c68295f48945972135f57322cd5208f4f809eb67ac",
+    "rows": 541909,
+    "sha256_of_csv_used_in_real_app_demo_2026_11_23": "959c8b3847939247e4007cbbd6dfcf3fdc78bc8236a08eba94565e15679914d8",
+    "note_on_checksum": "The CSV loaded into the real app on 2026-11-23 was converted again (InvoiceNo, StockCode, CustomerID kept as text) and has a different checksum; row count (541,909), columns and all ten expected values are unchanged."
+  },
+  "conventions": {
+    "revenue": "Quantity x UnitPrice per row (the file has no revenue column)",
+    "cancellations": "InvoiceNo starts with 'C' (negative Quantity)",
+    "sales_lines": "sales lines = InvoiceNo does not start with 'C' AND Quantity > 0 AND UnitPrice > 0",
+    "missing_CustomerID": "kept for revenue and unit counts; never counted as a customer",
+    "rounding": "expected money values are rounded to 2 decimals for reading; compare against unrounded values to the cent",
+    "pandas_loading": "df = pd.read_csv(path, dtype={'InvoiceNo': str, 'StockCode': str, 'CustomerID': str}, parse_dates=['InvoiceDate'])",
+    "sales_view_in_pandas": "s = df[~df['InvoiceNo'].str.startswith('C') & (df['Quantity'] > 0) & (df['UnitPrice'] > 0)]   # used by questions 5 to 10"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "How many rows (invoice lines) are in the file?",
+      "how_calculated": "Count of all rows, nothing excluded.",
+      "pandas": "len(df)",
+      "expected": 541909,
+      "note": ""
+    },
+    {
+      "id": 2,
+      "question": "How many different invoices are there?",
+      "how_calculated": "Distinct InvoiceNo over all rows (cancellation invoices, which start with C, are counted as invoices).",
+      "pandas": "df['InvoiceNo'].nunique()",
+      "expected": 25900,
+      "note": ""
+    },
+    {
+      "id": 3,
+      "question": "How many lines are cancellations?",
+      "how_calculated": "Rows whose InvoiceNo starts with the letter C. Those rows have a negative Quantity.",
+      "pandas": "df['InvoiceNo'].str.startswith('C').sum()",
+      "expected": 9288,
+      "note": "Rows with a negative Quantity but no C (stock adjustments) are NOT cancellations here: 1336 such rows."
+    },
+    {
+      "id": 4,
+      "question": "What is the net revenue, counting cancellations as credits?",
+      "how_calculated": "revenue = Quantity x UnitPrice on every row, then summed. Cancellation rows have negative Quantity, so they subtract. Missing CustomerID rows are included (revenue does not need a customer).",
+      "pandas": "(df['Quantity'] * df['UnitPrice']).sum()",
+      "expected": 9747747.93,
+      "note": "Rows with a non-positive UnitPrice are included here: 2517 rows with UnitPrice <= 0."
+    },
+    {
+      "id": 5,
+      "question": "What is the sales revenue, leaving out cancellations and non-sale rows?",
+      "how_calculated": "revenue = Quantity x UnitPrice, summed over sales lines = InvoiceNo does not start with 'C' AND Quantity > 0 AND UnitPrice > 0. Missing CustomerID rows are included.",
+      "pandas": "s = df[~df['InvoiceNo'].str.startswith('C') & (df['Quantity'] > 0) & (df['UnitPrice'] > 0)]\n(s['Quantity'] * s['UnitPrice']).sum()",
+      "expected": 10666684.54,
+      "note": "11805 lines are left out of the sales view."
+    },
+    {
+      "id": 6,
+      "question": "Which 5 countries have the most sales revenue?",
+      "how_calculated": "Sales revenue per Country (sales lines = InvoiceNo does not start with 'C' AND Quantity > 0 AND UnitPrice > 0), highest first.",
+      "pandas": "s.assign(rev=s['Quantity']*s['UnitPrice']).groupby('Country')['rev'].sum().sort_values(ascending=False).head(5)",
+      "expected": [
+        {
+          "Country": "United Kingdom",
+          "revenue": 9025222.08
+        },
+        {
+          "Country": "Netherlands",
+          "revenue": 285446.34
+        },
+        {
+          "Country": "EIRE",
+          "revenue": 283453.96
+        },
+        {
+          "Country": "Germany",
+          "revenue": 228867.14
+        },
+        {
+          "Country": "France",
+          "revenue": 209715.11
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": 7,
+      "question": "Which 5 products sold the most units?",
+      "how_calculated": "Total Quantity per Description over sales lines = InvoiceNo does not start with 'C' AND Quantity > 0 AND UnitPrice > 0. Grouped by Description text exactly as written; blank descriptions are not a product.",
+      "pandas": "s.dropna(subset=['Description']).groupby('Description')['Quantity'].sum().sort_values(ascending=False).head(5)",
+      "expected": [
+        {
+          "Description": "PAPER CRAFT , LITTLE BIRDIE",
+          "units": 80995
+        },
+        {
+          "Description": "MEDIUM CERAMIC TOP STORAGE JAR",
+          "units": 78033
+        },
+        {
+          "Description": "WORLD WAR 2 GLIDERS ASSTD DESIGNS",
+          "units": 55047
+        },
+        {
+          "Description": "JUMBO BAG RED RETROSPOT",
+          "units": 48474
+        },
+        {
+          "Description": "WHITE HANGING HEART T-LIGHT HOLDER",
+          "units": 37891
+        }
+      ],
+      "note": "If two products tie for 5th place the order between them is not defined."
+    },
+    {
+      "id": 8,
+      "question": "How many different customers bought something, and how many lines have no customer?",
+      "how_calculated": "Distinct CustomerID over sales lines = InvoiceNo does not start with 'C' AND Quantity > 0 AND UnitPrice > 0 rows that HAVE a CustomerID (a blank customer is not a customer). The second number counts sales lines with a blank CustomerID.",
+      "pandas": "s['CustomerID'].nunique(), s['CustomerID'].isna().sum()",
+      "expected": {
+        "distinct_customers": 4338,
+        "sales_lines_without_customer": 132220
+      },
+      "note": ""
+    },
+    {
+      "id": 9,
+      "question": "Which month had the highest sales revenue?",
+      "how_calculated": "Sales revenue (sales lines = InvoiceNo does not start with 'C' AND Quantity > 0 AND UnitPrice > 0) grouped by the calendar month of InvoiceDate; the month with the largest total.",
+      "pandas": "m = s.assign(rev=s['Quantity']*s['UnitPrice']).groupby(s['InvoiceDate'].dt.to_period('M'))['rev'].sum()\nm.idxmax(), m.max()",
+      "expected": {
+        "month": "2011-11",
+        "revenue": 1509496.33
+      },
+      "note": "Dates are read as written in the file; no time-zone shift."
+    },
+    {
+      "id": 10,
+      "question": "What is the average value of an order?",
+      "how_calculated": "Sales revenue (sales lines = InvoiceNo does not start with 'C' AND Quantity > 0 AND UnitPrice > 0) divided by the number of distinct InvoiceNo among those sales lines.",
+      "pandas": "s['rev'] = s['Quantity']*s['UnitPrice']\ns['rev'].sum() / s['InvoiceNo'].nunique()",
+      "expected": 534.4,
+      "note": "Distinct invoices in the sales view: 19960."
+    }
+  ],
+  "ui_comparison_2026_11_23": "All ten answers matched in the app; see docs/demo/ONLINE_RETAIL_DEMO_GUIDE.md section 5. Questions 2 to 10 were asked with the calculation rule written into the question. Q7 and Q9 were answered on a retry after a provider rate-limit error."
+}

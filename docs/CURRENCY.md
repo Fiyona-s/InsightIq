@@ -1,0 +1,53 @@
+# Monetary display and optional currency conversion
+
+Monetary meaning is confirmed in Knowledge base, separately from storage and analysis types. A name such as `revenue` is a suggestion, never proof. Select a source ISO currency for each monetary column, or mark it unknown/mixed. Confirmed metric definitions can also declare a currency. No formatting or conversion invokes an LLM.
+
+## Detection and compatibility
+
+`KnowledgeSettings.monetary_columns` maps actual dataset column names to `{currency: "INR", mixed: false}`. Unknown monetary fields use `{currency: null}`. Mixed columns use `{currency: null, mixed: true}`. Metric definitions accept optional `money` metadata. Existing settings default to empty monetary metadata. Existing snapshots/runs remain valid; missing metadata stays unknown rather than being backfilled from current definitions.
+
+Direct projections, casts and single-source SUM/AVG/MIN/MAX preserve column metadata through aliases. COUNT, ratios, products, unknown expressions, joins, CTEs and set operations do not inherit monetary units. An exact confirmed metric query may declare complex monetary semantics; filters/grouping must match. Result columns carry optional `money`; absent metadata is omitted to preserve legacy contracts. Chart data carries y-axis `money` and scatter `x_money`. Explicit mixed monetary aggregates and arithmetic combining distinct confirmed currencies stop with clarification before SQL execution. Separate result columns may have distinct confirmed currencies and are converted independently. Grouping/normalization of mixed-currency records must be explicitly resolved upstream; automatic per-row currency-column inference is unsupported.
+
+Metadata attaches to accepted result columns before evidence/chart creation and persists with explicit saved snapshots. Manual refresh reads current confirmed definitions. Existing result values, historical raw results, source files, SQL, analysis types and models are not rewritten. Verified-example replay compares actual SQL rows and types and preserves the accepted run's display provenance for digest comparison. Evaluation's no-custom-knowledge check includes currency settings, preserving benchmark isolation.
+
+## Presentation
+
+The browser uses `Intl.NumberFormat` with ISO currencies, currency precision and locale selection. INR defaults to `en-IN`; other supported currencies default to `en-US`. English US/India and German locale options are available. Null remains NULL. Source values remain inspectable in the Analyst cell title and raw CSV. Decimal strings are passed directly to modern Intl, including values beyond JS integer precision. Recharts necessarily uses safely representable numbers; conversions beyond its safe range show a table fallback. Exact decimal multiplication uses integer arithmetic, always starting from original values. Counts, labels, identifiers and other columns remain unchanged.
+
+Analyst answers, result tables, KPI cards, axes/tooltips, and saved dashboard widgets share display state. Applying/resetting conversion preserves chart selection, table paging and dashboard filters. Current applied quotes are kept in bounded memory, separately from results. Target/locale preferences are saved in browser localStorage keyed by run/widget and restored as selections; a reload requires explicit Apply to obtain a current quote, rather than silently restoring an old rate. Computed evidence remains labeled in original source currency on interactive views. PDF reports use ISO labels to avoid unsupported currency glyphs in standard PDF fonts.
+
+## Provider configuration and rate policy
+
+Set `FX_PROVIDER=frankfurter` on the API service; blank/unknown values disable conversion and show an explanation. Compose passes this environment setting. No API key or frontend secret is needed. Recreate the API after changing environment settings. No remote request occurs until conversion or a converted export is explicitly requested.
+
+Only the fixed HTTPS endpoint `https://api.frankfurter.dev/v2/rate/{source}/{target}` is allowed. See [Frankfurter documentation](https://frankfurter.dev/). The provider supplies daily blended reference rates, not intraday/trading quotes. Requests contain only validated currency codes and an optional historical date; uploaded rows/amounts are never transmitted. Redirects and inherited proxies are disabled; timeout is eight seconds and response limit is 64 KiB. Backend JSON parsing preserves decimal rates. Returned base/quote, date and positive finite rate are checked. Supported rate magnitudes are 1e-20 through 1e20. Latest observations older than seven calendar days are rejected; weekends/holidays may yield an explicitly displayed earlier effective date. Historical requests display the actual returned observation date, which can precede the requested date.
+
+A process-local cache holds at most 256 pair/date quotes for one hour, including historical quotes. Cache misses are serialized to prevent duplicate concurrent fetches. Expired entries require a successful fetch; outage never falls back to expired data. Applied display quotes retain their explicitly shown rate/date until reset/reapplied. The effective **date** is provider data; `fetched_at` is a separate UTC acquisition timestamp. No intraday effective timestamp is invented. Outages, unsupported pairs and invalid responses return clear errors without changing originals. The current supported ISO list is returned by `/api/currency/status` (USD, INR, EUR, GBP, AED, CAD, AUD, JPY, SGD, CHF and 12 additional currencies); actual provider coverage may vary by date.
+
+## APIs and exports
+
+- `GET /api/currency/status`: `{enabled, currencies, reason}`.
+- `POST /api/currency/convert`: `{source_currency, target_currency, amounts: [decimal-string|null], historical_date?: "YYYY-MM-DD"}`. Maximum 1,000 amounts; finite decimal strings of at most 100 characters and exponent magnitude bounded to 300. Response contains original/converted decimal-string arrays, source/target currency, exact rate, rate source, effective date, UTC fetched time and historical flag. Decimal arithmetic uses 400 significant digits. Rates are quoted as **target units per source unit**. The browser fetches each pair once using unit amount 1 and applies exact multiplication locally.
+- Existing Analyst and widget `results.csv` endpoints accept optional `target_currency` and `historical_date`. Default CSV is unchanged and formula-protected. Opt-in converted CSV appends converted columns plus source, rate, effective date and rate source; original columns stay intact. Converted column names contain the target ISO code. Existing CSV formula-protection rules apply to appended strings too.
+- Existing dashboard `report.pdf` / `report.json` accept optional `target_currency` and `historical_date`. The Report currency selector explicitly requests a converted report. Every converted widget records per-column quote metadata; its calculations/charts are recomputed for that report only. JSON includes `original_result` for each source widget. PDF labels converted values and exact rate provenance. Unconfirmed monetary columns remain original. Default reports use source currencies. Existing report-size/concurrency limits still apply.
+
+Conversion-disabled responses are 503, unsupported/invalid user input is 422, and unavailable/invalid provider rates are 503. Provider errors never expose credentials or arbitrary provider responses. No provider URL is accepted from the browser. No dependencies, SQL validation, query sandbox permissions, dataset migrations, or model behavior are changed.
+
+## Verification and changed files
+
+Tests use synthetic rates exclusively; they make no live FX or LLM requests. Backend coverage includes conservative aliases/aggregates, exact confirmed metrics, unknown/mixed/multiple currencies, direction, cache/expiry, timestamps, precision, invalid/stale/unavailable rates, raw-preserving exports, and converted PDF/JSON source preservation. Frontend coverage checks USD/INR locales, negatives/zero/null/JPY, exact large decimals, target switching, reset, table/KPI consistency, provider failure and hidden nonmonetary controls. Browser coverage exercises real SQL execution, INR confirmation, conversion/reset/count exclusion, saved chart axes/tables and report exports.
+
+Files changed or added for this enhancement:
+
+- Configuration/docs: `.env.example`, `compose.yaml`, `README.md`, `ARCHITECTURE.md`, `docs/CURRENCY.md`, `docs/CURRENCY_TEST_RESULTS.md` (removed).
+- Backend: `backend/app/currency.py`, `backend/app/knowledge.py`, `backend/app/analyst.py`, `backend/app/workflow.py`, `backend/app/main.py`, `backend/app/charts.py`, `backend/app/dashboards.py`, `backend/app/evidence.py`, `backend/app/reports.py`, `backend/app/evaluation.py`.
+- Frontend: `frontend/src/api.ts`, `frontend/src/phase4api.ts`, `frontend/src/lib/currency.tsx`, `frontend/src/components/KnowledgeEditor.tsx`, `frontend/src/components/Analyst.tsx`, `frontend/src/components/RunInsights.tsx`, `frontend/src/components/ResultChart.tsx`, `frontend/src/components/DashboardPage.tsx`, `frontend/src/index.css`.
+- Tests: `backend/tests/test_currency.py`, `backend/tests/e2e_server.py`, `frontend/src/lib/currency.test.tsx`, `frontend/src/lib/currencyControls.test.tsx`, `frontend/e2e/currency.spec.ts`, `frontend/playwright.analyst.config.ts`.
+
+Verification results are recorded in `docs/CURRENCY_TEST_RESULTS.md` (removed). Local `.env` is private configuration and never included in exports or documentation.
+
+## Legacy saved-widget repair
+
+Existing snapshots created without currency metadata can now explicitly **Apply confirmed currencies** after their dataset/metric units are confirmed in Knowledge base. `POST /api/saved-charts/{id}/currency-metadata` requires `expected_snapshot_digest`; it stores a separate per-column `currency_metadata` binding and provenance without changing the original snapshot columns/rows, SQL or historical runs. GETs do not backfill data. Dashboard rendering overlays the binding for charts/tables/reports. A later dataset preference does not overwrite a saved confirmed unit. Source schema drift or absent confirmation prevents a new binding. Manual refresh derives units for its new result and clears the old sidecar.
+
+Provider transport/invalid-response outages now have a 30-second safe retry cooldown. The status endpoint reports `configured`, `enabled`, and the last observed temporary outage; it does not probe remotely. The UI keeps source formatting, disables conversion during the outage and offers Retry rate service. Full actual-deployment evidence, changed files and regression results: currency audit.

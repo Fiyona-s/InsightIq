@@ -1,0 +1,191 @@
+[WebServer] INFO:     Started server process [21827]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+
+Running 21 tests using 1 worker
+
+  ✓   1 e2e/07-product-stage1.spec.ts:7:1 › Stage 1 task navigation, preferences, aliases and unobscured responsive headers (14.5s)
+[WebServer] <project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+[WebServer]   warnings.warn(
+[WebServer] 2026-11-15 13:46:36,034 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:46:36,368 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:46:36,371 INFO Analyst run metrics: {"run_id": "cdb35a57-7ba2-4de2-a64b-2a01cbba9660", "status": "succeeded", "retrieval_latency_ms": 11, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 299, "total_latency_ms": 841}
+  ✓   2 e2e/10-product-stage4-ask.spec.ts:5:1 › Stage 4 answer-first result, single monetary value, accessible details and preserved saving/FX/export (4.0s)
+  ✓   3 e2e/14-product-stage8-evaluation.spec.ts:6:1 › Stage 8 separates reference inventory from actual scores and keeps new evaluation explicit and responsive (13.4s)
+[WebServer] 2026-11-15 13:46:52,804 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:46:53,112 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:46:53,114 INFO Analyst run metrics: {"run_id": "37340a72-6f2c-4cf9-b5fa-f9fdfd97430f", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 286, "total_latency_ms": 645}
+  ✓   4 e2e/analyst.spec.ts:6:1 › controlled provider boundary, real typed aggregation, history and CSV export (2.2s)
+  ✘   5 e2e/analyst.spec.ts:85:1 › RAG, live graph repair, actual Recharts, evidence and verified example lifecycle (487ms)
+  ✓   6 e2e/automl.spec.ts:80:1 › local regression, registry reload, single/batch prediction and real CSV export (8.1s)
+  ✓   7 e2e/automl.spec.ts:236:1 › classification, customer RFM, anomaly scores and chronological forecasting use real local models (16.1s)
+  ✓   8 e2e/automl.spec.ts:363:1 › keyboard-only wizard navigation, suggestions never auto-apply and Advanced reset (4.3s)
+  ✓   9 e2e/automl.spec.ts:442:1 › negative R² and omitted importance use an actual temporary no-signal model (3.6s)
+[WebServer] 2026-11-15 13:47:28,194 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:47:28,513 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:47:28,515 INFO Analyst run metrics: {"run_id": "b03bfa06-fd3e-4bb6-ae8d-d0fa4df5f95d", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 295, "total_latency_ms": 655}
+[WebServer] 2026-11-15 13:47:31,404 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:47:31,717 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:47:31,720 INFO Analyst run metrics: {"run_id": "c182b40d-f901-4957-806c-5182efac111b", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 290, "total_latency_ms": 657}
+  ✓  10 e2e/currency-legacy.spec.ts:6:1 › legacy recognized-revenue KPI gains confirmed INR metadata without rewriting its snapshot (5.0s)
+  ✘  11 e2e/currency.spec.ts:6:1 › confirmed INR revenue converts with test-only rates and resets; counts have no currency control (691ms)
+  ✘  12 e2e/currency.spec.ts:112:1 › saved monetary bar charts convert axes and reports without changing snapshots (749ms)
+  ✓  13 e2e/dataset-editor.spec.ts:5:1 › dataset edits persist after refresh and export the saved version (871ms)
+[WebServer] 2026-11-15 13:47:36,897 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:47:37,213 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:47:37,216 INFO Analyst run metrics: {"run_id": "a6b5f326-f029-432f-862a-31eba70adf0a", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 294, "total_latency_ms": 654}
+  ✓  14 e2e/dataset-editor.spec.ts:85:1 › click existing revenue, preserve account 001 and row count, save revision 2, export and query in Analyst (2.4s)
+  ✓  15 e2e/dataset-editor.spec.ts:187:1 › existing cell batches survive sorted pages, invalid input, Escape, Undo, NULL and Cancel (1.4s)
+[WebServer] 2026-11-15 13:47:39,789 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:47:40,107 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:47:40,110 INFO Analyst run metrics: {"run_id": "476216a8-587e-4fc8-9006-8dfc9ded5607", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "query_latency_ms": 296, "total_latency_ms": 648}
+  ✓  16 e2e/dataset-lifecycle.spec.ts:5:1 › throwaway datasets: rename, dependency preview, archive/restore, guarded delete and retained history (3.9s)
+  ✓  17 e2e/dataset-lifecycle.spec.ts:44:1 › bulk DELETE confirmation processes only newly created selected fixtures (443ms)
+[WebServer] 2026-11-15 13:47:44,573 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:47:44,889 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:47:44,892 INFO Analyst run metrics: {"run_id": "f7eaae97-f233-46b4-8938-139281b451c4", "status": "succeeded", "retrieval_latency_ms": 11, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 294, "total_latency_ms": 654}
+  ✓  18 e2e/phase4.spec.ts:8:1 › dashboard save, layout, filters, reload and exports (5.3s)
+  ✓  19 e2e/ui-refinement.spec.ts:59:1 › mobile navigation is keyboard accessible, traps focus and restores focus on Escape (190ms)
+  ✘  20 e2e/ui-refinement.spec.ts:91:1 › all nine modules fit desktop tablet and mobile without horizontal overflow (1.5m)
+  ✘  21 e2e/workspace.spec.ts:2:1 › real upload, schema, preview, reload and mobile layout (242ms)
+
+
+  1) e2e/analyst.spec.ts:85:1 › RAG, live graph repair, actual Recharts, evidence and verified example lifecycle 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('status')
+    Expected substring: "Knowledge saved"
+    Error: strict mode violation: getByRole('status') resolved to 2 elements:
+        1) <p role="status" aria-live="polite" class="state-loading ui-loading">Loading knowledge review…</p> aka getByText('Loading knowledge review…')
+        2) <div role="status" aria-live="polite" class="ui-toast-region">…</div> aka getByRole('status').filter({ hasText: 'Admin tools are now shown in' })
+
+    Call log:
+      - Expect "toContainText" getByRole('status') with timeout 5000ms
+      - waiting for getByRole('status')
+
+
+      114 |     .getByRole("button", { name: "Save knowledge", exact: true })
+      115 |     .click();
+    > 116 |   await expect(page.getByRole("status")).toContainText("Knowledge saved");
+          |                                          ^
+      117 |   await page.locator(".knowledge-search > summary").click();
+      118 |   await page.getByLabel("Question", { exact: true }).fill("revenue by region");
+      119 |   await page
+        at <project>/frontend/e2e/analyst.spec.ts:116:42
+
+    Error Context: test-results/analyst-RAG-live-graph-rep-7b3a8--verified-example-lifecycle/error-context.md
+
+  2) e2e/currency.spec.ts:6:1 › confirmed INR revenue converts with test-only rates and resets; counts have no currency control 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('status')
+    Expected substring: "Knowledge saved"
+    Error: strict mode violation: getByRole('status') resolved to 2 elements:
+        1) <p role="status" class="success">Knowledge saved.</p> aka getByText('Knowledge saved.')
+        2) <div role="status" aria-live="polite" class="ui-toast-region">…</div> aka getByRole('status').filter({ hasText: 'Admin tools are now shown in' })
+
+    Call log:
+      - Expect "toContainText" getByRole('status') with timeout 5000ms
+      - waiting for getByRole('status')
+        2 × locator resolved to <div role="status" aria-live="polite" class="ui-toast-region">…</div>
+          - unexpected value "Admin tools are now shown in the sidebar.Dismiss"
+
+
+      29 |   await impact.getByRole('checkbox').check();
+      30 |   await impact.getByRole('button',{name:'Save confirmed change'}).click();
+    > 31 |   await expect(page.getByRole("status")).toContainText("Knowledge saved");
+         |                                          ^
+      32 |   await page.getByRole("button", { name: "Ask", exact: true }).click();
+      33 |   await openAnalysisTypes(page);
+      34 |   await page.getByLabel("Analysis type for revenue").selectOption("DOUBLE");
+        at <project>/frontend/e2e/currency.spec.ts:31:42
+
+    Error Context: test-results/currency-confirmed-INR-rev-ad0cf-ts-have-no-currency-control/error-context.md
+
+  3) e2e/currency.spec.ts:112:1 › saved monetary bar charts convert axes and reports without changing snapshots 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('status')
+    Expected substring: "Knowledge saved"
+    Error: strict mode violation: getByRole('status') resolved to 2 elements:
+        1) <p role="status" class="success">Knowledge saved.</p> aka getByText('Knowledge saved.')
+        2) <div role="status" aria-live="polite" class="ui-toast-region">…</div> aka getByRole('status').filter({ hasText: 'Admin tools are now shown in' })
+
+    Call log:
+      - Expect "toContainText" getByRole('status') with timeout 5000ms
+      - waiting for getByRole('status')
+        2 × locator resolved to <div role="status" aria-live="polite" class="ui-toast-region">…</div>
+          - unexpected value "Admin tools are now shown in the sidebar.Dismiss"
+
+
+      135 |   await impact.getByRole('checkbox').check();
+      136 |   await impact.getByRole('button',{name:'Save confirmed change'}).click();
+    > 137 |   await expect(page.getByRole("status")).toContainText("Knowledge saved");
+          |                                          ^
+      138 |   await page.request.post("/api/dashboards", {
+      139 |     data: { title: "Currency charts review", description: "" },
+      140 |   });
+        at <project>/frontend/e2e/currency.spec.ts:137:42
+
+    Error Context: test-results/currency-saved-monetary-ba-404d6--without-changing-snapshots/error-context.md
+
+  4) e2e/ui-refinement.spec.ts:91:1 › all nine modules fit desktop tablet and mobile without horizontal overflow 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Accuracy check', exact: true })
+
+
+       at ui.ts:18
+
+      16 | export async function openResultActions(page:Page){const panel=page.locator('details.result-more-actions');await panel.waitFor();if(!await panel.evaluate((el:HTMLDetailsElement)=>el.open))await panel.locator('summary').first().click();}
+      17 | // Admin tools are hidden by default; switch them on the way an owner would (Menu → Show admin tools).
+    > 18 | export async function openAdmin(page:Page){if(await page.getByRole('button',{name:'Accuracy check',exact:true}).count())return;await page.getByRole('button',{name:'Menu',exact:true}).click();const item=page.getByRole('menuitemcheckbox',{name:/Show admin tools/});if(await item.getAttribute('aria-checked')!=='true')await item.click();await page.keyboard.press('Escape');await page.getByRole('button',{name:'Accuracy check',exact:true}).waitFor({state:'attached'});}
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+      19 | export async function selectGlobal(page:Page,id:string){const response=await page.request.get('/api/datasets');const dataset=(await response.json()).find((d:{id:string})=>d.id===id);await page.getByRole('button',{name: /^Active dataset/}).click();await page.getByRole('textbox',{name:'Search active datasets'}).fill(dataset.display_name||dataset.name);await page.getByRole('option').filter({hasText:dataset.display_name||dataset.name}).click();}
+      20 | export async function editDashboard(page:Page){const toggle=page.getByRole('button',{name:'Edit dashboard',exact:true});if(await page.getByRole('button',{name:'Done editing',exact:true}).isVisible())return;await toggle.click();}
+      21 | export async function openDashboardCreation(page:Page){const panel=page.locator('details.dashboard-create');await panel.waitFor();if(!await panel.evaluate((el:HTMLDetailsElement)=>el.open))await panel.locator('summary').click();}
+        at openAdmin (<project>/frontend/e2e/ui.ts:18:437)
+        at <project>/frontend/e2e/ui-refinement.spec.ts:110:191
+
+    Error Context: test-results/ui-refinement-all-nine-mod-89551-without-horizontal-overflow/error-context.md
+
+  5) e2e/workspace.spec.ts:2:1 › real upload, schema, preview, reload and mobile layout ────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'Datasets' })
+    Expected: visible
+    Error: strict mode violation: getByRole('heading', { name: 'Datasets' }) resolved to 2 elements:
+        1) <h1>Datasets</h1> aka getByRole('heading', { name: 'Datasets', exact: true })
+        2) <h3>No datasets yet</h3> aka getByRole('heading', { name: 'No datasets yet' })
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'Datasets' }) with timeout 5000ms
+      - waiting for getByRole('heading', { name: 'Datasets' })
+
+
+       8 |   await expect(
+       9 |     page.getByRole("heading", { name: "Datasets" }),
+    > 10 |   ).toBeVisible();
+         |     ^
+      11 |   const name = `illustrative-e2e-${Date.now()}.csv`;
+      12 |   await page.getByLabel("Upload CSV file").setInputFiles({
+      13 |     name,
+        at <project>/frontend/e2e/workspace.spec.ts:10:5
+
+    Error Context: test-results/workspace-real-upload-sche-f9f0a-ew-reload-and-mobile-layout/error-context.md
+
+  5 failed
+    e2e/analyst.spec.ts:85:1 › RAG, live graph repair, actual Recharts, evidence and verified example lifecycle 
+    e2e/currency.spec.ts:6:1 › confirmed INR revenue converts with test-only rates and resets; counts have no currency control 
+    e2e/currency.spec.ts:112:1 › saved monetary bar charts convert axes and reports without changing snapshots 
+    e2e/ui-refinement.spec.ts:91:1 › all nine modules fit desktop tablet and mobile without horizontal overflow 
+    e2e/workspace.spec.ts:2:1 › real upload, schema, preview, reload and mobile layout ─────────────
+  16 passed (3.0m)

@@ -1,0 +1,17 @@
+{
+  "fixture": "disposable legacy snapshot fixture",
+  "current_revision": 23,
+  "restored_from": 3,
+  "snapshot_limit": 20,
+  "retained_snapshots": 20,
+  "pruned_revisions": [
+    3,
+    2
+  ],
+  "never_retained_revisions": [
+    1
+  ],
+  "retained_bytes": 49004544,
+  "largest_snapshot_bytes": 2633728,
+  "all_retained_snapshot_hashes_verified": true
+}

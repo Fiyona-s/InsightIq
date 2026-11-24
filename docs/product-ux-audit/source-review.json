@@ -1,0 +1,955 @@
+[
+  {
+    "file": "frontend/src/App.tsx",
+    "bytes": 22609,
+    "apiCalls": [
+      "upload"
+    ],
+    "technicalWording": [],
+    "detailsCount": 1,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/datasetProfileApi.ts",
+    "bytes": 2901,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/main.tsx",
+    "bytes": 364,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/datasetLifecycleApi.ts",
+    "bytes": 1426,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/phase4api.ts",
+    "bytes": 11699,
+    "apiCalls": [],
+    "technicalWording": [
+      "fingerprint"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/knowledgeReviewApi.ts",
+    "bytes": 1966,
+    "apiCalls": [],
+    "technicalWording": [
+      "provenance"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/App.test.tsx",
+    "bytes": 6230,
+    "apiCalls": [],
+    "technicalWording": [
+      "VARCHAR"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/Routes.test.tsx",
+    "bytes": 2666,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/index.css",
+    "bytes": 71553,
+    "apiCalls": [],
+    "technicalWording": [
+      "fingerprint",
+      "provenance",
+      "registry"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/test-setup.ts",
+    "bytes": 149,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/api.ts",
+    "bytes": 8856,
+    "apiCalls": [],
+    "technicalWording": [
+      "VARCHAR",
+      "fingerprint",
+      "provenance"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/datasetEditorApi.ts",
+    "bytes": 1073,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/dashboardWorkspaceApi.ts",
+    "bytes": 1446,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/automlapi.ts",
+    "bytes": 7491,
+    "apiCalls": [],
+    "technicalWording": [
+      "fingerprint"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/workspace.css",
+    "bytes": 64557,
+    "apiCalls": [],
+    "technicalWording": [
+      "fingerprint",
+      "provenance",
+      "registry"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/analystUXApi.ts",
+    "bytes": 621,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/ResultDataTable.tsx",
+    "bytes": 1421,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/UnitConfirmation.tsx",
+    "bytes": 1786,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/KnowledgeReview.test.tsx",
+    "bytes": 6130,
+    "apiCalls": [
+      "all",
+      "check",
+      "draft",
+      "get",
+      "remove",
+      "review"
+    ],
+    "technicalWording": [
+      "provenance"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/AutoMLSummary.test.tsx",
+    "bytes": 5152,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/Phase3.test.tsx",
+    "bytes": 9830,
+    "apiCalls": [
+      "analysis",
+      "chart",
+      "get",
+      "knowledge",
+      "retrieve",
+      "saveKnowledge",
+      "verify"
+    ],
+    "technicalWording": [
+      "fingerprint",
+      "provenance"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/AnalyticsPage.tsx",
+    "bytes": 16790,
+    "apiCalls": [
+      "analytics",
+      "dashboards"
+    ],
+    "technicalWording": [
+      "provenance"
+    ],
+    "detailsCount": 2,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/AutoMLPlots.tsx",
+    "bytes": 8101,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/AnalystFeedback.tsx",
+    "bytes": 1998,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DashboardWorkspaceControls.tsx",
+    "bytes": 6015,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/Analyst.test.tsx",
+    "bytes": 10451,
+    "apiCalls": [
+      "analysis",
+      "ask",
+      "cancel",
+      "history",
+      "profile",
+      "results",
+      "run"
+    ],
+    "technicalWording": [
+      "VARCHAR"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/AutoMLSummary.tsx",
+    "bytes": 4285,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DatasetHistory.tsx",
+    "bytes": 13148,
+    "apiCalls": [
+      "dependencies",
+      "history",
+      "preview",
+      "restore"
+    ],
+    "technicalWording": [],
+    "detailsCount": 2,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/ResultChart.tsx",
+    "bytes": 7677,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DashboardWorkspaceControls.test.tsx",
+    "bytes": 4378,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/EvaluationWorkspaceResults.tsx",
+    "bytes": 15043,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 1,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/Phase3Navigation.test.tsx",
+    "bytes": 8726,
+    "apiCalls": [
+      "charts",
+      "dashboards",
+      "list"
+    ],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/SetupGuide.tsx",
+    "bytes": 6015,
+    "apiCalls": [
+      "analytics",
+      "charts",
+      "dashboard"
+    ],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/EvaluationRunComparison.tsx",
+    "bytes": 5071,
+    "apiCalls": [
+      "evaluation"
+    ],
+    "technicalWording": [
+      "fingerprint"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DatasetManager.tsx",
+    "bytes": 7284,
+    "apiCalls": [
+      "rename",
+      "restore"
+    ],
+    "technicalWording": [],
+    "detailsCount": 1,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/FilterEditor.tsx",
+    "bytes": 4301,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 1,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DatasetWorkspace.test.tsx",
+    "bytes": 13606,
+    "apiCalls": [
+      "dependencies",
+      "describe",
+      "history",
+      "preview",
+      "quality",
+      "restore"
+    ],
+    "technicalWording": [
+      "VARCHAR"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/EvaluationWorkspace.test.tsx",
+    "bytes": 8470,
+    "apiCalls": [
+      "evaluation"
+    ],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DatasetProfile.tsx",
+    "bytes": 5849,
+    "apiCalls": [
+      "describe"
+    ],
+    "technicalWording": [
+      "provenance"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/ExecutionTracesPage.tsx",
+    "bytes": 10864,
+    "apiCalls": [
+      "history"
+    ],
+    "technicalWording": [
+      "provenance"
+    ],
+    "detailsCount": 1,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DatasetEditor.test.tsx",
+    "bytes": 11795,
+    "apiCalls": [],
+    "technicalWording": [
+      "VARCHAR"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/Phase4.test.tsx",
+    "bytes": 13398,
+    "apiCalls": [
+      "analytics",
+      "benchmark",
+      "charts",
+      "createDashboard",
+      "dashboard",
+      "dashboards",
+      "duplicate",
+      "evaluate",
+      "evaluations",
+      "refresh",
+      "saveChart",
+      "saveDashboard"
+    ],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/EditableDatasetCell.tsx",
+    "bytes": 3253,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/EvaluationDiagnostics.tsx",
+    "bytes": 12175,
+    "apiCalls": [],
+    "technicalWording": [
+      "fingerprint"
+    ],
+    "detailsCount": 2,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DatasetQuality.tsx",
+    "bytes": 3912,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 1,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/WorkspaceStates.tsx",
+    "bytes": 809,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 1,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/KnowledgeReview.tsx",
+    "bytes": 10295,
+    "apiCalls": [
+      "all",
+      "approve",
+      "check",
+      "clearRejected",
+      "draft",
+      "get",
+      "remove",
+      "reverify",
+      "review"
+    ],
+    "technicalWording": [
+      "VARCHAR",
+      "provenance"
+    ],
+    "detailsCount": 1,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/Analyst.tsx",
+    "bytes": 24610,
+    "apiCalls": [
+      "ask",
+      "cancel",
+      "history",
+      "run"
+    ],
+    "technicalWording": [
+      "VARCHAR"
+    ],
+    "detailsCount": 6,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/AnalystResultCard.tsx",
+    "bytes": 5603,
+    "apiCalls": [
+      "analysis",
+      "chart",
+      "propose"
+    ],
+    "technicalWording": [],
+    "detailsCount": 4,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DatasetEditor.tsx",
+    "bytes": 20929,
+    "apiCalls": [
+      "profile"
+    ],
+    "technicalWording": [
+      "VARCHAR"
+    ],
+    "detailsCount": 1,
+    "nativeConfirmCount": 3
+  },
+  {
+    "file": "frontend/src/components/RunInsights.tsx",
+    "bytes": 4205,
+    "apiCalls": [],
+    "technicalWording": [
+      "fingerprint",
+      "provenance"
+    ],
+    "detailsCount": 3,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/AutoMLStudio.tsx",
+    "bytes": 86410,
+    "apiCalls": [
+      "upload"
+    ],
+    "technicalWording": [
+      "fingerprint",
+      "provenance",
+      "registry"
+    ],
+    "detailsCount": 6,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/EvaluationDiagnostics.test.tsx",
+    "bytes": 8525,
+    "apiCalls": [],
+    "technicalWording": [
+      "fingerprint",
+      "provenance"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/AutoMLResults.tsx",
+    "bytes": 9233,
+    "apiCalls": [],
+    "technicalWording": [
+      "provenance"
+    ],
+    "detailsCount": 2,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/ActiveDatasetSelector.tsx",
+    "bytes": 4526,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/EvaluationPage.tsx",
+    "bytes": 45170,
+    "apiCalls": [
+      "benchmark",
+      "cancelEvaluation",
+      "deleteEvaluation",
+      "evaluate",
+      "evaluateOffline",
+      "evaluation",
+      "evaluations",
+      "installBenchmark",
+      "reviewCase",
+      "verifyBenchmark"
+    ],
+    "technicalWording": [
+      "RAG",
+      "fingerprint",
+      "provenance",
+      "registry"
+    ],
+    "detailsCount": 7,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/KnowledgeEditor.tsx",
+    "bytes": 17741,
+    "apiCalls": [
+      "dependencies",
+      "knowledge",
+      "retrieve",
+      "saveKnowledge"
+    ],
+    "technicalWording": [
+      "fingerprint"
+    ],
+    "detailsCount": 4,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/Sidebar.tsx",
+    "bytes": 6857,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/OfflineAndTraces.test.tsx",
+    "bytes": 10733,
+    "apiCalls": [
+      "ask",
+      "benchmark",
+      "evaluate",
+      "evaluateOffline",
+      "evaluations",
+      "history"
+    ],
+    "technicalWording": [
+      "fingerprint"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DatasetLifecycle.test.tsx",
+    "bytes": 7205,
+    "apiCalls": [
+      "bulkArchive",
+      "bulkDelete",
+      "delete",
+      "dependencies",
+      "rename"
+    ],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/AutoMLStudio.test.tsx",
+    "bytes": 17918,
+    "apiCalls": [],
+    "technicalWording": [
+      "VARCHAR",
+      "fingerprint",
+      "registry"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/SaveChartDialog.tsx",
+    "bytes": 5737,
+    "apiCalls": [
+      "attach",
+      "dashboard",
+      "dashboards",
+      "saveChart"
+    ],
+    "technicalWording": [
+      "provenance"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DatasetName.tsx",
+    "bytes": 782,
+    "apiCalls": [],
+    "technicalWording": [
+      "provenance"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/useRunEvents.ts",
+    "bytes": 1402,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DashboardPage.tsx",
+    "bytes": 36477,
+    "apiCalls": [
+      "all",
+      "attach",
+      "charts",
+      "confirmChartCurrency",
+      "createDashboard",
+      "dashboard",
+      "dashboards",
+      "deleteChart",
+      "deleteDashboard",
+      "duplicate",
+      "duplicateDashboard",
+      "history",
+      "refresh",
+      "saveDashboard",
+      "title"
+    ],
+    "technicalWording": [
+      "fingerprint",
+      "provenance"
+    ],
+    "detailsCount": 7,
+    "nativeConfirmCount": 1
+  },
+  {
+    "file": "frontend/src/components/DialogAccessibility.tsx",
+    "bytes": 2031,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/OfflineEvaluationResults.tsx",
+    "bytes": 7594,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 1,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/AnalystFeedback.test.tsx",
+    "bytes": 2003,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/DatasetLifecycleDialog.tsx",
+    "bytes": 7182,
+    "apiCalls": [
+      "archive",
+      "bulkArchive",
+      "bulkDelete",
+      "delete",
+      "dependencies"
+    ],
+    "technicalWording": [
+      "provenance"
+    ],
+    "detailsCount": 1,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/components/ui/button.tsx",
+    "bytes": 919,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/activeDataset.tsx",
+    "bytes": 13836,
+    "apiCalls": [
+      "history",
+      "list",
+      "run"
+    ],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/currencyControls.test.tsx",
+    "bytes": 6798,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/chartAxis.ts",
+    "bytes": 2461,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/currency.test.tsx",
+    "bytes": 1827,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/activeDataset.test.tsx",
+    "bytes": 5736,
+    "apiCalls": [
+      "list"
+    ],
+    "technicalWording": [
+      "VARCHAR"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/navigation.ts",
+    "bytes": 1177,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/formatters.test.ts",
+    "bytes": 2649,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/finalPolish.test.tsx",
+    "bytes": 3458,
+    "apiCalls": [],
+    "technicalWording": [
+      "VARCHAR"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/analystPresentation.ts",
+    "bytes": 3351,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/utils.ts",
+    "bytes": 168,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/analystPresentation.test.ts",
+    "bytes": 2430,
+    "apiCalls": [],
+    "technicalWording": [
+      "VARCHAR"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/scalarExpected.ts",
+    "bytes": 1026,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/evaluationPresentation.ts",
+    "bytes": 4322,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/currency.tsx",
+    "bytes": 10422,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 1,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/filenames.ts",
+    "bytes": 547,
+    "apiCalls": [],
+    "technicalWording": [
+      "provenance"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/formatters.ts",
+    "bytes": 4631,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/datasetNames.tsx",
+    "bytes": 1431,
+    "apiCalls": [],
+    "technicalWording": [
+      "provenance"
+    ],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  },
+  {
+    "file": "frontend/src/lib/automlPresentation.ts",
+    "bytes": 6711,
+    "apiCalls": [],
+    "technicalWording": [],
+    "detailsCount": 0,
+    "nativeConfirmCount": 0
+  }
+]

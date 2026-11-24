@@ -1,0 +1,47 @@
+created <project>/deploy/companies/tsta (secrets/ holds totp_key and restic_password; not shown)
+ Network iq-tsta_internal Creating 
+ Network iq-tsta_internal Created 
+ Network iq-tsta_edge Creating 
+ Network iq-tsta_edge Created 
+ Volume iq-tsta_caddy_data Creating 
+ Volume iq-tsta_caddy_data Created 
+ Volume iq-tsta_caddy_config Creating 
+ Volume iq-tsta_caddy_config Created 
+ Volume iq-tsta_data Creating 
+ Volume iq-tsta_data Created 
+ Container iq-tsta-web-1 Creating 
+ Container iq-tsta-api-1 Creating 
+ Container iq-tsta-web-1 Created 
+ Container iq-tsta-api-1 Created 
+ Container iq-tsta-caddy-1 Creating 
+ Container iq-tsta-caddy-1 Created 
+ Container iq-tsta-api-1 Starting 
+ Container iq-tsta-web-1 Starting 
+ Container iq-tsta-web-1 Started 
+ Container iq-tsta-api-1 Started 
+ Container iq-tsta-api-1 Waiting 
+ Container iq-tsta-web-1 Waiting 
+ Container iq-tsta-api-1 Healthy 
+ Container iq-tsta-web-1 Healthy 
+ Container iq-tsta-caddy-1 Starting 
+ Container iq-tsta-caddy-1 Started 
+Creating the first owner. You will be asked to type the password twice. It is not shown, stored in a file or passed as an argument.
+Workspace: /data
+Applied versions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+Datasets already present: 0
+Will create: company "tsta" and owner owner-a@example.com
+Owner password (typed, not shown): 
+<<typed password 1>>
+
+Repeat the password: 
+<<typed password 2>>
+
+Done. Versions now [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]. Company and owner created; the owner must change the password at first sign-in.
+Verified: 64 existing catalog statements unchanged.
+
+Company tsta is running at https://a.localhost:8443
+Next, by hand:
+  1. Copy secrets/totp_key and secrets/restic_password to your OFFLINE store now (see docs/OPERATIONS_HOSTED.md). Without totp_key
+     enrolled owners cannot sign in; without restic_password the backups cannot be opened. Neither is inside the backups.
+  2. The owner signs in, chooses a new password and sets up two-step sign-in.
+  3. Schedule backups (deploy/systemd/ or cron) and run one restore drill before relying on them.

@@ -1,0 +1,6 @@
+limits MB=60 rows=1200000 file=55823814 bytes
+http=201 seconds=131
+oomkilled=false status=running exit=0
+peak: 951.4MiB
+{"id":"da40eede-757f-481d-a8c2-792bd50fe363","name":"synth-1m.csv","rows":1000000,"bytes":55823814,"created_at":"2026-11-22T14:31:51.152130+00:00","columns":[{"name":"order_id","type":"VARCHAR","null_count":0},{"name":"order_date","type":"VARCHAR","null_count":0},{"name":"customer_id","type":"VARCHA
+DONE

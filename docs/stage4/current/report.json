@@ -1,0 +1,281 @@
+[
+ {
+  "screen": "predictions-1-dataset",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-1-dataset",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-1-dataset",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-2-task-empty",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-2-task-empty",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-2-task-empty",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-2-task-chosen",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-2-task-chosen",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-2-task-chosen",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-3-configure-empty",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-3-configure-empty",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-3-configure-empty",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-3-configure-with-leaky-feature",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-3-configure-with-leaky-feature",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-3-configure-with-leaky-feature",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-4-train-before",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-4-train-before",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-4-train-before",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-5-review",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": [
+   "landmark-unique:moderate:1"
+  ]
+ },
+ {
+  "screen": "predictions-5-review",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": [
+   "landmark-unique:moderate:1"
+  ]
+ },
+ {
+  "screen": "predictions-5-review",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": [
+   "landmark-unique:moderate:1"
+  ]
+ },
+ {
+  "screen": "predictions-6-predict-and-export",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-6-predict-and-export",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-6-predict-and-export",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-columns",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-columns",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-columns",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-metrics",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-metrics",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-metrics",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-drafts",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-drafts",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-drafts",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-dialog-data-sharing",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-dialog-data-sharing",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-dialog-data-sharing",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-advanced",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-advanced",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-advanced",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ }
+]

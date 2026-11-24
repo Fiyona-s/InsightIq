@@ -1,0 +1,22 @@
+{
+  "changed_files_from_recovery_manifest": [
+    "frontend/playwright.analyst.config.ts",
+    "frontend/tsconfig.tsbuildinfo",
+    "frontend/e2e/01-phase4-datasets.spec.ts",
+    "frontend/e2e/02-phase5-knowledge.spec.ts",
+    "frontend/src/workspace.css",
+    "frontend/src/components/Phase3.test.tsx",
+    "frontend/src/components/KnowledgeReview.tsx",
+    "frontend/src/components/KnowledgeEditor.tsx"
+  ],
+  "new_files": [
+    "frontend/src/components/KnowledgeEditor.test.tsx",
+    "frontend/e2e/13-product-stage7-knowledge.spec.ts",
+    "frontend/scripts/product-stage7-readonly-review.mjs",
+    "docs/PRODUCT_STAGE7_REVIEW.md",
+    "docs/product-stage7/"
+  ],
+  "other_modified": [
+    "README.md"
+  ]
+}

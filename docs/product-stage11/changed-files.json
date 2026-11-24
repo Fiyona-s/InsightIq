@@ -1,0 +1,9 @@
+{
+  "baseline_files_changed": [
+    "frontend/e2e/10-product-stage4-ask.spec.ts",
+    "frontend/src/components/Analyst.tsx"
+  ],
+  "new_review_script": "frontend/scripts/product-stage11-readonly-review.mjs",
+  "documentation": "README.md, docs/PRODUCT_STAGE11_REVIEW.md and docs/product-stage11/",
+  "note": "Source baseline covers frontend/backend only. Regression evidence outputs under docs can also be refreshed by existing suites."
+}

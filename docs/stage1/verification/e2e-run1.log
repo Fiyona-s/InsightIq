@@ -1,0 +1,657 @@
+[WebServer] INFO:     Started server process [17370]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+
+Running 49 tests using 1 worker
+
+[WebServer] <project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+[WebServer]   warnings.warn(
+[WebServer] 2026-11-15 13:26:24,111 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 304, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:26:24,496 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:26:24,499 INFO Analyst run metrics: {"run_id": "25d19769-529f-4ce6-bfb0-fb5e717ea65e", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "query_latency_ms": 310, "total_latency_ms": 943}
+  ✓   1 e2e/00-phase3-navigation.spec.ts:37:1 › empty workspace setup uses real progress and shared dataset across all work pages (3.3s)
+[WebServer] 2026-11-15 13:26:28,923 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1309, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:26:29,220 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:26:29,222 INFO Analyst run metrics: {"run_id": "685c303a-17fe-473a-93d5-608d46f9ef67", "status": "succeeded", "retrieval_latency_ms": 17, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1310, "query_latency_ms": 281, "total_latency_ms": 1641}
+  ✓   2 e2e/00-phase3-navigation.spec.ts:148:1 › dataset switches guard editor drafts, reset AutoML, retain running source and recover from archive (5.1s)
+  ✓   3 e2e/00-phase3-navigation.spec.ts:311:1 › selector and admin disclosure support keyboard search, persistence and responsive layout (466ms)
+  ✓   4 e2e/00-phase3-navigation.spec.ts:351:1 › AutoML running job keeps its original source after a confirmed dataset switch (4.8s)
+  ✓   5 e2e/01-phase4-datasets.spec.ts:29:1 › preview-first import, sticky editing, navigation guards and bounded mobile preview (3.4s)
+  ✓   6 e2e/01-phase4-datasets.spec.ts:175:1 › schema descriptions share Knowledge storage and quality issues remain informational (1.1s)
+  ✓   7 e2e/01-phase4-datasets.spec.ts:233:1 › real forward-only history shows unavailable, pruned and retained snapshots and restores N+1 (1.9s)
+[WebServer] 2026-11-15 13:26:44,070 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1310, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:26:44,379 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:26:44,381 INFO Analyst run metrics: {"run_id": "4070d169-8818-48dc-badb-c7136ab8e448", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1312, "query_latency_ms": 284, "total_latency_ms": 1648}
+  ✓   8 e2e/01-phase4-datasets.spec.ts:337:1 › archived datasets allow read-only history, and active analysis blocks revision restore (3.2s)
+[WebServer] 2026-11-15 13:26:46,108 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": null, "completion_tokens": null, "total_tokens": null, "estimated_cost_usd": null}
+[WebServer] 2026-11-15 13:26:48,866 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 302, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:26:49,165 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:26:49,168 INFO Analyst run metrics: {"run_id": "d337ac2b-8667-448e-ad40-6d1caaad38ad", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 303, "query_latency_ms": 282, "total_latency_ms": 633}
+  ✓   9 e2e/02-phase5-knowledge.spec.ts:6:1 › Phase 5 explicit draft sharing, review, overwrite, counts, examples and archived read-only (7.6s)
+[WebServer] 2026-11-15 13:26:53,582 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:26:53,880 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:26:53,882 INFO Analyst run metrics: {"run_id": "ff0ec67b-d343-4c10-ada0-3056c959fb48", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 283, "total_latency_ms": 629}
+[WebServer] 2026-11-15 13:26:54,501 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:26:54,820 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:26:54,822 INFO Analyst run metrics: {"run_id": "dc8a943f-b5a4-4d69-bd91-b65bb3d1c3b2", "status": "succeeded", "retrieval_latency_ms": 12, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 293, "total_latency_ms": 659}
+[WebServer] 2026-11-15 13:26:59,443 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:26:59,753 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:26:59,755 INFO Analyst run metrics: {"run_id": "024e9ae8-e9e8-4260-a1da-4280f0a7872a", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 288, "total_latency_ms": 641}
+  ✓  10 e2e/03-phase6-dashboards.spec.ts:10:1 › Phase 6 dashboard titles, duplicate decisions, guarded refresh, history, currency, overflow and mobile (9.8s)
+[WebServer] 2026-11-15 13:27:03,367 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 301, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:27:03,670 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:27:03,672 INFO Analyst run metrics: {"run_id": "d6b99563-276d-49a8-9684-bea3c56aa9e9", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 303, "query_latency_ms": 286, "total_latency_ms": 628}
+[WebServer] 2026-11-15 13:27:04,558 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:27:04,861 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:27:04,864 INFO Analyst run metrics: {"run_id": "c3bcdf71-b2ee-491a-8d6e-efa2d99b2c92", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 283, "total_latency_ms": 640}
+  ✓  11 e2e/03-phase6-dashboards.spec.ts:42:1 › Phase 6 Analyst pin checks duplicates and confirms replacement without altering the library snapshot (3.0s)
+[WebServer] 2026-11-15 13:27:17,850 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 301, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:27:18,147 INFO Analyst run metrics: {"run_id": "1db6d90d-5535-4f64-8945-ab25c6fe2404", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 302, "query_latency_ms": 281, "total_latency_ms": 615}
+[WebServer] 2026-11-15 13:27:18,541 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:27:18,836 INFO Analyst run metrics: {"run_id": "2704988e-33d4-4b74-a9c5-8c0f166be055", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 279, "total_latency_ms": 616}
+  ✓  12 e2e/04-phase8-evaluation.spec.ts:25:1 › results-first offline replay, failure diff, comparison, partial scope and keyboard/mobile review (21.0s)
+  ✓  13 e2e/05-phase9-accessibility.spec.ts:5:1 › Phase 9 axe, keyboard focus and 390/768/1280 responsive review on all nine pages (13.0s)
+  ✓  14 e2e/06-phase9-carry-forward.spec.ts:6:1 › Evaluation browser classifies Fixed Regressed Unchanged and unscored from controlled differing stored verdicts (11.5s)
+[WebServer] 2026-11-15 13:27:51,870 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 303, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:27:52,167 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:27:52,170 INFO Analyst run metrics: {"run_id": "d59f72aa-319f-46a2-ba9e-0b7e5e9ed8b4", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "query_latency_ms": 283, "total_latency_ms": 626}
+[WebServer] 2026-11-15 13:27:52,734 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": null, "completion_tokens": null, "total_tokens": null, "estimated_cost_usd": null}
+  ✓  15 e2e/06-phase9-carry-forward.spec.ts:10:1 › Knowledge Approve all and scalar verified reference becomes Needs re-check after an actual dataset edit (4.3s)
+  ✘  16 e2e/07-product-stage1.spec.ts:7:1 › Stage 1 task navigation, preferences, aliases and unobscured responsive headers (22.2s)
+[WebServer] 2026-11-15 13:28:19,360 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 304, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:28:19,675 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:28:19,678 INFO Analyst run metrics: {"run_id": "7f4d7e6f-4ff8-4ac2-b815-bb3320e7fd3c", "status": "succeeded", "retrieval_latency_ms": 16, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "query_latency_ms": 301, "total_latency_ms": 655}
+  ✓  17 e2e/08-product-stage2-home.spec.ts:5:1 › Stage 2 Home uses active counts and opens the selected real saved question and dashboard without replay (2.7s)
+  ✓  18 e2e/08-product-stage2-home.spec.ts:16:1 › Stage 2 empty Home offers three-step onboarding without fake totals or an unavailable demo (286ms)
+  ✓  19 e2e/09-product-stage3-data.spec.ts:4:1 › Stage 3 four dataset views preserve drafts, Undo, Discard, typed validation, revisions and CSV (6.2s)
+[WebServer] 2026-11-15 13:28:29,051 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 303, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:28:29,364 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:28:29,367 INFO Analyst run metrics: {"run_id": "07be6a48-6cfd-4cc8-b0e1-55fd952d22d1", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "query_latency_ms": 299, "total_latency_ms": 648}
+  ✘  20 e2e/10-product-stage4-ask.spec.ts:5:1 › Stage 4 answer-first result, single monetary value, accessible details and preserved saving/FX/export (7.3s)
+[WebServer] 2026-11-15 13:28:36,038 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:28:36,336 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:28:36,339 INFO Analyst run metrics: {"run_id": "663f21c6-7eb7-4761-abf8-b232434cf26d", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 285, "total_latency_ms": 631}
+[WebServer] 2026-11-15 13:28:36,923 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 301, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:28:37,232 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:28:37,235 INFO Analyst run metrics: {"run_id": "896f2b07-5c50-4569-9ba6-31a7e13c8b0a", "status": "succeeded", "retrieval_latency_ms": 12, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 302, "query_latency_ms": 294, "total_latency_ms": 639}
+  ✓  21 e2e/11-product-stage5-dashboards.spec.ts:5:1 › Stage 5 View is read-only, Edit preserves auto-save and guards details; currency and exports remain available (6.2s)
+  ✓  22 e2e/12-product-stage6-models.spec.ts:5:1 › Stage 6 task goals, optional suggestions, essential setup and responsive wizard do not train on navigation (2.5s)
+  ✓  23 e2e/13-product-stage7-knowledge.spec.ts:5:1 › Stage 7 knowledge sections preserve confirmed metadata, explicit saves, shared descriptions and dataset revisions (2.1s)
+  ✘  24 e2e/14-product-stage8-evaluation.spec.ts:6:1 › Stage 8 separates reference inventory from actual scores and keeps new evaluation explicit and responsive (16.9s)
+[WebServer] 2026-11-15 13:29:04,292 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:04,603 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:29:04,606 INFO Analyst run metrics: {"run_id": "edb96140-a1bc-4c33-9204-0bcc842156f7", "status": "succeeded", "retrieval_latency_ms": 12, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 297, "total_latency_ms": 647}
+[WebServer] 2026-11-15 13:29:05,164 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 303, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:05,475 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:05,479 INFO Analyst run metrics: {"run_id": "e11e5690-03c6-4b50-b034-69c14898c5fc", "status": "failed", "retrieval_latency_ms": 10, "prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150, "estimated_cost_usd": 0.0002, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 609, "total_latency_ms": 640}
+[WebServer] 2026-11-15 13:29:05,740 INFO Analyst run metrics: {"run_id": "8fcbc67a-ba88-4ce8-a357-9cbe73d9892d", "status": "cancelled", "retrieval_latency_ms": 10, "total_latency_ms": 20}
+[WebServer] 2026-11-15 13:29:06,166 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:06,176 INFO Analyst run metrics: {"run_id": "b2feac0f-a28e-4eb2-9b7b-e6b21f6a3c29", "status": "clarification", "retrieval_latency_ms": 9, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "total_latency_ms": 336}
+  ✓  25 e2e/15-product-stage9-monitoring.spec.ts:7:1 › Stage 9 real operational filters, keyboard traces, missing metrics and retained historical source labels (6.2s)
+  ✓  26 e2e/16-product-stage12-final.spec.ts:5:1 › Stage 12 final responsive landmarks, keyboard entry, expanded privacy disclosure and visual record (11.6s)
+[WebServer] 2026-11-15 13:29:23,522 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1311, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:23,837 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:29:23,839 INFO Analyst run metrics: {"run_id": "ec4d1e7f-4868-491c-92cb-484cd00dc83f", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1312, "query_latency_ms": 301, "total_latency_ms": 1664}
+[WebServer] 2026-11-15 13:29:25,540 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:25,853 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:29:25,856 INFO Analyst run metrics: {"run_id": "f3f135be-ed34-4baf-a5ac-652c8ef0144d", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 299, "total_latency_ms": 649}
+[WebServer] 2026-11-15 13:29:26,994 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:27,004 INFO Analyst run metrics: {"run_id": "73954ac0-6d72-4675-a3e6-218e64c814e8", "status": "clarification", "retrieval_latency_ms": 15, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "total_latency_ms": 347}
+[WebServer] 2026-11-15 13:29:27,883 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 304, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:28,191 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:29:28,193 INFO Analyst run metrics: {"run_id": "9f4ca958-28b7-4ddb-99e8-c1a775ea3c88", "status": "succeeded", "retrieval_latency_ms": 12, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "query_latency_ms": 294, "total_latency_ms": 646}
+[WebServer] 2026-11-15 13:29:29,241 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:29,551 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:29:29,554 INFO Analyst run metrics: {"run_id": "6e09cedf-0b94-4862-bcb2-5cb5f3e12586", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 295, "total_latency_ms": 647}
+[WebServer] 2026-11-15 13:29:30,704 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 303, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:31,011 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:29:31,014 INFO Analyst run metrics: {"run_id": "44feb59c-4741-43c0-ad10-2290b991221c", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 305, "query_latency_ms": 292, "total_latency_ms": 641}
+[WebServer] 2026-11-15 13:29:32,044 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:32,355 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:32,358 INFO Analyst run metrics: {"run_id": "f1422a4f-7bd0-4348-9abd-c10e3af84260", "status": "failed", "retrieval_latency_ms": 17, "prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150, "estimated_cost_usd": 0.0002, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 612, "total_latency_ms": 651}
+  ✓  27 e2e/analyst-phase2.spec.ts:7:1 › Phase 2 computed card, follow-ups, clarification, feedback and dashboard pin (11.1s)
+[WebServer] 2026-11-15 13:29:33,577 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:33,887 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:29:33,889 INFO Analyst run metrics: {"run_id": "7603204d-a3ac-428a-9af8-b75c20922610", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 295, "total_latency_ms": 645}
+[WebServer] 2026-11-15 13:29:35,060 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:29:35,359 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:29:35,361 INFO Analyst run metrics: {"run_id": "a3f0c17f-b759-47f5-bc3d-c8058a59d10d", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 285, "total_latency_ms": 634}
+  ✓  28 e2e/analyst-phase2.spec.ts:41:1 › switching datasets starts a new thread and requires fresh type confirmation (3.3s)
+  ✘  29 e2e/analyst.spec.ts:6:1 › controlled provider boundary, real typed aggregation, history and CSV export (30.0s)
+  ✘  30 e2e/analyst.spec.ts:85:1 › RAG, live graph repair, actual Recharts, evidence and verified example lifecycle (30.0s)
+  ✘  31 e2e/automl.spec.ts:80:1 › local regression, registry reload, single/batch prediction and real CSV export (2.0m)
+  ✘  32 e2e/automl.spec.ts:236:1 › classification, customer RFM, anomaly scores and chronological forecasting use real local models (3.0m)
+  ✘  33 e2e/automl.spec.ts:363:1 › keyboard-only wizard navigation, suggestions never auto-apply and Advanced reset (30.0s)
+  ✘  34 e2e/automl.spec.ts:442:1 › negative R² and omitted importance use an actual temporary no-signal model (30.0s)
+  ✘  35 e2e/currency-legacy.spec.ts:6:1 › legacy recognized-revenue KPI gains confirmed INR metadata without rewriting its snapshot (30.0s)
+  ✘  36 e2e/currency.spec.ts:6:1 › confirmed INR revenue converts with test-only rates and resets; counts have no currency control (30.0s)
+  ✘  37 e2e/currency.spec.ts:112:1 › saved monetary bar charts convert axes and reports without changing snapshots (30.0s)
+  ✘  38 e2e/dataset-editor.spec.ts:5:1 › dataset edits persist after refresh and export the saved version (30.0s)
+  ✘  39 e2e/dataset-editor.spec.ts:85:1 › click existing revenue, preserve account 001 and row count, save revision 2, export and query in Analyst (30.0s)
+  ✘  40 e2e/dataset-editor.spec.ts:187:1 › existing cell batches survive sorted pages, invalid input, Escape, Undo, NULL and Cancel (1.0m)
+[WebServer] 2026-11-15 13:40:12,341 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:40:12,677 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-15 13:40:12,680 INFO Analyst run metrics: {"run_id": "d772d20c-de73-4a74-86c2-8d7e5b32a528", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 313, "query_latency_ms": 315, "total_latency_ms": 672}
+  ✘  41 e2e/dataset-lifecycle.spec.ts:5:1 › throwaway datasets: rename, dependency preview, archive/restore, guarded delete and retained history (1.5m)
+  ✘  42 e2e/dataset-lifecycle.spec.ts:44:1 › bulk DELETE confirmation processes only newly created selected fixtures (30.0s)
+  ✘  43 e2e/phase4.spec.ts:8:1 › dashboard save, layout, filters, reload and exports (1.5m)
+[WebServer] 2026-11-15 13:43:56,111 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:43:56,415 INFO Analyst run metrics: {"run_id": "d0edbbe1-3b30-4954-8d24-aa1d5912e4c7", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 283, "total_latency_ms": 629}
+[WebServer] 2026-11-15 13:43:56,795 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 303, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-15 13:43:57,104 INFO Analyst run metrics: {"run_id": "fa44c4c7-c318-4359-ac09-b33db46892e3", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 304, "query_latency_ms": 288, "total_latency_ms": 628}
+  ✓  44 e2e/phase4.spec.ts:165:1 › controlled evaluation verifies references and records actual comparisons (17.2s)
+  ✓  45 e2e/ui-refinement.spec.ts:15:1 › sidebar collapse preserves the current workspace and keyboard dataset tabs preserve the preview (478ms)
+  ✘  46 e2e/ui-refinement.spec.ts:59:1 › mobile navigation is keyboard accessible, traps focus and restores focus on Escape (5.2s)
+  ✘  47 e2e/ui-refinement.spec.ts:91:1 › all nine modules fit desktop tablet and mobile without horizontal overflow (1.5m)
+  ✓  48 e2e/ui-refinement.spec.ts:128:1 › Phase 1A Overview groups counts and filters recent statuses without deleting records (442ms)
+  ✘  49 e2e/workspace.spec.ts:2:1 › real upload, schema, preview, reload and mobile layout (5.1s)
+
+
+  1) e2e/07-product-stage1.spec.ts:7:1 › Stage 1 task navigation, preferences, aliases and unobscured responsive headers 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('button', { name: 'Accuracy check', exact: true })
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" getByRole('button', { name: 'Accuracy check', exact: true }) with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Accuracy check', exact: true })
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      23 |  const samples=page.getByRole('checkbox',{name:/Hide sample datasets/});await samples.check();await page.reload();await expect(samples).toBeChecked();await samples.uncheck();
+      24 |  await page.getByRole('checkbox',{name:/Compact navigation/}).check();await expect(page.locator('.app')).toHaveClass(/nav-collapsed/);await page.getByRole('checkbox',{name:/Compact navigation/}).uncheck();
+    > 25 |  await page.evaluate(()=>localStorage.setItem('insightiq-admin-tools-v1','false'));await page.goto('/#overview');await expect(page.getByRole('button',{name:'Accuracy check',exact:true})).toHaveCount(0);await page.getByRole('button',{name:'Business definitions',exact:true}).click();await expect(page.locator('main h1')).toHaveText('Business definitions');await openAdmin(page);await expect(page.getByText('Not protected by a login')).toBeVisible();
+         |                                                                                                                                                                                            ^
+      26 |  for(const [alias,title]of [['ask-your-data','Ask your data'],['ask-insightiq','Ask your data'],['check-answer-accuracy','Accuracy check'],['performance-%26-errors','Performance & errors'],['data-workspace','Datasets'],['my-data','Datasets'],['build-models','Predictions']]){await page.goto('/#'+alias);await expect(page.locator('main h1')).toHaveText(title)}
+      27 |  expect(requests).toEqual([]);expect(errors).toEqual([]);fs.writeFileSync('../docs/product-stage1/browser-review.json',JSON.stringify({reviews,errors,preferenceMutatingRequests:requests},null,2));
+      28 | });
+        at <project>/frontend/e2e/07-product-stage1.spec.ts:25:188
+
+    Error Context: test-results/07-product-stage1-Stage-1--5630a-obscured-responsive-headers/error-context.md
+
+  2) e2e/10-product-stage4-ask.spec.ts:5:1 › Stage 4 answer-first result, single monetary value, accessible details and preserved saving/FX/export 
+
+    Error: raw execution details are Admin-only
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('region', { name: 'Result insights' }).locator('.execution-details')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - raw execution details are Admin-only getByRole('region', { name: 'Result insights' }).locator('.execution-details') with timeout 5000ms
+      - waiting for getByRole('region', { name: 'Result insights' }).locator('.execution-details')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      12 |  const submissions:unknown[]=[];page.on('request',r=>{if(r.method()==='POST'&&new URL(r.url()).pathname==='/api/analyst/runs')submissions.push(r.postDataJSON())});
+      13 |  await page.getByRole('textbox',{name:'Your question',exact:true}).fill('What is the total revenue?');await page.getByRole('button',{name:'Analyze',exact:true}).click();const card=page.getByRole('region',{name:'Result insights'});await expect(card.locator('.result-kpi strong')).toHaveText('₹12,50,000.00');expect((await card.innerText()).match(/₹12,50,000\.00/g)?.length).toBe(1);expect(submissions).toHaveLength(1);expect((await card.boundingBox())!.y).toBeLessThan((await page.locator('.question-composer').boundingBox())!.y);
+    > 14 |  for(const selector of ['.result-data-table','.sql-viewer','.calculation-details','.result-more-actions'])await expect(card.locator(selector)).not.toHaveAttribute('open','');await expect(card.locator('.execution-details'),'raw execution details are Admin-only').toHaveCount(0);await expect(card.getByRole('button',{name:'Propose as verified example'})).toHaveCount(0);
+         |                                                                                                                                                                                                                                                                       ^
+      15 |  const exportURL=(await card.getByRole('link',{name:'Export CSV',exact:true}).getAttribute('href'))!,raw=await(await page.request.get(exportURL)).text();await card.getByRole('button',{name:'Copy answer',exact:true}).click();expect(await page.evaluate(()=>navigator.clipboard.readText())).toBe('Your total revenue is ₹12,50,000.00.');
+      16 |  for(const width of [1280,768,390]){await page.setViewportSize({width,height:1000});await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);const scan=await new AxeBuilder({page}).analyze();expect(scan.violations.filter(v=>v.impact==='serious'||v.impact==='critical')).toEqual([]);checks.push({width,violations:scan.violations});await page.evaluate(()=>{if(document.activeElement instanceof HTMLElement&&document.activeElement.matches('.skip-link'))document.activeElement.blur();window.scrollTo(0,0)});await page.screenshot({path:`../docs/product-stage4/after/scalar-${width}.png`,fullPage:true})}
+      17 |  await page.setViewportSize({width:1280,height:1000});await card.getByRole('button',{name:'Convert Currency',exact:true}).click();await page.getByLabel('Target currency',{exact:true}).selectOption('USD');await page.getByRole('button',{name:'Apply conversion',exact:true}).click();await expect(card.locator('.result-kpi strong')).toHaveText('$15,625.00');expect(await(await page.request.get(exportURL)).text()).toBe(raw);await page.getByRole('button',{name:'Reset to Original Currency',exact:true}).click();await expect(card.locator('.result-kpi strong')).toHaveText('₹12,50,000.00');
+        at <project>/frontend/e2e/10-product-stage4-ask.spec.ts:14:263
+
+    Error Context: test-results/10-product-stage4-ask-Stag-8f9db--preserved-saving-FX-export/error-context.md
+
+  3) e2e/14-product-stage8-evaluation.spec.ts:6:1 › Stage 8 separates reference inventory from actual scores and keeps new evaluation explicit and responsive 
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  getByRole('region', { name: 'Stored evaluation summary' }).locator('.evaluation-score')
+    Expected: "26px"
+    Received: "28px"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" getByRole('region', { name: 'Stored evaluation summary' }).locator('.evaluation-score') with timeout 5000ms
+      - waiting for getByRole('region', { name: 'Stored evaluation summary' }).locator('.evaluation-score')
+        14 × locator resolved to <p class="evaluation-score">…</p>
+           - unexpected value "28px"
+
+
+       8 |  const installed=await(await page.request.post('/api/benchmarks/retail-v1/install')).json();expect((await page.request.post('/api/benchmarks/retail-v1/verify?dataset_id='+installed.dataset_id)).ok()).toBe(true);const fixtureResponse=await page.request.post('/api/test/phase9/'+installed.dataset_id+'/comparison-fixtures');expect(fixtureResponse.ok()).toBe(true);const fixture=await fixtureResponse.json();expect(fixture.controlled_fixture).toBe(true);
+       9 |  const before=await(await page.request.get('/api/evaluations/'+fixture.ids[1])).json();page.on('request',r=>{if(!['GET','HEAD','OPTIONS'].includes(r.method()))writes.push(r.method()+' '+new URL(r.url()).pathname)});
+    > 10 |  await page.goto('/#evaluation');await expect(page.getByText('Check saved answers against reference questions. For developers.',{exact:true})).toBeVisible();const inventory=page.getByRole('region',{name:'Benchmark inventory'});await expect(inventory).toContainText('45 verified reference questions');await expect(inventory).toContainText('not system accuracy');const summary=page.getByRole('region',{name:'Stored evaluation summary'});await expect(summary).toContainText('75.0% · 3 correct / 4 scored');await expect(summary.locator('.evaluation-score')).toHaveCSS('font-size','26px');await expect(summary).toContainText('Partial run: 4 of 45 questions');await expect(summary).toContainText('Offline replay · 0 new LLM calls');await expect(page.locator('details.evaluation-new-run')).not.toHaveAttribute('open','');await expect(page.getByRole('button',{name:'Run evaluation',exact:true})).toHaveCount(0);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^
+      11 |  for(const width of [1280,768,390]){await page.setViewportSize({width,height:1000});await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);const axe=await new AxeBuilder({page}).analyze();expect(axe.violations).toEqual([]);checks.push({state:'Saved result',width,violations:axe.violations});await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:`../docs/product-stage8/after/results-${width}.png`,fullPage:true})}
+      12 |  await page.setViewportSize({width:1280,height:1000});const globalBefore=await page.getByRole('button',{name:/^Active dataset/}).getAttribute('title');const override=page.getByRole('button',{name:'Use benchmark for this page only'});if(await override.count())await override.click();await openEvaluationSetup(page);await expect(page.getByLabel('Saved prediction source')).toBeVisible();await expect(page.getByLabel('Evaluation mode',{exact:true})).toHaveValue('offline');
+      13 |  for(const width of [1280,768,390]){await page.setViewportSize({width,height:1000});await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);const axe=await new AxeBuilder({page}).analyze();expect(axe.violations).toEqual([]);checks.push({state:'New evaluation',width,violations:axe.violations});await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:`../docs/product-stage8/after/new-evaluation-${width}.png`,fullPage:true})}
+        at <project>/frontend/e2e/14-product-stage8-evaluation.spec.ts:10:555
+
+    Error Context: test-results/14-product-stage8-evaluati-084e3-ion-explicit-and-responsive/error-context.md
+
+  4) e2e/analyst.spec.ts:6:1 › controlled provider boundary, real typed aggregation, history and CSV export 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.setInputFiles: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+      10 |   page.on("pageerror", (e) => errors.push(e.message));
+      11 |   await page.goto("/");
+    > 12 |   await page.getByLabel("Upload CSV file").setInputFiles({
+         |   ^
+      13 |     name: "controlled-analyst-fixture.csv",
+      14 |     mimeType: "text/csv",
+      15 |     buffer: Buffer.from(
+        at <project>/frontend/e2e/analyst.spec.ts:12:3
+
+    Error Context: test-results/analyst-controlled-provide-0f04e-tion-history-and-CSV-export/error-context.md
+
+  5) e2e/analyst.spec.ts:85:1 › RAG, live graph repair, actual Recharts, evidence and verified example lifecycle 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.setInputFiles: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+      93 |   });
+      94 |   await page.goto("/");
+    > 95 |   await page
+         |   ^
+      96 |     .getByLabel("Upload CSV file")
+      97 |     .setInputFiles({
+      98 |       name: "phase3-controlled-fixture.csv",
+        at <project>/frontend/e2e/analyst.spec.ts:95:3
+
+    Error Context: test-results/analyst-RAG-live-graph-rep-7b3a8--verified-example-lifecycle/error-context.md
+
+  6) e2e/automl.spec.ts:80:1 › local regression, registry reload, single/batch prediction and real CSV export 
+
+    Test timeout of 120000ms exceeded.
+
+    Error: locator.setInputFiles: Test timeout of 120000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+      12 | async function upload(page: Page, name: string, csv: string) {
+      13 |   await page.goto("/");
+    > 14 |   await page
+         |   ^
+      15 |     .getByLabel("Upload CSV file")
+      16 |     .setInputFiles({ name, mimeType: "text/csv", buffer: Buffer.from(csv) });
+      17 |   await expect(
+        at upload (<project>/frontend/e2e/automl.spec.ts:14:3)
+        at <project>/frontend/e2e/automl.spec.ts:95:3
+
+    Error Context: test-results/automl-local-regression-re-8240a-diction-and-real-CSV-export/error-context.md
+
+  7) e2e/automl.spec.ts:236:1 › classification, customer RFM, anomaly scores and chronological forecasting use real local models 
+
+    Test timeout of 180000ms exceeded.
+
+    Error: locator.setInputFiles: Test timeout of 180000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+      12 | async function upload(page: Page, name: string, csv: string) {
+      13 |   await page.goto("/");
+    > 14 |   await page
+         |   ^
+      15 |     .getByLabel("Upload CSV file")
+      16 |     .setInputFiles({ name, mimeType: "text/csv", buffer: Buffer.from(csv) });
+      17 |   await expect(
+        at upload (<project>/frontend/e2e/automl.spec.ts:14:3)
+        at <project>/frontend/e2e/automl.spec.ts:259:3
+
+    Error Context: test-results/automl-classification-cust-0a191-sting-use-real-local-models/error-context.md
+
+  8) e2e/automl.spec.ts:363:1 › keyboard-only wizard navigation, suggestions never auto-apply and Advanced reset 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.setInputFiles: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+      12 | async function upload(page: Page, name: string, csv: string) {
+      13 |   await page.goto("/");
+    > 14 |   await page
+         |   ^
+      15 |     .getByLabel("Upload CSV file")
+      16 |     .setInputFiles({ name, mimeType: "text/csv", buffer: Buffer.from(csv) });
+      17 |   await expect(
+        at upload (<project>/frontend/e2e/automl.spec.ts:14:3)
+        at <project>/frontend/e2e/automl.spec.ts:372:3
+
+    Error Context: test-results/automl-keyboard-only-wizar-bafd7-to-apply-and-Advanced-reset/error-context.md
+
+  9) e2e/automl.spec.ts:442:1 › negative R² and omitted importance use an actual temporary no-signal model 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.setInputFiles: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+      12 | async function upload(page: Page, name: string, csv: string) {
+      13 |   await page.goto("/");
+    > 14 |   await page
+         |   ^
+      15 |     .getByLabel("Upload CSV file")
+      16 |     .setInputFiles({ name, mimeType: "text/csv", buffer: Buffer.from(csv) });
+      17 |   await expect(
+        at upload (<project>/frontend/e2e/automl.spec.ts:14:3)
+        at <project>/frontend/e2e/automl.spec.ts:451:3
+
+    Error Context: test-results/automl-negative-R²-and-omi-be7c8-l-temporary-no-signal-model/error-context.md
+
+  10) e2e/currency-legacy.spec.ts:6:1 › legacy recognized-revenue KPI gains confirmed INR metadata without rewriting its snapshot 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.setInputFiles: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+       8 | }) => {
+       9 |   await page.goto("/");
+    > 10 |   await page
+         |   ^
+      11 |     .getByLabel("Upload CSV file")
+      12 |     .setInputFiles({
+      13 |       name: "LEGACY-CURRENCY-TEST.csv",
+        at <project>/frontend/e2e/currency-legacy.spec.ts:10:3
+
+    Error Context: test-results/currency-legacy-legacy-rec-831eb-hout-rewriting-its-snapshot/error-context.md
+
+  11) e2e/currency.spec.ts:6:1 › confirmed INR revenue converts with test-only rates and resets; counts have no currency control 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.setInputFiles: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+       8 | }) => {
+       9 |   await page.goto("/");
+    > 10 |   await page.getByLabel("Upload CSV file").setInputFiles({
+         |   ^
+      11 |     name: "currency-retail.csv",
+      12 |     mimeType: "text/csv",
+      13 |     buffer: Buffer.from("id,revenue,region\n1,1250000,North\n2,0,South\n"),
+        at <project>/frontend/e2e/currency.spec.ts:10:3
+
+    Error Context: test-results/currency-confirmed-INR-rev-ad0cf-ts-have-no-currency-control/error-context.md
+
+  12) e2e/currency.spec.ts:112:1 › saved monetary bar charts convert axes and reports without changing snapshots 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.setInputFiles: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+      114 | }) => {
+      115 |   await page.goto("/");
+    > 116 |   await page.getByLabel("Upload CSV file").setInputFiles({
+          |   ^
+      117 |     name: "currency-chart.csv",
+      118 |     mimeType: "text/csv",
+      119 |     buffer: Buffer.from("id,revenue,region\n1,1250000,North\n2,500000,South\n"),
+        at <project>/frontend/e2e/currency.spec.ts:116:3
+
+    Error Context: test-results/currency-saved-monetary-ba-404d6--without-changing-snapshots/error-context.md
+
+  13) e2e/dataset-editor.spec.ts:5:1 › dataset edits persist after refresh and export the saved version 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.setInputFiles: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+       8 |   await page.goto("/");
+       9 |   const name = `editor-${Date.now()}.csv`;
+    > 10 |   await page.getByLabel("Upload CSV file").setInputFiles({
+         |   ^
+      11 |     name,
+      12 |     mimeType: "text/csv",
+      13 |     buffer: Buffer.from("name,amount\nalpha,10\nbeta,20\ngamma,30\n"),
+        at <project>/frontend/e2e/dataset-editor.spec.ts:10:3
+
+    Error Context: test-results/dataset-editor-dataset-edi-99273-nd-export-the-saved-version/error-context.md
+
+  14) e2e/dataset-editor.spec.ts:85:1 › click existing revenue, preserve account 001 and row count, save revision 2, export and query in Analyst 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      88 |   page.on("dialog", (dialog) => dialog.accept());
+      89 |   await page.goto("/");
+    > 90 |   const imported = page.waitForResponse(
+         |                         ^
+      91 |     (r) => r.url().endsWith("/api/datasets") && r.request().method() === "POST",
+      92 |   );
+      93 |   await page.getByLabel("Upload CSV file").setInputFiles({
+        at <project>/frontend/e2e/dataset-editor.spec.ts:90:25
+
+    Error: locator.setInputFiles: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+      91 |     (r) => r.url().endsWith("/api/datasets") && r.request().method() === "POST",
+      92 |   );
+    > 93 |   await page.getByLabel("Upload CSV file").setInputFiles({
+         |   ^
+      94 |     name: "SYNTHETIC-existing-cell-example.csv",
+      95 |     mimeType: "text/csv",
+      96 |     buffer: Buffer.from(
+        at <project>/frontend/e2e/dataset-editor.spec.ts:93:3
+
+    Error Context: test-results/dataset-editor-click-exist-31896-export-and-query-in-Analyst/error-context.md
+
+  15) e2e/dataset-editor.spec.ts:187:1 › existing cell batches survive sorted pages, invalid input, Escape, Undo, NULL and Cancel 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 60000ms exceeded.
+
+      193 |   page.on("dialog", (dialog) => dialog.accept());
+      194 |   await page.goto("/");
+    > 195 |   const imported = page.waitForResponse(
+          |                         ^
+      196 |     (r) => r.url().endsWith("/api/datasets") && r.request().method() === "POST",
+      197 |   );
+      198 |   const csv =
+        at <project>/frontend/e2e/dataset-editor.spec.ts:195:25
+
+    Error: locator.setInputFiles: Test timeout of 60000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+      204 |     ).join("\n") +
+      205 |     "\n";
+    > 206 |   await page.getByLabel("Upload CSV file").setInputFiles({
+          |   ^
+      207 |     name: "SYNTHETIC-paged-cell-edits.csv",
+      208 |     mimeType: "text/csv",
+      209 |     buffer: Buffer.from(csv),
+        at <project>/frontend/e2e/dataset-editor.spec.ts:206:3
+
+    Error Context: test-results/dataset-editor-existing-ce-8a9f4-Escape-Undo-NULL-and-Cancel/error-context.md
+
+  16) e2e/dataset-lifecycle.spec.ts:5:1 › throwaway datasets: rename, dependency preview, archive/restore, guarded delete and retained history 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for locator('details.dataset-rail') to be visible
+
+
+       5 | test('throwaway datasets: rename, dependency preview, archive/restore, guarded delete and retained history',async({page})=>{
+       6 |  test.setTimeout(90000);fs.mkdirSync(folder,{recursive:true});const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+    >  7 |  async function openCatalog(){const rail=page.locator('details.dataset-rail');await rail.waitFor();if(!await rail.evaluate((el:HTMLDetailsElement)=>el.open))await rail.locator(':scope > summary').click()}
+         |                                                                                          ^
+       8 |  const suffix=String(Date.now()),original=`synthetic-PHASE1B-${suffix}.csv`,other=`verification-PHASE1B-${suffix}.csv`,renamed=`Temporary sales PHASE1B ${suffix}`;
+       9 |  async function upload(name:string){const r=await page.request.post('/api/datasets',{multipart:{file:{name,mimeType:'text/csv',buffer:Buffer.from('id,revenue,region\n001,1250,North\n002,20,South\n')}}});expect(r.status()).toBe(201);return r.json();}
+      10 |  const first=await upload(original),second=await upload(other);
+        at openCatalog (<project>/frontend/e2e/dataset-lifecycle.spec.ts:7:90)
+        at <project>/frontend/e2e/dataset-lifecycle.spec.ts:17:29
+
+    Error Context: test-results/dataset-lifecycle-throwawa-2549a-delete-and-retained-history/error-context.md
+
+  17) e2e/dataset-lifecycle.spec.ts:44:1 › bulk DELETE confirmation processes only newly created selected fixtures 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Find a dataset', { exact: true })
+
+
+      44 | test('bulk DELETE confirmation processes only newly created selected fixtures',async({page})=>{
+      45 |  const suffix=String(Date.now());for(const name of [`synthetic-bulk-PHASE1B-${suffix}.csv`,`verification-bulk-PHASE1B-${suffix}.csv`]){const r=await page.request.post('/api/datasets',{multipart:{file:{name,mimeType:'text/csv',buffer:Buffer.from('id\n001\n')}}});expect(r.status()).toBe(201);}
+    > 46 |  await page.goto('/');await page.getByLabel('Find a dataset',{exact:true}).fill(suffix);await page.getByLabel('Select all visible datasets').check();await page.getByRole('region',{name:'Selected dataset actions'}).getByRole('button',{name:'Delete',exact:true}).click();const dialog=page.getByRole('dialog');const remove=dialog.getByRole('button',{name:'Delete permanently'});await expect(remove).toBeDisabled();await dialog.getByLabel('Delete confirmation').fill('DELETE');const ack=dialog.getByLabel(/I acknowledge/);if(await ack.count())await ack.check();await page.screenshot({path:folder+'/bulk-delete-confirmation.png',fullPage:false});await remove.click();await expect(dialog.getByRole('status')).toContainText('success');expect(await dialog.getByRole('status').getByRole('listitem').count()).toBe(2);
+         |                                                                            ^
+      47 | });
+      48 |
+        at <project>/frontend/e2e/dataset-lifecycle.spec.ts:46:76
+
+    Error Context: test-results/dataset-lifecycle-bulk-DEL-707e8-y-created-selected-fixtures/error-context.md
+
+  18) e2e/phase4.spec.ts:8:1 › dashboard save, layout, filters, reload and exports ─────────────────
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.setInputFiles: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Upload CSV file')
+
+
+      13 |   page.on("pageerror", (e) => errors.push(e.message));
+      14 |   await page.goto("/");
+    > 15 |   await page.getByLabel("Upload CSV file").setInputFiles({
+         |   ^
+      16 |     name: "phase4-dashboard-controlled.csv",
+      17 |     mimeType: "text/csv",
+      18 |     buffer: Buffer.from(
+        at <project>/frontend/e2e/phase4.spec.ts:15:3
+
+    Error Context: test-results/phase4-dashboard-save-layout-filters-reload-and-exports/error-context.md
+
+  19) e2e/ui-refinement.spec.ts:59:1 › mobile navigation is keyboard accessible, traps focus and restores focus on Escape 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  getByRole('button', { name: 'Datasets', exact: true })
+    Expected: focused
+    Received: inactive
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeFocused" getByRole('button', { name: 'Datasets', exact: true }) with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Datasets', exact: true })
+        14 × locator resolved to <button class="nav-item" aria-label="Datasets">…</button>
+           - unexpected value "inactive"
+
+
+      71 |   await expect(
+      72 |     page.getByRole("button", { name: "Datasets", exact: true }),
+    > 73 |   ).toBeFocused();
+         |     ^
+      74 |   const brand = page.getByRole("link", { name: "InsightIQ home", exact: true });
+      75 |   await brand.focus();
+      76 |   await page.keyboard.press("Shift+Tab");
+        at <project>/frontend/e2e/ui-refinement.spec.ts:73:5
+
+    Error Context: test-results/ui-refinement-mobile-navig-dd4d9-nd-restores-focus-on-Escape/error-context.md
+
+  20) e2e/ui-refinement.spec.ts:91:1 › all nine modules fit desktop tablet and mobile without horizontal overflow 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Accuracy check', exact: true }) to be visible
+
+
+       at ui.ts:18
+
+      16 | export async function openResultActions(page:Page){const panel=page.locator('details.result-more-actions');await panel.waitFor();if(!await panel.evaluate((el:HTMLDetailsElement)=>el.open))await panel.locator('summary').first().click();}
+      17 | // Admin tools are hidden by default; switch them on the way an owner would (Menu → Show admin tools).
+    > 18 | export async function openAdmin(page:Page){if(await page.getByRole('button',{name:'Accuracy check',exact:true}).count())return;await page.getByRole('button',{name:'Menu',exact:true}).click();const item=page.getByRole('menuitemcheckbox',{name:/Show admin tools/});if(await item.getAttribute('aria-checked')!=='true')await item.click();await page.keyboard.press('Escape');await page.getByRole('button',{name:'Accuracy check',exact:true}).waitFor();}
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+      19 | export async function selectGlobal(page:Page,id:string){const response=await page.request.get('/api/datasets');const dataset=(await response.json()).find((d:{id:string})=>d.id===id);await page.getByRole('button',{name: /^Active dataset/}).click();await page.getByRole('textbox',{name:'Search active datasets'}).fill(dataset.display_name||dataset.name);await page.getByRole('option').filter({hasText:dataset.display_name||dataset.name}).click();}
+      20 | export async function editDashboard(page:Page){const toggle=page.getByRole('button',{name:'Edit dashboard',exact:true});if(await page.getByRole('button',{name:'Done editing',exact:true}).isVisible())return;await toggle.click();}
+      21 | export async function openDashboardCreation(page:Page){const panel=page.locator('details.dashboard-create');await panel.waitFor();if(!await panel.evaluate((el:HTMLDetailsElement)=>el.open))await panel.locator('summary').click();}
+        at openAdmin (<project>/frontend/e2e/ui.ts:18:437)
+        at <project>/frontend/e2e/ui-refinement.spec.ts:110:191
+
+    Error Context: test-results/ui-refinement-all-nine-mod-89551-without-horizontal-overflow/error-context.md
+
+  21) e2e/workspace.spec.ts:2:1 › real upload, schema, preview, reload and mobile layout ───────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'Datasets' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'Datasets' }) with timeout 5000ms
+      - waiting for getByRole('heading', { name: 'Datasets' })
+
+
+       8 |   await expect(
+       9 |     page.getByRole("heading", { name: "Datasets" }),
+    > 10 |   ).toBeVisible();
+         |     ^
+      11 |   const name = `illustrative-e2e-${Date.now()}.csv`;
+      12 |   await page.getByLabel("Upload CSV file").setInputFiles({
+      13 |     name,
+        at <project>/frontend/e2e/workspace.spec.ts:10:5
+
+    Error Context: test-results/workspace-real-upload-sche-f9f0a-ew-reload-and-mobile-layout/error-context.md
+
+  21 failed
+    e2e/07-product-stage1.spec.ts:7:1 › Stage 1 task navigation, preferences, aliases and unobscured responsive headers 
+    e2e/10-product-stage4-ask.spec.ts:5:1 › Stage 4 answer-first result, single monetary value, accessible details and preserved saving/FX/export 
+    e2e/14-product-stage8-evaluation.spec.ts:6:1 › Stage 8 separates reference inventory from actual scores and keeps new evaluation explicit and responsive 
+    e2e/analyst.spec.ts:6:1 › controlled provider boundary, real typed aggregation, history and CSV export 
+    e2e/analyst.spec.ts:85:1 › RAG, live graph repair, actual Recharts, evidence and verified example lifecycle 
+    e2e/automl.spec.ts:80:1 › local regression, registry reload, single/batch prediction and real CSV export 
+    e2e/automl.spec.ts:236:1 › classification, customer RFM, anomaly scores and chronological forecasting use real local models 
+    e2e/automl.spec.ts:363:1 › keyboard-only wizard navigation, suggestions never auto-apply and Advanced reset 
+    e2e/automl.spec.ts:442:1 › negative R² and omitted importance use an actual temporary no-signal model 
+    e2e/currency-legacy.spec.ts:6:1 › legacy recognized-revenue KPI gains confirmed INR metadata without rewriting its snapshot 
+    e2e/currency.spec.ts:6:1 › confirmed INR revenue converts with test-only rates and resets; counts have no currency control 
+    e2e/currency.spec.ts:112:1 › saved monetary bar charts convert axes and reports without changing snapshots 
+    e2e/dataset-editor.spec.ts:5:1 › dataset edits persist after refresh and export the saved version 
+    e2e/dataset-editor.spec.ts:85:1 › click existing revenue, preserve account 001 and row count, save revision 2, export and query in Analyst 
+    e2e/dataset-editor.spec.ts:187:1 › existing cell batches survive sorted pages, invalid input, Escape, Undo, NULL and Cancel 
+    e2e/dataset-lifecycle.spec.ts:5:1 › throwaway datasets: rename, dependency preview, archive/restore, guarded delete and retained history 
+    e2e/dataset-lifecycle.spec.ts:44:1 › bulk DELETE confirmation processes only newly created selected fixtures 
+    e2e/phase4.spec.ts:8:1 › dashboard save, layout, filters, reload and exports ───────────────────
+    e2e/ui-refinement.spec.ts:59:1 › mobile navigation is keyboard accessible, traps focus and restores focus on Escape 
+    e2e/ui-refinement.spec.ts:91:1 › all nine modules fit desktop tablet and mobile without horizontal overflow 
+    e2e/workspace.spec.ts:2:1 › real upload, schema, preview, reload and mobile layout ─────────────
+  28 passed (19.4m)

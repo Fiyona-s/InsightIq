@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "mode": "View",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "mode": "View",
+      "width": 768,
+      "violations": []
+    },
+    {
+      "mode": "View",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "mode": "Edit",
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "mode": "Edit",
+      "width": 768,
+      "violations": []
+    },
+    {
+      "mode": "Edit",
+      "width": 390,
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "entryAndModeSwitchWrites": [],
+  "layoutAutoSavePreserved": true,
+  "detailsRequireExplicitSave": true,
+  "sourceSnapshotValuesUnchanged": true,
+  "liveAICalls": 0
+}

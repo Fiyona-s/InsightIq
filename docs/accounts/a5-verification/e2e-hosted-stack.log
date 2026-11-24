@@ -1,0 +1,20 @@
+
+Running 15 tests using 1 worker
+
+  ✓   1 e2e/hosted-people.spec.ts:23:1 › an owner invites a person with a one-time link, who sets a password; the link works once; role change and deactivate take effect at once (13.3s)
+  ✓   2 e2e/hosted-people.spec.ts:119:1 › an owner sets up two-step sign-in in the browser, signs in with a code, and a recovery code works once (6.0s)
+  ✓   3 e2e/hosted-people.spec.ts:161:3 › a viewer cannot reach People or the Security log, and the server refuses both (2.1s)
+  ✓   4 e2e/hosted-people.spec.ts:161:3 › an analyst cannot reach People or the Security log, and the server refuses both (2.1s)
+  ✓   5 e2e/hosted-people.spec.ts:188:1 › any signed-in person can change their own password; other sessions end and the old password stops working (2.8s)
+  ✓   6 e2e/hosted-people.spec.ts:220:1 › with the server unreachable at first load the page says so, retries quietly, and has a Retry button (1.9s)
+  ✓   7 e2e/hosted-roles.spec.ts:27:1 › the sign-in page loads without a session, asks for nothing else, and wrong passwords get one message (4.5s)
+  ✓   8 e2e/hosted-roles.spec.ts:61:1 › a viewer sees Home and Dashboards only, never calls an analyst route, and cannot change anything (6.0s)
+  ✓   9 e2e/hosted-roles.spec.ts:109:1 › an analyst sees everything except Admin, Home reads the analyst's own questions, and cannot delete (5.7s)
+  ✓  10 e2e/hosted-roles.spec.ts:157:1 › an owner sees the Admin pages by role (no switch), without the accuracy check, and may delete (2.7s)
+  ✓  11 e2e/hosted-roles.spec.ts:189:1 › an ended session asks for sign-in again over the page, keeps what was typed, and returns to the same page (3.2s)
+  ✓  12 e2e/hosted-roles.spec.ts:210:1 › signing out returns to the sign-in page, and signing in again returns to the page that was open (419ms)
+  ✓  13 e2e/hosted-roles.spec.ts:226:1 › a first-login account must choose its own password before anything else (2.6s)
+  ✓  14 e2e/hosted-stack-csp.spec.ts:13:1 › the policy is sent on pages and API answers, and the guard really detects a violation (107ms)
+  ✓  15 e2e/hosted-stack-csp.spec.ts:30:1 › every owner screen, an answer with its chart, and the exports run under the policy without a violation (27.6s)
+
+  15 passed (1.4m)

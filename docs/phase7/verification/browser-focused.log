@@ -1,0 +1,46 @@
+
+> insightiq@0.1.0 test:e2e:analyst
+> playwright test --config playwright.analyst.config.ts --grep local regression|classification, customer|keyboard-only wizard|negative R²
+
+[WebServer] INFO:     Started server process [24127]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:24156) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:24158) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 e2e/automl.spec.ts:7:1 › local regression, registry reload, single/batch prediction and real CSV export (7.8s)
+  ✘  2 e2e/automl.spec.ts:17:1 › classification, customer RFM, anomaly scores and chronological forecasting use real local models (3.0m)
+(node:25202) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 e2e/automl.spec.ts:27:1 › keyboard-only wizard navigation, suggestions never auto-apply and Advanced reset (703ms)
+  ✓  4 e2e/automl.spec.ts:34:1 › negative R² and omitted importance use an actual temporary no-signal model (3.2s)
+
+
+  1) e2e/automl.spec.ts:17:1 › classification, customer RFM, anomaly scores and chronological forecasting use real local models 
+
+    Test timeout of 180000ms exceeded.
+
+    Error: locator.selectOption: Test timeout of 180000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Prediction input', { exact: true })
+
+
+      18 |  test.setTimeout(180000);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));const names=['order_id','value','region','quantity','order_date','customer_id','net_revenue_inr','label'];const rows=Array.from({length:180},(_,i)=>{const value=Math.sin(i)*3+i*.012,day=new Date(Date.UTC(2026,0,1+Math.floor(i/2))).toISOString().slice(0,10);return `O${i},${value.toFixed(6)},${['North','South','West'][i%3]},${i%5+1},${day},C${i%30},${(60+Math.sin(i)*10+Math.floor(i/2)*.3).toFixed(4)},${value>1?'high':'low'}`;});await upload(page,'SYNTHETIC-AUTOML-MULTITASK.csv',names.join(',')+'\n'+rows.join('\n')+'\n');
+      19 |  await task(page,/Classification Predict/,'label');await selectFeatures(page,names,['value','quantity','region']);let job=await train(page);expect(job.result.leaderboard).toHaveLength(4);await expect(page.getByRole('heading',{name:'Confusion matrix — actual rows, predicted columns'})).toBeVisible();await shot(page,'classification-confusion');
+    > 20 |  await page.getByRole('button',{name:'Next',exact:true}).click();await page.getByLabel('Prediction feature value',{exact:true}).fill('2');await page.getByLabel('Prediction feature quantity',{exact:true}).fill('3');await page.getByLabel('Prediction feature region',{exact:true}).selectOption('North');let inference=page.waitForResponse(r=>r.url().endsWith('/predict'));await page.getByRole('button',{name:'Predict with saved model',exact:true}).click();expect((await (await inference).json()).row_count).toBe(1);await page.getByLabel('Prediction input',{exact:true}).selectOption('batch');await page.getByLabel('Batch prediction dataset').selectOption(job.dataset_id);inference=page.waitForResponse(r=>r.url().endsWith('/predict'));await page.getByRole('button',{name:'Predict with saved model',exact:true}).click();const classified=await (await inference).json();expect(classified.row_count).toBe(180);expect((await page.request.get('/api/automl/predictions/'+classified.id+'/export.csv')).ok()).toBe(true);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+      21 |
+      22 |  await task(page,/Clustering Explore/);await page.getByLabel('Clustering features').selectOption('rfm');await page.getByLabel('Customer identifier').selectOption('customer_id');await page.getByLabel('Transaction date').selectOption('order_date');await page.getByLabel('Monetary value').selectOption('net_revenue_inr');await page.getByLabel('Order identifier (optional)').selectOption('order_id');job=await train(page);expect(job.result.rows_used).toBe(30);expect(job.result.details.cluster_profiles.reduce((n:number,p:{count:number})=>n+p.count,0)).toBe(30);await expect(page.getByRole('heading',{name:'Cluster characteristics — original feature summaries'})).toBeVisible();await expect(page.getByText('Cluster 0',{exact:true})).toBeVisible();
+      23 |  await task(page,/Anomaly detection/);await selectFeatures(page,names,['value','quantity']);job=await train(page);expect(job.result.details.fraud_accuracy).toBeNull();expect(job.result.plots.anomaly_distribution.reduce((n:number,b:{count:number})=>n+b.count,0)).toBe(180);await expect(page.getByText(/No fraud accuracy is measured/).first()).toBeVisible();
+        at <project>/frontend/e2e/automl.spec.ts:20:567
+
+    Error Context: test-results/automl-classification-cust-0a191-sting-use-real-local-models/error-context.md
+
+  1 failed
+    e2e/automl.spec.ts:17:1 › classification, customer RFM, anomaly scores and chronological forecasting use real local models 
+  3 passed (3.2m)

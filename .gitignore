@@ -1,0 +1,68 @@
+# ---- Secrets (never commit; copy .env.example to .env and fill it in locally) ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---- Live data, saved answers, model and prediction artifacts, backups ----
+# The real workspace lives in a Docker volume; these cover local runs and copies of it.
+data/
+**/data/
+.backups/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3
+*.duckdb
+*.duckdb.wal
+*.faiss
+*.pkl
+*.joblib
+*.npy
+*.npz
+*.onnx
+
+# ---- Dependencies, build output, caches, test results ----
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+test-results/
+playwright-report/
+frontend/test-results/
+frontend/playwright-report/
+.DS_Store
+
+# ---- Local evidence that fingerprints or shows the real workspace (kept on this computer only) ----
+# Baselines hold dataset ids and hashes; Lighthouse and live-QA captures show real dataset names.
+docs/baseline/*.json
+docs/product-stage*/preservation-*.json
+docs/**/lighthouse/
+docs/stage3/qa/
+docs/stage3/verification/final-live-qa.log
+# Per-stage copies of earlier screenshots made by the e2e runs (regenerated on every full run; ~130 MB).
+docs/stage*/e2e-outputs/
+*.webm
+*.mp4
+
+# ---- Hosted package (A5): everything generated per company (secrets, backups, settings) ----
+deploy/companies/
+
+# ---- Real data: never commit it (P4). The fictional demo files listed below are the only CSVs allowed in the repository. ----
+*.csv
+!docs/demo/*.csv
+!fixtures/**/*.csv
+!backend/tests/fixtures/**/*.csv
+!backend/benchmarks/*.csv
+!fixtures/*.csv
+verify-output/
+*.synthetic.csv

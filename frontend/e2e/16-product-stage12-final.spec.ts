@@ -1,0 +1,18 @@
+import {test,expect} from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+import fs from 'node:fs';
+const destinations:[string,string,string][]=[['overview','Home','Home'],['datasets','Datasets','Datasets'],['analyst','Ask your data','Ask'],['dashboards','Dashboards','Dashboards'],['automl','Predictions','Predictions'],['knowledge','Business definitions','Business definitions'],['evaluation','Accuracy check','Accuracy check'],['analytics','Performance & errors','Performance & errors'],['traces','Execution traces','Execution traces'],['settings','Settings','Settings']];
+test('Stage 12 final responsive landmarks, keyboard entry, expanded privacy disclosure and visual record',async({page})=>{
+ test.setTimeout(180000);await page.addInitScript(()=>localStorage.setItem('insightiq-admin-tools-v1','true'));fs.mkdirSync('../docs/product-stage12/after',{recursive:true});const seed=await page.request.post('/api/datasets',{multipart:{file:{name:'stage12-visual.csv',mimeType:'text/csv',buffer:Buffer.from('id,value,region\n001,10,North\n002,20,South\n')}}});expect(seed.status()).toBe(201);const errors:string[]=[],writes:string[]=[],checks:unknown[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(r.url().includes('/api/')&&!['GET','HEAD','OPTIONS'].includes(r.method()))writes.push(r.method()+' '+new URL(r.url()).pathname)});
+ for(const width of [1280,768,390]){
+  await page.setViewportSize({width,height:1000});
+  for(const [route,title,crumb] of destinations){
+   await page.goto('/#'+route);await expect(page.locator('main h1')).toHaveText(title);await page.waitForLoadState('networkidle');await expect(page.getByRole('main')).toHaveCount(1);await expect(page.locator('main h1')).toHaveCount(1);
+   if(route==='analyst'){await page.locator('.sharing-notice>summary').click();await expect(page.locator('.sharing-notice')).toContainText('No automatic masking is applied.');await expect(page.getByRole('textbox',{name:'Your question',exact:true})).toHaveValue('')}
+   const geometry=await page.evaluate(()=>{window.scrollTo(0,0);const heading=document.querySelector('main h1')!.getBoundingClientRect(),header=document.querySelector('.main>header')!.getBoundingClientRect(),selector=document.querySelector('.main>header .dataset-trigger')?.getBoundingClientRect();return {headingTop:heading.top,headerBottom:header.bottom,selectorBottom:(selector?selector.bottom:0),overflow:document.documentElement.scrollWidth>innerWidth}});expect(geometry.headingTop).toBeGreaterThanOrEqual(geometry.headerBottom);expect(geometry.selectorBottom).toBeLessThanOrEqual(geometry.headerBottom);expect(geometry.overflow).toBe(false);
+   const axe=await new AxeBuilder({page}).analyze();expect(axe.violations,title+' '+width).toEqual([]);checks.push({route,title,width,...geometry,axeViolations:axe.violations});await page.evaluate(()=>{if(document.activeElement instanceof HTMLElement)document.activeElement.blur();window.scrollTo(0,0)});await page.screenshot({path:`../docs/product-stage12/after/${route}-${width}.png`,fullPage:true});
+  }
+ }
+ await page.setViewportSize({width:1280,height:1000});await page.goto('/#overview');await page.reload();await expect(page.locator('main h1')).toHaveText('Home');await page.waitForLoadState('networkidle');await page.keyboard.press('Tab');const skip=page.getByRole('link',{name:'Skip to content'});await expect(skip).toBeFocused();await page.keyboard.press('Enter');await expect(page.getByRole('main')).toBeFocused();expect(writes).toEqual([]);expect(errors).toEqual([]);
+ fs.writeFileSync('../docs/product-stage12/visual-review.json',JSON.stringify({checks,pageErrors:errors,mutatingRequests:writes,keyboardSkipToMain:true,liveAICalls:0,isolatedWorkspace:true},null,2));
+});

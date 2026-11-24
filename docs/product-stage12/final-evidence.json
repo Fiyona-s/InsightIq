@@ -1,0 +1,17 @@
+{
+  "tests": {
+    "frontend": 197,
+    "backend": 361,
+    "browser": 49,
+    "smoke": 1,
+    "focused_visual": 1,
+    "focused_model_capture": 1
+  },
+  "visual_checks": 30,
+  "axe_violations": 0,
+  "page_errors": 0,
+  "original_workspace_mutations": 0,
+  "original_storage_hashes_unchanged": 102,
+  "all_report_links_resolve": true,
+  "application_source_changed": false
+}

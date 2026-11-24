@@ -1,0 +1,40 @@
+# The same front door for LOCAL testing: Caddy's own test CA instead of Let's Encrypt, a local host name, and NO HSTS
+# (HSTS belongs only to the real-HTTPS configuration, deploy/Caddyfile). Used by deploy/tests and for trying a stack on one computer.
+{
+	admin localhost:2019
+	servers {
+		protocols h1 h2                 # no HTTP/3: only TCP 80 and 443 are published
+	}
+	auto_https disable_redirects
+	local_certs
+}
+
+http://{$PUBLIC_HOST}:80 {
+	redir https://{$PUBLIC_HOST}{$PUBLIC_PORT_SUFFIX}{uri} permanent
+}
+
+{$PUBLIC_HOST}:443 {
+	tls internal
+	encode zstd gzip
+
+	header {
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "no-referrer"
+		X-Frame-Options "DENY"
+		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+		Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+		-Server
+	}
+
+	handle /api/* {
+		request_body {
+			max_size 110MB
+		}
+		reverse_proxy api:8000 {
+			flush_interval -1
+		}
+	}
+	handle {
+		reverse_proxy web:8080
+	}
+}

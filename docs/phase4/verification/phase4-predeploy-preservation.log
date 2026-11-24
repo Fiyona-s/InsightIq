@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-11-10T12:38:43.234289+00:00",
+  "original_dataset_count": 13,
+  "all_catalog_tables_unchanged": {
+    "datasets": true,
+    "analyst_runs": true,
+    "knowledge_state": true,
+    "knowledge_examples": true,
+    "schema_migrations": true,
+    "benchmark_installs": true,
+    "dashboards": true,
+    "evaluation_jobs": true,
+    "saved_charts": true,
+    "ml_experiments": true,
+    "ml_models": true,
+    "ml_predictions": true,
+    "dataset_references": true,
+    "dataset_audit": true,
+    "analyst_feedback": true
+  },
+  "schema_unchanged": true,
+  "storage_files_checked": 97,
+  "storage_files_changed": [],
+  "preexisting_lifecycle_audit_entries": 2,
+  "new_lifecycle_actions": 0,
+  "run_count": 18,
+  "dashboard_count": 1
+}

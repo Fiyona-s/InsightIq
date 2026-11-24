@@ -1,0 +1,92 @@
+{
+ "evaluation@1280": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Accuracy check"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "analytics@1280": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Performance & errors"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "traces@1280": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Execution traces"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "evaluation@768": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Accuracy check"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "analytics@768": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Performance & errors"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "traces@768": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Execution traces"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "evaluation@390": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Accuracy check"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "analytics@390": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Performance & errors"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "traces@390": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Execution traces"
+  ],
+  "axe": [],
+  "errors": []
+ }
+}

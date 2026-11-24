@@ -1,0 +1,25 @@
+{
+  "changed_tracked_by_recovery_manifest": [
+    "frontend/playwright.analyst.config.ts",
+    "frontend/e2e/phase4.spec.ts",
+    "frontend/e2e/08-product-stage2-home.spec.ts",
+    "frontend/e2e/currency-legacy.spec.ts",
+    "frontend/e2e/ui.ts",
+    "frontend/e2e/03-phase6-dashboards.spec.ts",
+    "frontend/e2e/00-phase3-navigation.spec.ts",
+    "frontend/e2e/dataset-lifecycle.spec.ts",
+    "frontend/src/workspace.css",
+    "frontend/src/components/Phase4.test.tsx",
+    "frontend/src/components/DashboardPage.tsx",
+    "frontend/src/lib/activeDataset.tsx"
+  ],
+  "new_files": [
+    "frontend/e2e/11-product-stage5-dashboards.spec.ts",
+    "frontend/scripts/product-stage5-readonly-review.mjs",
+    "docs/PRODUCT_STAGE5_REVIEW.md",
+    "docs/product-stage5/"
+  ],
+  "other_modified": [
+    "README.md"
+  ]
+}

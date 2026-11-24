@@ -1,0 +1,309 @@
+{
+  "checks": [
+    {
+      "route": "overview",
+      "title": "Home",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "datasets",
+      "title": "Datasets",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "analyst",
+      "title": "Ask your data",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "dashboards",
+      "title": "Dashboards",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "automl",
+      "title": "Predictions",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "knowledge",
+      "title": "Business definitions",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "evaluation",
+      "title": "Accuracy check",
+      "width": 1280,
+      "headingTop": 165.390625,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "analytics",
+      "title": "Performance & errors",
+      "width": 1280,
+      "headingTop": 165.390625,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "traces",
+      "title": "Execution traces",
+      "width": 1280,
+      "headingTop": 165.390625,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "settings",
+      "title": "Settings",
+      "width": 1280,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "overview",
+      "title": "Home",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "datasets",
+      "title": "Datasets",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "analyst",
+      "title": "Ask your data",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "dashboards",
+      "title": "Dashboards",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "automl",
+      "title": "Predictions",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "knowledge",
+      "title": "Business definitions",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "evaluation",
+      "title": "Accuracy check",
+      "width": 768,
+      "headingTop": 165.390625,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "analytics",
+      "title": "Performance & errors",
+      "width": 768,
+      "headingTop": 165.390625,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "traces",
+      "title": "Execution traces",
+      "width": 768,
+      "headingTop": 165.390625,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "settings",
+      "title": "Settings",
+      "width": 768,
+      "headingTop": 101,
+      "headerBottom": 77,
+      "selectorBottom": 68,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "overview",
+      "title": "Home",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "datasets",
+      "title": "Datasets",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "analyst",
+      "title": "Ask your data",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "dashboards",
+      "title": "Dashboards",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "automl",
+      "title": "Predictions",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "knowledge",
+      "title": "Business definitions",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "evaluation",
+      "title": "Accuracy check",
+      "width": 390,
+      "headingTop": 271.78125,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "analytics",
+      "title": "Performance & errors",
+      "width": 390,
+      "headingTop": 271.78125,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "traces",
+      "title": "Execution traces",
+      "width": 390,
+      "headingTop": 271.78125,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "axeViolations": []
+    },
+    {
+      "route": "settings",
+      "title": "Settings",
+      "width": 390,
+      "headingTop": 161,
+      "headerBottom": 137,
+      "selectorBottom": 128,
+      "overflow": false,
+      "axeViolations": []
+    }
+  ],
+  "pageErrors": [],
+  "mutatingRequests": [],
+  "keyboardSkipToMain": true,
+  "liveAICalls": 0,
+  "isolatedWorkspace": true
+}

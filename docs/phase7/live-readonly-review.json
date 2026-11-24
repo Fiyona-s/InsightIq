@@ -1,0 +1,12 @@
+{
+  "url": "http://localhost:8080",
+  "datasetCount": 13,
+  "experimentCount": 5,
+  "experimentPayloadsUnchanged": true,
+  "trainingStarted": 0,
+  "mutatingAPIRequests": [],
+  "browserErrors": [],
+  "wizard": "Dataset step only; no original model selected or trained",
+  "preservedKPI": "₹83,79,680.76",
+  "convertCurrencyVisible": true
+}

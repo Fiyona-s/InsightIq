@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "width": 1280,
+      "defaultView": true,
+      "originalDashboardEdited": false
+    },
+    {
+      "width": 768,
+      "defaultView": true,
+      "originalDashboardEdited": false
+    },
+    {
+      "width": 390,
+      "defaultView": true,
+      "originalDashboardEdited": false
+    }
+  ],
+  "writes": [],
+  "errors": [],
+  "preservedKPI": "₹83,79,680.76",
+  "duplicateBadges": 2,
+  "originalQuestionsSubmitted": 0,
+  "originalScreenshotsCreated": 0
+}

@@ -1,0 +1,21 @@
+
+> insightiq@0.1.0 test:e2e:analyst
+> playwright test --config playwright.analyst.config.ts --grep local regression|classification, customer|keyboard-only wizard|negative R²
+
+[WebServer] INFO:     Started server process [28073]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:28094) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:28095) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 e2e/automl.spec.ts:78:1 › local regression, registry reload, single/batch prediction and real CSV export (8.2s)
+  ✓  2 e2e/automl.spec.ts:227:1 › classification, customer RFM, anomaly scores and chronological forecasting use real local models (16.3s)
+  ✓  3 e2e/automl.spec.ts:354:1 › keyboard-only wizard navigation, suggestions never auto-apply and Advanced reset (4.3s)
+  ✓  4 e2e/automl.spec.ts:431:1 › negative R² and omitted importance use an actual temporary no-signal model (3.3s)
+
+  4 passed (34.0s)

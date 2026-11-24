@@ -1,0 +1,491 @@
+
+> insightiq@0.1.0 test:e2e:analyst
+> playwright test --config playwright.analyst.config.ts
+
+[WebServer] INFO:     Started server process [88892]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:88914) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 42 tests using 1 worker
+
+(node:88919) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] <project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+[WebServer]   warnings.warn(
+[WebServer] 2026-11-12 08:51:08,643 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:51:09,007 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:51:09,010 INFO Analyst run metrics: {"run_id": "3fd2e568-6327-4be4-9cc6-0960e458029b", "status": "succeeded", "retrieval_latency_ms": 16, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 283, "total_latency_ms": 854}
+  ✓   1 e2e/00-phase3-navigation.spec.ts:36:1 › empty workspace setup uses real progress and shared dataset across all work pages (3.3s)
+[WebServer] 2026-11-12 08:51:13,458 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1309, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:51:13,772 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:51:13,775 INFO Analyst run metrics: {"run_id": "7045417b-f9de-4e8e-adeb-4304a0c3e4ca", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1310, "query_latency_ms": 290, "total_latency_ms": 1664}
+  ✓   2 e2e/00-phase3-navigation.spec.ts:149:1 › dataset switches guard editor drafts, reset AutoML, retain running source and recover from archive (4.9s)
+  ✓   3 e2e/00-phase3-navigation.spec.ts:312:1 › selector and admin disclosure support keyboard search, persistence and responsive layout (436ms)
+  ✓   4 e2e/00-phase3-navigation.spec.ts:349:1 › AutoML running job keeps its original source after a confirmed dataset switch (4.0s)
+  ✓   5 e2e/01-phase4-datasets.spec.ts:29:1 › preview-first import, sticky editing, navigation guards and bounded mobile preview (3.4s)
+  ✓   6 e2e/01-phase4-datasets.spec.ts:175:1 › schema descriptions share Knowledge storage and quality issues remain informational (1.1s)
+  ✓   7 e2e/01-phase4-datasets.spec.ts:233:1 › real forward-only history shows unavailable, pruned and retained snapshots and restores N+1 (1.8s)
+[WebServer] 2026-11-12 08:51:27,698 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1310, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:51:28,015 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:51:28,018 INFO Analyst run metrics: {"run_id": "342c8df5-4875-489f-b6e1-5147063e8b28", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1312, "query_latency_ms": 293, "total_latency_ms": 1661}
+  ✓   8 e2e/01-phase4-datasets.spec.ts:337:1 › archived datasets allow read-only history, and active analysis blocks revision restore (3.2s)
+[WebServer] 2026-11-12 08:51:29,674 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": null, "completion_tokens": null, "total_tokens": null, "estimated_cost_usd": null}
+[WebServer] 2026-11-12 08:51:32,437 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:51:32,743 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:51:32,746 INFO Analyst run metrics: {"run_id": "dbf17f75-c234-44c7-8ffa-80ec93513ced", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 285, "total_latency_ms": 646}
+  ✓   9 e2e/02-phase5-knowledge.spec.ts:5:1 › Phase 5 explicit draft sharing, review, overwrite, counts, examples and archived read-only (7.0s)
+[WebServer] 2026-11-12 08:51:36,596 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:51:36,911 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:51:36,914 INFO Analyst run metrics: {"run_id": "863195c1-bce3-450a-9ab9-6e1f837d2c8c", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 291, "total_latency_ms": 647}
+[WebServer] 2026-11-12 08:51:37,525 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:51:37,833 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:51:37,836 INFO Analyst run metrics: {"run_id": "8585a22c-c702-470d-b1d5-2219a0ff93d7", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 282, "total_latency_ms": 649}
+[WebServer] 2026-11-12 08:51:43,239 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:51:43,550 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:51:43,553 INFO Analyst run metrics: {"run_id": "5d4bfa07-9be3-49e1-ab26-5e27bf09a8bf", "status": "succeeded", "retrieval_latency_ms": 9, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 288, "total_latency_ms": 642}
+  ✓  10 e2e/03-phase6-dashboards.spec.ts:9:1 › Phase 6 dashboard titles, duplicate decisions, guarded refresh, history, currency, overflow and mobile (10.5s)
+[WebServer] 2026-11-12 08:51:47,114 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:51:47,422 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:51:47,425 INFO Analyst run metrics: {"run_id": "5dc90b6d-1fdb-4226-ab0c-135189dd445f", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 287, "total_latency_ms": 640}
+[WebServer] 2026-11-12 08:51:48,322 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:51:48,618 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:51:48,620 INFO Analyst run metrics: {"run_id": "47f8f85d-0245-4431-a028-50bdf6f33c86", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 276, "total_latency_ms": 633}
+  ✓  11 e2e/03-phase6-dashboards.spec.ts:41:1 › Phase 6 Analyst pin checks duplicates and confirms replacement without altering the library snapshot (3.0s)
+[WebServer] 2026-11-12 08:52:01,061 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:52:01,379 INFO Analyst run metrics: {"run_id": "8c384289-903d-4ef8-aac3-6eedd95a0c4e", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 293, "total_latency_ms": 640}
+[WebServer] 2026-11-12 08:52:01,760 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:52:02,083 INFO Analyst run metrics: {"run_id": "e6b5b51e-e3aa-491e-8644-e5f3a07a03a5", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 296, "total_latency_ms": 645}
+  ✓  12 e2e/04-phase8-evaluation.spec.ts:20:1 › results-first offline replay, failure diff, comparison, partial scope and keyboard/mobile review (20.3s)
+  ✓  13 e2e/05-phase9-accessibility.spec.ts:5:1 › Phase 9 axe, keyboard focus and 390/768/1280 responsive review on all nine pages (12.2s)
+  ✓  14 e2e/06-phase9-carry-forward.spec.ts:2:1 › Evaluation browser classifies Fixed Regressed Unchanged and unscored from controlled differing stored verdicts (10.6s)
+[WebServer] 2026-11-12 08:52:33,231 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:52:33,543 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:52:33,546 INFO Analyst run metrics: {"run_id": "70131e62-4ce1-41be-8de8-0a7f7ecc6a20", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 290, "total_latency_ms": 644}
+[WebServer] 2026-11-12 08:52:34,128 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": null, "completion_tokens": null, "total_tokens": null, "estimated_cost_usd": null}
+  ✓  15 e2e/06-phase9-carry-forward.spec.ts:6:1 › Knowledge Approve all and scalar verified reference becomes Needs re-check after an actual dataset edit (4.4s)
+  ✓  16 e2e/07-product-stage1.spec.ts:6:1 › Stage 1 task navigation, preferences, aliases and unobscured responsive headers (16.2s)
+[WebServer] 2026-11-12 08:52:54,155 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:52:54,476 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:52:54,478 INFO Analyst run metrics: {"run_id": "d92a0a85-38ae-49d2-9f0b-47776dd200a8", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 301, "total_latency_ms": 658}
+  ✓  17 e2e/08-product-stage2-home.spec.ts:5:1 › Stage 2 Home uses active counts and opens the selected real saved question and dashboard without replay (2.4s)
+  ✓  18 e2e/08-product-stage2-home.spec.ts:16:1 › Stage 2 empty Home offers three-step onboarding without fake totals or an unavailable demo (260ms)
+  ✘  19 e2e/09-product-stage3-data.spec.ts:4:1 › Stage 3 four dataset views preserve drafts, Undo, Discard, typed validation, revisions and CSV (2.5s)
+(node:89460) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 2026-11-12 08:53:01,051 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1308, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:01,369 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:01,371 INFO Analyst run metrics: {"run_id": "ecc99712-0788-4fd4-9597-0e238ac5fd62", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1310, "query_latency_ms": 294, "total_latency_ms": 1656}
+[WebServer] 2026-11-12 08:53:03,449 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:03,762 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:03,765 INFO Analyst run metrics: {"run_id": "d9eaf5d4-701e-412b-bff8-c35cd1d8683e", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 291, "total_latency_ms": 651}
+[WebServer] 2026-11-12 08:53:04,931 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:04,948 INFO Analyst run metrics: {"run_id": "46fec3b9-0f5c-462c-be3c-68b4bed4e380", "status": "clarification", "retrieval_latency_ms": 13, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "total_latency_ms": 351}
+[WebServer] 2026-11-12 08:53:05,856 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 302, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:06,161 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:06,164 INFO Analyst run metrics: {"run_id": "f444ff37-37c9-4f4b-8132-40f9356757d2", "status": "succeeded", "retrieval_latency_ms": 12, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 304, "query_latency_ms": 285, "total_latency_ms": 641}
+[WebServer] 2026-11-12 08:53:06,719 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:07,031 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:07,033 INFO Analyst run metrics: {"run_id": "cc2b1b25-ffc8-4d90-9021-004829b0df0e", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 290, "total_latency_ms": 652}
+[WebServer] 2026-11-12 08:53:08,252 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:08,549 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:08,551 INFO Analyst run metrics: {"run_id": "95353ebb-8b3f-48f6-a06a-7b01d3810ab6", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "query_latency_ms": 283, "total_latency_ms": 637}
+[WebServer] 2026-11-12 08:53:09,617 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:09,937 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:09,944 INFO Analyst run metrics: {"run_id": "64d57f91-8097-4992-b0f3-2879f348027c", "status": "failed", "retrieval_latency_ms": 15, "prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150, "estimated_cost_usd": 0.0002, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 615, "total_latency_ms": 674}
+  ✓  20 e2e/analyst-phase2.spec.ts:7:1 › Phase 2 computed card, follow-ups, clarification, feedback and dashboard pin (11.1s)
+[WebServer] 2026-11-12 08:53:11,127 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:11,420 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:11,423 INFO Analyst run metrics: {"run_id": "d0ff6859-ed9c-4be4-acd2-23b70ea46a87", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 274, "total_latency_ms": 629}
+[WebServer] 2026-11-12 08:53:12,129 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:12,437 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:12,440 INFO Analyst run metrics: {"run_id": "e116a2bd-0cc6-481c-b337-2f001fa31d67", "status": "succeeded", "retrieval_latency_ms": 13, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 288, "total_latency_ms": 645}
+  ✓  21 e2e/analyst-phase2.spec.ts:41:1 › switching datasets starts a new thread and requires fresh type confirmation (2.3s)
+[WebServer] 2026-11-12 08:53:13,434 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:13,736 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:13,739 INFO Analyst run metrics: {"run_id": "690e6962-7407-4325-a300-3068709ea76f", "status": "succeeded", "retrieval_latency_ms": 11, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 282, "total_latency_ms": 642}
+  ✓  22 e2e/analyst.spec.ts:5:1 › controlled provider boundary, real typed aggregation, history and CSV export (2.3s)
+[WebServer] 2026-11-12 08:53:15,990 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:16,313 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:16,632 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:16,635 INFO Analyst run metrics: {"run_id": "76e53543-6bc6-4671-b62d-ecff9d99edf1", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 110, "completion_tokens": 55, "total_tokens": 165, "estimated_cost_usd": 0.00022, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 616, "query_latency_ms": 295, "total_latency_ms": 983}
+  ✓  23 e2e/analyst.spec.ts:84:1 › RAG, live graph repair, actual Recharts, evidence and verified example lifecycle (2.6s)
+  ✓  24 e2e/automl.spec.ts:78:1 › local regression, registry reload, single/batch prediction and real CSV export (7.0s)
+  ✓  25 e2e/automl.spec.ts:227:1 › classification, customer RFM, anomaly scores and chronological forecasting use real local models (16.1s)
+  ✓  26 e2e/automl.spec.ts:354:1 › keyboard-only wizard navigation, suggestions never auto-apply and Advanced reset (4.4s)
+  ✓  27 e2e/automl.spec.ts:431:1 › negative R² and omitted importance use an actual temporary no-signal model (3.3s)
+[WebServer] 2026-11-12 08:53:49,131 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:49,453 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:49,456 INFO Analyst run metrics: {"run_id": "298069f8-d080-452c-a27d-c874bff020d2", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 300, "total_latency_ms": 660}
+[WebServer] 2026-11-12 08:53:52,218 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:52,533 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:52,535 INFO Analyst run metrics: {"run_id": "9a07cfe4-f1c4-40b4-b4b8-6069caaf47eb", "status": "succeeded", "retrieval_latency_ms": 16, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 294, "total_latency_ms": 656}
+  ✓  28 e2e/currency-legacy.spec.ts:4:1 › legacy recognized-revenue KPI gains confirmed INR metadata without rewriting its snapshot (4.9s)
+[WebServer] 2026-11-12 08:53:54,362 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:54,668 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:54,671 INFO Analyst run metrics: {"run_id": "4a31c639-7ea3-4de4-8330-95eab029d728", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 285, "total_latency_ms": 647}
+[WebServer] 2026-11-12 08:53:56,127 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:56,438 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:56,440 INFO Analyst run metrics: {"run_id": "bb0cef83-e09b-470a-b0e4-44c67669f7b5", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 287, "total_latency_ms": 651}
+  ✓  29 e2e/currency.spec.ts:5:1 › confirmed INR revenue converts with test-only rates and resets; counts have no currency control (3.9s)
+[WebServer] 2026-11-12 08:53:58,315 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:53:58,621 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:53:58,624 INFO Analyst run metrics: {"run_id": "4855dabf-edd7-4d13-a7cb-17a96df4ea50", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 283, "total_latency_ms": 646}
+  ✓  30 e2e/currency.spec.ts:111:1 › saved monetary bar charts convert axes and reports without changing snapshots (3.5s)
+  ✓  31 e2e/dataset-editor.spec.ts:5:1 › dataset edits persist after refresh and export the saved version (984ms)
+[WebServer] 2026-11-12 08:54:02,991 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 306, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:54:03,310 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:54:03,312 INFO Analyst run metrics: {"run_id": "5285efdf-ed9b-4298-9b84-a9ef1a82022c", "status": "succeeded", "retrieval_latency_ms": 15, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 299, "total_latency_ms": 657}
+  ✓  32 e2e/dataset-editor.spec.ts:85:1 › click existing revenue, preserve account 001 and row count, save revision 2, export and query in Analyst (2.4s)
+  ✓  33 e2e/dataset-editor.spec.ts:187:1 › existing cell batches survive sorted pages, invalid input, Escape, Undo, NULL and Cancel (1.5s)
+[WebServer] 2026-11-12 08:54:05,919 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:54:06,235 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:54:06,238 INFO Analyst run metrics: {"run_id": "a1714f5c-3ed5-444c-8cca-f502caeb78be", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 309, "query_latency_ms": 293, "total_latency_ms": 648}
+  ✓  34 e2e/dataset-lifecycle.spec.ts:5:1 › throwaway datasets: rename, dependency preview, archive/restore, guarded delete and retained history (4.0s)
+  ✓  35 e2e/dataset-lifecycle.spec.ts:43:1 › bulk DELETE confirmation processes only newly created selected fixtures (437ms)
+[WebServer] 2026-11-12 08:54:10,855 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:54:11,184 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 08:54:11,187 INFO Analyst run metrics: {"run_id": "e30b2bfc-b15f-43cc-8f62-722b54cb2911", "status": "succeeded", "retrieval_latency_ms": 16, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 301, "total_latency_ms": 679}
+  ✓  36 e2e/phase4.spec.ts:5:1 › dashboard save, layout, filters, reload and exports (4.9s)
+[WebServer] 2026-11-12 08:54:27,292 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:54:27,601 INFO Analyst run metrics: {"run_id": "502d7e24-0616-4b65-8d88-89bccc0bc0a9", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 287, "total_latency_ms": 635}
+[WebServer] 2026-11-12 08:54:27,982 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 08:54:28,295 INFO Analyst run metrics: {"run_id": "28436d5f-f7d4-4cbf-a586-d31d3eb18932", "status": "succeeded", "retrieval_latency_ms": 0, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "query_latency_ms": 288, "total_latency_ms": 633}
+  ✓  37 e2e/phase4.spec.ts:159:1 › controlled evaluation verifies references and records actual comparisons (16.7s)
+  ✓  38 e2e/ui-refinement.spec.ts:14:1 › sidebar collapse preserves the current workspace and keyboard dataset tabs preserve the preview (560ms)
+  ✓  39 e2e/ui-refinement.spec.ts:58:1 › mobile navigation is keyboard accessible, traps focus and restores focus on Escape (216ms)
+  ✓  40 e2e/ui-refinement.spec.ts:90:1 › all nine modules fit desktop tablet and mobile without horizontal overflow (2.0s)
+  ✓  41 e2e/ui-refinement.spec.ts:127:1 › Phase 1A Overview groups counts and filters recent statuses without deleting records (390ms)
+  ✓  42 e2e/workspace.spec.ts:2:1 › real upload, schema, preview, reload and mobile layout (758ms)
+
+
+  1) e2e/09-product-stage3-data.spec.ts:4:1 › Stage 3 four dataset views preserve drafts, Undo, Discard, typed validation, revisions and CSV 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -   1
+    + Received  + 305
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+    +     "help": "Elements must meet minimum color contrast ratio thresholds",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+    +     "id": "color-contrast",
+    +     "impact": "serious",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "bgColor": "#f0f4e9",
+    +               "contrastRatio": 2.64,
+    +               "expectedContrastRatio": "4.5:1",
+    +               "fgColor": "#8b9c75",
+    +               "fontSize": "6.0pt (8px)",
+    +               "fontWeight": "normal",
+    +               "messageKey": null,
+    +             },
+    +             "id": "color-contrast",
+    +             "impact": "serious",
+    +             "message": "Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<code>VARCHAR</code>",
+    +                 "target": Array [
+    +                   "tr:nth-child(1) > td[title=\"Storage: VARCHAR\"] > code",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +         "html": "<code>VARCHAR</code>",
+    +         "impact": "serious",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "tr:nth-child(1) > td[title=\"Storage: VARCHAR\"] > code",
+    +         ],
+    +       },
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "bgColor": "#f0f4e9",
+    +               "contrastRatio": 2.64,
+    +               "expectedContrastRatio": "4.5:1",
+    +               "fgColor": "#8b9c75",
+    +               "fontSize": "9.0pt (12px)",
+    +               "fontWeight": "normal",
+    +               "messageKey": null,
+    +             },
+    +             "id": "color-contrast",
+    +             "impact": "serious",
+    +             "message": "Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<code class=\"profile-sample\">001</code>",
+    +                 "target": Array [
+    +                   "tr:nth-child(1) > td:nth-child(5) > .profile-sample:nth-child(1)",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +         "html": "<code class=\"profile-sample\">001</code>",
+    +         "impact": "serious",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "tr:nth-child(1) > td:nth-child(5) > .profile-sample:nth-child(1)",
+    +         ],
+    +       },
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "bgColor": "#f0f4e9",
+    +               "contrastRatio": 2.64,
+    +               "expectedContrastRatio": "4.5:1",
+    +               "fgColor": "#8b9c75",
+    +               "fontSize": "9.0pt (12px)",
+    +               "fontWeight": "normal",
+    +               "messageKey": null,
+    +             },
+    +             "id": "color-contrast",
+    +             "impact": "serious",
+    +             "message": "Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<code class=\"profile-sample\">002</code>",
+    +                 "target": Array [
+    +                   "tr:nth-child(1) > td:nth-child(5) > .profile-sample:nth-child(2)",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +         "html": "<code class=\"profile-sample\">002</code>",
+    +         "impact": "serious",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "tr:nth-child(1) > td:nth-child(5) > .profile-sample:nth-child(2)",
+    +         ],
+    +       },
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "bgColor": "#f0f4e9",
+    +               "contrastRatio": 2.64,
+    +               "expectedContrastRatio": "4.5:1",
+    +               "fgColor": "#8b9c75",
+    +               "fontSize": "6.0pt (8px)",
+    +               "fontWeight": "normal",
+    +               "messageKey": null,
+    +             },
+    +             "id": "color-contrast",
+    +             "impact": "serious",
+    +             "message": "Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<code>DOUBLE</code>",
+    +                 "target": Array [
+    +                   "tr:nth-child(2) > td[title=\"Storage: VARCHAR\"] > code",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +         "html": "<code>DOUBLE</code>",
+    +         "impact": "serious",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "tr:nth-child(2) > td[title=\"Storage: VARCHAR\"] > code",
+    +         ],
+    +       },
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "bgColor": "#f0f4e9",
+    +               "contrastRatio": 2.64,
+    +               "expectedContrastRatio": "4.5:1",
+    +               "fgColor": "#8b9c75",
+    +               "fontSize": "9.0pt (12px)",
+    +               "fontWeight": "normal",
+    +               "messageKey": null,
+    +             },
+    +             "id": "color-contrast",
+    +             "impact": "serious",
+    +             "message": "Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<code class=\"profile-sample\">13.45</code>",
+    +                 "target": Array [
+    +                   "tr:nth-child(2) > td:nth-child(5) > .profile-sample:nth-child(1)",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +         "html": "<code class=\"profile-sample\">13.45</code>",
+    +         "impact": "serious",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "tr:nth-child(2) > td:nth-child(5) > .profile-sample:nth-child(1)",
+    +         ],
+    +       },
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "bgColor": "#f0f4e9",
+    +               "contrastRatio": 2.64,
+    +               "expectedContrastRatio": "4.5:1",
+    +               "fgColor": "#8b9c75",
+    +               "fontSize": "9.0pt (12px)",
+    +               "fontWeight": "normal",
+    +               "messageKey": null,
+    +             },
+    +             "id": "color-contrast",
+    +             "impact": "serious",
+    +             "message": "Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<code class=\"profile-sample\">20.00</code>",
+    +                 "target": Array [
+    +                   "tr:nth-child(2) > td:nth-child(5) > .profile-sample:nth-child(2)",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +         "html": "<code class=\"profile-sample\">20.00</code>",
+    +         "impact": "serious",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "tr:nth-child(2) > td:nth-child(5) > .profile-sample:nth-child(2)",
+    +         ],
+    +       },
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "bgColor": "#f0f4e9",
+    +               "contrastRatio": 2.64,
+    +               "expectedContrastRatio": "4.5:1",
+    +               "fgColor": "#8b9c75",
+    +               "fontSize": "6.0pt (8px)",
+    +               "fontWeight": "normal",
+    +               "messageKey": null,
+    +             },
+    +             "id": "color-contrast",
+    +             "impact": "serious",
+    +             "message": "Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<code>VARCHAR</code>",
+    +                 "target": Array [
+    +                   "tr:nth-child(3) > td[title=\"Storage: VARCHAR\"] > code",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +         "html": "<code>VARCHAR</code>",
+    +         "impact": "serious",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "tr:nth-child(3) > td[title=\"Storage: VARCHAR\"] > code",
+    +         ],
+    +       },
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "bgColor": "#f0f4e9",
+    +               "contrastRatio": 2.64,
+    +               "expectedContrastRatio": "4.5:1",
+    +               "fgColor": "#8b9c75",
+    +               "fontSize": "9.0pt (12px)",
+    +               "fontWeight": "normal",
+    +               "messageKey": null,
+    +             },
+    +             "id": "color-contrast",
+    +             "impact": "serious",
+    +             "message": "Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<code class=\"profile-sample\">你好
+    + quoted \"cell\"</code>",
+    +                 "target": Array [
+    +                   "tr:nth-child(3) > td:nth-child(5) > .profile-sample",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   Element has insufficient color contrast of 2.64 (foreground color: #8b9c75, background color: #f0f4e9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+    +         "html": "<code class=\"profile-sample\">你好
+    + quoted \"cell\"</code>",
+    +         "impact": "serious",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "tr:nth-child(3) > td:nth-child(5) > .profile-sample",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.color",
+    +       "wcag2aa",
+    +       "wcag143",
+    +       "TTv5",
+    +       "TT13.c",
+    +       "EN-301-549",
+    +       "EN-9.1.4.3",
+    +       "ACT",
+    +       "RGAAv4",
+    +       "RGAA-3.2.1",
+    +     ],
+    +   },
+    + ]
+
+      13 |  await edit('10.00','13.45');await page.getByLabel('Type for revenue',{exact:true}).selectOption('DOUBLE');await page.getByRole('button',{name:'Confirm types',exact:true}).click();page.once('dialog',dialog=>dialog.accept());await page.getByRole('button',{name:'Save changes',exact:true}).click();await expect(page.getByText('Saved · Version 2',{exact:true})).toBeVisible();const after=await(await page.request.get(url+'/rows')).json();expect(after.rows[0].id).toBe(before.rows[0].id);expect(after.rows[0].values).toEqual(['001','13.45','你好\nquoted "cell"']);expect(after.rows[1]).toEqual(before.rows[1]);
+      14 |  const link=page.getByRole('link',{name:'Download CSV',exact:true});await expect(link).toHaveCount(1);const csv=await(await page.request.get((await link.getAttribute('href'))!)).text();expect(csv).toContain('001,13.45,');expect(csv).toContain('你好');
+    > 15 |  for(const width of [1280,768,390]){await page.setViewportSize({width,height:1000});for(const [name,slug]of [['Preview','preview'],['Columns','columns'],['Data Quality','quality'],['Version History','history']]){await page.getByRole('tab',{name,exact:true}).click();await page.waitForLoadState('networkidle');await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);const axe=await new AxeBuilder({page}).analyze();expect(axe.violations.filter(v=>v.impact==='critical'||v.impact==='serious')).toEqual([]);checks.push({name,width,violations:axe.violations});await page.screenshot({path:`../docs/product-stage3/after/${slug}-${width}.png`,fullPage:true})}}
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^
+      16 |  await page.getByRole('tab',{name:'Preview',exact:true}).click();await page.getByRole('tab',{name:'Preview',exact:true}).focus();await page.keyboard.press('ArrowRight');await expect(page.getByRole('tab',{name:'Columns',exact:true})).toBeFocused();await page.keyboard.press('ArrowRight');await expect(page.getByRole('tab',{name:'Data Quality',exact:true})).toBeFocused();expect(errors).toEqual([]);fs.writeFileSync('../docs/product-stage3/browser-review.json',JSON.stringify({checks,errors,stableRowIdsPreserved:true,originalCellStringsPreserved:true,invalidSaveVersion:1,savedVersion:2},null,2));
+      17 | });
+      18 |
+        at <project>/frontend/e2e/09-product-stage3-data.spec.ts:15:539
+
+    Error Context: test-results/09-product-stage3-data-Sta-43f96-alidation-revisions-and-CSV/error-context.md
+
+  1 failed
+    e2e/09-product-stage3-data.spec.ts:4:1 › Stage 3 four dataset views preserve drafts, Undo, Discard, typed validation, revisions and CSV 
+  41 passed (3.5m)

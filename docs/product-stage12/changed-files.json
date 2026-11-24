@@ -1,0 +1,18 @@
+{
+  "baseline_frontend_backend_files_changed": [
+    "frontend/playwright.analyst.config.ts",
+    "frontend/e2e/automl.spec.ts",
+    "frontend/e2e/04-phase8-evaluation.spec.ts"
+  ],
+  "new_files": [
+    "frontend/e2e/16-product-stage12-final.spec.ts",
+    "frontend/scripts/product-stage12-readonly-review.mjs"
+  ],
+  "documentation": [
+    "README.md",
+    "docs/PRODUCT_UX_AUDIT.md",
+    "docs/PRODUCT_STAGE12_REVIEW.md",
+    "docs/product-stage12/"
+  ],
+  "note": "Existing screenshot outputs can be refreshed by the regression suites."
+}

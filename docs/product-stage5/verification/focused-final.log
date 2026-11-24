@@ -1,0 +1,2334 @@
+
+> insightiq@0.1.0 test:e2e:analyst
+> playwright test --config playwright.analyst.config.ts --grep throwaway datasets:|dashboard save, layout|Stage 5 View
+
+[WebServer] INFO:     Started server process [9348]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:9374) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:9376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  pw:api => browserType.launch started +0ms
+  pw:api <= browserType.launch succeeded +238ms
+  pw:api => browser.newContext started +3ms
+  pw:api <= browser.newContext succeeded +4ms
+  pw:api => browserContext.newPage started +1ms
+  pw:api <= browserContext.newPage succeeded +107ms
+  pw:api => apiRequestContext.post started +2ms
+  pw:api → POST http://127.0.0.1:5174/api/datasets +8ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: multipart/form-data; boundary=----WebKitFormBoundary7difpB3W9gxqfHko +0ms
+  pw:api   content-length: 242 +0ms
+  pw:api ← 201 Created +43ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:17 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 379 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +1ms
+  pw:api => apiRequestContext.get started +0ms
+  pw:api → GET http://127.0.0.1:5174/api/datasets/f2c07d74-10e5-4439-89da-5f7fee09edd6/knowledge +1ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +18ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:17 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 418 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+  pw:api => apiRequestContext.put started +1ms
+  pw:api → PUT http://127.0.0.1:5174/api/datasets/f2c07d74-10e5-4439-89da-5f7fee09edd6/knowledge +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   content-length: 94 +0ms
+  pw:api ← 200 OK +22ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:17 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 460 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +1ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.put succeeded +0ms
+  pw:api => apiRequestContext.post started +1ms
+  pw:api → POST http://127.0.0.1:5174/api/analyst/runs +1ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   content-length: 124 +0ms
+  pw:api ← 202 Accepted +3ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:17 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 1230 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +1ms
+  pw:api => apiRequestContext.get started +1ms
+  pw:api → GET http://127.0.0.1:5174/api/analyst/runs/287d1598-8006-4e34-9940-187ecfff1adc +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +2ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:17 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 1230 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +1ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+[WebServer] <project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+[WebServer]   warnings.warn(
+  pw:api => apiRequestContext.get started +104ms
+  pw:api → GET http://127.0.0.1:5174/api/analyst/runs/287d1598-8006-4e34-9940-187ecfff1adc +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +5ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:17 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 1230 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+  pw:api => apiRequestContext.get started +254ms
+  pw:api → GET http://127.0.0.1:5174/api/analyst/runs/287d1598-8006-4e34-9940-187ecfff1adc +2ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +6ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:17 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 6215 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +1ms
+[WebServer] 2026-11-12 10:42:17,827 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 313, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:42:18,156 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:42:18,159 INFO Analyst run metrics: {"run_id": "287d1598-8006-4e34-9940-187ecfff1adc", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 314, "query_latency_ms": 294, "total_latency_ms": 813}
+  pw:api => apiRequestContext.get started +504ms
+  pw:api → GET http://127.0.0.1:5174/api/analyst/runs/287d1598-8006-4e34-9940-187ecfff1adc +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +4ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:18 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 9044 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+  pw:api => apiRequestContext.post started +1ms
+  pw:api → POST http://127.0.0.1:5174/api/saved-charts +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   content-length: 144 +0ms
+  pw:api ← 201 Created +13ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:18 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 1396 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +0ms
+  pw:api => apiRequestContext.post started +1ms
+  pw:api → POST http://127.0.0.1:5174/api/analyst/runs +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   content-length: 128 +0ms
+  pw:api ← 202 Accepted +7ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:18 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 1234 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +0ms
+  pw:api => apiRequestContext.get started +1ms
+  pw:api → GET http://127.0.0.1:5174/api/analyst/runs/03091825-db30-4b8b-adc2-77496093f67b +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +2ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:18 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 1399 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +1ms
+  pw:api => apiRequestContext.get started +102ms
+  pw:api → GET http://127.0.0.1:5174/api/analyst/runs/03091825-db30-4b8b-adc2-77496093f67b +1ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +3ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:18 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 6218 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+[WebServer] 2026-11-12 10:42:18,581 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 308, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+  pw:api => apiRequestContext.get started +254ms
+  pw:api → GET http://127.0.0.1:5174/api/analyst/runs/03091825-db30-4b8b-adc2-77496093f67b +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +10ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:18 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 7324 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+[WebServer] 2026-11-12 10:42:18,893 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:42:18,896 INFO Analyst run metrics: {"run_id": "03091825-db30-4b8b-adc2-77496093f67b", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 310, "query_latency_ms": 287, "total_latency_ms": 647}
+  pw:api => apiRequestContext.get started +504ms
+  pw:api → GET http://127.0.0.1:5174/api/analyst/runs/03091825-db30-4b8b-adc2-77496093f67b +2ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +7ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:19 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 9288 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +1ms
+  pw:api => apiRequestContext.post started +1ms
+  pw:api → POST http://127.0.0.1:5174/api/saved-charts +4ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   content-length: 145 +0ms
+  pw:api ← 201 Created +20ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:19 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 1441 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +0ms
+  pw:api => apiRequestContext.post started +1ms
+  pw:api → POST http://127.0.0.1:5174/api/dashboards +1ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   content-length: 32 +0ms
+  pw:api ← 201 Created +5ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:19 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 271 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +0ms
+  pw:api => apiRequestContext.get started +1ms
+  pw:api → GET http://127.0.0.1:5174/api/dashboards/ec568576-7710-4e4d-af0a-91ecb00f72fd +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +2ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:19 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 347 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+  pw:api => apiRequestContext.post started +1ms
+  pw:api → POST http://127.0.0.1:5174/api/dashboards/ec568576-7710-4e4d-af0a-91ecb00f72fd/charts +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   content-length: 64 +0ms
+  pw:api ← 200 OK +40ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:19 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 6275 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +1ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +0ms
+  pw:api => apiRequestContext.get started +0ms
+  pw:api → GET http://127.0.0.1:5174/api/dashboards/ec568576-7710-4e4d-af0a-91ecb00f72fd +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +9ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:19 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 6388 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +1ms
+  pw:api => apiRequestContext.post started +0ms
+  pw:api → POST http://127.0.0.1:5174/api/dashboards/ec568576-7710-4e4d-af0a-91ecb00f72fd/charts +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   content-length: 64 +0ms
+  pw:api ← 200 OK +24ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:19 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 13480 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +0ms
+  pw:api => apiRequestContext.get started +1ms
+  pw:api → GET http://127.0.0.1:5174/api/dashboards/ec568576-7710-4e4d-af0a-91ecb00f72fd +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +20ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:19 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 13685 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+  pw:api => page.goto started +1ms
+  pw:api navigating to "http://127.0.0.1:5174/#dashboards", waiting until "load" +0ms
+  pw:api   "commit" event fired +5ms
+  pw:api   navigated to "http://127.0.0.1:5174/#dashboards" +0ms
+  pw:api   "domcontentloaded" event fired +66ms
+  pw:api   "load" event fired +1ms
+  pw:api <= page.goto succeeded +0ms
+  pw:api => locator.selectOption started +1ms
+  pw:api waiting for getByRole('combobox', { name: 'Open dashboard', exact: true }) +0ms
+  pw:api   locator resolved to <select>…</select> +38ms
+  pw:api attempting select option action +2ms
+  pw:api   waiting for element to be visible and enabled +1ms
+  pw:api   selected specified option(s) +2ms
+  pw:api <= locator.selectOption succeeded +0ms
+  pw:api => Expect "toBeVisible" started +1ms
+  pw:api Expect "toBeVisible" getByRole('heading', { name: 'Stage 5 sales review', exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('heading', { name: 'Stage 5 sales review', exact: true }) +0ms
+  pw:api   locator resolved to <h2 class="dashboard-view-title">Stage 5 sales review</h2> +34ms
+  pw:api <= Expect "toBeVisible" succeeded +1ms
+  pw:api => Expect "toHaveText" started +1ms
+  pw:api Expect "toHaveText" locator('.result-kpi strong') with timeout 5000ms +1ms
+  pw:api waiting for locator('.result-kpi strong') +0ms
+  pw:api   locator resolved to <strong title="Original value: 1750000">₹17,50,000.00</strong> +813ms
+  pw:api <= Expect "toHaveText" succeeded +0ms
+  pw:api => Expect "toHaveCount" started +2ms
+  pw:api Expect "toHaveCount" getByRole('button', { name: 'Delete widget 1' }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('button', { name: 'Delete widget 1' }) +0ms
+  pw:api <= Expect "toHaveCount" succeeded +4ms
+  pw:api => Expect "toHaveCount" started +1ms
+  pw:api Expect "toHaveCount" locator('.widget-layout') with timeout 5000ms +0ms
+  pw:api waiting for locator('.widget-layout') +0ms
+  pw:api <= Expect "toHaveCount" succeeded +2ms
+  pw:api => Expect "toHaveCount" started +1ms
+  pw:api Expect "toHaveCount" getByLabel('Dashboard title', { exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByLabel('Dashboard title', { exact: true }) +0ms
+  pw:api <= Expect "toHaveCount" succeeded +1ms
+  pw:api => Expect "toHaveCount" started +1ms
+  pw:api Expect "toHaveCount" locator('.dashboard-add') with timeout 5000ms +0ms
+  pw:api waiting for locator('.dashboard-add') +0ms
+  pw:api <= Expect "toHaveCount" succeeded +1ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('button', { name: 'Edit dashboard', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-primary">Edit dashboard</button> +2ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +1ms
+  pw:api   "networkidle" event fired +17ms
+  pw:api   element is visible, enabled and stable +1ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +2ms
+  pw:api   click action done +43ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toBeVisible" started +0ms
+  pw:api Expect "toBeVisible" getByLabel('Dashboard title', { exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByLabel('Dashboard title', { exact: true }) +1ms
+  pw:api <= Expect "toBeVisible" succeeded +1ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Done editing', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-outline">Done editing</button> +1ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +34ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +8ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api <= page.waitForLoadState succeeded +1ms
+  pw:api => apiRequestContext.get started +0ms
+  pw:api → GET http://127.0.0.1:5174/api/dashboards/ec568576-7710-4e4d-af0a-91ecb00f72fd +1ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +24ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:20 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 13685 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+  pw:api => page.setViewportSize started +1ms
+  pw:api <= page.setViewportSize succeeded +1ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +57ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => frame.evaluate started +0ms
+  pw:api <= frame.evaluate succeeded +3ms
+  pw:api => frame.evaluate started +0ms
+  pw:api <= frame.evaluate succeeded +131ms
+  pw:api => browserContext.newPage started +6ms
+  pw:api <= browserContext.newPage succeeded +23ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +62ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +12ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +42ms
+  pw:api => page.close started +1ms
+  pw:api <= page.close succeeded +4ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +1ms
+  pw:api waiting for fonts to load... +0ms
+  pw:api fonts loaded +1ms
+  pw:api <= page.screenshot succeeded +51ms
+  pw:api => page.setViewportSize started +1ms
+  pw:api <= page.setViewportSize succeeded +3ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.evaluate started +101ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +28ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => frame.evaluate started +0ms
+  pw:api <= frame.evaluate succeeded +2ms
+  pw:api => frame.evaluate started +0ms
+  pw:api <= frame.evaluate succeeded +71ms
+  pw:api => browserContext.newPage started +2ms
+  pw:api <= browserContext.newPage succeeded +17ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +63ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +9ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +33ms
+  pw:api => page.close started +1ms
+  pw:api <= page.close succeeded +4ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +0ms
+  pw:api fonts loaded +1ms
+  pw:api <= page.screenshot succeeded +35ms
+  pw:api => page.setViewportSize started +0ms
+  pw:api <= page.setViewportSize succeeded +3ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +5ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +19ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => frame.evaluate started +0ms
+  pw:api <= frame.evaluate succeeded +2ms
+  pw:api => frame.evaluate started +0ms
+  pw:api <= frame.evaluate succeeded +63ms
+  pw:api => browserContext.newPage started +2ms
+  pw:api <= browserContext.newPage succeeded +17ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +60ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +10ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +33ms
+  pw:api => page.close started +1ms
+  pw:api <= page.close succeeded +3ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +1ms
+  pw:api fonts loaded +0ms
+  pw:api <= page.screenshot succeeded +42ms
+  pw:api => page.setViewportSize started +1ms
+  pw:api <= page.setViewportSize succeeded +3ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Edit dashboard', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-primary">Edit dashboard</button> +2ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +30ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +1ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +11ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.fill started +1ms
+  pw:api waiting for getByLabel('Dashboard title', { exact: true }) +0ms
+  pw:api   locator resolved to <input maxlength="120" value="Stage 5 sales review"/> +1ms
+  pw:api   fill("Uncommitted title") +0ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +7ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for locator('.dashboard-widget').first().locator('.widget-layout>summary') +0ms
+  pw:api   locator resolved to <summary>Layout</summary> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +26ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +1ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +1ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +1ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.selectOption started +0ms
+  pw:api waiting for getByLabel('Widget width 1', { exact: true }) +0ms
+  pw:api   locator resolved to <select aria-label="Widget width 1">…</select> +1ms
+  pw:api attempting select option action +0ms
+  pw:api   waiting for element to be visible and enabled +0ms
+  pw:api   selected specified option(s) +8ms
+  pw:api <= locator.selectOption succeeded +1ms
+  pw:api => Expect "toBeVisible" started +0ms
+  pw:api Expect "toBeVisible" getByText('Layout saved.', { exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByText('Layout saved.', { exact: true }) +0ms
+  pw:api   locator resolved to <p role="status" class="success">Layout saved.</p> +34ms
+  pw:api <= Expect "toBeVisible" succeeded +0ms
+  pw:api => apiRequestContext.get started +0ms
+  pw:api → GET http://127.0.0.1:5174/api/dashboards/ec568576-7710-4e4d-af0a-91ecb00f72fd +1ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +23ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:21 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 13686 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+  pw:api => Expect "toHaveValue" started +1ms
+  pw:api Expect "toHaveValue" getByLabel('Dashboard title', { exact: true }) with timeout 5000ms +1ms
+  pw:api waiting for getByLabel('Dashboard title', { exact: true }) +0ms
+  pw:api <= Expect "toHaveValue" succeeded +1ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Home', exact: true }) +0ms
+  pw:api   locator resolved to <button class="nav-item" aria-label="Home">…</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +24ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +12ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toBeVisible" started +0ms
+  pw:api Expect "toBeVisible" getByRole('dialog', { name: 'Unsaved dashboard details', exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('dialog', { name: 'Unsaved dashboard details', exact: true }) +0ms
+  pw:api <= Expect "toBeVisible" succeeded +1ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('dialog', { name: 'Unsaved dashboard details', exact: true }).getByRole('button', { name: 'Cancel', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-outline">Cancel</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +18ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +1ms
+  pw:api   performing click action +0ms
+  pw:api   navigated to "http://127.0.0.1:5174/#dashboards" +10ms
+  pw:api   click action done +0ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toBeVisible" started +1ms
+  pw:api Expect "toBeVisible" getByRole('button', { name: 'Done editing', exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('button', { name: 'Done editing', exact: true }) +0ms
+  pw:api <= Expect "toBeVisible" succeeded +1ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Done editing', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-outline">Done editing</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +20ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +8ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +1ms
+  pw:api fonts loaded +0ms
+  pw:api <= page.screenshot succeeded +61ms
+  pw:api => keyboard.press started +3ms
+  pw:api <= keyboard.press succeeded +7ms
+  pw:api => Expect "toHaveCount" started +0ms
+  pw:api Expect "toHaveCount" getByRole('dialog', { name: 'Unsaved dashboard details', exact: true }) with timeout 5000ms +1ms
+  pw:api waiting for getByRole('dialog', { name: 'Unsaved dashboard details', exact: true }) +0ms
+  pw:api <= Expect "toHaveCount" succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Done editing', exact: true }) +1ms
+  pw:api   locator resolved to <button class="button button-outline">Done editing</button> +2ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +31ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +8ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('dialog', { name: 'Unsaved dashboard details', exact: true }).getByRole('button', { name: 'Discard details and view' }) +0ms
+  pw:api   locator resolved to <button class="button button-outline">Discard details and view</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +24ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +8ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toBeVisible" started +1ms
+  pw:api Expect "toBeVisible" getByRole('heading', { name: 'Stage 5 sales review', exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('heading', { name: 'Stage 5 sales review', exact: true }) +0ms
+  pw:api <= Expect "toBeVisible" succeeded +0ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('button', { name: 'Edit dashboard', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-primary">Edit dashboard</button> +0ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +22ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +10ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +1ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.fill started +0ms
+  pw:api waiting for getByLabel('Dashboard title', { exact: true }) +0ms
+  pw:api   locator resolved to <input maxlength="120" value="Stage 5 sales review"/> +1ms
+  pw:api   fill("Reviewed sales") +0ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +7ms
+  pw:api => page.setViewportSize started +0ms
+  pw:api <= page.setViewportSize succeeded +1ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +20ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => frame.evaluate started +1ms
+  pw:api <= frame.evaluate succeeded +1ms
+  pw:api => frame.evaluate started +1ms
+  pw:api <= frame.evaluate succeeded +116ms
+  pw:api => browserContext.newPage started +2ms
+  pw:api <= browserContext.newPage succeeded +19ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +64ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.evaluate started +2ms
+  pw:api <= page.evaluate succeeded +17ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +61ms
+  pw:api => page.close started +1ms
+  pw:api <= page.close succeeded +4ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +3ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +1ms
+  pw:api fonts loaded +0ms
+  pw:api <= page.screenshot succeeded +81ms
+  pw:api => page.setViewportSize started +1ms
+  pw:api <= page.setViewportSize succeeded +3ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => page.evaluate started +102ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +27ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => frame.evaluate started +0ms
+  pw:api <= frame.evaluate succeeded +2ms
+  pw:api => frame.evaluate started +0ms
+  pw:api <= frame.evaluate succeeded +99ms
+  pw:api => browserContext.newPage started +2ms
+  pw:api <= browserContext.newPage succeeded +16ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +59ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +17ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +47ms
+  pw:api => page.close started +2ms
+  pw:api <= page.close succeeded +4ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +0ms
+  pw:api fonts loaded +1ms
+  pw:api <= page.screenshot succeeded +53ms
+  pw:api => page.setViewportSize started +1ms
+  pw:api <= page.setViewportSize succeeded +3ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +20ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api => frame.evaluate started +0ms
+  pw:api <= frame.evaluate succeeded +1ms
+  pw:api => frame.evaluate started +0ms
+  pw:api <= frame.evaluate succeeded +94ms
+  pw:api => browserContext.newPage started +2ms
+  pw:api <= browserContext.newPage succeeded +16ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +70ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +15ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +47ms
+  pw:api => page.close started +2ms
+  pw:api <= page.close succeeded +4ms
+  pw:api => page.evaluate started +1ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +1ms
+  pw:api fonts loaded +0ms
+  pw:api <= page.screenshot succeeded +52ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Done editing', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-outline">Done editing</button> +2ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +22ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +8ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Save and view', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-primary">Save and view</button> +1ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +22ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +1ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +9ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toBeVisible" started +1ms
+  pw:api Expect "toBeVisible" getByRole('heading', { name: 'Reviewed sales', exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('heading', { name: 'Reviewed sales', exact: true }) +0ms
+  pw:api   locator resolved to <h2 class="dashboard-view-title">Reviewed sales</h2> +29ms
+  pw:api <= Expect "toBeVisible" succeeded +1ms
+  pw:api => locator.selectOption started +0ms
+  pw:api waiting for getByRole('combobox', { name: 'Report currency', exact: true }) +0ms
+  pw:api   locator resolved to <select aria-label="Report currency">…</select> +1ms
+  pw:api attempting select option action +0ms
+  pw:api   waiting for element to be visible and enabled +0ms
+  pw:api   selected specified option(s) +6ms
+  pw:api <= locator.selectOption succeeded +0ms
+  pw:api => Expect "toHaveText" started +0ms
+  pw:api Expect "toHaveText" locator('.result-kpi strong') with timeout 5000ms +0ms
+  pw:api waiting for locator('.result-kpi strong') +0ms
+  pw:api <= Expect "toHaveText" succeeded +8ms
+  pw:api => Expect "toHaveAttribute" started +1ms
+  pw:api Expect "toHaveAttribute" getByRole('link', { name: 'Export report', exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('link', { name: 'Export report', exact: true }) +0ms
+  pw:api <= Expect "toHaveAttribute" succeeded +0ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('button', { name: 'More actions', exact: true }) +0ms
+  pw:api   locator resolved to <button aria-haspopup="menu" aria-expanded="false" class="button button-outline">More actions</button> +0ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +24ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +2ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toHaveAttribute" started +0ms
+  pw:api Expect "toHaveAttribute" getByRole('menuitem', { name: 'Export JSON', exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('menuitem', { name: 'Export JSON', exact: true }) +0ms
+  pw:api <= Expect "toHaveAttribute" succeeded +1ms
+  pw:api => keyboard.press started +0ms
+  pw:api <= keyboard.press succeeded +1ms
+  pw:api => locator.selectOption started +0ms
+  pw:api waiting for getByRole('combobox', { name: 'Report currency', exact: true }) +0ms
+  pw:api   locator resolved to <select aria-label="Report currency">…</select> +1ms
+  pw:api attempting select option action +0ms
+  pw:api   waiting for element to be visible and enabled +0ms
+  pw:api   selected specified option(s) +7ms
+  pw:api <= locator.selectOption succeeded +1ms
+  pw:api => Expect "toHaveText" started +0ms
+  pw:api Expect "toHaveText" locator('.result-kpi strong') with timeout 5000ms +0ms
+  pw:api waiting for locator('.result-kpi strong') +0ms
+  pw:api <= Expect "toHaveText" succeeded +1ms
+  pw:api => apiRequestContext.get started +0ms
+  pw:api → GET http://127.0.0.1:5174/api/dashboards/ec568576-7710-4e4d-af0a-91ecb00f72fd +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +23ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:23 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 13680 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+  pw:api => browserContext.close started +5ms
+  pw:api <= browserContext.close succeeded +3ms
+  ✓  1 e2e/11-product-stage5-dashboards.spec.ts:5:1 › Stage 5 View is read-only, Edit preserves auto-save and guards details; currency and exports remain available (6.1s)
+  pw:api => browser.newContext started +11ms
+  pw:api <= browser.newContext succeeded +4ms
+  pw:api => browserContext.newPage started +0ms
+  pw:api <= browserContext.newPage succeeded +54ms
+  pw:api => apiRequestContext.post started +1ms
+  pw:api → POST http://127.0.0.1:5174/api/datasets +2ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +1ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: multipart/form-data; boundary=----WebKitFormBoundary4qWuisGM1krvBhwq +0ms
+  pw:api   content-length: 253 +0ms
+  pw:api ← 201 Created +33ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:23 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 396 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +0ms
+  pw:api => apiRequestContext.post started +1ms
+  pw:api → POST http://127.0.0.1:5174/api/datasets +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: multipart/form-data; boundary=----WebKitFormBoundaryfdMJvhgotmBCiAwP +0ms
+  pw:api   content-length: 256 +0ms
+  pw:api ← 201 Created +30ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:23 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 399 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +0ms
+  pw:api => apiRequestContext.post started +0ms
+  pw:api → POST http://127.0.0.1:5174/api/analyst/runs +1ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   content-length: 129 +0ms
+  pw:api ← 202 Accepted +5ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:23 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 1253 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +0ms
+  pw:api => apiRequestContext.get started +1ms
+  pw:api → GET http://127.0.0.1:5174/api/analyst/runs/bb79751b-5338-419e-8759-9fe26a765a3c +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +2ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:23 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 1418 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+  pw:api => apiRequestContext.get started +103ms
+  pw:api → GET http://127.0.0.1:5174/api/analyst/runs/bb79751b-5338-419e-8759-9fe26a765a3c +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +3ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:23 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 6274 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+[WebServer] 2026-11-12 10:42:23,732 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+  pw:api => apiRequestContext.get started +254ms
+  pw:api → GET http://127.0.0.1:5174/api/analyst/runs/bb79751b-5338-419e-8759-9fe26a765a3c +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +4ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:23 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 7300 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+[WebServer] 2026-11-12 10:42:24,041 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:42:24,044 INFO Analyst run metrics: {"run_id": "bb79751b-5338-419e-8759-9fe26a765a3c", "status": "succeeded", "retrieval_latency_ms": 10, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 314, "query_latency_ms": 288, "total_latency_ms": 647}
+  pw:api => apiRequestContext.get started +505ms
+  pw:api → GET http://127.0.0.1:5174/api/analyst/runs/bb79751b-5338-419e-8759-9fe26a765a3c +1ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +8ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:24 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 9049 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +1ms
+  pw:api => apiRequestContext.post started +1ms
+  pw:api → POST http://127.0.0.1:5174/api/saved-charts +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +1ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   content-length: 119 +0ms
+  pw:api ← 201 Created +19ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:24 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 1419 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +1ms
+  pw:api => apiRequestContext.post started +0ms
+  pw:api → POST http://127.0.0.1:5174/api/dashboards +1ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   content-length: 56 +0ms
+  pw:api ← 201 Created +4ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:24 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 278 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.post succeeded +1ms
+  pw:api => apiRequestContext.put started +0ms
+  pw:api → PUT http://127.0.0.1:5174/api/dashboards/31c86236-48c4-487c-ac1e-0f82f33c7792 +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +1ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   content-length: 209 +0ms
+  pw:api ← 200 OK +21ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:24 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 6322 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.put succeeded +0ms
+  pw:api => page.goto started +0ms
+  pw:api navigating to "http://127.0.0.1:5174/", waiting until "load" +0ms
+  pw:api   "commit" event fired +5ms
+  pw:api   navigated to "http://127.0.0.1:5174/" +0ms
+  pw:api   "domcontentloaded" event fired +69ms
+  pw:api   "load" event fired +1ms
+  pw:api <= page.goto succeeded +0ms
+  pw:api => locator.waitFor started +0ms
+  pw:api waiting for locator('details.dataset-rail') to be visible +0ms
+  pw:api   locator resolved to visible <details open="" class="dataset-rail">…</details> +35ms
+  pw:api <= locator.waitFor succeeded +0ms
+  pw:api => locator.evaluate started +0ms
+  pw:api waiting for locator('details.dataset-rail') +0ms
+  pw:api   locator resolved to visible <details open="" class="dataset-rail">…</details> +11ms
+  pw:api <= locator.evaluate succeeded +9ms
+  pw:api => locator.fill started +1ms
+  pw:api waiting for getByLabel('Find a dataset', { exact: true }) +0ms
+  pw:api   locator resolved to <input value="" aria-label="Find a dataset" placeholder="Find a dataset…"/> +3ms
+  pw:api   fill("1794460343327") +0ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +4ms
+  pw:api => Expect "toHaveCount" started +0ms
+  pw:api Expect "toHaveCount" locator('.dataset-panel .sample-badge') with timeout 5000ms +0ms
+  pw:api waiting for locator('.dataset-panel .sample-badge') +1ms
+  pw:api <= Expect "toHaveCount" succeeded +1ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +0ms
+  pw:api fonts loaded +1ms
+  pw:api <= page.screenshot succeeded +64ms
+  pw:api => locator.check started +5ms
+  pw:api waiting for getByLabel('Hide sample data') +0ms
+  pw:api   locator resolved to <input type="checkbox"/> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +27ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +3ms
+  pw:api   click action done +5ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.check succeeded +0ms
+  pw:api => Expect "toHaveCount" started +1ms
+  pw:api Expect "toHaveCount" locator('.dataset-panel .sample-badge') with timeout 5000ms +0ms
+  pw:api waiting for locator('.dataset-panel .sample-badge') +0ms
+  pw:api <= Expect "toHaveCount" succeeded +0ms
+  pw:api => page.reload started +0ms
+  pw:api waiting for navigation until "load" +1ms
+  pw:api   "commit" event fired +6ms
+  pw:api   navigated to "http://127.0.0.1:5174/" +0ms
+  pw:api   navigated to "http://127.0.0.1:5174/" +0ms
+  pw:api   "domcontentloaded" event fired +18ms
+  pw:api   "load" event fired +0ms
+  pw:api <= page.reload succeeded +1ms
+  pw:api => Expect "toBeChecked" started +0ms
+  pw:api Expect "toBeChecked" getByLabel('Hide sample data') with timeout 5000ms +0ms
+  pw:api waiting for getByLabel('Hide sample data') +0ms
+  pw:api <= Expect "toBeChecked" succeeded +22ms
+  pw:api => locator.waitFor started +1ms
+  pw:api waiting for locator('details.dataset-rail') to be visible +0ms
+  pw:api   locator resolved to visible <details open="" class="dataset-rail">…</details> +1ms
+  pw:api <= locator.waitFor succeeded +0ms
+  pw:api => locator.evaluate started +0ms
+  pw:api waiting for locator('details.dataset-rail') +0ms
+  pw:api   locator resolved to visible <details open="" class="dataset-rail">…</details> +1ms
+  pw:api <= locator.evaluate succeeded +9ms
+  pw:api => locator.fill started +1ms
+  pw:api waiting for getByLabel('Find a dataset', { exact: true }) +0ms
+  pw:api   locator resolved to <input value="" aria-label="Find a dataset" placeholder="Find a dataset…"/> +1ms
+  pw:api   fill("1794460343327") +0ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +1ms
+  pw:api <= locator.fill succeeded +2ms
+  pw:api => locator.uncheck started +0ms
+  pw:api waiting for getByLabel('Hide sample data') +0ms
+  pw:api   locator resolved to <input checked type="checkbox"/> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +25ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +4ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.uncheck succeeded +0ms
+  pw:api => Expect "toHaveCount" started +0ms
+  pw:api Expect "toHaveCount" locator('.dataset-panel .sample-badge') with timeout 5000ms +1ms
+  pw:api waiting for locator('.dataset-panel .sample-badge') +0ms
+  pw:api <= Expect "toHaveCount" succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByLabel('Actions for synthetic-PHASE1B-1794460343327.csv', { exact: true }) +0ms
+  pw:api   locator resolved to <summary aria-label="Actions for synthetic-PHASE1B-1794460343327.csv">…</summary> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +28ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for locator('.dataset-overflow[open]').getByRole('button', { name: 'Rename', exact: true }) +1ms
+  pw:api   locator resolved to <button>…</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +28ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +3ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.fill started +0ms
+  pw:api waiting for getByLabel('Dataset display name', { exact: true }) +0ms
+  pw:api   locator resolved to <input value="" aria-label="Dataset display name" placeholder="synthetic-PHASE1B-1794460343327.csv"/> +1ms
+  pw:api   fill("Temporary sales PHASE1B 1794460343327") +0ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +2ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +0ms
+  pw:api fonts loaded +0ms
+  pw:api <= page.screenshot succeeded +45ms
+  pw:api => locator.press started +3ms
+  pw:api waiting for getByLabel('Dataset display name', { exact: true }) +0ms
+  pw:api   locator resolved to <input aria-label="Dataset display name" value="Temporary sales PHASE1B 1794460343327" placeholder="synthetic-PHASE1B-1794460343327.csv"/> +1ms
+  pw:api elementHandle.press("Enter") +0ms
+  pw:api <= locator.press succeeded +3ms
+  pw:api => Expect "toBeVisible" started +0ms
+  pw:api Expect "toBeVisible" locator('.dataset-panel [title="Temporary sales PHASE1B 1794460343327"]') with timeout 5000ms +1ms
+  pw:api waiting for locator('.dataset-panel [title="Temporary sales PHASE1B 1794460343327"]') +0ms
+  pw:api   locator resolved to <span class="dataset-name" title="Temporary sales PHASE1B 1794460343327">…</span> +31ms
+  pw:api <= Expect "toBeVisible" succeeded +0ms
+  pw:api => apiRequestContext.get started +1ms
+  pw:api → GET http://127.0.0.1:5174/api/datasets/7ce37d3c-a839-4b15-addb-6b299a33f3fc +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +2ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:24 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-length: 431 +0ms
+  pw:api   content-type: application/json +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByLabel('Actions for Temporary sales PHASE1B 1794460343327', { exact: true }) +0ms
+  pw:api   locator resolved to <summary aria-label="Actions for Temporary sales PHASE1B 1794460343327">…</summary> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +20ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for locator('.dataset-overflow[open]').getByRole('button', { name: 'Archive', exact: true }) +0ms
+  pw:api   locator resolved to <button>Archive</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +32ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +4ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +1ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toBeVisible" started +0ms
+  pw:api Expect "toBeVisible" getByRole('dialog').locator('summary').filter({ hasText: '1 dashboard' }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('dialog').locator('summary').filter({ hasText: '1 dashboard' }) +0ms
+  pw:api   locator resolved to <summary>1 dashboard</summary> +30ms
+  pw:api <= Expect "toBeVisible" succeeded +1ms
+  pw:api => Expect "toBeVisible" started +0ms
+  pw:api Expect "toBeVisible" getByRole('dialog').locator('summary').filter({ hasText: '1 saved question' }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('dialog').locator('summary').filter({ hasText: '1 saved question' }) +0ms
+  pw:api <= Expect "toBeVisible" succeeded +1ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +1ms
+  pw:api fonts loaded +0ms
+  pw:api <= page.screenshot succeeded +29ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('dialog').getByRole('button', { name: 'Archive', exact: true }) +1ms
+  pw:api   locator resolved to <button class="button button-primary">Archive</button> +0ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +30ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +3ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toContainText" started +1ms
+  pw:api Expect "toContainText" getByRole('dialog').getByRole('status') with timeout 5000ms +1ms
+  pw:api waiting for getByRole('dialog').getByRole('status') +0ms
+  pw:api   locator resolved to <div role="status">…</div> +30ms
+  pw:api <= Expect "toContainText" succeeded +1ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('dialog').getByRole('button', { name: 'Done', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-ghost">Done</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +29ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +1ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('button', { name: 'Archived', exact: true }) +0ms
+  pw:api   locator resolved to <button aria-pressed="false" class="button button-outline">Archived</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +29ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +3ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toBeVisible" started +0ms
+  pw:api Expect "toBeVisible" locator('.dataset-panel [title="Temporary sales PHASE1B 1794460343327"]') with timeout 5000ms +1ms
+  pw:api waiting for locator('.dataset-panel [title="Temporary sales PHASE1B 1794460343327"]') +0ms
+  pw:api <= Expect "toBeVisible" succeeded +0ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +1ms
+  pw:api fonts loaded +0ms
+  pw:api <= page.screenshot succeeded +45ms
+  pw:api => locator.click started +4ms
+  pw:api waiting for getByLabel('Actions for Temporary sales PHASE1B 1794460343327', { exact: true }) +0ms
+  pw:api   locator resolved to <summary aria-label="Actions for Temporary sales PHASE1B 1794460343327">…</summary> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +26ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +1ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for locator('.dataset-overflow[open]').getByRole('button', { name: 'Restore', exact: true }) +0ms
+  pw:api   locator resolved to <button>Restore</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +30ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +1ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toHaveCount" started +0ms
+  pw:api Expect "toHaveCount" locator('.dataset-panel [title="Temporary sales PHASE1B 1794460343327"]') with timeout 5000ms +0ms
+  pw:api waiting for locator('.dataset-panel [title="Temporary sales PHASE1B 1794460343327"]') +0ms
+  pw:api   locator resolved to 1 element +1ms
+  pw:api   unexpected value "1" +0ms
+  pw:api   locator resolved to 0 elements +23ms
+  pw:api <= Expect "toHaveCount" succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Active', exact: true }) +0ms
+  pw:api   locator resolved to <button aria-pressed="false" class="button button-outline">Active</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +23ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +3ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.check started +0ms
+  pw:api waiting for getByLabel('Select all visible datasets', { exact: true }) +0ms
+  pw:api   locator resolved to <input type="checkbox" aria-label="Select all visible datasets"/> +1ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +27ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +1ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +3ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.check succeeded +1ms
+  pw:api => Expect "toContainText" started +0ms
+  pw:api Expect "toContainText" getByRole('region', { name: 'Selected dataset actions' }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('region', { name: 'Selected dataset actions' }) +0ms
+  pw:api <= Expect "toContainText" succeeded +1ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +1ms
+  pw:api fonts loaded +0ms
+  pw:api <= page.screenshot succeeded +48ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('button', { name: 'Clear', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-ghost">Clear</button> +2ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +24ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByLabel('Actions for Temporary sales PHASE1B 1794460343327', { exact: true }) +0ms
+  pw:api   locator resolved to <summary aria-label="Actions for Temporary sales PHASE1B 1794460343327">…</summary> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +29ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +3ms
+  pw:api   click action done +1ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +1ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for locator('.dataset-overflow[open]').getByRole('button', { name: 'Delete', exact: true }) +0ms
+  pw:api   locator resolved to <button class="destructive">Delete</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +28ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +4ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toBeDisabled" started +1ms
+  pw:api Expect "toBeDisabled" getByRole('dialog').getByRole('button', { name: 'Delete permanently', exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('dialog').getByRole('button', { name: 'Delete permanently', exact: true }) +0ms
+  pw:api   locator resolved to <button disabled class="button button-outline destructive">Delete permanently</button> +31ms
+  pw:api <= Expect "toBeDisabled" succeeded +0ms
+  pw:api => locator.fill started +0ms
+  pw:api waiting for getByRole('dialog').getByLabel('Delete confirmation') +0ms
+  pw:api   locator resolved to <input value="" autocomplete="off" aria-label="Delete confirmation"/> +1ms
+  pw:api   fill("synthetic-PHASE1B-1794460343327.csv") +0ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +2ms
+  pw:api => Expect "toBeDisabled" started +1ms
+  pw:api Expect "toBeDisabled" getByRole('dialog').getByRole('button', { name: 'Delete permanently', exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('dialog').getByRole('button', { name: 'Delete permanently', exact: true }) +0ms
+  pw:api <= Expect "toBeDisabled" succeeded +0ms
+  pw:api => locator.fill started +1ms
+  pw:api waiting for getByRole('dialog').getByLabel('Delete confirmation') +0ms
+  pw:api   locator resolved to <input autocomplete="off" aria-label="Delete confirmation" value="synthetic-PHASE1B-1794460343327.csv"/> +0ms
+  pw:api   fill("Temporary sales PHASE1B 1794460343327") +1ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +1ms
+  pw:api => locator.check started +0ms
+  pw:api waiting for getByRole('dialog').getByLabel(/I acknowledge/) +1ms
+  pw:api   locator resolved to <input type="checkbox"/> +0ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +21ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.check succeeded +0ms
+  pw:api => Expect "toBeEnabled" started +1ms
+  pw:api Expect "toBeEnabled" getByRole('dialog').getByRole('button', { name: 'Delete permanently', exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('dialog').getByRole('button', { name: 'Delete permanently', exact: true }) +0ms
+  pw:api <= Expect "toBeEnabled" succeeded +1ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +0ms
+  pw:api fonts loaded +0ms
+  pw:api <= page.screenshot succeeded +37ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('dialog').getByRole('button', { name: 'Delete permanently', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-outline destructive">Delete permanently</button> +1ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +23ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toContainText" started +1ms
+  pw:api Expect "toContainText" getByRole('dialog').getByRole('status') with timeout 5000ms +0ms
+  pw:api waiting for getByRole('dialog').getByRole('status') +0ms
+  pw:api   locator resolved to <div role="status">…</div> +28ms
+  pw:api <= Expect "toContainText" succeeded +1ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('dialog').getByRole('button', { name: 'Done', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-ghost">Done</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +1ms
+  pw:api   element is visible, enabled and stable +32ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('button', { name: 'Home', exact: true }) +0ms
+  pw:api   locator resolved to <button class="nav-item" aria-label="Home">…</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +29ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   navigated to "http://127.0.0.1:5174/#overview" +2ms
+  pw:api   navigated to "http://127.0.0.1:5174/#overview" +1ms
+  pw:api   click action done +5ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toBeVisible" started +1ms
+  pw:api Expect "toBeVisible" locator('[title="Deleted dataset (synthetic-PHASE1B-1794460343327.csv)"]') with timeout 5000ms +0ms
+  pw:api waiting for locator('[title="Deleted dataset (synthetic-PHASE1B-1794460343327.csv)"]') +0ms
+  pw:api   locator resolved to <span class="dataset-name" title="Deleted dataset (synthetic-PHASE1B-1794460343327.csv)">…</span> +78ms
+  pw:api <= Expect "toBeVisible" succeeded +0ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +0ms
+  pw:api fonts loaded +0ms
+  pw:api <= page.screenshot succeeded +51ms
+  pw:api => locator.getAttribute started +1ms
+  pw:api waiting for getByRole('button', { name: 'Advanced tools', exact: true }) +0ms
+  pw:api   locator resolved to <button aria-expanded="false" title="Advanced tools" aria-label="Advanced tools" class="nav-label nav-disclosure" aria-controls="admin-navigation">…</button> +1ms
+  pw:api <= locator.getAttribute succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Advanced tools', exact: true }) +1ms
+  pw:api   locator resolved to <button aria-expanded="false" title="Advanced tools" aria-label="Advanced tools" class="nav-label nav-disclosure" aria-controls="admin-navigation">…</button> +1ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +23ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Run Analytics', exact: true }) +0ms
+  pw:api   locator resolved to <button class="nav-item" aria-label="Run Analytics">…</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +30ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   navigated to "http://127.0.0.1:5174/#analytics" +2ms
+  pw:api   navigated to "http://127.0.0.1:5174/#analytics" +0ms
+  pw:api   click action done +3ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toBeVisible" started +0ms
+  pw:api Expect "toBeVisible" locator('[title="Deleted dataset (synthetic-PHASE1B-1794460343327.csv)"]') with timeout 5000ms +0ms
+  pw:api waiting for locator('[title="Deleted dataset (synthetic-PHASE1B-1794460343327.csv)"]') +0ms
+  pw:api   locator resolved to <span class="dataset-name" title="Deleted dataset (synthetic-PHASE1B-1794460343327.csv)">…</span> +27ms
+  pw:api <= Expect "toBeVisible" succeeded +1ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Dashboards', exact: true }) +0ms
+  pw:api   locator resolved to <button class="nav-item" aria-label="Dashboards">…</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +32ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   navigated to "http://127.0.0.1:5174/#dashboards" +1ms
+  pw:api   navigated to "http://127.0.0.1:5174/#dashboards" +1ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.selectOption started +0ms
+  pw:api waiting for getByRole('combobox', { name: 'Open dashboard', exact: true }) +0ms
+  pw:api   locator resolved to <select>…</select> +1ms
+  pw:api attempting select option action +0ms
+  pw:api   waiting for element to be visible and enabled +0ms
+  pw:api   did not find some options +1ms
+  pw:api retrying select option action +0ms
+  pw:api   waiting for element to be visible and enabled +0ms
+  pw:api   did not find some options +0ms
+  pw:api retrying select option action +0ms
+  pw:api   waiting 20ms +0ms
+  pw:api   waiting for element to be visible and enabled +21ms
+  pw:api   selected specified option(s) +4ms
+  pw:api <= locator.selectOption succeeded +0ms
+  pw:api => Expect "toBeVisible" started +0ms
+  pw:api Expect "toBeVisible" locator('.dashboard-grid [title="Deleted dataset (synthetic-PHASE1B-1794460343327.csv)"]') with timeout 5000ms +0ms
+  pw:api waiting for locator('.dashboard-grid [title="Deleted dataset (synthetic-PHASE1B-1794460343327.csv)"]') +0ms
+  pw:api <= Expect "toBeVisible" succeeded +1ms
+  pw:api => Expect "toContainText" started +0ms
+  pw:api Expect "toContainText" locator('.result-kpi strong') with timeout 5000ms +0ms
+  pw:api waiting for locator('.result-kpi strong') +0ms
+  pw:api   "networkidle" event fired +540ms
+  pw:api   locator resolved to <strong title="Original value: 1270">1,270</strong> +264ms
+  pw:api <= Expect "toContainText" succeeded +0ms
+  pw:api => page.screenshot started +1ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +1ms
+  pw:api fonts loaded +1ms
+  pw:api <= page.screenshot succeeded +72ms
+  pw:api => locator.click started +3ms
+  pw:api waiting for getByRole('button', { name: 'My Data', exact: true }) +0ms
+  pw:api   locator resolved to <button class="nav-item" aria-label="My Data">…</button> +2ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +35ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   navigated to "http://127.0.0.1:5174/#datasets" +3ms
+  pw:api   navigated to "http://127.0.0.1:5174/#datasets" +1ms
+  pw:api   click action done +3ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.waitFor started +1ms
+  pw:api waiting for locator('details.dataset-rail') to be visible +0ms
+  pw:api   locator resolved to visible <details class="dataset-rail">…</details> +0ms
+  pw:api <= locator.waitFor succeeded +0ms
+  pw:api => locator.evaluate started +1ms
+  pw:api waiting for locator('details.dataset-rail') +0ms
+  pw:api   locator resolved to visible <details class="dataset-rail">…</details> +0ms
+  pw:api <= locator.evaluate succeeded +2ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for locator('details.dataset-rail').locator(':scope > summary') +0ms
+  pw:api   locator resolved to <summary>Dataset catalog · 2</summary> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +21ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +1ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.fill started +0ms
+  pw:api waiting for getByLabel('Find a dataset', { exact: true }) +0ms
+  pw:api   locator resolved to <input value="1794460343327" aria-label="Find a dataset" placeholder="Find a dataset…"/> +1ms
+  pw:api   fill("1794460343327") +0ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +1ms
+  pw:api => locator.check started +1ms
+  pw:api waiting for getByLabel('Select all visible datasets', { exact: true }) +0ms
+  pw:api   locator resolved to <input type="checkbox" aria-label="Select all visible datasets"/> +0ms
+  pw:api attempting click action +3ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +24ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +1ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.check succeeded +0ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('region', { name: 'Selected dataset actions' }).getByRole('button', { name: 'Delete', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-outline">Delete</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +29ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +3ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.fill started +1ms
+  pw:api waiting for getByRole('dialog').getByLabel('Delete confirmation') +0ms
+  pw:api   locator resolved to <input value="" autocomplete="off" aria-label="Delete confirmation"/> +23ms
+  pw:api   fill("DELETE") +1ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +1ms
+  pw:api => locator.count started +0ms
+  pw:api <= locator.count succeeded +1ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('dialog').getByRole('button', { name: 'Delete permanently' }) +0ms
+  pw:api   locator resolved to <button class="button button-outline destructive">Delete permanently</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +17ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toContainText" started +1ms
+  pw:api Expect "toContainText" getByRole('dialog').getByRole('status') with timeout 5000ms +0ms
+  pw:api waiting for getByRole('dialog').getByRole('status') +0ms
+  pw:api   locator resolved to <div role="status">…</div> +28ms
+  pw:api <= Expect "toContainText" succeeded +0ms
+  pw:api => browserContext.close started +1ms
+  pw:api <= browserContext.close succeeded +3ms
+  ✓  2 e2e/dataset-lifecycle.spec.ts:5:1 › throwaway datasets: rename, dependency preview, archive/restore, guarded delete and retained history (3.8s)
+  pw:api => browser.newContext started +9ms
+  pw:api <= browser.newContext succeeded +10ms
+  pw:api => browserContext.newPage started +1ms
+  pw:api <= browserContext.newPage succeeded +50ms
+  pw:api => page.goto started +1ms
+  pw:api navigating to "http://127.0.0.1:5174/", waiting until "load" +0ms
+  pw:api   "commit" event fired +6ms
+  pw:api   navigated to "http://127.0.0.1:5174/" +1ms
+  pw:api   "domcontentloaded" event fired +60ms
+  pw:api   "load" event fired +1ms
+  pw:api <= page.goto succeeded +0ms
+  pw:api => locator.setInputFiles started +0ms
+  pw:api waiting for getByLabel('Upload CSV file') +0ms
+  pw:api   locator resolved to <input type="file" class="sr-only" accept=".csv,text/csv" aria-label="Upload CSV file"/> +33ms
+  pw:api <= locator.setInputFiles succeeded +2ms
+  pw:api => Expect "toBeVisible" started +1ms
+  pw:api Expect "toBeVisible" getByRole('status').filter({ hasText: 'imported successfully' }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('status').filter({ hasText: 'imported successfully' }) +0ms
+  pw:api   locator resolved to <div role="status" class="success">…</div> +88ms
+  pw:api <= Expect "toBeVisible" succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Dashboards', exact: true }) +0ms
+  pw:api   locator resolved to <button class="nav-item" aria-label="Dashboards">…</button> +1ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +33ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   navigated to "http://127.0.0.1:5174/#dashboards" +2ms
+  pw:api   navigated to "http://127.0.0.1:5174/#dashboards" +1ms
+  pw:api   click action done +3ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +1ms
+  pw:api => locator.waitFor started +0ms
+  pw:api waiting for locator('details.dashboard-create') to be visible +0ms
+  pw:api   locator resolved to visible <details class="dashboard-create">…</details> +1ms
+  pw:api <= locator.waitFor succeeded +0ms
+  pw:api => locator.evaluate started +0ms
+  pw:api waiting for locator('details.dashboard-create') +0ms
+  pw:api   locator resolved to visible <details class="dashboard-create">…</details> +1ms
+  pw:api <= locator.evaluate succeeded +7ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for locator('details.dashboard-create').locator('summary') +0ms
+  pw:api   locator resolved to <summary>New dashboard</summary> +21ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +28ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +1ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +1ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.fill started +0ms
+  pw:api waiting for getByLabel('New dashboard title') +0ms
+  pw:api   locator resolved to <input value="" required="" maxlength="120" placeholder="Quarterly review"/> +1ms
+  pw:api   fill("Controlled regional review") +0ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +2ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('button', { name: 'Create dashboard', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-outline">…</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +25ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +4ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toHaveValue" started +0ms
+  pw:api Expect "toHaveValue" getByLabel('Dashboard title', { exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByLabel('Dashboard title', { exact: true }) +0ms
+  pw:api   locator resolved to <input maxlength="120" value="Controlled regional review"/> +28ms
+  pw:api <= Expect "toHaveValue" succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Ask InsightIQ', exact: true }) +0ms
+  pw:api   locator resolved to <button class="nav-item" aria-label="Ask InsightIQ">…</button> +2ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +32ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   navigated to "http://127.0.0.1:5174/#analyst" +2ms
+  pw:api   navigated to "http://127.0.0.1:5174/#analyst" +1ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.waitFor started +1ms
+  pw:api waiting for locator('details.type-settings') to be visible +0ms
+  pw:api   locator resolved to visible <details class="type-settings">…</details> +75ms
+  pw:api <= locator.waitFor succeeded +0ms
+  pw:api => locator.evaluate started +1ms
+  pw:api waiting for locator('details.type-settings') +0ms
+  pw:api   locator resolved to visible <details class="type-settings">…</details> +0ms
+  pw:api <= locator.evaluate succeeded +1ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for locator('details.type-settings').locator('summary') +0ms
+  pw:api   locator resolved to <summary>Analysis types</summary> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +32ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +1ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.selectOption started +1ms
+  pw:api waiting for getByLabel('Analysis type for revenue') +0ms
+  pw:api   locator resolved to <select id="type-revenue" aria-label="Analysis type for revenue">…</select> +0ms
+  pw:api attempting select option action +1ms
+  pw:api   waiting for element to be visible and enabled +0ms
+  pw:api   selected specified option(s) +1ms
+  pw:api <= locator.selectOption succeeded +0ms
+  pw:api => locator.check started +0ms
+  pw:api waiting for getByRole('checkbox') +0ms
+  pw:api   locator resolved to <input type="checkbox"/> +1ms
+  pw:api attempting click action +3ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +25ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.check succeeded +0ms
+  pw:api => locator.fill started +1ms
+  pw:api waiting for getByRole('textbox', { name: 'Your question', exact: true }) +0ms
+  pw:api   locator resolved to <textarea rows="3" maxlength="2000" id="analyst-question" placeholder="What would you like to know about this dataset?"></textarea> +0ms
+  pw:api   fill("Total revenue by region") +1ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +1ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('button', { name: 'Analyze', exact: true }) +0ms
+  pw:api   locator resolved to <button type="submit" class="button button-primary">…</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +26ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +1ms
+  pw:api => locator.count started +0ms
+  pw:api <= locator.count succeeded +0ms
+  pw:api => locator.waitFor started +1ms
+  pw:api waiting for locator('form.question-composer[aria-busy="false"]') to be visible +0ms
+[WebServer] 2026-11-12 10:42:28,065 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 311, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-12 10:42:28,377 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-12 10:42:28,379 INFO Analyst run metrics: {"run_id": "6c80db67-4356-4ea2-a7d6-fd75e6da00c1", "status": "succeeded", "retrieval_latency_ms": 14, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 313, "query_latency_ms": 290, "total_latency_ms": 655}
+  pw:api   locator resolved to visible <form aria-busy="false" class="question-composer follow-up-composer">…</form> +1s
+  pw:api <= locator.waitFor succeeded +1ms
+  pw:api => locator.waitFor started +0ms
+  pw:api waiting for locator('details.result-data-table') to be visible +1ms
+  pw:api   locator resolved to visible <details class="result-data-table">…</details> +1ms
+  pw:api <= locator.waitFor succeeded +0ms
+  pw:api => locator.evaluate started +0ms
+  pw:api waiting for locator('details.result-data-table') +0ms
+  pw:api   locator resolved to visible <details class="result-data-table">…</details> +1ms
+  pw:api <= locator.evaluate succeeded +2ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for locator('details.result-data-table').locator('summary').first() +1ms
+  pw:api   locator resolved to <summary>Data table</summary> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   "networkidle" event fired +16ms
+  pw:api   element is visible, enabled and stable +0ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +4ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +1ms
+  pw:api => Expect "toBeVisible" started +0ms
+  pw:api Expect "toBeVisible" getByRole('cell', { name: '15.5', exact: true }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('cell', { name: '15.5', exact: true }) +0ms
+  pw:api <= Expect "toBeVisible" succeeded +3ms
+  pw:api => locator.waitFor started +0ms
+  pw:api waiting for locator('details.result-more-actions') to be visible +0ms
+  pw:api   locator resolved to visible <details class="result-more-actions">…</details> +2ms
+  pw:api <= locator.waitFor succeeded +0ms
+  pw:api => locator.evaluate started +0ms
+  pw:api waiting for locator('details.result-more-actions') +1ms
+  pw:api   locator resolved to visible <details class="result-more-actions">…</details> +1ms
+  pw:api <= locator.evaluate succeeded +1ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for locator('details.result-more-actions').locator('summary').first() +0ms
+  pw:api   locator resolved to <summary tabindex="0">More result actions</summary> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +34ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +1ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Save to library', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-outline">Save to library</button> +3ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +26ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +4ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.fill started +1ms
+  pw:api waiting for getByLabel('Saved chart title') +0ms
+  pw:api   locator resolved to <input maxlength="120" value="Total revenue by region"/> +1ms
+  pw:api   fill("Actual regional totals") +0ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +2ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Full save options' }) +0ms
+  pw:api   locator resolved to <button class="button button-ghost">Full save options</button> +2ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +22ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +1ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.selectOption started +1ms
+  pw:api waiting for getByLabel('Refresh policy') +0ms
+  pw:api   locator resolved to <select>…</select> +1ms
+  pw:api attempting select option action +0ms
+  pw:api   waiting for element to be visible and enabled +0ms
+  pw:api   selected specified option(s) +0ms
+  pw:api <= locator.selectOption succeeded +1ms
+  pw:api => locator.selectOption started +0ms
+  pw:api waiting for getByLabel('Add to dashboard') +0ms
+  pw:api   locator resolved to <select>…</select> +1ms
+  pw:api attempting select option action +0ms
+  pw:api   waiting for element to be visible and enabled +0ms
+  pw:api   selected specified option(s) +0ms
+  pw:api <= locator.selectOption succeeded +0ms
+  pw:api => Expect "toBeDisabled" started +1ms
+  pw:api Expect "toBeDisabled" getByRole('button', { name: 'Save snapshot' }) with timeout 5000ms +1ms
+  pw:api waiting for getByRole('button', { name: 'Save snapshot' }) +0ms
+  pw:api <= Expect "toBeDisabled" succeeded +2ms
+  pw:api => locator.check started +0ms
+  pw:api waiting for getByLabel('I want to persist these result rows and provenance locally.') +0ms
+  pw:api   locator resolved to <input type="checkbox"/> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +22ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.check succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Save snapshot' }) +0ms
+  pw:api   locator resolved to <button class="button button-primary">Save snapshot</button> +2ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +29ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +1ms
+  pw:api => Expect "toBeVisible" started +0ms
+  pw:api Expect "toBeVisible" getByRole('status').filter({ hasText: 'Saved result snapshot' }) with timeout 5000ms +0ms
+  pw:api waiting for getByRole('status').filter({ hasText: 'Saved result snapshot' }) +0ms
+  pw:api   locator resolved to <p role="status" class="insight-note">Saved result snapshot and provenance to dashboard.</p> +89ms
+  pw:api <= Expect "toBeVisible" succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Dashboards', exact: true }) +0ms
+  pw:api   locator resolved to <button class="nav-item" aria-label="Dashboards">…</button> +2ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +23ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   navigated to "http://127.0.0.1:5174/#dashboards" +3ms
+  pw:api   navigated to "http://127.0.0.1:5174/#dashboards" +1ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +1ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toHaveCount" started +0ms
+  pw:api Expect "toHaveCount" locator('.dashboard-widget') with timeout 5000ms +0ms
+  pw:api waiting for locator('.dashboard-widget') +0ms
+  pw:api   locator resolved to 0 elements +1ms
+  pw:api   unexpected value "0" +0ms
+  pw:api   locator resolved to 0 elements +23ms
+  pw:api   unexpected value "0" +0ms
+  pw:api   locator resolved to 1 element +53ms
+  pw:api <= Expect "toHaveCount" succeeded +0ms
+  pw:api => Expect "toHaveCount" started +1ms
+  pw:api Expect "toHaveCount" locator('.recharts-bar-rectangle') with timeout 5000ms +0ms
+  pw:api waiting for locator('.recharts-bar-rectangle') +0ms
+  pw:api <= Expect "toHaveCount" succeeded +0ms
+  pw:api => locator.isVisible started +0ms
+  pw:api   checking visibility of getByRole('button', { name: 'Done editing', exact: true }) +1ms
+  pw:api <= locator.isVisible succeeded +1ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Edit dashboard', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-primary">Edit dashboard</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +28ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +12ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for locator('.dashboard-widget').first().locator('.widget-layout > summary') +0ms
+  pw:api   locator resolved to <summary>Layout</summary> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +20ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +1ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.selectOption started +0ms
+  pw:api waiting for getByLabel('Widget width 1') +0ms
+  pw:api   locator resolved to <select aria-label="Widget width 1">…</select> +1ms
+  pw:api attempting select option action +0ms
+  pw:api   waiting for element to be visible and enabled +0ms
+  pw:api   selected specified option(s) +7ms
+  pw:api <= locator.selectOption succeeded +0ms
+  pw:api => Expect "toHaveAttribute" started +1ms
+  pw:api Expect "toHaveAttribute" locator('.dashboard-widget') with timeout 5000ms +0ms
+  pw:api waiting for locator('.dashboard-widget') +0ms
+  pw:api   locator resolved to <article tabindex="-1" class="dashboard-widget" id="widget-0d5885cb-451d-41e2-949d-97a0b554e943" data-widget-id="0d5885cb-451d-41e2-949d-97a0b554e943">…</article> +4ms
+  pw:api   unexpected value "grid-column: span 6; min-height: 340px;" +0ms
+  pw:api   locator resolved to <article tabindex="-1" class="dashboard-widget" id="widget-0d5885cb-451d-41e2-949d-97a0b554e943" data-widget-id="0d5885cb-451d-41e2-949d-97a0b554e943">…</article> +22ms
+  pw:api <= Expect "toHaveAttribute" succeeded +0ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('button', { name: 'Duplicate widget 1' }) +0ms
+  pw:api   locator resolved to <button aria-label="Duplicate widget 1">…</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +27ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +1ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +8ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toHaveCount" started +0ms
+  pw:api Expect "toHaveCount" locator('.dashboard-widget') with timeout 5000ms +1ms
+  pw:api waiting for locator('.dashboard-widget') +0ms
+  pw:api   locator resolved to 1 element +0ms
+  pw:api   unexpected value "1" +0ms
+  pw:api   locator resolved to 2 elements +39ms
+  pw:api <= Expect "toHaveCount" succeeded +1ms
+  pw:api => locator.evaluateAll started +0ms
+  pw:api <= locator.evaluateAll succeeded +2ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'Move widget 2 up' }) +0ms
+  pw:api   locator resolved to <button aria-label="Move widget 2 up">…</button> +1ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +30ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +11ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +1ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.getAttribute started +0ms
+  pw:api waiting for locator('.dashboard-widget').first() +0ms
+  pw:api   locator resolved to <article tabindex="-1" class="dashboard-widget" id="widget-0d5885cb-451d-41e2-949d-97a0b554e943" data-widget-id="0d5885cb-451d-41e2-949d-97a0b554e943">…</article> +1ms
+  pw:api <= locator.getAttribute succeeded +0ms
+  pw:api => locator.getAttribute started +103ms
+  pw:api waiting for locator('.dashboard-widget').first() +0ms
+  pw:api   locator resolved to <article tabindex="-1" class="dashboard-widget" id="widget-44883cc1-81fe-49d0-a60d-1d1dcb594a43" data-widget-id="44883cc1-81fe-49d0-a60d-1d1dcb594a43">…</article> +0ms
+  pw:api <= locator.getAttribute succeeded +1ms
+  pw:api => page.setViewportSize started +0ms
+  pw:api <= page.setViewportSize succeeded +2ms
+  pw:api => locator.dragTo started +1ms
+  pw:api waiting for getByRole('button', { name: 'Drag widget 1', exact: true }) +0ms
+  pw:api   locator resolved to <button draggable="true" class="drag-handle" aria-label="Drag widget 1">…</button> +1ms
+  pw:api attempting move and down action +1ms
+  pw:api   waiting for element to be visible and stable +0ms
+  pw:api   element is visible and stable +28ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing move and down action +1ms
+  pw:api   move and down action done +16ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api waiting for locator('.widget-header').nth(1) +0ms
+  pw:api   locator resolved to <div class="widget-header">…</div> +1ms
+  pw:api attempting move and up action +0ms
+  pw:api   waiting for element to be visible and stable +0ms
+  pw:api   element is visible and stable +32ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing move and up action +0ms
+  pw:api   move and up action done +38ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +1ms
+  pw:api <= locator.dragTo succeeded +0ms
+  pw:api => locator.getAttribute started +0ms
+  pw:api waiting for locator('.dashboard-widget').first() +0ms
+  pw:api   locator resolved to <article tabindex="-1" class="dashboard-widget" id="widget-44883cc1-81fe-49d0-a60d-1d1dcb594a43" data-widget-id="44883cc1-81fe-49d0-a60d-1d1dcb594a43">…</article> +1ms
+  pw:api <= locator.getAttribute succeeded +0ms
+  pw:api => locator.getAttribute started +102ms
+  pw:api waiting for locator('.dashboard-widget').first() +0ms
+  pw:api   locator resolved to <article tabindex="-1" class="dashboard-widget" id="widget-0d5885cb-451d-41e2-949d-97a0b554e943" data-widget-id="0d5885cb-451d-41e2-949d-97a0b554e943">…</article> +1ms
+  pw:api <= locator.getAttribute succeeded +0ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for locator('.dashboards-page>.filter-editor').locator('summary') +0ms
+  pw:api   locator resolved to <summary>…</summary> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +4ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.fill started +0ms
+  pw:api waiting for locator('.dashboards-page>.filter-editor').getByLabel('Result column') +0ms
+  pw:api   locator resolved to <input value="" maxlength="128" list="Dashboard-filters-columns"/> +1ms
+  pw:api   fill("region") +1ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +2ms
+  pw:api => locator.fill started +0ms
+  pw:api waiting for locator('.dashboards-page>.filter-editor').getByLabel('Values, separated by commas') +0ms
+  pw:api   locator resolved to <input value="" type="text"/> +1ms
+  pw:api   fill("North") +0ms
+  pw:api attempting fill action +0ms
+  pw:api   waiting for element to be visible, enabled and editable +0ms
+  pw:api <= locator.fill succeeded +1ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for locator('.dashboards-page>.filter-editor').getByRole('button', { name: 'Apply filter' }) +0ms
+  pw:api   locator resolved to <button type="button" class="button button-outline">Apply filter</button> +3ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +21ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +13ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toHaveCount" started +0ms
+  pw:api Expect "toHaveCount" locator('.dashboard-widget').first().locator('.recharts-bar-rectangle') with timeout 5000ms +0ms
+  pw:api waiting for locator('.dashboard-widget').first().locator('.recharts-bar-rectangle') +0ms
+  pw:api   locator resolved to 2 elements +1ms
+  pw:api   unexpected value "2" +0ms
+  pw:api   locator resolved to 1 element +29ms
+  pw:api <= Expect "toHaveCount" succeeded +1ms
+  pw:api => locator.click started +0ms
+  pw:api waiting for getByRole('button', { name: 'More actions', exact: true }) +0ms
+  pw:api   locator resolved to <button aria-haspopup="menu" aria-expanded="false" class="button button-outline">More actions</button> +2ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +20ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +1ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +1ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => locator.getAttribute started +0ms
+  pw:api waiting for getByRole('menuitem', { name: 'PDF report', exact: true }) +0ms
+  pw:api   locator resolved to <a download="" role="menuitem" href="/api/dashboards/ccf6d3b1-5bd6-41c5-a3ec-25c1a64e559f/report.pdf">PDF report</a> +1ms
+  pw:api <= locator.getAttribute succeeded +0ms
+  pw:api => apiRequestContext.get started +0ms
+  pw:api → GET http://127.0.0.1:5174/api/dashboards/ccf6d3b1-5bd6-41c5-a3ec-25c1a64e559f/report.pdf +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +41ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:29 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-disposition: attachment; filename="insightiq-dashboard.pdf" +0ms
+  pw:api   content-length: 28049 +0ms
+  pw:api   content-type: application/pdf +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+  pw:api => locator.getAttribute started +1ms
+  pw:api waiting for locator('.dashboard-widget').first().getByRole('link', { name: 'CSV', exact: true }) +0ms
+  pw:api   locator resolved to <a download="" class="button button-ghost" href="/api/dashboards/ccf6d3b1-5bd6-41c5-a3ec-25c1a64e559f/widgets/0d5885cb-451d-41e2-949d-97a0b554e943/results.csv">CSV</a> +0ms
+  pw:api <= locator.getAttribute succeeded +0ms
+  pw:api => apiRequestContext.get started +1ms
+  pw:api → GET http://127.0.0.1:5174/api/dashboards/ccf6d3b1-5bd6-41c5-a3ec-25c1a64e559f/widgets/0d5885cb-451d-41e2-949d-97a0b554e943/results.csv +0ms
+  pw:api   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 +0ms
+  pw:api   accept: */* +0ms
+  pw:api   accept-encoding: gzip,deflate,br +0ms
+  pw:api ← 200 OK +20ms
+  pw:api   vary: Origin +0ms
+  pw:api   date: Thu, 12 Nov 2026 05:12:29 GMT +0ms
+  pw:api   server: uvicorn +0ms
+  pw:api   content-disposition: attachment; filename="insightiq-widget.csv" +0ms
+  pw:api   content-length: 34 +0ms
+  pw:api   content-type: text/csv; charset=utf-8 +0ms
+  pw:api   cache-control: no-store +0ms
+  pw:api   connection: close +0ms
+  pw:api <= apiRequestContext.get succeeded +0ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for locator('.dashboard-widget').first().getByRole('button', { name: 'PNG', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-ghost">PNG</button> +1ms
+  pw:api attempting click action +0ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +15ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +0ms
+  pw:api   click action done +2ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +1ms
+  pw:api <= page.waitForEvent succeeded +1s
+  pw:api => page.reload started +2ms
+  pw:api waiting for navigation until "load" +0ms
+  pw:api   "commit" event fired +30ms
+  pw:api   navigated to "http://127.0.0.1:5174/#dashboards" +0ms
+  pw:api   navigated to "http://127.0.0.1:5174/#dashboards" +0ms
+  pw:api   "domcontentloaded" event fired +24ms
+  pw:api   "load" event fired +1ms
+  pw:api <= page.reload succeeded +0ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('button', { name: 'Dashboards', exact: true }) +0ms
+  pw:api   locator resolved to <button aria-current="page" aria-label="Dashboards" class="nav-item active">…</button> +24ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +30ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +1ms
+  pw:api   performing click action +0ms
+  pw:api   navigated to "http://127.0.0.1:5174/#dashboards" +2ms
+  pw:api   click action done +1ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toHaveCount" started +0ms
+  pw:api Expect "toHaveCount" locator('.dashboard-widget') with timeout 5000ms +0ms
+  pw:api waiting for locator('.dashboard-widget') +0ms
+  pw:api   locator resolved to 0 elements +1ms
+  pw:api   unexpected value "0" +0ms
+  pw:api   locator resolved to 2 elements +26ms
+  pw:api <= Expect "toHaveCount" succeeded +0ms
+  pw:api => Expect "toHaveCount" started +1ms
+  pw:api Expect "toHaveCount" locator('.dashboard-widget').first().locator('.recharts-bar-rectangle') with timeout 5000ms +0ms
+  pw:api waiting for locator('.dashboard-widget').first().locator('.recharts-bar-rectangle') +0ms
+  pw:api   locator resolved to 0 elements +2ms
+  pw:api   unexpected value "0" +0ms
+  pw:api   locator resolved to 0 elements +22ms
+  pw:api   unexpected value "0" +0ms
+  pw:api   locator resolved to 0 elements +53ms
+  pw:api   unexpected value "0" +0ms
+  pw:api   locator resolved to 0 elements +103ms
+  pw:api   unexpected value "0" +0ms
+  pw:api   locator resolved to 0 elements +105ms
+  pw:api   unexpected value "0" +0ms
+  pw:api   "networkidle" event fired +207ms
+  pw:api   locator resolved to 1 element +297ms
+  pw:api <= Expect "toHaveCount" succeeded +1ms
+  pw:api => locator.isVisible started +0ms
+  pw:api   checking visibility of getByRole('button', { name: 'Done editing', exact: true }) +0ms
+  pw:api <= locator.isVisible succeeded +3ms
+  pw:api => locator.click started +1ms
+  pw:api waiting for getByRole('button', { name: 'Edit dashboard', exact: true }) +0ms
+  pw:api   locator resolved to <button class="button button-primary">Edit dashboard</button> +2ms
+  pw:api attempting click action +1ms
+  pw:api   waiting for element to be visible, enabled and stable +0ms
+  pw:api   element is visible, enabled and stable +21ms
+  pw:api   scrolling into view if needed +0ms
+  pw:api   done scrolling +0ms
+  pw:api   performing click action +1ms
+  pw:api   click action done +30ms
+  pw:api   waiting for scheduled navigations to finish +0ms
+  pw:api   navigations have finished +0ms
+  pw:api <= locator.click succeeded +0ms
+  pw:api => Expect "toHaveValue" started +1ms
+  pw:api Expect "toHaveValue" getByLabel('Widget width 1') with timeout 5000ms +0ms
+  pw:api waiting for getByLabel('Widget width 1') +0ms
+  pw:api <= Expect "toHaveValue" succeeded +2ms
+  pw:api => page.screenshot started +0ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +1ms
+  pw:api fonts loaded +1ms
+  pw:api <= page.screenshot succeeded +69ms
+  pw:api => page.setViewportSize started +1ms
+  pw:api <= page.setViewportSize succeeded +4ms
+  pw:api => page.evaluate started +0ms
+  pw:api <= page.evaluate succeeded +1ms
+  pw:api   navigated to "http://127.0.0.1:5174/#dashboards" +9ms
+  pw:api => page.evaluate started +92ms
+  pw:api <= page.evaluate succeeded +0ms
+  pw:api => page.screenshot started +1ms
+  pw:api taking page screenshot +0ms
+  pw:api waiting for fonts to load... +1ms
+  pw:api fonts loaded +0ms
+  pw:api <= page.screenshot succeeded +61ms
+  pw:api => browserContext.close started +2ms
+  pw:api <= browserContext.close succeeded +2ms
+  ✓  3 e2e/phase4.spec.ts:7:1 › dashboard save, layout, filters, reload and exports (5.4s)
+  pw:api => browser.close started +4ms
+  pw:api <= browser.close succeeded +30ms
+
+  3 passed (17.2s)

@@ -1,0 +1,5 @@
+order_id,region,revenue,order_date
+ORD-001,North,1240.50,2026-01-02
+ORD-002,West,890.00,2026-01-03
+ORD-003,North,,2026-01-04
+ORD-004,South,2150.75,2026-01-05

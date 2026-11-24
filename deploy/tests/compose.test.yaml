@@ -1,0 +1,11 @@
+# Test-only override (Accounts A5 local stack tests). It changes ONE thing: the app container runs tests/stack_test_app.py, which
+# is the normal application with the controlled AI provider (no live AI), with the backend tests folder mounted read-only.
+# Every production setting, limit and hardening option still comes from ../compose.yaml.
+services:
+  api:
+    command: ["python", "-m", "uvicorn", "tests.stack_test_app:app", "--host", "0.0.0.0", "--port", "8000", "--no-proxy-headers"]
+    environment:
+      INSIGHTIQ_BIND_HOST: 0.0.0.0
+      STACK_TEST: "1"
+    volumes:
+      - ../backend/tests:/app/tests:ro      # relative to deploy/ (the first compose file)

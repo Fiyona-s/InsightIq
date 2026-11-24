@@ -1,0 +1,912 @@
+{
+  "notice": "Historical authored retail-v1 fixture evaluation, read from the local API on 2026-11-04. Not a new model run. Never generation/RAG input.",
+  "source": {
+    "id": "c2730eb3-6937-489c-b9fc-ffcf86c06426",
+    "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+    "dataset_fingerprint": "c69c1e9ce3c8ce212796dd29546a230ee42c76d63a4f80a1bd3c0f3312c341f2",
+    "version": "retail-v1",
+    "case_ids": [
+      "q05",
+      "q06"
+    ],
+    "mode": "paid",
+    "source_evaluation_id": null,
+    "pipeline": "agentic",
+    "max_spend_usd": 0.5,
+    "max_total_tokens": 100000,
+    "confirm_paid_calls": true,
+    "status": "completed",
+    "created_at": "2026-11-03T19:06:28.410043+00:00",
+    "updated_at": "2026-11-03T19:06:31.477927+00:00",
+    "completed_at": "2026-11-03T19:06:31.477900+00:00",
+    "model": "openai/gpt-oss-120b",
+    "provider_endpoint": "https://api.groq.com",
+    "pricing": {
+      "input": "0.15",
+      "output": "0.60",
+      "source": "User-configured USD per million tokens; verify current provider rates."
+    },
+    "results": [
+      {
+        "case_id": "q05",
+        "category": "aggregation",
+        "difficulty": "easy",
+        "question": "How many order records are there?",
+        "reference_sql": "SELECT COUNT(*) AS orders FROM data",
+        "expected": {
+          "columns": [
+            {
+              "name": "orders",
+              "type": "BIGINT"
+            }
+          ],
+          "rows": [
+            [
+              8
+            ]
+          ],
+          "row_count": 1
+        },
+        "actual": {
+          "columns": [
+            {
+              "name": "order_record_count",
+              "type": "BIGINT"
+            }
+          ],
+          "rows": [
+            [
+              8
+            ]
+          ],
+          "row_count": 1
+        },
+        "correct": false,
+        "comparison": "Column names/semantic aliases differ.",
+        "run": {
+          "events": [
+            {
+              "id": 1,
+              "step": "retrieve_context",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:28.598938+00:00",
+              "attempt": 0,
+              "summary": "Starting retrieve context."
+            },
+            {
+              "id": 2,
+              "step": "retrieve_context",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:28.911815+00:00",
+              "attempt": 0,
+              "summary": "Retrieved 6 dataset-scoped documents."
+            },
+            {
+              "id": 3,
+              "step": "plan",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:28.916790+00:00",
+              "attempt": 0,
+              "summary": "Starting plan."
+            },
+            {
+              "id": 4,
+              "step": "plan",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:28.918743+00:00",
+              "attempt": 0,
+              "summary": "Use only the selected dataset, confirmed types and explicit definitions. Validate every attempt; execute at most 1000 result rows."
+            },
+            {
+              "id": 5,
+              "step": "generate_sql",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:28.920393+00:00",
+              "attempt": 0,
+              "summary": "Starting generate sql."
+            },
+            {
+              "id": 6,
+              "step": "generate_sql",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:28.922609+00:00",
+              "attempt": 1,
+              "summary": "Generating a candidate query from the question and authorized schema."
+            },
+            {
+              "id": 7,
+              "step": "generate_sql",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:29.877535+00:00",
+              "attempt": 1,
+              "summary": "Candidate SQL received; execution requires validation."
+            },
+            {
+              "id": 8,
+              "step": "validate",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:29.883031+00:00",
+              "attempt": 1,
+              "summary": "Starting validate."
+            },
+            {
+              "id": 9,
+              "step": "validate",
+              "status": "passed",
+              "timestamp": "2026-11-03T19:06:29.907067+00:00",
+              "attempt": 1,
+              "summary": "Read-only SQL, relation scope, column references, functions and explicit types passed validation."
+            },
+            {
+              "id": 10,
+              "step": "execute",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:29.909950+00:00",
+              "attempt": 1,
+              "summary": "Starting execute."
+            },
+            {
+              "id": 11,
+              "step": "execute",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:29.911307+00:00",
+              "attempt": 1,
+              "summary": "Executing validated SQL in the isolated read-only DuckDB worker."
+            },
+            {
+              "id": 12,
+              "step": "execute",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:30.001983+00:00",
+              "attempt": 1,
+              "summary": "1 actual rows returned. Empty results are valid."
+            },
+            {
+              "id": 13,
+              "step": "chart",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:30.005661+00:00",
+              "attempt": 1,
+              "summary": "Starting chart."
+            },
+            {
+              "id": 14,
+              "step": "chart",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:30.006732+00:00",
+              "attempt": 1,
+              "summary": "Validated chart choices against actual result types, rows, cardinality, finite values and null handling."
+            },
+            {
+              "id": 15,
+              "step": "explain",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:30.007793+00:00",
+              "attempt": 1,
+              "summary": "Starting explain."
+            },
+            {
+              "id": 16,
+              "step": "explain",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:30.008738+00:00",
+              "attempt": 1,
+              "summary": "Computed evidence and grounded every displayed narrative statement to a known fact ID. This provider has no narrative selection capability. Showing computed facts."
+            },
+            {
+              "id": 17,
+              "step": "finish",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:30.009864+00:00",
+              "attempt": 1,
+              "summary": "Starting finish."
+            },
+            {
+              "id": 18,
+              "step": "finish",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:30.011199+00:00",
+              "attempt": 1,
+              "summary": "Workflow completed; metadata and event history retained. Result rows expire after 10 minutes."
+            },
+            {
+              "id": 19,
+              "step": "finish",
+              "status": "succeeded",
+              "timestamp": "2026-11-03T19:06:30.012461+00:00",
+              "attempt": 1,
+              "summary": "Run reached terminal state."
+            }
+          ],
+          "attempts": 1,
+          "current_step": "finish",
+          "retrieval": {
+            "status": "ready",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+            "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+            "embedding_model": "sentence-transformers:daa3ad087dec355b301b5395164c2b3bdf09f89bae1844d7b6e61d03c60e2115",
+            "documents": [
+              {
+                "id": "16823f98a397af5ae32c765e",
+                "kind": "dataset",
+                "title": "CONTROLLED-BENCHMARK-retail-v1.csv",
+                "text": "Dataset CONTROLLED-BENCHMARK-retail-v1.csv. Authorized SQL relation: data. 8 rows. No business description supplied.",
+                "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+                "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+                "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+                "provenance": {
+                  "source": "catalog + user definition",
+                  "updated_at": "2026-11-03T15:50:05.505976+00:00",
+                  "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990"
+                },
+                "score": 0.378467857837677,
+                "reason": "Rank 1 by normalized embedding cosine similarity within the selected dataset; dataset context."
+              },
+              {
+                "id": "94793deb56b85dadc13e277e",
+                "kind": "column",
+                "title": "order_date",
+                "text": "Column \"order_date\" on data; SQL type DATE; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: DATE, not a business meaning. No user-authored description.",
+                "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+                "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+                "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+                "provenance": {
+                  "source": "DuckDB DESCRIBE + full-column profile",
+                  "column": "order_date",
+                  "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990",
+                  "mapping_signature": "334c452060f41779a901379dc323630c7abd299e2b40b01e925dd0b57881bff7",
+                  "description_source": "none"
+                },
+                "score": 0.27569007873535156,
+                "reason": "Rank 2 by normalized embedding cosine similarity within the selected dataset; column context."
+              },
+              {
+                "id": "40015665ecbd99d6ea6d7c46",
+                "kind": "column",
+                "title": "quantity",
+                "text": "Column \"quantity\" on data; SQL type BIGINT; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: BIGINT, not a business meaning. No user-authored description.",
+                "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+                "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+                "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+                "provenance": {
+                  "source": "DuckDB DESCRIBE + full-column profile",
+                  "column": "quantity",
+                  "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990",
+                  "mapping_signature": "334c452060f41779a901379dc323630c7abd299e2b40b01e925dd0b57881bff7",
+                  "description_source": "none"
+                },
+                "score": 0.20203785598278046,
+                "reason": "Rank 3 by normalized embedding cosine similarity within the selected dataset; column context."
+              },
+              {
+                "id": "94a1ef86816052ccdc4bebd4",
+                "kind": "column",
+                "title": "manager_id",
+                "text": "Column \"manager_id\" on data; SQL type BIGINT; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: BIGINT, not a business meaning. No user-authored description.",
+                "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+                "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+                "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+                "provenance": {
+                  "source": "DuckDB DESCRIBE + full-column profile",
+                  "column": "manager_id",
+                  "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990",
+                  "mapping_signature": "334c452060f41779a901379dc323630c7abd299e2b40b01e925dd0b57881bff7",
+                  "description_source": "none"
+                },
+                "score": 0.17739295959472656,
+                "reason": "Rank 4 by normalized embedding cosine similarity within the selected dataset; column context."
+              },
+              {
+                "id": "75c086fc6e1567f941896aff",
+                "kind": "column",
+                "title": "id",
+                "text": "Column \"id\" on data; SQL type BIGINT; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: BIGINT, not a business meaning. No user-authored description.",
+                "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+                "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+                "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+                "provenance": {
+                  "source": "DuckDB DESCRIBE + full-column profile",
+                  "column": "id",
+                  "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990",
+                  "mapping_signature": "334c452060f41779a901379dc323630c7abd299e2b40b01e925dd0b57881bff7",
+                  "description_source": "none"
+                },
+                "score": 0.17201051115989685,
+                "reason": "Rank 5 by normalized embedding cosine similarity within the selected dataset; column context."
+              },
+              {
+                "id": "51aa99186f9a6fce57634486",
+                "kind": "column",
+                "title": "revenue",
+                "text": "Column \"revenue\" on data; SQL type DOUBLE; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: BIGINT, not a business meaning. No user-authored description.",
+                "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+                "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+                "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+                "provenance": {
+                  "source": "DuckDB DESCRIBE + full-column profile",
+                  "column": "revenue",
+                  "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990",
+                  "mapping_signature": "334c452060f41779a901379dc323630c7abd299e2b40b01e925dd0b57881bff7",
+                  "description_source": "none"
+                },
+                "score": 0.17103660106658936,
+                "reason": "Rank 6 by normalized embedding cosine similarity within the selected dataset; column context."
+              }
+            ],
+            "warning": null,
+            "rebuilt": true
+          },
+          "chart_spec": {
+            "kind": "kpi",
+            "x": null,
+            "y": 0,
+            "title": "order_record_count",
+            "null_policy": "omit_with_count",
+            "zero_baseline": true
+          },
+          "evidence_count": 7,
+          "activity_kind": "evaluation",
+          "pipeline": "agentic",
+          "result_digest": "80163d9a88bb6826b4d1d41025b83bced2b91106499c3cee3d7a97421224b019",
+          "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990",
+          "id": "4459930e-d75c-4b26-af80-2e6a9fde7047",
+          "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+          "dataset_name": "CONTROLLED-BENCHMARK-retail-v1.csv",
+          "question": "How many order records are there?",
+          "status": "succeeded",
+          "created_at": "2026-11-03T19:06:28.436355+00:00",
+          "completed_at": "2026-11-03T19:06:30.012409+00:00",
+          "sql": "SELECT COUNT(*) AS order_record_count FROM data",
+          "executed_sql": "SELECT COUNT(*) AS order_record_count FROM data",
+          "explanation": "Count the total number of rows (order records) in the data table",
+          "answer": "order_record_count: 8",
+          "clarification": null,
+          "error": null,
+          "error_code": null,
+          "type_mapping": {
+            "id": "BIGINT",
+            "revenue": "DOUBLE",
+            "quantity": "BIGINT",
+            "order_date": "DATE",
+            "manager_id": "BIGINT",
+            "target": "DOUBLE"
+          },
+          "conversions": [
+            {
+              "column": "id",
+              "type": "BIGINT",
+              "missing": 0,
+              "failed": 0
+            },
+            {
+              "column": "revenue",
+              "type": "DOUBLE",
+              "missing": 0,
+              "failed": 0
+            },
+            {
+              "column": "quantity",
+              "type": "BIGINT",
+              "missing": 0,
+              "failed": 0
+            },
+            {
+              "column": "order_date",
+              "type": "DATE",
+              "missing": 0,
+              "failed": 0
+            },
+            {
+              "column": "manager_id",
+              "type": "BIGINT",
+              "missing": 0,
+              "failed": 0
+            },
+            {
+              "column": "target",
+              "type": "DOUBLE",
+              "missing": 0,
+              "failed": 0
+            }
+          ],
+          "metrics": {
+            "model": "openai/gpt-oss-120b",
+            "provider_model": "openai/gpt-oss-120b",
+            "model_latency_ms": 953,
+            "retrieval_latency_ms": 303,
+            "query_latency_ms": 85,
+            "total_latency_ms": 1574,
+            "prompt_tokens": 2745,
+            "completion_tokens": 135,
+            "total_tokens": 2880,
+            "estimated_cost_usd": 0.00049275
+          },
+          "result_metadata": {
+            "columns": [
+              {
+                "name": "order_record_count",
+                "type": "BIGINT"
+              }
+            ],
+            "row_count": 1
+          },
+          "results_available": true
+        },
+        "status": null,
+        "source_evaluation_id": null,
+        "source_run_id": null,
+        "source_model": null,
+        "source_pipeline": null,
+        "replayed_sql": null,
+        "offline_latency_ms": null,
+        "failure_labels": [
+          "unclassified_mismatch"
+        ],
+        "review": null
+      },
+      {
+        "case_id": "q06",
+        "category": "aggregation",
+        "difficulty": "easy",
+        "question": "What is the sum of revenue across all orders?",
+        "reference_sql": "SELECT SUM(revenue) AS total_revenue FROM data",
+        "expected": {
+          "columns": [
+            {
+              "name": "total_revenue",
+              "type": "DOUBLE"
+            }
+          ],
+          "rows": [
+            [
+              1000
+            ]
+          ],
+          "row_count": 1
+        },
+        "actual": {
+          "columns": [
+            {
+              "name": "total_revenue",
+              "type": "DOUBLE"
+            }
+          ],
+          "rows": [
+            [
+              1000.0
+            ]
+          ],
+          "row_count": 1
+        },
+        "correct": true,
+        "comparison": "Typed multiset matches; duplicates and NULLs preserved.",
+        "run": {
+          "events": [
+            {
+              "id": 1,
+              "step": "retrieve_context",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:30.176973+00:00",
+              "attempt": 0,
+              "summary": "Starting retrieve context."
+            },
+            {
+              "id": 2,
+              "step": "retrieve_context",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:30.208964+00:00",
+              "attempt": 0,
+              "summary": "Retrieved 6 dataset-scoped documents."
+            },
+            {
+              "id": 3,
+              "step": "plan",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:30.210890+00:00",
+              "attempt": 0,
+              "summary": "Starting plan."
+            },
+            {
+              "id": 4,
+              "step": "plan",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:30.211819+00:00",
+              "attempt": 0,
+              "summary": "Use only the selected dataset, confirmed types and explicit definitions. Validate every attempt; execute at most 1000 result rows."
+            },
+            {
+              "id": 5,
+              "step": "generate_sql",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:30.212955+00:00",
+              "attempt": 0,
+              "summary": "Starting generate sql."
+            },
+            {
+              "id": 6,
+              "step": "generate_sql",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:30.214070+00:00",
+              "attempt": 1,
+              "summary": "Generating a candidate query from the question and authorized schema."
+            },
+            {
+              "id": 7,
+              "step": "generate_sql",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:31.322444+00:00",
+              "attempt": 1,
+              "summary": "Candidate SQL received; execution requires validation."
+            },
+            {
+              "id": 8,
+              "step": "validate",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:31.329597+00:00",
+              "attempt": 1,
+              "summary": "Starting validate."
+            },
+            {
+              "id": 9,
+              "step": "validate",
+              "status": "passed",
+              "timestamp": "2026-11-03T19:06:31.334458+00:00",
+              "attempt": 1,
+              "summary": "Read-only SQL, relation scope, column references, functions and explicit types passed validation."
+            },
+            {
+              "id": 10,
+              "step": "execute",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:31.337156+00:00",
+              "attempt": 1,
+              "summary": "Starting execute."
+            },
+            {
+              "id": 11,
+              "step": "execute",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:31.340064+00:00",
+              "attempt": 1,
+              "summary": "Executing validated SQL in the isolated read-only DuckDB worker."
+            },
+            {
+              "id": 12,
+              "step": "execute",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:31.434650+00:00",
+              "attempt": 1,
+              "summary": "1 actual rows returned. Empty results are valid."
+            },
+            {
+              "id": 13,
+              "step": "chart",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:31.438171+00:00",
+              "attempt": 1,
+              "summary": "Starting chart."
+            },
+            {
+              "id": 14,
+              "step": "chart",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:31.439750+00:00",
+              "attempt": 1,
+              "summary": "Validated chart choices against actual result types, rows, cardinality, finite values and null handling."
+            },
+            {
+              "id": 15,
+              "step": "explain",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:31.440999+00:00",
+              "attempt": 1,
+              "summary": "Starting explain."
+            },
+            {
+              "id": 16,
+              "step": "explain",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:31.442479+00:00",
+              "attempt": 1,
+              "summary": "Computed evidence and grounded every displayed narrative statement to a known fact ID. This provider has no narrative selection capability. Showing computed facts."
+            },
+            {
+              "id": 17,
+              "step": "finish",
+              "status": "running",
+              "timestamp": "2026-11-03T19:06:31.443674+00:00",
+              "attempt": 1,
+              "summary": "Starting finish."
+            },
+            {
+              "id": 18,
+              "step": "finish",
+              "status": "completed",
+              "timestamp": "2026-11-03T19:06:31.444625+00:00",
+              "attempt": 1,
+              "summary": "Workflow completed; metadata and event history retained. Result rows expire after 10 minutes."
+            },
+            {
+              "id": 19,
+              "step": "finish",
+              "status": "succeeded",
+              "timestamp": "2026-11-03T19:06:31.445804+00:00",
+              "attempt": 1,
+              "summary": "Run reached terminal state."
+            }
+          ],
+          "attempts": 1,
+          "current_step": "finish",
+          "retrieval": {
+            "status": "ready",
+            "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+            "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+            "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+            "embedding_model": "sentence-transformers:daa3ad087dec355b301b5395164c2b3bdf09f89bae1844d7b6e61d03c60e2115",
+            "documents": [
+              {
+                "id": "16823f98a397af5ae32c765e",
+                "kind": "dataset",
+                "title": "CONTROLLED-BENCHMARK-retail-v1.csv",
+                "text": "Dataset CONTROLLED-BENCHMARK-retail-v1.csv. Authorized SQL relation: data. 8 rows. No business description supplied.",
+                "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+                "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+                "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+                "provenance": {
+                  "source": "catalog + user definition",
+                  "updated_at": "2026-11-03T15:50:05.505976+00:00",
+                  "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990"
+                },
+                "score": 0.2693670988082886,
+                "reason": "Rank 1 by normalized embedding cosine similarity within the selected dataset; dataset context."
+              },
+              {
+                "id": "51aa99186f9a6fce57634486",
+                "kind": "column",
+                "title": "revenue",
+                "text": "Column \"revenue\" on data; SQL type DOUBLE; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: BIGINT, not a business meaning. No user-authored description.",
+                "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+                "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+                "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+                "provenance": {
+                  "source": "DuckDB DESCRIBE + full-column profile",
+                  "column": "revenue",
+                  "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990",
+                  "mapping_signature": "334c452060f41779a901379dc323630c7abd299e2b40b01e925dd0b57881bff7",
+                  "description_source": "none"
+                },
+                "score": 0.25507766008377075,
+                "reason": "Rank 2 by normalized embedding cosine similarity within the selected dataset; column context."
+              },
+              {
+                "id": "40015665ecbd99d6ea6d7c46",
+                "kind": "column",
+                "title": "quantity",
+                "text": "Column \"quantity\" on data; SQL type BIGINT; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: BIGINT, not a business meaning. No user-authored description.",
+                "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+                "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+                "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+                "provenance": {
+                  "source": "DuckDB DESCRIBE + full-column profile",
+                  "column": "quantity",
+                  "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990",
+                  "mapping_signature": "334c452060f41779a901379dc323630c7abd299e2b40b01e925dd0b57881bff7",
+                  "description_source": "none"
+                },
+                "score": 0.17153628170490265,
+                "reason": "Rank 3 by normalized embedding cosine similarity within the selected dataset; column context."
+              },
+              {
+                "id": "94793deb56b85dadc13e277e",
+                "kind": "column",
+                "title": "order_date",
+                "text": "Column \"order_date\" on data; SQL type DATE; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: DATE, not a business meaning. No user-authored description.",
+                "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+                "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+                "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+                "provenance": {
+                  "source": "DuckDB DESCRIBE + full-column profile",
+                  "column": "order_date",
+                  "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990",
+                  "mapping_signature": "334c452060f41779a901379dc323630c7abd299e2b40b01e925dd0b57881bff7",
+                  "description_source": "none"
+                },
+                "score": 0.14841823279857635,
+                "reason": "Rank 4 by normalized embedding cosine similarity within the selected dataset; column context."
+              },
+              {
+                "id": "94a1ef86816052ccdc4bebd4",
+                "kind": "column",
+                "title": "manager_id",
+                "text": "Column \"manager_id\" on data; SQL type BIGINT; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: BIGINT, not a business meaning. No user-authored description.",
+                "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+                "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+                "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+                "provenance": {
+                  "source": "DuckDB DESCRIBE + full-column profile",
+                  "column": "manager_id",
+                  "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990",
+                  "mapping_signature": "334c452060f41779a901379dc323630c7abd299e2b40b01e925dd0b57881bff7",
+                  "description_source": "none"
+                },
+                "score": 0.10222819447517395,
+                "reason": "Rank 5 by normalized embedding cosine similarity within the selected dataset; column context."
+              },
+              {
+                "id": "291afeb14f3b2337dc8cbd00",
+                "kind": "column",
+                "title": "target",
+                "text": "Column \"target\" on data; SQL type DOUBLE; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: BIGINT, not a business meaning. No user-authored description.",
+                "workspace_id": "ad269178-9b0d-4db8-83a4-bc58630ccf9c",
+                "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+                "fingerprint": "f30d22f8369123508a0af8a23eeef858d87a85a85000ec59e9c5b74d0a9fb937",
+                "provenance": {
+                  "source": "DuckDB DESCRIBE + full-column profile",
+                  "column": "target",
+                  "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990",
+                  "mapping_signature": "334c452060f41779a901379dc323630c7abd299e2b40b01e925dd0b57881bff7",
+                  "description_source": "none"
+                },
+                "score": 0.07010452449321747,
+                "reason": "Rank 6 by normalized embedding cosine similarity within the selected dataset; column context."
+              }
+            ],
+            "warning": null,
+            "rebuilt": false
+          },
+          "chart_spec": {
+            "kind": "kpi",
+            "x": null,
+            "y": 0,
+            "title": "total_revenue",
+            "null_policy": "omit_with_count",
+            "zero_baseline": true
+          },
+          "evidence_count": 7,
+          "activity_kind": "evaluation",
+          "pipeline": "agentic",
+          "result_digest": "80eea7d38237189ae99a1cdd0dc4a2352a5d8a6fd3cbe158c98c85b6bd6c7480",
+          "schema_signature": "f39ef246f013dfd535da672aa945fddc153b3e7976c2a559763072898e2f7990",
+          "id": "a00eeda9-341b-4b2f-baae-9e93a7466332",
+          "dataset_id": "2643dd74-cd84-4fce-8f1a-de0007c078da",
+          "dataset_name": "CONTROLLED-BENCHMARK-retail-v1.csv",
+          "question": "What is the sum of revenue across all orders?",
+          "status": "succeeded",
+          "created_at": "2026-11-03T19:06:30.068208+00:00",
+          "completed_at": "2026-11-03T19:06:31.445745+00:00",
+          "sql": "SELECT SUM(revenue) AS total_revenue FROM data",
+          "executed_sql": "SELECT SUM(revenue) AS total_revenue FROM data",
+          "explanation": "Calculate the total revenue by summing the revenue column across all rows in the data table.",
+          "answer": "total_revenue: 1000.0",
+          "clarification": null,
+          "error": null,
+          "error_code": null,
+          "type_mapping": {
+            "id": "BIGINT",
+            "revenue": "DOUBLE",
+            "quantity": "BIGINT",
+            "order_date": "DATE",
+            "manager_id": "BIGINT",
+            "target": "DOUBLE"
+          },
+          "conversions": [
+            {
+              "column": "id",
+              "type": "BIGINT",
+              "missing": 0,
+              "failed": 0
+            },
+            {
+              "column": "revenue",
+              "type": "DOUBLE",
+              "missing": 0,
+              "failed": 0
+            },
+            {
+              "column": "quantity",
+              "type": "BIGINT",
+              "missing": 0,
+              "failed": 0
+            },
+            {
+              "column": "order_date",
+              "type": "DATE",
+              "missing": 0,
+              "failed": 0
+            },
+            {
+              "column": "manager_id",
+              "type": "BIGINT",
+              "missing": 0,
+              "failed": 0
+            },
+            {
+              "column": "target",
+              "type": "DOUBLE",
+              "missing": 0,
+              "failed": 0
+            }
+          ],
+          "metrics": {
+            "model": "openai/gpt-oss-120b",
+            "provider_model": "openai/gpt-oss-120b",
+            "model_latency_ms": 1107,
+            "retrieval_latency_ms": 21,
+            "query_latency_ms": 89,
+            "total_latency_ms": 1376,
+            "prompt_tokens": 2750,
+            "completion_tokens": 210,
+            "total_tokens": 2960,
+            "estimated_cost_usd": 0.0005385
+          },
+          "result_metadata": {
+            "columns": [
+              {
+                "name": "total_revenue",
+                "type": "DOUBLE"
+              }
+            ],
+            "row_count": 1
+          },
+          "results_available": true
+        },
+        "status": null,
+        "source_evaluation_id": null,
+        "source_run_id": null,
+        "source_model": null,
+        "source_pipeline": null,
+        "replayed_sql": null,
+        "offline_latency_ms": null,
+        "failure_labels": [],
+        "review": null
+      }
+    ],
+    "active_run_id": null,
+    "provider_calls": 2,
+    "reserved_tokens": 34963,
+    "reserved_cost_usd": 0.00668445,
+    "error": null,
+    "metrics": {
+      "evaluated_count": null,
+      "correct_count": null,
+      "incorrect_count": null,
+      "missing_predictions": null,
+      "execution_failures": null,
+      "reference_failures": null,
+      "completed_cases": 2,
+      "accuracy": 0.5,
+      "valid_sql_rate": 1.0,
+      "execution_success_rate": 1.0,
+      "result_accuracy": 0.5,
+      "average_attempts": 1.0,
+      "repair_success_rate": null,
+      "p50_latency_ms": 1475.0,
+      "p95_latency_ms": 1564.1,
+      "total_tokens": 5840,
+      "estimated_cost_usd": 0.00103125,
+      "difficulties": {
+        "easy": {
+          "total": 2,
+          "correct": 1
+        }
+      },
+      "categories": {
+        "aggregation": {
+          "total": 2,
+          "correct": 1
+        }
+      },
+      "diagnostic_counts": {
+        "unclassified_mismatch": 1
+      },
+      "wrong_join_rate": null,
+      "wrong_filter_rate": null,
+      "wrong_aggregation_rate": null,
+      "hallucinated_column_rate": null,
+      "hallucinated_table_rate": null,
+      "reviewed_cases": 0,
+      "diagnostic_note": "Structural differences and guard reference errors are observable signals, not semantic error-cause certification. Cause rates use only independently reviewed cases and remain unknown without review; see reviewed-case denominator."
+    }
+  }
+}

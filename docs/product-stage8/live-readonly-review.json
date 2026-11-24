@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "width": 1280,
+      "inventorySeparated": true,
+      "storedResultVisible": true,
+      "newSetupCollapsed": true,
+      "newEvaluationStarted": false
+    },
+    {
+      "width": 768,
+      "inventorySeparated": true,
+      "storedResultVisible": true,
+      "newSetupCollapsed": true,
+      "newEvaluationStarted": false
+    },
+    {
+      "width": 390,
+      "inventorySeparated": true,
+      "storedResultVisible": true,
+      "newSetupCollapsed": true,
+      "newEvaluationStarted": false
+    }
+  ],
+  "writes": [],
+  "errors": [],
+  "evaluationResponsesUnchanged": true,
+  "verifiedReferenceCount": 45,
+  "preservedKPI": "₹83,79,680.76",
+  "duplicateBadges": 2,
+  "originalEvaluationSubmissions": 0,
+  "originalReferenceVerifications": 0,
+  "originalScreenshotsCreated": 0
+}

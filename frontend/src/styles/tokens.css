@@ -1,0 +1,116 @@
+/*
+ * InsightIQ design tokens — the ONLY place raw colour, type-size, spacing,
+ * radius and shadow values may be written. Everything else uses var(--…).
+ * Enforced by src/styles/tokens.test.ts.
+ */
+:root {
+  /* Brand: one colour, with tints for surfaces and a dark shade for text/hover. */
+  --brand-900: #0f3a2c;
+  --brand-700: #1d6a50;
+  --brand-600: #237a5d;
+  --brand-500: #2f8f6d;
+  --brand-300: #8fc9ae;
+  --brand-100: #dcefe5;
+  --brand-50: #eef7f2;
+
+  /* Neutrals (slightly green-tinted greys). */
+  --neutral-0: #ffffff;
+  --neutral-25: #f7f9f8;
+  --neutral-50: #f0f3f1;
+  --neutral-100: #e3e8e5;
+  --neutral-200: #cfd8d3;
+  --neutral-300: #aebab3;
+  --neutral-500: #5f6e67;
+  --neutral-600: #4b5a53;
+  --neutral-700: #33423c;
+  --neutral-800: #22302b;
+  --neutral-900: #121d19;
+
+  /* Semantic colours: text / background / border. */
+  --success-text: var(--brand-700);
+  --success-bg: var(--brand-50);
+  --success-border: var(--brand-300);
+  --warning-text: #7a4a00;
+  --warning-bg: #fdf5e6;
+  --warning-border: #ecd2a0;
+  --danger-text: #a8261b;
+  --danger-bg: #fdeeec;
+  --danger-border: #f1beb8;
+  --info-text: #1d5a80;
+  --info-bg: #eaf3f9;
+  --info-border: #b9d5e8;
+
+  /* Roles. */
+  --color-text: var(--neutral-900);
+  --color-text-muted: var(--neutral-600);
+  --color-text-subtle: var(--neutral-500);
+  --color-text-inverse: var(--neutral-0);
+  --color-bg: var(--neutral-25);
+  --color-surface: var(--neutral-0);
+  --color-surface-muted: var(--neutral-50);
+  --color-border: var(--neutral-100);
+  --color-border-strong: var(--neutral-200);
+  --color-focus: var(--brand-600);
+  --color-overlay: rgb(18 29 25 / 0.45);
+
+  /* Chart palette (categorical, validated for contrast on white). */
+  --chart-1: #237a5d;
+  --chart-2: #b0664a;
+  --chart-3: #3f7fa0;
+  --chart-4: #9a7a2e;
+  --chart-5: #7d64a0;
+  --chart-6: #6e8a3a;
+  --chart-7: #4f8a8f;
+  --chart-8: #8a8a3a;
+
+  /* Type scale — 14px is the floor for any visible text. */
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --text-sm: 14px;   /* metadata, captions, table text */
+  --text-base: 16px; /* body */
+  --text-lg: 18px;   /* card titles */
+  --text-xl: 22px;   /* section titles */
+  --text-2xl: 28px;  /* page titles */
+  --text-metric: 36px; /* big numbers */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --weight-regular: 400;
+  --weight-medium: 550;
+  --weight-bold: 650;
+
+  /* Spacing — 8px grid, with 4px for tight inline gaps. */
+  --space-0: 0;
+  --space-half: 4px;
+  --space-1: 8px;
+  --space-1h: 12px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-8: 64px;
+
+  /* Radius and elevation. */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgb(18 29 25 / 0.06);
+  --shadow: 0 2px 8px rgb(18 29 25 / 0.08);
+  --shadow-lg: 0 12px 32px rgb(18 29 25 / 0.16);
+
+  /* Layout. */
+  --gutter: 16px;
+  --sidebar-width: 240px;
+  --sidebar-width-md: 210px;
+  --content-max: 1200px;
+  --tap-target: 44px;
+
+  /* Legacy aliases kept so existing class names keep working. */
+  --text-helper: var(--text-sm);
+  --text-body: var(--text-sm);
+  --text-heading: var(--text-2xl);
+}
+@media (min-width: 768px) {
+  :root { --gutter: 32px; }
+}

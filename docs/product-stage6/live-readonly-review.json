@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "width": 1280,
+      "taskNames": true,
+      "taskAutomaticallyChosen": false,
+      "originalTrainingStarted": false
+    },
+    {
+      "width": 768,
+      "taskNames": true,
+      "taskAutomaticallyChosen": false,
+      "originalTrainingStarted": false
+    },
+    {
+      "width": 390,
+      "taskNames": true,
+      "taskAutomaticallyChosen": false,
+      "originalTrainingStarted": false
+    }
+  ],
+  "writes": [],
+  "errors": [],
+  "experimentResponsesUnchanged": true,
+  "preservedKPI": "₹83,79,680.76",
+  "duplicateBadges": 2,
+  "originalTrainingStarted": 0,
+  "originalModelsSelected": 0,
+  "originalScreenshotsCreated": 0
+}

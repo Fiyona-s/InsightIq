@@ -1,0 +1,23 @@
+
+> insightiq@0.1.0 build
+> tsc -b && vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 2034 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                        0.48 kB │ gzip:   0.33 kB
+dist/assets/index-e5cVgd1C.css       189.82 kB │ gzip:  30.13 kB
+dist/assets/AutoMLPlots-DflhX0a7.js   19.20 kB │ gzip:   6.08 kB
+dist/assets/ResultChart-CW9NaJEv.js   21.25 kB │ gzip:   6.80 kB
+dist/assets/chartAxis-Bvd8lPf0.js    403.77 kB │ gzip: 114.68 kB
+dist/assets/index-BMIwC4b4.js        539.55 kB │ gzip: 157.56 kB
+
+✓ built in 443ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+build exit 0

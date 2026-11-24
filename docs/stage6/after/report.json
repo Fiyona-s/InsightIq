@@ -1,0 +1,128 @@
+[
+ {
+  "screen": "datasets-nothing-marked",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "datasets-nothing-marked",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "datasets-nothing-marked",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "datasets-samples-selected",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "datasets-samples-selected",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "datasets-samples-selected",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "business-definitions-metric-review",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "business-definitions-metric-review",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "business-definitions-metric-review",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "dashboard-currency-remembered",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "dashboard-currency-remembered",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "dashboard-currency-remembered",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "dashboard-saved-before-tracking",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "dashboard-saved-before-tracking",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "dashboard-saved-before-tracking",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "verified-example-steps",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "verified-example-steps",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ },
+ {
+  "screen": "verified-example-steps",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "axeViolations": []
+ }
+]

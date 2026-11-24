@@ -1,0 +1,272 @@
+{
+ "overview@1280": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Home"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "datasets@1280": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Datasets"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "analyst@1280": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Ask your data"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "dashboards@1280": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Dashboards"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "automl@1280": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Predictions"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "knowledge@1280": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Business definitions"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "settings@1280": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Settings"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "projects@1280": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Projects"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "design@1280": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Design system"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "overview@768": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Home"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "datasets@768": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Datasets"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "analyst@768": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Ask your data"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "dashboards@768": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Dashboards"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "automl@768": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Predictions"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "knowledge@768": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Business definitions"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "settings@768": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Settings"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "projects@768": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Projects"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "design@768": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Design system"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "overview@390": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Home"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "datasets@390": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Datasets"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "analyst@390": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Ask your data"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "dashboards@390": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Dashboards"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "automl@390": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Predictions"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "knowledge@390": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Business definitions"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "settings@390": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Settings"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "projects@390": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Projects"
+  ],
+  "axe": [],
+  "errors": []
+ },
+ "design@390": {
+  "overflowX": 0,
+  "minFont": 14,
+  "small": [],
+  "h1": [
+   "Design system"
+  ],
+  "axe": [],
+  "errors": []
+ }
+}

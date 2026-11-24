@@ -1,0 +1,22 @@
+{
+  "unchanged": true,
+  "baseline": "Running approved Phase 8 image before Phase 9 deployment",
+  "files": {
+    "sql_guard.py": "f6892a3a16a350d04e016d9c54ef77756edbe2c8e1b6416c8c0734ed48f721cf",
+    "query_worker.py": "8c1790d77913260fbaf9ad86edf2ddd247f0f93db79c33c4c3f2d1c5a7e8c69c",
+    "execution.py": "b55265e132387b80bdebe28afb6b9eeb00ba39767374d135f635835c0497f6af",
+    "currency.py": "a8029494a2104b55a19024edd6cb2482ff36f5d1a14434a0d2e462ca3809e4b5",
+    "evaluation.py": "99a06d4180c33b0c4a38d0ed89566d163d020600d63b4aa4e0e5e4673393e111",
+    "evaluation_reporting.py": "745e8d28e1df98cc51072d459b35b1df77671efa00b0ec11e9d173380d898433",
+    "benchmark.py": "5f8173423ee053b8c39bfca5f0f60124475bfc4af3a9b31d65057a7cde0a4dc0",
+    "workflow.py": "cd0295a6fb3f50a03f9f3aaa8fadf89efe26c01495211cb77c670cfdbc5e83c2",
+    "dataset_editor.py": "e4ae5b8351ad11ebeb94d4fd31948f2f205a0b3766d5e39cda53f52c6f0bfc67",
+    "automl/engine.py": "7ab87d800c5ca0a07bdc0cef962d6b110d09688a05c824fd8abb7ac8e4887fa9",
+    "automl/preprocessing.py": "86dce6d3b5d349675306a45916e0f1ef673c1bd8f9b3f1082fdfadb765e4e773",
+    "automl/forecasting.py": "1fbadbae21aa206821baced4b0b4646d13fab17f7927729814050a23c1e29a76",
+    "automl/service.py": "aac14e05b69834c527f6620c1301b453e87b5739b1caaf001bd8589205d57f50",
+    "automl/worker.py": "45bfa4a98f2dbd0ac06a6cf9fc8a188e311ce49bc20c059119f3a25f7852dbd1",
+    "knowledge.py": "250f141edc6bd7f9be80ec9b0adc4210352a30a40471ea0a72a2ed1fe376c097",
+    "provider.py": "45bae9eee8893b2fb98f5b8fa95cc77fd3caae9eb99bb458c547bc3dd098ebb0"
+  }
+}

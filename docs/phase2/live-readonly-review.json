@@ -1,0 +1,14 @@
+{
+  "url": "http://localhost:8080",
+  "analystLoaded": true,
+  "suggestionCount": 4,
+  "sharingNotice": true,
+  "maskToggle": false,
+  "feedbackCounts": {
+    "helpful": 0,
+    "not_helpful": 0
+  },
+  "preservedKPI": "₹83,79,680.76",
+  "mutatingAPIRequests": [],
+  "browserErrors": []
+}

@@ -1,0 +1,30 @@
+Deleted for company tstb:
+  - containers, the internal and edge networks and ALL volumes of project iq-tstb (data, caddy_data with its certificates, caddy_config)
+  - <project>/deploy/companies/tstb/secrets (totp_key, restic_password), <project>/deploy/companies/tstb/backups (the restic repository and every snapshot in it), <project>/deploy/companies/tstb/company.env
+NOT removed (you must handle these yourself if they exist):
+  - copies of totp_key or restic_password you stored offline, and any backup copy you made OUTSIDE this folder (another disk, a remote restic repository)
+  - the built images (insightiq-hosted-*), Docker's build cache, and logs kept by Docker or your system
+  - DNS records, firewall rules, and certificates already issued by a public authority (those are public records)
+  - other companies; nothing of theirs was touched
+ Container iq-tstb-caddy-1 Stopping 
+ Container iq-tstb-caddy-1 Stopped 
+ Container iq-tstb-caddy-1 Removing 
+ Container iq-tstb-caddy-1 Removed 
+ Container iq-tstb-web-1 Stopping 
+ Container iq-tstb-api-1 Stopping 
+ Container iq-tstb-web-1 Stopped 
+ Container iq-tstb-web-1 Removing 
+ Container iq-tstb-web-1 Removed 
+ Container iq-tstb-api-1 Stopped 
+ Container iq-tstb-api-1 Removing 
+ Container iq-tstb-api-1 Removed 
+ Network iq-tstb_internal Removing 
+ Volume iq-tstb_data Removing 
+ Volume iq-tstb_caddy_data Removing 
+ Volume iq-tstb_caddy_config Removing 
+ Network iq-tstb_edge Removing 
+ Volume iq-tstb_caddy_config Removed 
+ Volume iq-tstb_data Removed 
+ Volume iq-tstb_caddy_data Removed 
+ Network iq-tstb_internal Removed 
+ Network iq-tstb_edge Removed 

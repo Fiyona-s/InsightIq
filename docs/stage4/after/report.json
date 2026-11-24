@@ -1,0 +1,170 @@
+[
+ {
+  "screen": "predictions-1-what-to-predict",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-1-what-to-predict",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-1-what-to-predict",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-1-target-chosen",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-1-target-chosen",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-1-target-chosen",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-2-check-and-train",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-2-check-and-train",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-2-check-and-train",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-3-results-and-predict",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-3-results-and-predict",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions-3-results-and-predict",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-columns",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-columns",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-columns",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-dialog-data-sharing",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-dialog-data-sharing",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-dialog-data-sharing",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-metrics",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-metrics",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-metrics",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-advanced",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-advanced",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "definitions-advanced",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14px": [],
+  "axeViolations": []
+ }
+]

@@ -1,0 +1,26 @@
+
+> insightiq@0.1.0 lint
+> eslint src
+
+
+<project>/frontend/src/components/Analyst.tsx
+  207:6  warning  React Hook useEffect has a missing dependency: 'run'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  229:6  warning  React Hook useEffect has a missing dependency: 'run'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+<project>/frontend/src/components/AutoMLStudio.tsx
+  192:6  warning  React Hook useEffect has a missing dependency: 'datasets'. Either include it or remove the dependency array. If 'setDatasetId' needs the current value of 'datasets', you can also switch to useReducer instead of useState and read 'datasets' in the reducer  react-hooks/exhaustive-deps
+  223:6  warning  React Hook useEffect has a missing dependency: 'job'. Either include it or remove the dependency array                                                                                                                                                          react-hooks/exhaustive-deps
+
+<project>/frontend/src/components/DatasetEditor.tsx
+  163:18  warning  The ref value 'generation.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'generation.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+  165:6   warning  React Hook useEffect has a missing dependency: 'load'. Either include it or remove the dependency array                                                                                                                                                              react-hooks/exhaustive-deps
+
+<project>/frontend/src/components/EvaluationPage.tsx
+  86:6  warning  React Hook useEffect has a missing dependency: 'job'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+<project>/frontend/src/lib/currency.tsx
+  121:6  warning  React Hook useEffect has a missing dependency: 'sources.length'. Either include it or remove the dependency array                         react-hooks/exhaustive-deps
+  121:7  warning  React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked  react-hooks/exhaustive-deps
+
+✖ 9 problems (0 errors, 9 warnings)
+

@@ -1,0 +1,57 @@
+{
+  "checks": [
+    {
+      "page": "Ask InsightIQ",
+      "width": 1280,
+      "columnTypeCopy": true,
+      "conversionWarningShown": false,
+      "conversionChoiceChanged": false,
+      "questionSubmitted": false
+    },
+    {
+      "page": "Draft disclosure",
+      "width": 1280,
+      "metadataAllowlistPreserved": true,
+      "draftRequested": false
+    },
+    {
+      "page": "Ask InsightIQ",
+      "width": 768,
+      "columnTypeCopy": true,
+      "conversionWarningShown": false,
+      "conversionChoiceChanged": false,
+      "questionSubmitted": false
+    },
+    {
+      "page": "Draft disclosure",
+      "width": 768,
+      "metadataAllowlistPreserved": true,
+      "draftRequested": false
+    },
+    {
+      "page": "Ask InsightIQ",
+      "width": 390,
+      "columnTypeCopy": true,
+      "conversionWarningShown": false,
+      "conversionChoiceChanged": false,
+      "questionSubmitted": false
+    },
+    {
+      "page": "Draft disclosure",
+      "width": 390,
+      "metadataAllowlistPreserved": true,
+      "draftRequested": false
+    },
+    {
+      "page": "Settings",
+      "localSingleUserExplicit": true
+    }
+  ],
+  "writes": [],
+  "errors": [],
+  "preservedKPI": "₹83,79,680.76",
+  "duplicateBadges": 2,
+  "originalQueriesSubmitted": 0,
+  "originalDraftRequests": 0,
+  "originalScreenshotsCreated": 0
+}

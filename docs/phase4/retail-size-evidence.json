@@ -1,0 +1,16 @@
+{
+  "dataset": "disposable synthetic retail-shaped data, not original customer rows",
+  "rows": 2400,
+  "columns": 12,
+  "csv_bytes": 214981,
+  "revisions": 20,
+  "snapshot_limit": 20,
+  "snapshot_bytes": 63422464,
+  "snapshot_mib": 60.484,
+  "smallest_snapshot_bytes": 1585152,
+  "largest_snapshot_bytes": 3944448,
+  "live_duckdb_bytes": 3682304,
+  "all_snapshot_hashes_verified": true,
+  "live_ai_calls": 0,
+  "elapsed_seconds": 54.43
+}

@@ -1,0 +1,12 @@
+import {chromium,expect} from '@playwright/test';
+import fs from 'node:fs';
+const browser=await chromium.launch({channel:'chrome'}),page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
+const mutations=[],errors=[];page.on('request',r=>{if(r.url().includes('/api/')&&!['GET','HEAD','OPTIONS'].includes(r.method()))mutations.push({method:r.method(),path:new URL(r.url()).pathname})});page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://localhost:8080');await page.getByRole('button',{name:'AI Analyst',exact:true}).click();
+await expect(page.getByRole('heading',{name:'AI Analyst.'})).toBeVisible();await expect(page.locator('.sharing-notice')).toHaveAttribute('title',/configured AI provider/);
+await expect(page.getByRole('region',{name:'Suggested questions'})).toBeVisible();const suggestions=await page.locator('.analyst-suggestions button').count();expect(suggestions).toBeGreaterThanOrEqual(4);
+await expect(page.getByRole('button',{name:/mask from AI/i})).toHaveCount(0);
+await page.getByRole('button',{name:'Run analytics',exact:true}).click();await expect(page.locator('.feedback-counts')).toHaveText('Helpful: 0 · Not helpful: 0');
+await page.getByRole('button',{name:'Dashboards',exact:true}).click();await expect(page.locator('.result-kpi strong')).toHaveText('₹83,79,680.76');await expect(page.getByRole('button',{name:'Convert Currency',exact:true}).first()).toBeVisible();
+expect(mutations).toEqual([]);expect(errors).toEqual([]);
+const report={url:'http://localhost:8080',analystLoaded:true,suggestionCount:suggestions,sharingNotice:true,maskToggle:false,feedbackCounts:{helpful:0,not_helpful:0},preservedKPI:'₹83,79,680.76',mutatingAPIRequests:mutations,browserErrors:errors};fs.writeFileSync('../docs/phase2/live-readonly-review.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));await browser.close();

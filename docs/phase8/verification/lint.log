@@ -1,0 +1,25 @@
+
+> insightiq@0.1.0 lint
+> eslint src
+
+
+<project>/frontend/src/components/Analyst.tsx
+  222:6  warning  React Hook useEffect has a missing dependency: 'run'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  244:6  warning  React Hook useEffect has a missing dependency: 'run'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+<project>/frontend/src/components/AutoMLStudio.tsx
+  299:6  warning  React Hook useEffect has a missing dependency: 'job'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+<project>/frontend/src/components/DatasetEditor.tsx
+  166:18  warning  The ref value 'generation.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'generation.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+  168:6   warning  React Hook useEffect has a missing dependency: 'load'. Either include it or remove the dependency array                                                                                                                                                              react-hooks/exhaustive-deps
+
+<project>/frontend/src/components/EvaluationPage.tsx
+  125:6  warning  React Hook useEffect has a missing dependency: 'job'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+<project>/frontend/src/lib/currency.tsx
+  122:6  warning  React Hook useEffect has a missing dependency: 'sources.length'. Either include it or remove the dependency array                         react-hooks/exhaustive-deps
+  122:7  warning  React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked  react-hooks/exhaustive-deps
+
+✖ 8 problems (0 errors, 8 warnings)
+

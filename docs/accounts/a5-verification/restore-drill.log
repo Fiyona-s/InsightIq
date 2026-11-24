@@ -1,0 +1,21 @@
+1. stopping the app and fingerprinting the data volume
+2. backing up (restic, encrypted)
+3. DESTROYING the data volume iq-tstb_data
+4. restoring from the backup
+5. fingerprinting the restored volume
+files: 8 before, 8 after, identical: True
+catalog content hash: 904c23b34f707a10... before, 904c23b34f707a10... after, identical: True
+6. starting the app again
+RESTORE DRILL PASSED for tstb: the restored volume is identical to the one that was backed up.
+ Container iq-tstb-api-1 Stopping 
+ Container iq-tstb-api-1 Stopped 
+ Container iq-tstb-web-1 Running 
+ Container iq-tstb-caddy-1 Running 
+ Container iq-tstb-api-1 Creating 
+ Container iq-tstb-api-1 Created 
+ Container iq-tstb-api-1 Starting 
+ Container iq-tstb-api-1 Started 
+ Container iq-tstb-web-1 Waiting 
+ Container iq-tstb-api-1 Waiting 
+ Container iq-tstb-web-1 Healthy 
+ Container iq-tstb-api-1 Healthy 

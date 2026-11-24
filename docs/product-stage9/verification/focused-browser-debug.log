@@ -1,0 +1,209 @@
+
+> insightiq@0.1.0 test:e2e:analyst
+> playwright test --config playwright.analyst.config.ts --grep Stage 9 real
+
+[WebServer] INFO:     Started server process [39438]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:39460) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:39461) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] <project>/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+[WebServer]   warnings.warn(
+[WebServer] 2026-11-13 22:52:44,293 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-13 22:52:44,620 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 1, "prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15, "estimated_cost_usd": 2e-05}
+[WebServer] 2026-11-13 22:52:44,622 INFO Analyst run metrics: {"run_id": "9f3d2223-a425-4d83-997d-041aa970a226", "status": "succeeded", "retrieval_latency_ms": 11, "prompt_tokens": 60, "completion_tokens": 30, "total_tokens": 90, "estimated_cost_usd": 0.00012, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 314, "query_latency_ms": 291, "total_latency_ms": 805}
+[WebServer] 2026-11-13 22:52:45,038 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 307, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-13 22:52:45,361 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-13 22:52:45,370 INFO Analyst run metrics: {"run_id": "8ad31c60-f455-4a05-9bcc-1b5f1784e45a", "status": "failed", "retrieval_latency_ms": 10, "prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150, "estimated_cost_usd": 0.0002, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 620, "total_latency_ms": 663}
+[WebServer] 2026-11-13 22:52:45,636 INFO Analyst run metrics: {"run_id": "50dde7b6-df4e-4316-94d8-b2b811cc5ec4", "status": "cancelled", "retrieval_latency_ms": 14, "total_latency_ms": 36}
+[WebServer] 2026-11-13 22:52:46,080 INFO LLM request metrics: {"model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 312, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001}
+[WebServer] 2026-11-13 22:52:46,101 INFO Analyst run metrics: {"run_id": "34ed85a8-b48d-4077-b3c3-7a4574dae950", "status": "clarification", "retrieval_latency_ms": 12, "prompt_tokens": 50, "completion_tokens": 25, "total_tokens": 75, "estimated_cost_usd": 0.0001, "model": "controlled-browser-test", "provider_model": "controlled-browser-test", "model_latency_ms": 313, "total_latency_ms": 364}
+STEP_DIAGNOSTIC {
+  clicked: null,
+  pressed: 'false',
+  label: '17. Revise SQLFailed · Attempt 2',
+  focus: 'Skip to contentInsightIQ×WMy workspaceMain workspaceHomeMy DataAsk InsightIQDashboardsBuild ModelsAdvanced tools−Knowledge BaseEvaluation CenterRun AnalyticsExecution TracesSettingsWorkspace guideExecution TracesActive dataset stage9-monitoring.csvstage9-monitoring.csv2 rows · 3 columns Local workspaceYOExecution TracesInspect the steps behind each analysis.Refresh run historyTrace datasetAll datasets, including historical runsstage9-monitoring.csvSearch loaded runsTrace statusAll statusesQueuedPreparing answerRunning queryCompletedFailedNeeds clarificationCancelledRun history4 loaded runs · Filters apply to this list.PHASE2 unsafe querystage9-monitoring.csvstage9-monitoring.csv · Failed11/13/2026, 10:52:44 PM · 2 attemptsstage9-monitoring.csvstage9-monitoring.csvPHASE2 unsafe queryFailedBack to run historyThe run failed. Recorded errors are available in Technical details.Started 11/13/2026, 10:52:44 PM · Completed 11/13/2026, 10:52:45 PMAttempts2Total latency663 msReported tokens150Estimated cost (USD)$0.0002Modelcontrolled-browser-testResult metadataNo stored result metadataStep timelineRecorded workflow events, not private model reasoning.1. retrieve contextrunning · Attempt 02. retrieve contextCompleted · Attempt 03. planrunning · Attempt 04. planCompleted · Attempt 05. generate sqlrunning · Attempt 06. generate sqlrunning · Attempt 17. generate sqlCompleted · Attempt 18. Check SQL rulesrunning · Attempt 19. Check SQL rulesRejected · Attempt 110. Revise SQLrunning · Attempt 111. Revise SQLrunning · Attempt 112. generate sqlrunning · Attempt 113. generate sqlrunning · Attempt 214. generate sqlCompleted · Attempt 215. Check SQL rulesrunning · Attempt 216. Revise SQLstopped · Attempt 217. Revise SQLFailed · Attempt 2retrieve contextStarting retrieve context.11/13/2026, 10:52:44 PM · runningRecorded event JSON{\n' +
+    '  "id": 1,\n' +
+    '  "step": "retrieve_context",\n' +
+    '  "status": "running",\n' +
+    '  "timestamp": "2026-11-13T17:22:44.710302+00:00",\n' +
+    '  "attempt": 0,\n' +
+    '  "summary": "Starting retrieve context."\n' +
+    '}Generated SQL — execution not completedDELETE FROM dataTechnical detailsRecorded errorModel repeated a failed SQL query; retry stopped. Revise the question or confirmed types.repeated_sqlrepairAttempt 2 / 3Agent workflow 17 eventsretrieve contextrunning · attempt 010:52:44 PMStarting retrieve context.retrieve contextcompleted · attempt 010:52:44 PMRetrieved 4 dataset-scoped documents.planrunning · attempt 010:52:44 PMStarting plan.plancompleted · attempt 010:52:44 PMUse only the selected dataset, confirmed types and explicit definitions. Validate every attempt; execute at most 1000 result rows.generate sqlrunning · attempt 010:52:44 PMStarting generate sql.generate sqlrunning · attempt 110:52:44 PMGenerating a candidate query from the question and authorized schema.generate sqlcompleted · attempt 110:52:45 PMCandidate SQL received; execution requires validation.validaterunning · attempt 110:52:45 PMStarting validate.validaterejected · attempt 110:52:45 PMOnly a single read-only SELECT query is allowed.repairrunning · attempt 110:52:45 PMStarting repair.repairrunning · attempt 110:52:45 PMPreparing attempt 2 of 3 after a recoverable SQL failure. This is syntax/execution repair, not semantic correctness verification.generate sqlrunning · attempt 110:52:45 PMStarting generate sql.generate sqlrunning · attempt 210:52:45 PMGenerating a candidate query from the question and authorized schema.generate sqlcompleted · attempt 210:52:45 PMCandidate SQL received; execution requires validation.validaterunning · attempt 210:52:45 PMStarting validate.repairstopped · attempt 210:52:45 PMA previously failed normalized SQL query was repeated. Stopping without executing it again.repairfailed · attempt 210:52:45 PMModel repeated a failed SQL query; retry stopped. Revise the question or confirmed types.Decision summaries and validation outcomes. Client disconnects close the stream; accepted runs continue until completion or explicit cancellation.Retrieved context 4 documents · readyCosine similarity ranks relevance within this dataset. Retrieved text is untrusted reference material.stage9-monitoring.csvdataset · 1.000Dataset stage9-monitoring.csv. Authorized SQL relation: data. 2 rows. No business description supplied.Rank 1 by normalized embedding cosine similarity within the selected dataset; dataset context.Provenance{\n' +
+    '  "source": "catalog + user definition",\n' +
+    '  "updated_at": "2026-11-13T17:22:43.799044+00:00",\n' +
+    '  "schema_signature": "9f4a39e32bc939d421eb62f23e90e13dd69d7b278e21ced5e0dd490da1960e31"\n' +
+    '}Document d09f82610aa5fdceee337237 · dataset f16fb09f-7dc3-4cf7-b2df-93d778917762idcolumn · 0.100Column "id" on data; SQL type VARCHAR; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: VARCHAR, not a business meaning. No user-authored description.Rank 2 by normalized embedding cosine similarity within the selected dataset; column context.Provenance{\n' +
+    '  "source": "DuckDB DESCRIBE + full-column profile",\n' +
+    '  "column": "id",\n' +
+    '  "schema_signature": "9f4a39e32bc939d421eb62f23e90e13dd69d7b278e21ced5e0dd490da1960e31",\n' +
+    '  "mapping_signature": "d1b90cdeed980c4bf761ed2b7c5f1f96a6d9dca36a3b86305bdaaba926b896da",\n' +
+    '  "description_source": "none"\n' +
+    '}Document ddbe6fa3f83441554aec11d8 · dataset f16fb09f-7dc3-4cf7-b2df-93d778917762regioncolumn · 0.071Column "region" on data; SQL type VARCHAR; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: VARCHAR, not a business meaning. No user-authored description.Rank 3 by normalized embedding cosine similarity within the selected dataset; column context.Provenance{\n' +
+    '  "source": "DuckDB DESCRIBE + full-column profile",\n' +
+    '  "column": "region",\n' +
+    '  "schema_signature": "9f4a39e32bc939d421eb62f23e90e13dd69d7b278e21ced5e0dd490da1960e31",\n' +
+    '  "mapping_signature": "d1b90cdeed980c4bf761ed2b7c5f1f96a6d9dca36a3b86305bdaaba926b896da",\n' +
+    '  "description_source": "none"\n' +
+    '}Document 76285b33ab4a6a8870d256f6 · dataset f16fb09f-7dc3-4cf7-b2df-93d778917762revenuecolumn · 0.071Column "revenue" on data; SQL type DOUBLE; raw storage VARCHAR; 0 missing values; 0 failed confirmed conversions. Inferred type candidate: BIGINT, not a business meaning. No user-authored description.Rank 4 by normalized embedding cosine similarity within the selected dataset; column context.Provenance{\n' +
+    '  "source": "DuckDB DESCRIBE + full-column profile",\n' +
+    '  "column": "revenue",\n' +
+    '  "schema_signature": "9f4a39e32bc939d421eb62f23e90e13dd69d7b278e21ced5e0dd490da1960e31",\n' +
+    '  "mapping_signature": "d1b90cdeed980c4bf761ed2b7c5f1f96a6d9dca36a3b86305bdaaba926b896da",\n' +
+    '  "description_source": "none"\n' +
+    '}Document f3742e6129403eac96f98213 · dataset f16fb09f-7dc3-4cf7-b2df-93d778917762Workspace 7edd444e-ad21-44c6-95c9-3cd85254ccba · index 6130b9a41030b483 · test-only-keyword-v1Recorded trace JSON{\n' +
+    '  "id": "8ad31c60-f455-4a05-9bcc-1b5f1784e45a",\n' +
+    '  "dataset_id": "f16fb09f-7dc3-4cf7-b2df-93d778917762",\n' +
+    '  "dataset_name": "stage9-monitoring.csv",\n' +
+    '  "status": "failed",\n' +
+    '  "current_step": "repair",\n' +
+    '  "error": "Model repeated a failed SQL query; retry stopped. Revise the question or confirmed types.",\n' +
+    '  "error_code": "repeated_sql",\n' +
+    '  "sql": "DELETE FROM data",\n' +
+    '  "executed_sql": null,\n' +
+    '  "type_mapping": {\n' +
+    '    "revenue": "DOUBLE"\n' +
+    '  },\n' +
+    '  "conversions": [\n' +
+    '    {\n' +
+    '      "column": "revenue",\n' +
+    '      "type": "DOUBLE",\n' +
+    '      "missing": 0,\n' +
+    '      "failed": 0\n' +
+    '    }\n' +
+    '  ],\n' +
+    '  "attempt_history": [\n' +
+    '    {\n' +
+    '      "attempt": 1,\n' +
+    '      "context_fingerprint": "348d67addb60256bc8e9b25546bfbdb399155d1408cc9cca378a7e4d3b7cde1b",\n' +
+    '      "sql": "DELETE FROM data",\n' +
+    '      "outcome": "validation_failed",\n' +
+    '      "validation": "rejected",\n' +
+    '      "execution": "not_started",\n' +
+    '      "error_code": "validation_error"\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "attempt": 2,\n' +
+    '      "context_fingerprint": "4b7828afbfa537bdb1682908de0292df21f26a697c1157f84e3fa13a87cdc761",\n' +
+    '      "sql": "DELETE FROM data",\n' +
+    '      "outcome": "repeated_sql",\n' +
+    '      "validation": "stopped",\n' +
+    '      "execution": "not_started",\n' +
+    '      "error_code": "repeated_sql"\n' +
+    '    }\n' +
+    '  ],\n' +
+    '  "events": [\n' +
+    '    {\n' +
+    '      "id": 1,\n' +
+    '      "step": "retrieve_context",\n' +
+    '      "status": "running",\n' +
+    '      "timestamp": "2026-11-13T17:22:44.710302+00:00",\n' +
+    '      "attempt": 0,\n' +
+    '      "summary": "Starting retrieve context."\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "id": 2,\n' +
+    '      "step": "retrieve_context",\n' +
+    '      "status": "completed",\n' +
+    '      "timestamp": "2026-11-13T17:22:44.727816+00:00",\n' +
+    '      "attempt": 0,\n' +
+    '      "summary": "Retrieved 4 dataset-scoped documents."\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "id": 3,\n' +
+    '      "step": "plan",\n' +
+    '      "status": "running",\n' +
+    '      "timestamp": "2026-11-13T17:22:44.728808+00:00",\n' +
+    '      "attempt": 0,\n' +
+    '      "summary": "Starting plan."\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "id": 4,\n' +
+    '      "step": "plan",\n' +
+    '      "status": "completed",\n' +
+    '      "timestamp": "2026-11-13T17:22:44.729464+00:00",\n' +
+    '      "attempt": 0,\n' +
+    '      "summary": "Use only the selected dataset, confirmed types and explicit definitions. Validate every attempt; execute at most 1000 result rows."\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "id": 5,\n' +
+    '      "step": "generate_sql",\n' +
+    '      "status": "running",\n' +
+    '      "timestamp": "2026-11-13T17:22:44.730322+00:00",\n' +
+    '      "attempt": 0,\n' +
+    '      "summary": "Starting generate sql."\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "id": 6,\n' +
+    '      "step": "generate_sql",\n' +
+    '      "status": "running",\n' +
+    '      "timestamp": "2026-11-13T17:22:44.730974+00:00",\n' +
+    '      "attempt": 1,\n' +
+    '      "summary": "Generating a candidate query from the question and authorized schema."\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "id": 7,\n' +
+    '      "step": "generate_sql",\n' +
+    '      "status": "completed",\n' +
+    '      "timestamp": "2026-11-13T17:22:45.038955+00:00",\n' +
+    '      "attempt": 1,\n' +
+    '      "summary": "Candidate SQL received; execution requires validation."\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "id": 8,\n' +
+    '      "step": "validate",\n' +
+    '      "status": "running",\n' +
+    '      "timestamp": "2026-11-13T17:22:45.041345+00:00",\n' +
+    '      "attempt": 1,\n' +
+    '      "summary": "Starting validate."\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "id": 9,\n' +
+    '      "step": "validate",\n' +
+    '      "status": "rejected",\n' +
+    '      "timestamp": "2026-11-13T17:22:45.043404+00:00",\n' +
+    '      "attempt": 1,\n' +
+    '      "summary": "Only a single r'... 7002 more characters
+} [
+   1,  2,  3,  4,  5,  6,  7,
+   8,  9, 10, 11, 12, 13, 14,
+  15, 16, 17
+]
+  ✘  1 e2e/15-product-stage9-monitoring.spec.ts:3:1 › Stage 9 real operational filters, keyboard traces, missing metrics and retained historical source labels (9.1s)
+
+
+  1) e2e/15-product-stage9-monitoring.spec.ts:3:1 › Stage 9 real operational filters, keyboard traces, missing metrics and retained historical source labels 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByRole('list', { name: 'Recorded steps' }).getByRole('button').last()
+    Expected: "true"
+    Received: "false"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" getByRole('list', { name: 'Recorded steps' }).getByRole('button').last() with timeout 5000ms
+      - waiting for getByRole('list', { name: 'Recorded steps' }).getByRole('button').last()
+        14 × locator resolved to <button aria-pressed="false" aria-controls=":r3:">…</button>
+           - unexpected value "false"
+
+
+      13 |  await page.goto('/#traces');await page.getByLabel('Trace dataset').selectOption(d.id);await expect(page.locator('.trace-history .trace-run')).toHaveCount(4);await expect(page.getByRole('region',{name:'Run trace details'})).toContainText('needs clarification');await expect(page.getByText('Estimated cost (USD)').locator('..')).toContainText('Unknown');await expect(page.getByText('Attempts',{exact:true}).locator('..')).toContainText('Unknown');
+      14 |  const history=page.getByRole('region',{name:'Recorded runs'});const historyButtons=history.locator('.trace-run');await historyButtons.first().focus();await page.keyboard.press('ArrowDown');await expect(historyButtons.nth(1)).toBeFocused();await page.keyboard.press('Enter');await expect(page.locator('.trace-inspection h2')).toBeFocused();await expect(page.getByRole('region',{name:'Run trace details'})).toContainText('The saved run is marked cancelled.');await page.getByRole('button',{name:'Back to run history'}).click();await expect(historyButtons.nth(1)).toBeFocused();
+    > 15 |  await page.getByLabel('Trace status').selectOption('failed');await expect(history.locator('.trace-run')).toHaveCount(1);const steps=page.getByRole('list',{name:'Recorded steps'}).getByRole('button');expect(await steps.count()).toBeGreaterThan(1);await steps.first().focus();await page.keyboard.press('End');await expect(steps.last()).toBeFocused();await steps.last().evaluate(el=>el.addEventListener('click',()=>el.setAttribute('data-test-click','1')));await page.keyboard.press('Enter');console.log('STEP_DIAGNOSTIC',await steps.last().evaluate(el=>({clicked:el.getAttribute('data-test-click'),pressed:el.getAttribute('aria-pressed'),label:el.textContent,focus:document.activeElement?.textContent})),failure.events.map((e:any)=>e.id));await expect(steps.last()).toHaveAttribute('aria-pressed','true');await page.getByText('Technical details',{exact:true}).click();await page.getByText('Recorded trace JSON',{exact:true}).click();await expect(page.locator('.trace-technical')).toContainText('DELETE FROM data');const rawAxe=await new AxeBuilder({page}).analyze();expect(rawAxe.violations).toEqual([]);checks.push({page:'Raw trace',width:1280,violations:rawAxe.violations});await page.screenshot({path:'../docs/product-stage9/after/raw-failure.png',fullPage:true});await page.getByText('Technical details',{exact:true}).click();
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+      16 |  for(const width of [1280,768,390]){await page.setViewportSize({width,height:1000});await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);const axe=await new AxeBuilder({page}).analyze();expect(axe.violations).toEqual([]);checks.push({page:'Traces',width,violations:axe.violations});await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:`../docs/product-stage9/after/traces-${width}.png`,fullPage:true})}
+      17 |  expect(writes).toEqual([]);expect((await page.request.post('/api/datasets/'+d.id+'/archive')).ok()).toBe(true);await page.reload();await page.getByLabel('Trace dataset').selectOption(d.id);await expect(page.getByText('Archived dataset · historical run')).toBeVisible();await page.screenshot({path:'../docs/product-stage9/after/archived-source.png',fullPage:true});expect((await page.request.post('/api/datasets/'+d.id+'/restore')).ok()).toBe(true);const removed=await page.request.delete('/api/datasets/'+d.id,{data:{confirm_name:d.name,acknowledge_dependencies:true}});expect(removed.status()).toBe(204);await page.reload();await expect(page.locator('.trace-history [title="Deleted dataset (stage9-monitoring.csv)"]').first()).toBeVisible();await page.screenshot({path:'../docs/product-stage9/after/deleted-source.png',fullPage:true});
+      18 |  const after=await Promise.all([success,failure,cancelled,clarification].map(async r=>stable(await(await page.request.get('/api/analyst/runs/'+r.id)).json())));expect(after).toEqual(before);expect(errors).toEqual([]);fs.writeFileSync('../docs/product-stage9/browser-review.json',JSON.stringify({checks,errors,monitoringWrites:writes,realRunStatuses:[success.status,failure.status,cancelled.status,clarification.status],missingMetricsBoundary:'Controlled read-only browser response override',storedRunEvidenceUnchanged:true,archiveDeleteFixturesOnly:true,liveAICalls:0},null,2));
+        at <project>/frontend/e2e/15-product-stage9-monitoring.spec.ts:15:765
+
+    Error Context: test-results/15-product-stage9-monitori-a551c-ed-historical-source-labels/error-context.md
+
+  1 failed
+    e2e/15-product-stage9-monitoring.spec.ts:3:1 › Stage 9 real operational filters, keyboard traces, missing metrics and retained historical source labels 

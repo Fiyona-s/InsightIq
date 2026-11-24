@@ -1,0 +1,98 @@
+[
+  {
+    "file": "frontend/src/components/Analyst.tsx",
+    "before": "<summary>Analysis types</summary>",
+    "after": "<summary>Check column types</summary>",
+    "reason": "Make the type-review action explicit."
+  },
+  {
+    "file": "frontend/src/components/Analyst.tsx",
+    "before": "Inspecting types\u2026",
+    "after": "Checking column types\u2026",
+    "reason": "Use the same column-type terminology while loading."
+  },
+  {
+    "file": "frontend/src/components/Analyst.tsx",
+    "before": "Confirm your type conversions before submitting.",
+    "after": "Confirm column types to continue.",
+    "reason": "Keep the action short; the NULL warning remains beside the checkbox."
+  },
+  {
+    "file": "frontend/src/components/DatasetProfile.tsx",
+    "before": "Description for ${column} saved to Knowledge base.",
+    "after": "Description for ${column} saved to Knowledge Base.",
+    "reason": "Match the visible page name; keep the interpolated column unchanged."
+  },
+  {
+    "file": "frontend/src/components/DatasetManager.tsx",
+    "before": "<h3>A fresh workspace</h3>",
+    "after": "<h3>No datasets yet</h3>",
+    "reason": "State the actual empty state."
+  },
+  {
+    "file": "frontend/src/components/DashboardPage.tsx",
+    "before": "Loading saved workspace\u2026",
+    "after": "Loading dashboards\u2026",
+    "reason": "Name the page being loaded."
+  },
+  {
+    "file": "frontend/src/components/DashboardPage.tsx",
+    "before": "<h2>Build your decision workspace</h2>",
+    "after": "<h2>Create a dashboard</h2>",
+    "reason": "Give the next task directly."
+  },
+  {
+    "file": "frontend/src/components/DashboardPage.tsx",
+    "before": "Create a dashboard and add charts from the Analyst or your library.",
+    "after": "Save results from Ask InsightIQ or add charts from your library.",
+    "reason": "Use the current product label."
+  },
+  {
+    "file": "frontend/src/components/AutoMLStudio.tsx",
+    "before": "Refresh workspace",
+    "after": "Retry loading",
+    "reason": "Describe the existing error-recovery action; it does not train."
+  },
+  {
+    "file": "frontend/src/components/EvaluationPage.tsx",
+    "before": "Run offline evaluation",
+    "after": "Set up offline replay",
+    "reason": "The empty-state button opens setup; it does not submit an evaluation."
+  },
+  {
+    "file": "frontend/src/components/ResultChart.tsx",
+    "before": "\"Actual query result\"",
+    "after": "\"Query result\"",
+    "reason": "Keep source/converted display distinction without implying freshness."
+  },
+  {
+    "file": "frontend/src/components/KnowledgeReview.tsx",
+    "before": "Questions, schema and computed evidence are shared with your configured AI provider.",
+    "after": "Review what will be sent to your AI provider.",
+    "reason": "Avoid a broad disclosure that conflicts with the specific draft allowlist below."
+  },
+  {
+    "file": "frontend/src/components/ExecutionTracesPage.tsx",
+    "before": "<h2>Select a recorded run</h2>",
+    "after": "<h2>No run selected</h2>",
+    "reason": "Describe the filtered/empty trace state."
+  },
+  {
+    "file": "frontend/src/components/ExecutionTracesPage.tsx",
+    "before": "Its SQL, workflow events and diagnostics will appear here.",
+    "after": "Choose a run from history, or adjust the filters.",
+    "reason": "Offer the next available tasks."
+  },
+  {
+    "file": "frontend/src/components/HomePage.tsx",
+    "before": "Ask questions about your data. Understand the results. Make better\n            decisions.",
+    "after": "Upload a CSV to start exploring your data.",
+    "reason": "Shorten the empty-workspace introduction."
+  },
+  {
+    "file": "frontend/src/components/SaveChartDialog.tsx",
+    "before": "This intentionally persists the complete accepted result (up to\n            1,000 rows), computed summary and SQL provenance beyond the Analyst\n            cache. Delete saved charts from the library when no longer needed.",
+    "after": "Saves the query result (up to 1,000 rows), summary and SQL provenance\n            beyond the temporary cache. Remove saved charts from the library\n            when no longer needed.",
+    "reason": "Retain the row limit, persistence and removal context without implying approval proves correctness."
+  }
+]

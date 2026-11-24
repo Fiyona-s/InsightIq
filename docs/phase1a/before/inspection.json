@@ -1,0 +1,37 @@
+{
+  "stage": "before",
+  "pages": [
+    {
+      "page": "Overview",
+      "localIndicators": 3,
+      "overflow": false
+    },
+    {
+      "page": "Data workspace",
+      "localIndicators": 3,
+      "overflow": false
+    },
+    {
+      "page": "Dashboards",
+      "localIndicators": 3,
+      "overflow": false,
+      "axes": [
+        null,
+        null
+      ]
+    }
+  ],
+  "focus": {
+    "mouse": {
+      "visible": false,
+      "outline": "none",
+      "width": "3px"
+    },
+    "keyboard": {
+      "label": "Data workspace",
+      "visible": true,
+      "outline": "solid",
+      "width": "3px"
+    }
+  }
+}

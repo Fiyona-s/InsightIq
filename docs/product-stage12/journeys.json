@@ -1,0 +1,32 @@
+[
+  {
+    "journey": "Upload \u2192 edit \u2192 save \u2192 CSV",
+    "test_file": "frontend/e2e/dataset-editor.spec.ts",
+    "test_name": "click existing revenue, preserve account 001 and row count, save revision 2, export and query in Analyst",
+    "asserted_behavior": "Edits an existing cell, preserves account 001 and row count, reloads revision 2, clicks Download CSV and compares bytes."
+  },
+  {
+    "journey": "Select \u2192 ask \u2192 SQL \u2192 dashboard",
+    "test_file": "frontend/e2e/10-product-stage4-ask.spec.ts",
+    "test_name": "Stage 4 answer-first result, single monetary value, accessible details and preserved saving/FX/export",
+    "asserted_behavior": "Uploads/selects throwaway data, confirms types/currency, submits one question, opens SQL, saves a dashboard snapshot."
+  },
+  {
+    "journey": "Dashboard \u2192 currency \u2192 report",
+    "test_file": "frontend/e2e/phase9-smoke.spec.ts",
+    "test_name": "clean workspace final smoke: edit, knowledge, answer, dashboard FX/export, local ML, offline replay and guarded deletion",
+    "asserted_behavior": "Changes report currency to USD, verifies a dollar KPI, reads the PDF link response and checks %PDF-, then source JSON. Additional currency/Phase 6 suites check reset, outages, labels, tooltip/table consistency and immutable snapshots."
+  },
+  {
+    "journey": "Task \u2192 train \u2192 metrics \u2192 predict \u2192 CSV",
+    "test_file": "frontend/e2e/automl.spec.ts",
+    "test_name": "local regression, registry reload, single/batch prediction and real CSV export",
+    "asserted_behavior": "Real temporary local training, registry reload, measured review, single/batch prediction, actual browser CSV download compared with the export endpoint."
+  },
+  {
+    "journey": "Benchmark \u2192 evaluation \u2192 failed SQL",
+    "test_file": "frontend/e2e/04-phase8-evaluation.spec.ts",
+    "test_name": "results-first offline replay, failure diff, comparison, partial scope and keyboard/mobile review",
+    "asserted_behavior": "Installs/verifies authored benchmark, generates controlled predictions, runs real offline replay, filters Incorrect, opens Predicted SQL and expected/actual diff, closes by Escape with focus return. No live provider."
+  }
+]

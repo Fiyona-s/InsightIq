@@ -1,0 +1,20 @@
+{
+  "files": {
+    "original_records": 27,
+    "changed": [],
+    "new_records": []
+  },
+  "saved_raw_snapshots": {
+    "original_records": 3,
+    "changed": [],
+    "new_records": []
+  },
+  "historical_runs": {
+    "original_records": 11,
+    "changed": [],
+    "new_records": [
+      "8ac34181-8e81-4c47-b3bf-b296b46bd4d7",
+      "a14a802f-b0fd-44e5-90e8-54c81eb66801"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "state": "details",
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "singleVisibleSourceAmount": true,
+  "explicitQuestionSubmissions": 1,
+  "rawCSVUnchangedByConversion": true,
+  "dashboardSaved": true,
+  "liveAICalls": 0,
+  "datasetId": "13c08e09-fe47-4737-9729-f10657298be4"
+}

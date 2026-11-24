@@ -1,0 +1,19 @@
+{
+  "url": "http://localhost:8080",
+  "datasets": 13,
+  "evaluationsUnchanged": true,
+  "modelsUnchanged": true,
+  "newOriginalAuditEntries": 0,
+  "originalActors": [
+    null,
+    null
+  ],
+  "preservedKPI": "₹83,79,680.76",
+  "convertCurrencyVisible": true,
+  "originalDuplicateBadges": 2,
+  "mutatingRequests": [],
+  "browserErrors": [],
+  "evaluationsStarted": 0,
+  "trainingStarted": 0,
+  "originalScreenshotsCreated": 0
+}

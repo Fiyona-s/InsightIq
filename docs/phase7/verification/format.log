@@ -1,0 +1,7 @@
+src/components/AutoMLStudio.tsx 86ms
+src/components/AutoMLStudio.test.tsx 17ms
+src/components/AutoMLSummary.tsx 4ms
+src/components/AutoMLSummary.test.tsx 4ms
+src/lib/automlPresentation.ts 6ms
+src/automlapi.ts 6ms
+e2e/automl.spec.ts 17ms

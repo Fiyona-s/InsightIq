@@ -1,0 +1,95 @@
+ Image project-web Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 936B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 295B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:22-alpine
+#3 ...
+
+#4 [internal] load metadata for docker.io/nginxinc/nginx-unprivileged:1.27-alpine
+#4 DONE 1.2s
+
+#3 [internal] load metadata for docker.io/library/node:22-alpine
+#3 DONE 1.3s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 58B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/3] FROM docker.io/nginxinc/nginx-unprivileged:1.27-alpine@sha256:65e3e85dbaed8ba248841d9d58a899b6197106c23cb0ff1a132b7bfe0547e4c0
+#6 resolve docker.io/nginxinc/nginx-unprivileged:1.27-alpine@sha256:65e3e85dbaed8ba248841d9d58a899b6197106c23cb0ff1a132b7bfe0547e4c0 0.0s done
+#6 DONE 0.0s
+
+#7 [build 1/6] FROM docker.io/library/node:22-alpine@sha256:1314fb30ec37592d5845e5a160d522c0e680972aa534549940b8d73bde88481a
+#7 resolve docker.io/library/node:22-alpine@sha256:1314fb30ec37592d5845e5a160d522c0e680972aa534549940b8d73bde88481a 0.0s done
+#7 DONE 0.0s
+
+#8 [internal] load build context
+#8 transferring context: 100.71kB done
+#8 DONE 0.0s
+
+#9 [build 3/6] COPY package*.json ./
+#9 CACHED
+
+#10 [build 2/6] WORKDIR /app
+#10 CACHED
+
+#11 [build 4/6] RUN npm ci
+#11 CACHED
+
+#12 [build 5/6] COPY . .
+#12 DONE 0.0s
+
+#13 [build 6/6] RUN npm run build
+#13 0.131 
+#13 0.131 > insightiq@0.1.0 build
+#13 0.131 > tsc -b && vite build
+#13 0.131 
+#13 3.049 vite v8.3.5 building client environment for production...
+#13 3.058 transforming...
+#13 3.526 ✓ 2008 modules transformed.
+#13 3.579 rendering chunks...
+#13 3.621 computing gzip size...
+#13 3.625 dist/index.html                        0.48 kB │ gzip:   0.34 kB
+#13 3.625 dist/assets/index-MH6E_0GL.css       135.73 kB │ gzip:  26.93 kB
+#13 3.625 dist/assets/AutoMLPlots-Ct-AWRrS.js   19.15 kB │ gzip:   6.12 kB
+#13 3.625 dist/assets/ResultChart-Bh4anuYd.js   21.24 kB │ gzip:   6.84 kB
+#13 3.625 dist/assets/chartAxis-BhU-fYtN.js    403.77 kB │ gzip: 114.75 kB
+#13 3.625 dist/assets/index-TV3MQB0n.js        504.84 kB │ gzip: 146.23 kB
+#13 3.625 
+#13 3.626 [plugin builtin:vite-reporter] 
+#13 3.626 (!) Some chunks are larger than 500 kB after minification. Consider:
+#13 3.626 - Using dynamic import() to code-split the application
+#13 3.626 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+#13 3.626 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+#13 3.626 ✓ built in 576ms
+#13 DONE 3.7s
+
+#14 [stage-1 2/3] COPY nginx.conf /etc/nginx/conf.d/default.conf
+#14 CACHED
+
+#15 [stage-1 3/3] COPY --from=build /app/dist /usr/share/nginx/html
+#15 DONE 0.0s
+
+#16 exporting to image
+#16 exporting layers 0.0s done
+#16 exporting manifest sha256:0ff48c7ddad83349320f73dc946a53af2154d7fa8cd34585a02aaf06b28d64d8 done
+#16 exporting config sha256:116b94b58290d2574cb138eaaffd1a52877a17bd9486c968560f671bd4a1fc78 done
+#16 exporting attestation manifest sha256:9b426bbd21089b78de4f05957545a29a86ff3d7518055227a33d69469fe1b6bb done
+#16 exporting manifest list sha256:ca675d19a4f6cde1794e352d9b2e33a29c1d1c6baa610e1e84cc8209f4802073 done
+#16 naming to docker.io/library/project-web:latest done
+#16 unpacking to docker.io/library/project-web:latest done
+#16 DONE 0.1s
+
+#17 resolving provenance for metadata file
+#17 DONE 0.0s
+ Image project-web Built 
+ Container project-api-1 Running 
+ Container project-web-1 Recreate 
+ Container project-web-1 Recreated 
+ Container project-web-1 Starting 
+ Container project-web-1 Started 

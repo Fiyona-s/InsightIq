@@ -1,0 +1,6 @@
+limits MB=30 rows=500000 file=27855985 bytes
+http=201 seconds=68
+oomkilled=false status=running exit=0
+peak: 524.8MiB
+{"id":"b6525ca7-d2ed-40ed-bf03-5c6fddda836f","name":"synth-500k.csv","rows":500000,"bytes":27855985,"created_at":"2026-11-22T14:26:55.601904+00:00","columns":[{"name":"order_id","type":"VARCHAR","null_count":0},{"name":"order_date","type":"VARCHAR","null_count":0},{"name":"customer_id","type":"VARCH
+DONE

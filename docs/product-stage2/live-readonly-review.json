@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "width": 1280,
+      "activeDatasetId": "0cf4bff3-118b-4fff-9b49-881122bbdf2e",
+      "records": 2,
+      "columns": 2
+    },
+    {
+      "width": 768,
+      "activeDatasetId": "0cf4bff3-118b-4fff-9b49-881122bbdf2e",
+      "records": 2,
+      "columns": 2
+    },
+    {
+      "width": 390,
+      "activeDatasetId": "0cf4bff3-118b-4fff-9b49-881122bbdf2e",
+      "records": 2,
+      "columns": 2
+    }
+  ],
+  "writes": [],
+  "errors": [],
+  "preservedKPI": "₹83,79,680.76",
+  "duplicateBadges": 2,
+  "originalScreenshotsCreated": 0
+}

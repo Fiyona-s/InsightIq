@@ -1,0 +1,145 @@
+2026-11-14T03:09:09.327274049Z INFO:     Started server process [1]
+2026-11-14T03:09:09.327303841Z INFO:     Waiting for application startup.
+2026-11-14T03:09:09.466273841Z INFO:     Application startup complete.
+2026-11-14T03:09:09.466366216Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-11-14T03:09:35.452914089Z INFO:     172.20.0.3:34534 - "GET /api/datasets?include_archived=true HTTP/1.1" 200 OK
+2026-11-14T03:09:35.466701131Z INFO:     172.20.0.3:34552 - "GET /api/automl/experiments HTTP/1.1" 200 OK
+2026-11-14T03:09:35.475700881Z INFO:     172.20.0.3:34546 - "GET /api/analyst/runs?offset=0 HTTP/1.1" 200 OK
+2026-11-14T03:09:35.479410881Z INFO:     172.20.0.3:34564 - "GET /api/datasets/references HTTP/1.1" 200 OK
+2026-11-14T03:09:35.481101172Z INFO:     172.20.0.3:34578 - "GET /api/datasets/0cf4bff3-118b-4fff-9b49-881122bbdf2e/rows?offset=0&sort= HTTP/1.1" 200 OK
+2026-11-14T03:09:35.484690547Z INFO:     172.20.0.3:34586 - "GET /api/datasets/references HTTP/1.1" 200 OK
+2026-11-14T03:09:44.794550968Z INFO:     172.20.0.3:53296 - "GET /api/automl/experiments HTTP/1.1" 200 OK
+2026-11-14T03:09:44.797797177Z INFO:     172.20.0.3:53262 - "GET /api/datasets?include_archived=true HTTP/1.1" 200 OK
+2026-11-14T03:09:44.805387510Z INFO:     172.20.0.3:53280 - "GET /api/datasets/references HTTP/1.1" 200 OK
+2026-11-14T03:09:44.810652093Z INFO:     172.20.0.3:53264 - "GET /api/analyst/runs?offset=0 HTTP/1.1" 200 OK
+2026-11-14T03:09:44.815760302Z INFO:     172.20.0.3:53320 - "GET /api/datasets/references HTTP/1.1" 200 OK
+2026-11-14T03:09:44.818960635Z INFO:     172.20.0.3:53306 - "GET /api/datasets/0cf4bff3-118b-4fff-9b49-881122bbdf2e/rows?offset=0&sort= HTTP/1.1" 200 OK
+2026-11-14T03:09:47.971082428Z INFO:     172.20.0.3:53328 - "GET /api/dashboards HTTP/1.1" 200 OK
+2026-11-14T03:09:47.973613678Z INFO:     172.20.0.3:53326 - "GET /api/saved-charts HTTP/1.1" 200 OK
+2026-11-14T03:09:47.980651012Z INFO:     172.20.0.3:53364 - "GET /api/dashboards HTTP/1.1" 200 OK
+2026-11-14T03:09:47.990891178Z INFO:     172.20.0.3:53324 - "GET /api/analytics/runs HTTP/1.1" 200 OK
+2026-11-14T03:09:48.008665845Z INFO:     172.20.0.3:53374 - "GET /api/analytics/runs HTTP/1.1" 200 OK
+2026-11-14T03:09:48.062894012Z INFO:     172.20.0.3:53368 - "GET /api/dashboards/bae47ed5-b60a-4573-ac83-e77e1fdfd6d3 HTTP/1.1" 200 OK
+2026-11-14T03:09:55.676089168Z INFO:     172.20.0.3:54140 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/rows?offset=0&sort= HTTP/1.1" 200 OK
+2026-11-14T03:10:04.995977672Z INFO:     172.20.0.3:58218 - "GET /api/analyst/runs?dataset_id=4d7cb8c8-9300-401f-a864-b29f89920559&offset=0 HTTP/1.1" 200 OK
+2026-11-14T03:10:05.047205714Z INFO:     172.20.0.3:58210 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/suggested-questions HTTP/1.1" 200 OK
+2026-11-14T03:10:05.075072672Z INFO:     172.20.0.3:58232 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/profile HTTP/1.1" 200 OK
+2026-11-14T03:10:10.838929966Z INFO:     172.20.0.3:51546 - "POST /api/analyst/runs HTTP/1.1" 202 Accepted
+2026-11-14T03:10:10.883942925Z INFO:     172.20.0.3:51566 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860/events HTTP/1.1" 200 OK
+2026-11-14T03:10:10.888116550Z INFO:     172.20.0.3:51562 - "GET /api/analyst/runs?dataset_id=4d7cb8c8-9300-401f-a864-b29f89920559&offset=0 HTTP/1.1" 200 OK
+2026-11-14T03:10:11.213522467Z INFO:     172.20.0.3:51582 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:11.551533717Z INFO:     172.20.0.3:51588 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:11.718070967Z INFO:     172.20.0.3:51592 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:12.254333217Z INFO:     172.20.0.3:51594 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:12.261017050Z INFO:     172.20.0.3:51600 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:12.764389634Z INFO:     172.20.0.3:51614 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:12.971682176Z INFO:     172.20.0.3:51626 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:13.274477426Z INFO:     172.20.0.3:51638 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:13.388728718Z 2026-11-14 03:10:13,388 INFO LLM request metrics: {"model": "openai/gpt-oss-120b", "provider_model": "openai/gpt-oss-120b", "model_latency_ms": 963, "prompt_tokens": 3285, "completion_tokens": 310, "total_tokens": 3595, "estimated_cost_usd": 0.00067875}
+2026-11-14T03:10:13.682183593Z INFO:     172.20.0.3:51642 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:13.784890551Z INFO:     172.20.0.3:51644 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:14.295739843Z INFO:     172.20.0.3:51648 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:14.395429135Z INFO:     172.20.0.3:51660 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:14.668766968Z 2026-11-14 03:10:14,668 INFO LLM request metrics: {"model": "openai/gpt-oss-120b", "provider_model": "openai/gpt-oss-120b", "model_latency_ms": 1121, "prompt_tokens": 670, "completion_tokens": 176, "total_tokens": 846, "estimated_cost_usd": 0.0002061}
+2026-11-14T03:10:14.680474260Z 2026-11-14 03:10:14,680 INFO Analyst run metrics: {"run_id": "cdb65212-88a6-4e0e-afcd-d6e78e8a6860", "status": "succeeded", "retrieval_latency_ms": 1362, "prompt_tokens": 3955, "completion_tokens": 486, "total_tokens": 4441, "estimated_cost_usd": 0.00088485, "model": "openai/gpt-oss-120b", "provider_model": "openai/gpt-oss-120b", "model_latency_ms": 2085, "query_latency_ms": 132, "total_latency_ms": 3843}
+2026-11-14T03:10:14.774548802Z INFO:     172.20.0.3:51668 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:14.786429343Z INFO:     172.20.0.3:51684 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860/results?offset=0&limit=25 HTTP/1.1" 200 OK
+2026-11-14T03:10:14.793362552Z INFO:     172.20.0.3:51678 - "GET /api/analyst/runs?dataset_id=4d7cb8c8-9300-401f-a864-b29f89920559&offset=0 HTTP/1.1" 200 OK
+2026-11-14T03:10:14.798321177Z INFO:     172.20.0.3:51696 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860/analysis HTTP/1.1" 200 OK
+2026-11-14T03:10:14.806615510Z INFO:     172.20.0.3:51702 - "GET /api/currency/status HTTP/1.1" 200 OK
+2026-11-14T03:10:14.808703260Z INFO:     172.20.0.3:51704 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860/feedback HTTP/1.1" 200 OK
+2026-11-14T03:10:15.109815760Z INFO:     172.20.0.3:51722 - "GET /api/analyst/runs/cdb65212-88a6-4e0e-afcd-d6e78e8a6860 HTTP/1.1" 200 OK
+2026-11-14T03:10:27.169540918Z INFO:     172.20.0.3:54370 - "GET /api/dashboards HTTP/1.1" 200 OK
+2026-11-14T03:10:27.173193418Z INFO:     172.20.0.3:54372 - "GET /api/saved-charts HTTP/1.1" 200 OK
+2026-11-14T03:10:27.246496543Z INFO:     172.20.0.3:54398 - "GET /api/dashboards/bae47ed5-b60a-4573-ac83-e77e1fdfd6d3 HTTP/1.1" 200 OK
+2026-11-14T03:10:27.566679418Z INFO:     172.20.0.3:54400 - "GET /api/currency/status HTTP/1.1" 200 OK
+2026-11-14T03:10:27.571033585Z INFO:     172.20.0.3:54402 - "GET /api/currency/status HTTP/1.1" 200 OK
+2026-11-14T03:10:27.575227543Z INFO:     172.20.0.3:54418 - "GET /api/currency/status HTTP/1.1" 200 OK
+2026-11-14T03:11:03.279202005Z INFO:     172.20.0.3:46818 - "GET /api/analyst/runs?dataset_id=4d7cb8c8-9300-401f-a864-b29f89920559&offset=0 HTTP/1.1" 200 OK
+2026-11-14T03:11:03.321693630Z INFO:     172.20.0.3:46820 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/suggested-questions HTTP/1.1" 200 OK
+2026-11-14T03:11:03.350259755Z INFO:     172.20.0.3:46826 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/profile HTTP/1.1" 200 OK
+2026-11-14T03:11:08.233011215Z INFO:     172.20.0.3:46836 - "POST /api/analyst/runs HTTP/1.1" 202 Accepted
+2026-11-14T03:11:08.251646465Z INFO:     172.20.0.3:46848 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204/events HTTP/1.1" 200 OK
+2026-11-14T03:11:08.255509174Z INFO:     172.20.0.3:46846 - "GET /api/analyst/runs?dataset_id=4d7cb8c8-9300-401f-a864-b29f89920559&offset=0 HTTP/1.1" 200 OK
+2026-11-14T03:11:08.552439715Z INFO:     172.20.0.3:46854 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204 HTTP/1.1" 200 OK
+2026-11-14T03:11:08.948889174Z INFO:     172.20.0.3:46864 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204 HTTP/1.1" 200 OK
+2026-11-14T03:11:09.059101174Z INFO:     172.20.0.3:46870 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204 HTTP/1.1" 200 OK
+2026-11-14T03:11:09.285431966Z 2026-11-14 03:11:09,285 INFO LLM request metrics: {"model": "openai/gpt-oss-120b", "provider_model": "openai/gpt-oss-120b", "model_latency_ms": 942, "prompt_tokens": 3285, "completion_tokens": 220, "total_tokens": 3505, "estimated_cost_usd": 0.00062475}
+2026-11-14T03:11:09.564973174Z INFO:     172.20.0.3:46878 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204 HTTP/1.1" 200 OK
+2026-11-14T03:11:09.660063799Z INFO:     172.20.0.3:46882 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204 HTTP/1.1" 200 OK
+2026-11-14T03:11:10.073439383Z INFO:     172.20.0.3:46370 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204 HTTP/1.1" 200 OK
+2026-11-14T03:11:10.372566966Z INFO:     172.20.0.3:46374 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204 HTTP/1.1" 200 OK
+2026-11-14T03:11:10.407342925Z 2026-11-14 03:11:10,407 INFO LLM request metrics: {"model": "openai/gpt-oss-120b", "provider_model": "openai/gpt-oss-120b", "model_latency_ms": 963, "prompt_tokens": 670, "completion_tokens": 133, "total_tokens": 803, "estimated_cost_usd": 0.0001803}
+2026-11-14T03:11:10.418694133Z 2026-11-14 03:11:10,418 INFO Analyst run metrics: {"run_id": "1dc92566-322f-41bd-89a4-adfc87520204", "status": "succeeded", "retrieval_latency_ms": 45, "prompt_tokens": 3955, "completion_tokens": 353, "total_tokens": 4308, "estimated_cost_usd": 0.00080505, "model": "openai/gpt-oss-120b", "provider_model": "openai/gpt-oss-120b", "model_latency_ms": 1905, "query_latency_ms": 126, "total_latency_ms": 2188}
+2026-11-14T03:11:10.578224258Z INFO:     172.20.0.3:46380 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204 HTTP/1.1" 200 OK
+2026-11-14T03:11:10.589428716Z INFO:     172.20.0.3:46398 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204/results?offset=0&limit=25 HTTP/1.1" 200 OK
+2026-11-14T03:11:10.591932508Z INFO:     172.20.0.3:46382 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204 HTTP/1.1" 200 OK
+2026-11-14T03:11:10.597642925Z INFO:     172.20.0.3:46406 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204/analysis HTTP/1.1" 200 OK
+2026-11-14T03:11:10.604104175Z INFO:     172.20.0.3:46388 - "GET /api/analyst/runs?dataset_id=4d7cb8c8-9300-401f-a864-b29f89920559&offset=0 HTTP/1.1" 200 OK
+2026-11-14T03:11:10.607778633Z INFO:     172.20.0.3:46428 - "GET /api/currency/status HTTP/1.1" 200 OK
+2026-11-14T03:11:10.609245050Z INFO:     172.20.0.3:46412 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204/feedback HTTP/1.1" 200 OK
+2026-11-14T03:11:11.087141842Z INFO:     172.20.0.3:46432 - "GET /api/analyst/runs/1dc92566-322f-41bd-89a4-adfc87520204 HTTP/1.1" 200 OK
+2026-11-14T03:11:18.760662470Z INFO:     172.20.0.3:46442 - "GET /api/dashboards HTTP/1.1" 200 OK
+2026-11-14T03:11:27.335154835Z INFO:     172.20.0.3:50172 - "POST /api/saved-charts HTTP/1.1" 201 Created
+2026-11-14T03:11:27.385127627Z INFO:     172.20.0.3:50178 - "GET /api/dashboards/bae47ed5-b60a-4573-ac83-e77e1fdfd6d3 HTTP/1.1" 200 OK
+2026-11-14T03:11:27.446040627Z INFO:     172.20.0.3:50184 - "POST /api/dashboards/bae47ed5-b60a-4573-ac83-e77e1fdfd6d3/charts HTTP/1.1" 200 OK
+2026-11-14T03:11:30.235220128Z INFO:     172.20.0.3:51130 - "GET /api/saved-charts HTTP/1.1" 200 OK
+2026-11-14T03:11:30.239122961Z INFO:     172.20.0.3:51128 - "GET /api/dashboards HTTP/1.1" 200 OK
+2026-11-14T03:11:30.323522586Z INFO:     172.20.0.3:51156 - "GET /api/dashboards/bae47ed5-b60a-4573-ac83-e77e1fdfd6d3 HTTP/1.1" 200 OK
+2026-11-14T03:11:30.341063295Z INFO:     172.20.0.3:51168 - "GET /api/currency/status HTTP/1.1" 200 OK
+2026-11-14T03:11:30.342116878Z INFO:     172.20.0.3:51172 - "GET /api/currency/status HTTP/1.1" 200 OK
+2026-11-14T03:11:30.343252836Z INFO:     172.20.0.3:51180 - "GET /api/currency/status HTTP/1.1" 200 OK
+2026-11-14T03:11:30.344167045Z INFO:     172.20.0.3:51188 - "GET /api/currency/status HTTP/1.1" 200 OK
+2026-11-14T03:11:51.211745346Z INFO:     172.20.0.3:51846 - "PUT /api/dashboards/bae47ed5-b60a-4573-ac83-e77e1fdfd6d3 HTTP/1.1" 200 OK
+2026-11-14T03:12:26.014593584Z INFO:     172.20.0.3:34906 - "POST /api/dashboards/bae47ed5-b60a-4573-ac83-e77e1fdfd6d3/widgets/85bcc7a0-a289-4f14-b1fb-1f55e3edc87d/refresh HTTP/1.1" 200 OK
+2026-11-14T03:13:29.264552961Z INFO:     172.20.0.3:39730 - "GET /api/analyst/runs?dataset_id=4d7cb8c8-9300-401f-a864-b29f89920559&offset=0 HTTP/1.1" 200 OK
+2026-11-14T03:13:29.305400211Z INFO:     172.20.0.3:39708 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/suggested-questions HTTP/1.1" 200 OK
+2026-11-14T03:13:29.333601253Z INFO:     172.20.0.3:39718 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/profile HTTP/1.1" 200 OK
+2026-11-14T03:13:30.966710045Z INFO:     172.20.0.3:39146 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/rows?offset=0&sort= HTTP/1.1" 200 OK
+2026-11-14T03:13:44.377610676Z INFO:     172.20.0.3:48346 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/profile HTTP/1.1" 200 OK
+2026-11-14T03:13:46.812720386Z INFO:     172.20.0.3:48350 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/rows?offset=0&sort= HTTP/1.1" 200 OK
+2026-11-14T03:14:09.751868924Z INFO:     172.20.0.3:48718 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/profile-details HTTP/1.1" 200 OK
+2026-11-14T03:14:28.132228169Z INFO:     172.20.0.3:39054 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/quality HTTP/1.1" 200 OK
+2026-11-14T03:14:29.083014044Z INFO:     172.20.0.3:39068 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/revisions?offset=0 HTTP/1.1" 200 OK
+2026-11-14T03:14:40.737046091Z INFO:     172.20.0.3:51542 - "GET /api/dashboards HTTP/1.1" 200 OK
+2026-11-14T03:14:40.738768300Z INFO:     172.20.0.3:51518 - "GET /api/saved-charts HTTP/1.1" 200 OK
+2026-11-14T03:14:40.753571966Z INFO:     172.20.0.3:51528 - "GET /api/analytics/runs HTTP/1.1" 200 OK
+2026-11-14T03:14:40.758756508Z INFO:     172.20.0.3:51546 - "GET /api/dashboards HTTP/1.1" 200 OK
+2026-11-14T03:14:40.773020425Z INFO:     172.20.0.3:51562 - "GET /api/analytics/runs HTTP/1.1" 200 OK
+2026-11-14T03:14:40.829401550Z INFO:     172.20.0.3:51560 - "GET /api/dashboards/bae47ed5-b60a-4573-ac83-e77e1fdfd6d3 HTTP/1.1" 200 OK
+2026-11-14T03:14:50.187463513Z INFO:     172.20.0.3:40124 - "GET /api/automl/experiments HTTP/1.1" 200 OK
+2026-11-14T03:14:50.193807888Z INFO:     172.20.0.3:40098 - "GET /api/automl/models HTTP/1.1" 200 OK
+2026-11-14T03:14:50.194611096Z INFO:     172.20.0.3:40126 - "GET /api/automl/predictions HTTP/1.1" 200 OK
+2026-11-14T03:14:50.240274013Z INFO:     172.20.0.3:40112 - "GET /api/automl/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/profile?task=regression HTTP/1.1" 200 OK
+2026-11-14T03:17:51.771290472Z INFO:     172.20.0.3:55220 - "GET /api/automl/models/afcf4efe-cda0-4aef-bcb6-21f7fb79ead8/input-schema HTTP/1.1" 200 OK
+2026-11-14T03:17:56.796733585Z INFO:     172.20.0.3:55230 - "GET /api/automl/experiments HTTP/1.1" 200 OK
+2026-11-14T03:17:56.798789835Z INFO:     172.20.0.3:55254 - "GET /api/automl/predictions HTTP/1.1" 200 OK
+2026-11-14T03:17:56.801273376Z INFO:     172.20.0.3:55244 - "GET /api/automl/models HTTP/1.1" 200 OK
+2026-11-14T03:18:08.191961257Z INFO:     172.20.0.3:33682 - "POST /api/automl/models/afcf4efe-cda0-4aef-bcb6-21f7fb79ead8/validate-input HTTP/1.1" 200 OK
+2026-11-14T03:18:08.627167090Z INFO:     172.20.0.3:33694 - "POST /api/automl/models/afcf4efe-cda0-4aef-bcb6-21f7fb79ead8/predict HTTP/1.1" 422 Unprocessable Entity
+2026-11-14T03:18:17.027170553Z INFO:     172.20.0.3:44978 - "GET /api/automl/predictions/f1cb716b-e57c-47f1-b218-02bdc44e63c6?offset=0&limit=50 HTTP/1.1" 200 OK
+2026-11-14T03:18:25.340936417Z INFO:     172.20.0.3:56648 - "GET /api/automl/predictions/f1cb716b-e57c-47f1-b218-02bdc44e63c6?offset=0&limit=50 HTTP/1.1" 200 OK
+2026-11-14T03:20:14.691066218Z INFO:     172.20.0.3:40772 - "GET /api/dashboards HTTP/1.1" 200 OK
+2026-11-14T03:20:14.692934760Z INFO:     172.20.0.3:40754 - "GET /api/saved-charts HTTP/1.1" 200 OK
+2026-11-14T03:20:14.696099427Z INFO:     172.20.0.3:40774 - "GET /api/dashboards HTTP/1.1" 200 OK
+2026-11-14T03:20:14.713768677Z INFO:     172.20.0.3:40762 - "GET /api/analytics/runs HTTP/1.1" 200 OK
+2026-11-14T03:20:14.731698885Z INFO:     172.20.0.3:40784 - "GET /api/analytics/runs HTTP/1.1" 200 OK
+2026-11-14T03:20:14.788650802Z INFO:     172.20.0.3:40778 - "GET /api/dashboards/bae47ed5-b60a-4573-ac83-e77e1fdfd6d3 HTTP/1.1" 200 OK
+2026-11-14T03:27:26.366858459Z INFO:     172.20.0.3:38670 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/rows?offset=0&sort= HTTP/1.1" 200 OK
+2026-11-14T03:27:27.645810168Z INFO:     172.20.0.3:38702 - "GET /api/analyst/runs?dataset_id=4d7cb8c8-9300-401f-a864-b29f89920559&offset=0 HTTP/1.1" 200 OK
+2026-11-14T03:27:27.689292960Z INFO:     172.20.0.3:38672 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/suggested-questions HTTP/1.1" 200 OK
+2026-11-14T03:27:27.718088043Z INFO:     172.20.0.3:38686 - "GET /api/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/profile HTTP/1.1" 200 OK
+2026-11-14T03:27:29.810410294Z INFO:     172.20.0.3:58816 - "GET /api/saved-charts HTTP/1.1" 200 OK
+2026-11-14T03:27:29.810738044Z INFO:     172.20.0.3:58818 - "GET /api/dashboards HTTP/1.1" 200 OK
+2026-11-14T03:27:29.896199669Z INFO:     172.20.0.3:58822 - "GET /api/dashboards/bae47ed5-b60a-4573-ac83-e77e1fdfd6d3 HTTP/1.1" 200 OK
+2026-11-14T03:27:29.907994419Z INFO:     172.20.0.3:58828 - "GET /api/currency/status HTTP/1.1" 200 OK
+2026-11-14T03:27:29.908916836Z INFO:     172.20.0.3:58840 - "GET /api/currency/status HTTP/1.1" 200 OK
+2026-11-14T03:27:29.909799294Z INFO:     172.20.0.3:58846 - "GET /api/currency/status HTTP/1.1" 200 OK
+2026-11-14T03:27:31.979013462Z INFO:     172.20.0.3:58896 - "GET /api/automl/predictions HTTP/1.1" 200 OK
+2026-11-14T03:27:31.990460629Z INFO:     172.20.0.3:58860 - "GET /api/automl/experiments HTTP/1.1" 200 OK
+2026-11-14T03:27:31.993346295Z INFO:     172.20.0.3:58872 - "GET /api/automl/models HTTP/1.1" 200 OK
+2026-11-14T03:27:32.040269295Z INFO:     172.20.0.3:58880 - "GET /api/automl/datasets/4d7cb8c8-9300-401f-a864-b29f89920559/profile?task=regression HTTP/1.1" 200 OK
+2026-11-14T03:36:37.261558590Z INFO:     Shutting down
+2026-11-14T03:36:37.362887048Z INFO:     Waiting for application shutdown.
+2026-11-14T03:36:37.367220756Z INFO:     Application shutdown complete.
+2026-11-14T03:36:37.367761673Z INFO:     Finished server process [1]

@@ -1,0 +1,13 @@
+
+> insightiq@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 <project>/frontend
+
+
+ Test Files  15 passed (15)
+      Tests  90 passed (90)
+   Start at  11:17:07
+   Duration  2.42s (tests 58%, environment 23%, setup 9%, import 7%, transform 2%)
+

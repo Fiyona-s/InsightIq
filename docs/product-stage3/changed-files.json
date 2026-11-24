@@ -1,0 +1,27 @@
+{
+  "new": [
+    "frontend/scripts/product-stage3-readonly-review.mjs",
+    "frontend/e2e/09-product-stage3-data.spec.ts",
+    "frontend/src/components/DatasetTabs.tsx",
+    "frontend/src/components/DatasetTabs.test.tsx"
+  ],
+  "modified": [
+    "frontend/playwright.analyst.config.ts",
+    "frontend/tsconfig.tsbuildinfo",
+    "frontend/e2e/01-phase4-datasets.spec.ts",
+    "frontend/e2e/dataset-editor.spec.ts",
+    "frontend/e2e/workspace.spec.ts",
+    "frontend/e2e/phase9-smoke.spec.ts",
+    "frontend/e2e/00-phase3-navigation.spec.ts",
+    "frontend/e2e/ui-refinement.spec.ts",
+    "frontend/src/App.tsx",
+    "frontend/src/App.test.tsx",
+    "frontend/src/workspace.css",
+    "frontend/src/components/DatasetWorkspace.test.tsx",
+    "frontend/src/components/DatasetProfile.tsx",
+    "frontend/src/components/DatasetEditor.test.tsx",
+    "frontend/src/components/DatasetQuality.tsx",
+    "frontend/src/components/DatasetEditor.tsx"
+  ],
+  "removed": []
+}

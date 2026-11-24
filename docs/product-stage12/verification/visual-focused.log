@@ -1,0 +1,36 @@
+[WebServer] INFO:     Started server process [71450]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:71477) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:71478) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 e2e/16-product-stage12-final.spec.ts:5:1 › Stage 12 final responsive landmarks, keyboard entry, expanded privacy disclosure and visual record (1.2m)
+
+
+  1) e2e/16-product-stage12-final.spec.ts:5:1 › Stage 12 final responsive landmarks, keyboard entry, expanded privacy disclosure and visual record 
+
+    Test was interrupted.
+
+    Error: locator.click: Test ended.
+    Call log:
+      - waiting for locator('.sharing-notice>summary')
+
+
+       9 |   for(const [route,title] of destinations){
+      10 |    await page.goto('/#'+route);await expect(page.locator('main h1')).toHaveText(title);await page.waitForLoadState('networkidle');await expect(page.getByRole('main')).toHaveCount(1);await expect(page.locator('main h1')).toHaveCount(1);await expect(page.locator('.breadcrumb strong')).toHaveText(title);
+    > 11 |    if(route==='analyst'){await page.locator('.sharing-notice>summary').click();await expect(page.locator('.sharing-notice')).toContainText('No automatic masking is applied.');await expect(page.getByRole('textbox',{name:'Your question',exact:true})).toHaveValue('')}
+         |                                                                        ^
+      12 |    const geometry=await page.evaluate(()=>{window.scrollTo(0,0);const heading=document.querySelector('main h1')!.getBoundingClientRect(),header=document.querySelector('.main>header')!.getBoundingClientRect(),selector=document.querySelector('.dataset-trigger')!.getBoundingClientRect();return {headingTop:heading.top,headerBottom:header.bottom,selectorBottom:selector.bottom,overflow:document.documentElement.scrollWidth>innerWidth}});expect(geometry.headingTop).toBeGreaterThanOrEqual(geometry.headerBottom);expect(geometry.selectorBottom).toBeLessThanOrEqual(geometry.headerBottom);expect(geometry.overflow).toBe(false);
+      13 |    const axe=await new AxeBuilder({page}).analyze();expect(axe.violations,title+' '+width).toEqual([]);checks.push({route,title,width,...geometry,axeViolations:axe.violations});await page.evaluate(()=>{if(document.activeElement instanceof HTMLElement)document.activeElement.blur();window.scrollTo(0,0)});await page.screenshot({path:`../docs/product-stage12/after/${route}-${width}.png`,fullPage:true});
+      14 |   }
+        at <project>/frontend/e2e/16-product-stage12-final.spec.ts:11:72
+
+    Error Context: test-results/16-product-stage12-final-S-be77d-isclosure-and-visual-record/error-context.md
+
+  1 interrupted
+    e2e/16-product-stage12-final.spec.ts:5:1 › Stage 12 final responsive landmarks, keyboard entry, expanded privacy disclosure and visual record 

@@ -1,0 +1,648 @@
+/* Shared component styles. Tokens only (see tokens.css). Loaded last so it wins over legacy rules. */
+
+/* ---------- Base ---------- */
+:root { font-family: var(--font-sans); font-size: var(--text-sm); color: var(--color-text); background: var(--color-bg); }
+body { background: var(--color-bg); color: var(--color-text); line-height: var(--leading-normal); }
+:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+/* Headings/regions the app focuses for screen readers (tabindex="-1") are not controls: no ring. Roving-focus widgets keep theirs. */
+:is(h1, h2, h3, main, section)[tabindex="-1"]:focus { outline: none; }
+img, svg, video, canvas { max-width: 100%; }
+.main, main { min-width: 0; }
+
+/* ---------- Button ---------- */
+.app .button, .ui-button {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-1);
+  min-height: 40px; padding: 0 var(--space-2); border-radius: var(--radius);
+  font-size: var(--text-sm); font-weight: var(--weight-medium); line-height: var(--leading-tight);
+  border: 1px solid transparent; white-space: normal; text-align: center; text-decoration: none; cursor: pointer; max-width: 100%;
+}
+.app .button-primary { background: var(--brand-700); color: var(--color-text-inverse); border-color: var(--brand-700); }
+.app .button-primary:hover:not(:disabled) { background: var(--brand-900); border-color: var(--brand-900); }
+.app .button-outline { background: var(--color-surface); color: var(--neutral-800); border-color: var(--color-border-strong); }
+.app .button-outline:hover:not(:disabled) { background: var(--color-surface-muted); }
+.app .button-ghost { background: transparent; color: var(--brand-700); border-color: transparent; }
+.app .button-ghost:hover:not(:disabled) { background: var(--brand-50); }
+.app .button-danger { background: var(--danger-text); color: var(--color-text-inverse); border-color: var(--danger-text); }
+.app .button-sm { min-height: 32px; padding: 0 var(--space-1h); }
+.app .button:disabled { opacity: 0.55; cursor: not-allowed; }
+@media (max-width: 767px) { .app .button { min-height: var(--tap-target); } }
+
+/* ---------- Page header ---------- */
+.ui-page-header { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: var(--space-2); margin: 0 0 var(--space-3); }
+.ui-page-header > div:first-child { min-width: 0; flex: 1 1 280px; }
+.ui-page-header h1 { margin: 0; font-size: var(--text-2xl); line-height: var(--leading-tight); font-weight: var(--weight-bold); color: var(--color-text); letter-spacing: -0.01em; }
+.ui-page-header p { margin: var(--space-1) 0 0; font-size: var(--text-base); color: var(--color-text-muted); max-width: 64ch; }
+.ui-page-header .ui-page-actions { display: flex; flex-wrap: wrap; gap: var(--space-1); align-items: center; }
+@media (max-width: 767px) { .ui-page-header h1 { font-size: var(--text-xl); } .ui-page-header .ui-page-actions { width: 100%; } }
+
+/* ---------- Card ---------- */
+.ui-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-3); box-shadow: var(--shadow-sm); min-width: 0; }
+.ui-card-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-1); margin-bottom: var(--space-2); }
+.ui-card-header h2, .ui-card-header h3 { margin: 0; font-size: var(--text-lg); font-weight: var(--weight-bold); }
+.ui-card-header p { margin: var(--space-half) 0 0; color: var(--color-text-muted); }
+@media (max-width: 767px) { .ui-card { padding: var(--space-2); } }
+
+/* ---------- States: empty / error / loading / skeleton ---------- */
+.state-empty, .ui-empty { color: var(--color-text-muted); font-size: var(--text-sm); }
+.ui-empty.ui-empty-block { display: grid; justify-items: center; text-align: center; gap: var(--space-1); padding: var(--space-5) var(--space-3); border: 1px dashed var(--color-border-strong); border-radius: var(--radius-lg); background: var(--color-surface); }
+.ui-empty-block .ui-empty-icon { display: grid; place-items: center; width: 48px; height: 48px; border-radius: var(--radius-lg); background: var(--brand-50); color: var(--brand-700); }
+.ui-empty-block h2, .ui-empty-block h3 { margin: 0; font-size: var(--text-lg); color: var(--color-text); }
+.ui-empty-block p { margin: 0; max-width: 48ch; }
+.state-error, .ui-error { color: var(--danger-text); background: var(--danger-bg); border: 1px solid var(--danger-border); border-radius: var(--radius); padding: var(--space-1h) var(--space-2); font-size: var(--text-sm); }
+.state-error pre, .ui-error pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: var(--text-sm); max-width: 100%; }
+.state-loading, .ui-loading { color: var(--color-text-muted); font-size: var(--text-sm); }
+.ui-skeleton { display: block; background: linear-gradient(90deg, var(--neutral-50), var(--neutral-100), var(--neutral-50)); background-size: 200% 100%; border-radius: var(--radius-sm); animation: ui-shimmer 1.4s ease-in-out infinite; }
+@keyframes ui-shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .ui-skeleton { animation: none; } }
+
+/* ---------- Status chip ---------- */
+.ui-chip { display: inline-flex; align-items: center; gap: var(--space-half); padding: 0 var(--space-1); min-height: 24px; border-radius: var(--radius-pill); font-size: var(--text-sm); font-weight: var(--weight-medium); border: 1px solid; white-space: nowrap; }
+.ui-chip-neutral { color: var(--neutral-700); background: var(--neutral-50); border-color: var(--neutral-200); }
+.ui-chip-success { color: var(--success-text); background: var(--success-bg); border-color: var(--success-border); }
+.ui-chip-warning { color: var(--warning-text); background: var(--warning-bg); border-color: var(--warning-border); }
+.ui-chip-danger { color: var(--danger-text); background: var(--danger-bg); border-color: var(--danger-border); }
+.ui-chip-info { color: var(--info-text); background: var(--info-bg); border-color: var(--info-border); }
+
+/* ---------- Data table ---------- */
+.ui-table-frame, .app .table-scroll { position: relative; }
+.ui-table-frame { max-width: 100%; overflow-x: auto; border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-surface); -webkit-overflow-scrolling: touch; }
+.ui-table-frame:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+.ui-table-frame > table, .ui-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+.ui-table th { text-align: left; font-weight: var(--weight-bold); color: var(--neutral-700); background: var(--color-surface-muted); padding: var(--space-1) var(--space-1h); border-bottom: 1px solid var(--color-border); white-space: nowrap; }
+.ui-table td { padding: var(--space-1) var(--space-1h); border-bottom: 1px solid var(--color-border); vertical-align: top; }
+.ui-table tr:last-child td { border-bottom: 0; }
+.ui-table td.num, .ui-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.ui-table-caption { caption-side: top; text-align: left; padding: var(--space-1) var(--space-1h); color: var(--color-text-muted); }
+
+/* ---------- Modal / drawer ---------- */
+dialog.ui-modal { border: 0; padding: 0; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: min(560px, calc(100vw - 2 * var(--gutter))); max-height: calc(100dvh - 2 * var(--space-3)); color: var(--color-text); background: var(--color-surface); }
+dialog.ui-modal::backdrop { background: var(--color-overlay); }
+.ui-modal-inner { display: flex; flex-direction: column; max-height: inherit; }
+.ui-modal-header { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-2); padding: var(--space-3) var(--space-3) var(--space-1); }
+.ui-modal-header h2 { margin: 0; font-size: var(--text-xl); line-height: var(--leading-tight); }
+.ui-modal-body { padding: var(--space-1) var(--space-3) var(--space-2); overflow-y: auto; }
+.ui-modal-footer { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: var(--space-1); padding: var(--space-2) var(--space-3) var(--space-3); border-top: 1px solid var(--color-border); }
+dialog.ui-drawer { margin: 0 0 0 auto; height: 100dvh; max-height: 100dvh; width: min(480px, 100vw); border-radius: 0; }
+@media (max-width: 767px) { dialog.ui-modal:not(.ui-drawer) { width: calc(100vw - 2 * var(--gutter)); } .ui-modal-footer { justify-content: stretch; } .ui-modal-footer > * { flex: 1 1 auto; } }
+
+/* ---------- Tabs ---------- */
+.ui-tabs { display: flex; gap: var(--space-half); border-bottom: 1px solid var(--color-border); overflow-x: auto; scrollbar-width: thin; max-width: 100%; }
+.ui-tab { appearance: none; background: none; border: 0; border-bottom: 2px solid transparent; padding: var(--space-1h) var(--space-2); font-size: var(--text-sm); font-weight: var(--weight-medium); color: var(--color-text-muted); white-space: nowrap; display: inline-flex; align-items: center; gap: var(--space-1); cursor: pointer; min-height: var(--tap-target); }
+.ui-tab[aria-selected="true"] { color: var(--brand-700); border-bottom-color: var(--brand-700); }
+.ui-tab:hover { color: var(--color-text); }
+
+/* ---------- Toast ---------- */
+.ui-toast-region { position: fixed; z-index: 60; right: var(--gutter); bottom: var(--gutter); display: grid; gap: var(--space-1); max-width: min(420px, calc(100vw - 2 * var(--gutter))); }
+.ui-toast { display: flex; align-items: flex-start; gap: var(--space-1); padding: var(--space-1h) var(--space-2); border-radius: var(--radius); background: var(--neutral-900); color: var(--color-text-inverse); box-shadow: var(--shadow-lg); font-size: var(--text-sm); }
+.ui-toast button { margin-left: auto; background: none; border: 0; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; min-height: 24px; }
+
+/* ---------- Menu (top bar) ---------- */
+.ui-menu { position: relative; }
+.ui-menu-panel { position: absolute; right: 0; top: calc(100% + var(--space-half)); z-index: 40; min-width: 260px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); box-shadow: var(--shadow-lg); padding: var(--space-1); display: grid; gap: var(--space-half); }
+.ui-menu-panel [role="menuitem"], .ui-menu-panel [role="menuitemcheckbox"] { display: flex; align-items: center; gap: var(--space-1); width: 100%; text-align: left; background: none; border: 0; border-radius: var(--radius-sm); padding: var(--space-1) var(--space-1h); font-size: var(--text-sm); color: var(--color-text); cursor: pointer; min-height: 40px; }
+.ui-menu-panel [role="menuitem"]:hover, .ui-menu-panel [role="menuitemcheckbox"]:hover, .ui-menu-panel [role]:focus-visible { background: var(--color-surface-muted); }
+.ui-menu-note { margin: 0; padding: 0 var(--space-1h) var(--space-1); color: var(--color-text-muted); font-size: var(--text-sm); }
+.ui-switch { margin-left: auto; width: 36px; height: 20px; border-radius: var(--radius-pill); background: var(--neutral-200); position: relative; flex: none; }
+.ui-switch::after { content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: var(--neutral-0); box-shadow: var(--shadow-sm); }
+[aria-checked="true"] > .ui-switch { background: var(--brand-600); }
+[aria-checked="true"] > .ui-switch::after { left: 18px; }
+
+/* ---------- Shell: sidebar groups, admin banner, top bar ---------- */
+.app .sidebar nav { margin-top: var(--space-3); }
+.app .sidebar .nav-group + .nav-group { margin-top: var(--space-3); }
+.app .sidebar .nav-label { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-half); margin: 0 0 var(--space-1); padding: 0 var(--space-1h); font-size: var(--text-sm); font-weight: var(--weight-bold); letter-spacing: 0; text-transform: none; }
+.app .sidebar .admin-nav-note { flex-basis: 100%; padding: 0; margin: 0; }
+.app.nav-collapsed .sidebar .nav-label { display: none; }
+.admin-banner { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); margin: 0 0 var(--space-2); padding: var(--space-1h) var(--space-2); border-radius: var(--radius); background: var(--warning-bg); border: 1px solid var(--warning-border); color: var(--warning-text); font-size: var(--text-sm); }
+.admin-nav-note { display: block; padding: 0 var(--space-1h); margin-top: var(--space-half); color: inherit; opacity: 0.85; font-size: var(--text-sm); font-weight: var(--weight-regular); text-transform: none; letter-spacing: 0; }
+
+/* ---------- Responsive safety net for legacy layouts ---------- */
+/* break-word (not anywhere): wraps long words without shrinking table cells' minimum width, which made table actions unstable to click. */
+.app main { overflow-wrap: break-word; }
+.app main table { max-width: 100%; }
+.app .detail-panel, .app .data-layout > *, .app [class*="grid"] > * { min-width: 0; }
+.app pre { max-width: 100%; overflow-x: auto; }
+
+/* ---------- Design page ---------- */
+.design-grid { display: grid; gap: var(--space-3); }
+.design-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: var(--space-1); }
+.design-swatch { border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; font-size: var(--text-sm); background: var(--color-surface); }
+.design-swatch span { display: block; height: 48px; }
+.design-swatch code { display: block; padding: var(--space-1); overflow-wrap: anywhere; }
+.design-row { display: flex; flex-wrap: wrap; gap: var(--space-1); align-items: center; }
+.design-type p { margin: 0 0 var(--space-1); }
+
+/* Remembered column types (fix 3a) */
+.types-remembered { margin: var(--space-1) 0; padding: var(--space-1) var(--space-1h); border-radius: var(--radius); background: var(--info-bg); border: 1px solid var(--info-border); color: var(--info-text); font-size: var(--text-sm); }
+
+/* ---------- Projects (Stage 2) ---------- */
+.project-switcher { flex: none; }
+.project-trigger { display: inline-flex; align-items: center; gap: var(--space-1); min-height: var(--tap-target); max-width: 260px; padding: var(--space-half) var(--space-1h); border: 1px solid var(--color-border-strong); border-radius: var(--radius); background: var(--color-surface); color: var(--color-text); cursor: pointer; text-align: left; }
+.project-trigger:hover { background: var(--color-surface-muted); }
+.project-trigger-text { display: grid; min-width: 0; line-height: var(--leading-tight); }
+.project-trigger-text small { font-size: var(--text-sm); color: var(--color-text-muted); }
+.project-trigger-text strong { font-size: var(--text-sm); font-weight: var(--weight-bold); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.project-menu { left: 0; right: auto; }
+.project-menu [role="menuitemradio"] { display: flex; align-items: center; gap: var(--space-1); width: 100%; text-align: left; background: none; border: 0; border-radius: var(--radius-sm); padding: var(--space-1) var(--space-1h); font-size: var(--text-sm); color: var(--color-text); cursor: pointer; min-height: 40px; }
+.project-menu [role="menuitemradio"]:hover, .project-menu [role="menuitemradio"]:focus-visible { background: var(--color-surface-muted); }
+.project-menu [aria-checked="true"] { font-weight: var(--weight-bold); }
+.project-check { display: inline-grid; place-items: center; width: 16px; color: var(--brand-700); }
+.ui-menu-separator { border: 0; border-top: 1px solid var(--color-border); margin: var(--space-half) 0; }
+.projects-page { display: grid; gap: var(--space-3); }
+.project-status, .project-actions { display: flex; flex-wrap: wrap; gap: var(--space-half); align-items: center; }
+.app .button.danger-text { color: var(--danger-text); }
+.project-form, .project-delete { display: grid; gap: var(--space-1); }
+.project-form input, .project-delete input { min-height: var(--tap-target); padding: 0 var(--space-1h); border: 1px solid var(--color-border-strong); border-radius: var(--radius); font-size: var(--text-base); }
+.project-delete ul { margin: 0; padding-left: var(--space-3); }
+/* Phones: project and dataset share one row so the page content stays above the fold. */
+@media (max-width: 600px) { .project-switcher { order: 3; flex: 1 1 0; min-width: 0; } .project-trigger { max-width: none; width: 100%; } .app .main > header .global-dataset-selector { order: 4; flex: 1 1 0; width: auto; min-width: 0; } }
+/* Wider than a phone: the page heading names the page, so the top-bar label is visually hidden (kept for screen readers) and the project switcher leads the bar. */
+@media (min-width: 601px) {
+  .app .main > header .breadcrumb { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+/* Phones: the dataset selector shares the row with the project switcher, so its button clips long names (the dropdown is not clipped). */
+@media (max-width: 600px) {
+  .app .main > header .global-dataset-selector .dataset-trigger { width: 100%; max-width: 100%; min-width: 0; overflow: hidden; }
+  .app .main > header .global-dataset-selector .dataset-trigger > * { min-width: 0; }
+}
+@media (max-width: 600px) {
+  /* Row 1: menu, page name, Menu. Row 2: project + dataset side by side. */
+  .app .main > header::after { content: ""; order: 2; flex-basis: 100%; height: 0; }
+  .app .main > header .header-right { margin-left: auto; }
+}
+@media (max-width: 600px) {
+  /* Keep the two-row phone header compact: one line per control. */
+  .app .main > header .global-dataset-selector .dataset-trigger small { display: none; }
+  .project-trigger-text small { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .project-trigger, .app .main > header .global-dataset-selector .dataset-trigger { min-height: var(--tap-target); }
+}
+@media (max-width: 600px) {
+  .app .main > header .global-dataset-selector .dataset-trigger > span { overflow: hidden; }
+  .app .main > header .global-dataset-selector .dataset-trigger > svg { flex: none; }
+}
+
+/* ---------- Modal content (Stage 3): consistent typography and fields for every dialog ---------- */
+.ui-modal h2 { overflow-wrap: anywhere; }
+.ui-modal small { font-size: var(--text-sm); }
+.ui-modal-body { font-size: var(--text-sm); line-height: var(--leading-normal); }
+.ui-modal-body p { margin: var(--space-1h) 0; }
+.ui-modal-body ul { margin: var(--space-1) 0; padding-left: var(--space-3); list-style: disc; }
+.ui-modal-body li { margin: var(--space-1) 0; overflow-wrap: anywhere; }
+.ui-modal-body a { color: var(--brand-700); text-decoration: underline; }
+.ui-modal-body details { margin: var(--space-1) 0; }
+.ui-modal-body section { margin: var(--space-2) 0; }
+.ui-modal-body label { display: grid; gap: var(--space-1); margin-top: var(--space-1h); font-size: var(--text-sm); font-weight: var(--weight-medium); }
+.ui-modal-body label.lifecycle-check { display: flex; align-items: flex-start; gap: var(--space-1); font-weight: var(--weight-regular); }
+.ui-modal-body label.lifecycle-check input { width: auto; flex: none; margin-top: var(--space-half); }
+.ui-modal-body input[type="text"], .ui-modal-body input:not([type]) { width: 100%; min-height: var(--tap-target); padding: 0 var(--space-1h); border: 1px solid var(--color-border-strong); border-radius: var(--radius); font-size: var(--text-base); background: var(--color-surface); color: var(--color-text); }
+.ui-modal-body .lifecycle-warning { padding: var(--space-1); background: var(--warning-bg); color: var(--warning-text); border: 1px solid var(--warning-border); border-radius: var(--radius-sm); }
+
+/* ---------- Pin / save panel: opens right under its button instead of floating away (Stage 3, A3) ---------- */
+.analyst-result-card .save-chart-control { position: relative; }
+.analyst-result-card .save-chart-panel { top: calc(100% + var(--space-1)); bottom: auto; left: 0; right: auto; }
+@media (max-width: 699px) { .analyst-result-card .save-chart-panel { position: relative; top: auto; left: auto; } }
+
+/* Menu (Stage 3): "more actions" popover; real buttons/links, no hover-only behaviour. */
+.ui-menu { position: relative; display: inline-block; }
+.ui-menu-list { position: fixed; z-index: 40; min-width: 220px; max-width: calc(100vw - 2 * var(--gutter)); display: flex; flex-direction: column; padding: var(--space-half); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); }
+.app .ui-menu-item { display: flex; align-items: center; min-height: 40px; padding: var(--space-1) var(--space-1h); border: 0; border-radius: var(--radius-sm); background: transparent; color: var(--color-text); font: inherit; font-size: var(--text-body); text-align: left; text-decoration: none; cursor: pointer; width: 100%; }
+.app .ui-menu-item:hover, .app .ui-menu-item:focus-visible { background: var(--brand-50); outline: 2px solid transparent; }
+.app .ui-menu-item:focus-visible { box-shadow: inset 0 0 0 2px var(--brand-600); }
+.app .ui-menu-item[aria-disabled="true"] { color: var(--color-text-muted); cursor: not-allowed; }
+.app .ui-menu-item.ui-menu-danger { color: var(--danger-text); }
+
+/* Ask answer card (Stage 3): one primary action, a menu for the rest, details in tabs. */
+.app .analyst-result-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); margin: var(--space-2) 0; }
+.app .result-details { margin-top: var(--space-2); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-1) var(--space-2); background: var(--color-surface); }
+.app .result-details > summary { min-height: 40px; display: flex; align-items: center; font-weight: var(--weight-bold); cursor: pointer; }
+.app .result-detail-panel { padding: var(--space-2) 0; min-width: 0; overflow-x: auto; }
+.app .result-detail-panel .calculation-details ol { margin: 0 0 var(--space-2); padding-left: var(--space-3); }
+.app .result-secondary-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); margin-top: var(--space-2); }
+.ui-modal-footer .save-sentence { flex: 1 1 100%; margin: 0 0 var(--space-half); color: var(--color-text-muted); font-size: var(--text-sm); text-align: left; }
+.app .ui-modal-body details { margin-top: var(--space-1); }
+
+/* Reserved space for a future account menu (Stage 3 readiness). Empty today, so it renders nothing and adds no spacing. */
+.account-slot:empty { display: none; }
+
+/* Home (Stage 3): the question box leads the page. */
+.app .home-ask { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-3); box-shadow: var(--shadow-sm); display: grid; gap: var(--space-2); }
+.app .home-ask h2 { margin: 0; font-size: var(--text-xl); }
+.app .home-ask-form { display: flex; gap: var(--space-1); flex-wrap: wrap; }
+.app .home-ask-form input[type="text"] { flex: 1 1 280px; min-height: 48px; padding: 0 var(--space-2); font-size: var(--text-base); border: 1px solid var(--color-border-strong); border-radius: var(--radius); background: var(--color-surface); color: var(--color-text); }
+.app .home-ask-form input[type="text"]::placeholder { font-style: italic; color: var(--neutral-500); }
+.app .home-ask-form .button { min-height: 48px; }
+.app .home-suggestions { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+.app .home-dashboard-list li > div { display: grid; gap: var(--space-half); min-width: 0; }
+.app .home-dashboard-list .ui-chip { justify-self: start; }
+
+/* Datasets (Stage 3): table first, preview below. */
+.app .datasets-stack { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-2); min-width: 0; }
+.app .dataset-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-1) var(--space-2); }
+.app .dataset-filters { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+.app .dataset-table th.dataset-name-cell { font-weight: var(--weight-regular, 400); background: transparent; white-space: normal; text-align: left; border-bottom: 1px solid var(--color-border); min-width: 200px; }
+.app .dataset-table tbody th { color: var(--color-text); }
+.app .dataset-table tr.selected { background: var(--brand-50); }
+.app .dataset-table tr.archived { color: var(--color-text-muted); }
+.app .dataset-table button.dataset { display: grid; gap: var(--space-half); width: 100%; min-height: var(--tap-target); padding: var(--space-half) var(--space-1); border: 0; border-radius: var(--radius-sm); background: transparent; text-align: left; font: inherit; color: inherit; cursor: pointer; box-shadow: none; }
+.app .dataset-table button.dataset:hover { background: var(--brand-50); }
+.app .dataset-table button.dataset:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 1px; }
+.app .dataset-table .dataset-full-name { font-weight: var(--weight-bold); overflow-wrap: anywhere; white-space: normal; }
+.app .dataset-table .dataset-file-name { color: var(--color-text-muted); overflow-wrap: anywhere; }
+.app .dataset-table .dataset-check-cell { width: 40px; padding-right: 0; }
+.app .dataset-table .dataset-check-cell input { width: 24px; height: 24px; margin: var(--space-half); }
+.app .dataset-table .dataset-actions-cell { text-align: right; white-space: nowrap; width: 1%; }
+.app .dataset-table td { vertical-align: middle; }
+.app .dataset-health { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-half) var(--space-2); }
+.app .dataset-health p { margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+.app .dataset-table-frame { max-height: 320px; overflow-y: auto; }
+@media (max-width: 600px) { .app .dataset-table-frame { max-height: 220px; } }
+
+/* Dashboards (Stage 3) */
+.app .dashboard-manager { display: grid; gap: var(--space-1); grid-template-columns: minmax(0, 1fr); align-items: start; }
+.app .dashboard-manager-actions, .app .dashboard-edit-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); }
+.app .dashboard-source { margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+.app .widget-provenance { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); color: var(--color-text-muted); font-size: var(--text-sm); }
+.app .tile-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: var(--space-1); }
+.app .library-row { display: grid; gap: var(--space-half); padding: var(--space-1) 0; border-bottom: 1px solid var(--color-border); }
+.app .library-add { display: grid; gap: var(--space-1); margin-bottom: var(--space-2); }
+.app .dashboard-heading .ui-chip { margin-top: var(--space-half); }
+.app .dataset-list > summary { min-height: var(--tap-target); display: flex; align-items: center; font-weight: var(--weight-bold); cursor: pointer; }
+.app .dataset-list { display: grid; gap: var(--space-1); }
+.app .datasets-stack > *, .app .dataset-list, .app .dataset-management, .app .dataset-toolbar { min-width: 0; max-width: 100%; }
+dialog.ui-modal { overflow: hidden; }
+.ui-modal-body { overflow-x: auto; min-width: 0; }
+.app .dataset-management { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-1); }
+.app .dataset-management > * { min-width: 0; }
+.ui-menu > .button svg { flex: none; }
+.app .dataset-table .dataset-actions-cell { min-width: 64px; }
+.app .dataset-table .dataset-actions-cell .button { min-width: var(--tap-target); padding-inline: var(--space-1); }
+.app .detail-panel .dataset-health { padding-inline: var(--space-2); }
+
+/* Stage 3 final round: visual clean-up */
+@media (min-width: 601px) {
+  .app .dataset-list > summary { display: none; }            /* the table is the heading on wide screens */
+  .app .detail-heading.only-mobile { display: none; }       /* one dataset: its row above already names it */
+}
+@media (max-width: 600px) {
+  /* Phones: name the previewed dataset in one compact line (the heading was hidden before). */
+  .app .datasets-stack .detail-heading { display: block; }
+  .app .datasets-stack .detail-heading .file-icon, .app .datasets-stack .detail-heading .detail-name p, .app .datasets-stack .detail-heading + p { display: none; }
+  .app .datasets-stack .detail-heading h2 { font-size: var(--text-base); margin: 0; overflow-wrap: anywhere; }
+  /* Top bar: the project name keeps its words; the dataset name may take two lines instead of three. */
+  .project-switcher { flex: 0 1 auto; max-width: 52%; }
+  .app .main > header .global-dataset-selector { flex: 1 1 0; }
+  .app .main > header .global-dataset-selector .dataset-trigger .dataset-name { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  /* Ask: suggestions line up as one full-width column; the reassurance does not wrap. */
+  .app .analyst-chips > .button { width: 100%; justify-content: flex-start; text-align: left; }
+}
+.app .composer-actions > span { white-space: nowrap; }
+.app .composer-actions { flex-wrap: wrap; row-gap: var(--space-1); }
+.app .home-content-grid { align-items: stretch; }
+.app .home-content-grid > .home-section { height: 100%; }
+.app .tile-toolbar { justify-content: space-between; }
+.app .tile-toolbar > label { flex: 1 1 auto; }
+/* Phones: the Datasets intro sentence goes, so the preview's first rows stay on the first screen. */
+@media (max-width: 600px) { .app .datasets-header p { display: none; } }
+
+/* Currency (owner default) */
+.app .dataset-currency { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-half) var(--space-2); padding-inline: var(--space-2); }
+.app .dataset-currency p, .app .currency-note { margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+
+/* Predictions: on phones the six steps become a compact numbered row (the step's name stays for screen readers and is the heading below). */
+@media (max-width: 640px) {
+  .app nav.ml-stepper { display: flex; flex-wrap: nowrap; gap: var(--space-1); overflow: hidden; }
+  .app nav.ml-stepper button { flex: 1 1 0; min-width: 0; min-height: var(--tap-target); padding: 0; justify-content: center; text-align: center; }
+  .app nav.ml-stepper .ml-step-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+.app .ml-plain { font-size: var(--text-base); }
+
+/* Business definitions: one row per column (description + currency) */
+.app .knowledge-column-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(160px, 240px); gap: var(--space-1) var(--space-2); align-items: end; }
+.app .knowledge-currency-choice { display: grid; gap: var(--space-half); min-width: 0; }
+@media (max-width: 600px) { .app .knowledge-column-row { grid-template-columns: minmax(0, 1fr); } }
+/* Phones: the quality counts and the currency line shrink to their buttons so the preview stays on the first screen. */
+@media (max-width: 600px) {
+  .app .detail-panel .dataset-health p, .app .dataset-currency p { display: none; }
+  .app .detail-panel .dataset-health, .app .dataset-currency { display: inline-flex; padding-inline: var(--space-2); }
+}
+
+/* Top bar: project and dataset sit together on the left, Menu on the right. */
+@media (min-width: 601px) {
+  .app .main > header { justify-content: flex-start; gap: var(--space-2); }
+  .app .main > header .breadcrumb { display: none; }
+  .app .main > header .global-dataset-selector { flex: 0 1 380px; min-width: 0; }
+  .app .main > header .account-slot:empty { display: none; }
+  .app .main > header .header-right { margin-left: auto; }
+}
+
+/* Dashboard tiles: the actions menu sits beside the title; a lone tile is centred. */
+.app .dashboard-widget { position: relative; }
+.app .dashboard-widget .tile-toolbar:not(:has(label)) { position: absolute; top: var(--space-1h); right: var(--space-1h); margin: 0; width: auto; }
+.app .dashboard-widget:not(:has(.drag-handle)) .widget-header h2 { padding-right: calc(var(--tap-target) + var(--space-1)); }
+.app .dashboard-grid > :only-child { grid-column: 1 / -1 !important; justify-self: center; width: 100%; max-width: 520px; }
+
+/* Quiet confirmation line instead of a blue alert box. */
+.app .types-remembered { display: flex; align-items: center; gap: var(--space-1); margin: 0 0 var(--space-1); padding: 0; border: 0; background: none; color: var(--color-text-muted); font-size: var(--text-sm); }
+.app .types-remembered::before { content: "✓"; flex: none; display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--success-bg); color: var(--success-text); font-weight: 700; font-size: var(--text-sm); }
+
+/* Owner-confirmed units (money / percentage / neither) in the Ask column card. */
+.app .unit-choices { margin: var(--space-2) 0 0; padding: 0; border: 0; display: grid; gap: var(--space-1); }
+.app .unit-choices legend { padding: 0; font-weight: 600; }
+.app .unit-choices p { margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+.app .unit-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: var(--space-1); align-items: center; }
+.app .unit-row small { color: var(--color-text-muted); }
+@media (max-width: 600px) { .app .unit-row { grid-template-columns: minmax(0, 1fr) auto; } .app .unit-row small { grid-column: 1 / -1; } }
+
+/* Type picker: wide enough for "Decimal number" and "Date and time" (they were cut off). */
+.app .type-column { grid-template-columns: minmax(0, 1fr) 170px; }
+@media (max-width: 620px) { .app .type-column { grid-template-columns: minmax(0, 1fr) 150px; } }
+
+/* Home: the sections are separated by the same gap. Business definitions: the unit drop-down says what it is on phones. */
+.app .home-page > * + * { margin-top: var(--space-3); }
+@media (max-width: 600px) { .app .knowledge-currency-choice::before { content: "Shown as"; display: block; margin-bottom: var(--space-half); font-size: var(--text-sm); color: var(--color-text-muted); } }
+
+/* Business definitions: one card per tab, so it uses the full width; the name sits above its description box. */
+.app .knowledge-workspace .knowledge-grid { grid-template-columns: minmax(0, 1fr); }
+.app .knowledge-column-row > label { display: grid; gap: var(--space-half); margin-top: 0; }
+.app .knowledge-column-row > label input { width: 100%; }
+
+@media (max-width: 600px) { .app .knowledge-column-row { margin-bottom: var(--space-1h); } }
+
+/* Placeholder for the dataset selector while datasets load: same height as the real control, so nothing jumps. */
+.app .dataset-selector-placeholder { min-height: 60px; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); }
+@media (max-width: 600px) { .app .main > header .dataset-selector-placeholder { flex: 1 1 0; min-width: 0; order: 4; } }
+
+/* Placeholder chips while Home suggestions load, so the cards below do not jump. */
+.app .home-suggestion-placeholder { display: block; min-height: 48px; min-width: 200px; border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-surface); }
+@media (max-width: 600px) { .app .home-suggestion-placeholder { flex: 1 1 100%; } }
+
+/* While the column types load, hold the height of the collapsed "Check column types" row so the page does not jump. */
+.app .types-checking { display: flex; align-items: center; gap: var(--space-1); min-height: 45px; margin: 0; padding: 0; }
+
+/* Stage 4 leftovers: the column-type list is not a small scroll box on phones; the selected Datasets row has one even border. */
+@media (max-width: 620px) { .app .type-column-list { max-height: none; overflow: visible; } }
+.app .dataset-table th.dataset-name-cell { border-bottom-color: var(--neutral-50); }
+
+/* Stage 4: Predictions in three guided steps. */
+.app .ml-setup-grid.ml-single { grid-template-columns: minmax(0, 1fr); }
+.app .ml-stages button { min-height: var(--tap-target); }
+.app .ml-about > summary, .app .ml-history > summary, .app .ml-compare > summary { cursor: pointer; font-weight: 600; }
+.app .ml-about, .app .ml-history { margin-top: var(--space-2); }
+.app .ml-workspace-selection { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); padding: var(--space-2); margin-bottom: var(--space-2); }
+.app .ml-workspace-selection .ml-warning { flex: 1 1 100%; margin: 0; }
+.app .ml-registry td:last-child { min-width: 12rem; overflow-wrap: anywhere; }
+.app .ml-target-distribution { margin-top: var(--space-1); }
+.app .ml-warning ul { margin: var(--space-1) 0; padding-left: var(--space-3); }
+
+.app .ml-job, .app .ml-wizard-actions { margin-top: var(--space-2); }
+#ml-train { margin-top: var(--space-1); }
+
+/* Stage 4: aligned column rows (a hint under one select no longer shifts the others) and wrapping table headings. */
+.app .knowledge-column-row { align-items: start; }
+.app .knowledge-column-row > label { align-self: start; }
+.app .ml-summary th { white-space: normal; }
+
+/* Placeholders read as hints, not typed text (metric calculation, notes). */
+.app .knowledge-definitions textarea::placeholder, .app .knowledge-definitions input::placeholder { font-style: italic; color: var(--neutral-500); }
+
+/* The data status keeps its own line so its words changing never move the cards below. */
+.app .ml-data-status { margin: 0; min-height: 1.6em; font-weight: 600; }
+.app .ml-workspace-selection .active-dataset-label { margin: 0; flex: 1 1 100%; }
+
+/* Stage 5: Admin pages */
+.admin-purpose { margin: 0 0 var(--space-2); color: var(--color-text-muted); max-width: 70ch; }
+.admin-backup-page, .admin-history-page { display: grid; gap: var(--space-2); }
+.admin-code { display: block; padding: var(--space-1) var(--space-1h); background: var(--color-surface-muted); border: 1px solid var(--color-border-strong); border-radius: var(--radius); overflow-x: auto; white-space: pre; font-family: var(--font-mono, monospace); }
+.admin-coverage, .admin-recommendation { padding: var(--space-1h) var(--space-2); background: var(--color-surface-muted); border: 1px solid var(--color-border); border-radius: var(--radius); }
+.admin-history-filters { display: flex; flex-wrap: wrap; gap: var(--space-1h); align-items: end; }
+.evaluation-why { display: grid; gap: var(--space-1h); }
+.evaluation-why-actions { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+.evaluation-breakdown-group > summary { cursor: pointer; font-weight: 600; padding: var(--space-1) 0; }
+.admin-hidden-card { display: grid; gap: var(--space-2); justify-items: start; }
+
+/* Stage 6: the three steps of a verified example */
+.example-steps { margin: 0 0 var(--space-2); padding-left: var(--space-3); list-style: decimal; display: grid; gap: var(--space-half); font-weight: 600; }
+.example-check-result { margin: 0; }
+
+/* Accounts A3: sign-in, password change, session dialog */
+.auth-page { min-height: 100vh; display: grid; place-items: center; padding: var(--space-3); background: var(--color-surface-muted); }
+.auth-card { width: min(100%, 28rem); display: grid; gap: var(--space-2); }
+.auth-brand { margin: 0; font-weight: var(--weight-bold); color: var(--brand-700); }
+.auth-form { display: grid; gap: var(--space-1); }
+.auth-form label { font-weight: 600; }
+.auth-form input { width: 100%; min-height: var(--space-5); padding: var(--space-1) var(--space-1h); border: 1px solid var(--neutral-200); border-radius: var(--radius-sm); background: var(--neutral-0); color: inherit; font: inherit; }
+.auth-form input[aria-invalid="true"] { border-color: var(--danger-border); }
+.auth-actions { display: flex; flex-wrap: wrap; gap: var(--space-1); align-items: center; }
+.auth-error { margin: 0; }
+
+/* Accounts A4 */
+.auth-card-inline { width: min(100%, 28rem); }
+.auth-form select { width: 100%; }
+.auth-secret { display: block; padding: var(--space-1) var(--space-1h); border: 1px solid var(--neutral-200); border-radius: var(--radius-sm); background: var(--color-surface-muted); font-family: var(--font-mono); overflow-wrap: anywhere; user-select: all; }
+.auth-codes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-half) var(--space-2); padding: var(--space-1h); margin: 0; list-style: none; border: 1px solid var(--neutral-200); border-radius: var(--radius-sm); background: var(--color-surface-muted); font-family: var(--font-mono); }
+.people-table td, .people-table th { white-space: nowrap; }
+
+/* UI-CLEAN step 1: slim rail, quiet top bar, Home */
+.app .sidebar .nav-group { margin: 0; }
+.app .sidebar nav { margin-top: var(--space-2); }
+.ui-menu-heading { display: flex; align-items: center; gap: var(--space-1); margin: 0; padding: var(--space-1) var(--space-2) var(--space-half); font-weight: 600; color: var(--neutral-600); font-size: var(--text-sm); }
+.app .main > header { gap: var(--space-2); }
+.app .main > header .project-switcher { flex: 0 1 auto; }
+.app .main > header .header-right { margin-left: auto; }
+
+.app .home-page { max-width: 56rem; margin-inline: auto; }
+.app .home-ask { gap: var(--space-2); }
+.app .home-ask h2 { font-size: var(--text-xl); }
+.app .home-ask-box { display: flex; flex-direction: column; gap: var(--space-1); padding: var(--space-2); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); box-shadow: var(--shadow-sm); }
+.app .home-ask-box:focus-within { border-color: var(--accent); }
+.app .home-ask-box input[type="text"] { width: 100%; min-height: 3.5rem; padding: 0; border: 0; background: transparent; font-size: var(--text-lg); box-shadow: none; }
+.app .home-ask-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-1); }
+.app .home-ask-bar .global-dataset-selector { flex: 0 1 22rem; min-width: 0; }
+.app .home-ask-bar .dataset-trigger { width: 100%; min-height: var(--tap-target); border-color: transparent; background: var(--neutral-100); }
+.app .home-ask-bar .button { min-height: var(--tap-target); }
+.app .home-suggestions { align-items: center; flex-wrap: nowrap; }
+.app .home-suggestions-label { flex: none; color: var(--neutral-600); font-size: var(--text-sm); }
+.app .home-suggestions .button { flex: 0 1 auto; min-width: 0; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 600px) { .app .home-suggestions { flex-wrap: wrap; } .app .home-suggestions .button { max-width: 100%; } .app .home-ask-bar .global-dataset-selector { flex-basis: 100%; } }
+.app .home-content-grid { align-items: start; }
+.app .home-content-grid > .home-section { height: auto; }
+.app .home-row-list { list-style: none; margin: 0; padding: 0; display: grid; }
+.app .home-row-list > li + li { border-top: 1px solid var(--color-border); }
+.app .home-row { position: relative; display: flex; align-items: center; gap: var(--space-2); padding: var(--space-1) var(--space-half); border-radius: var(--radius); }
+.app .home-row:hover:not(.home-row-static) { background: var(--neutral-100); }
+.app .home-row-hit { padding: 0; border: 0; background: transparent; color: inherit; font: inherit; font-weight: 600; text-align: left; cursor: pointer; overflow-wrap: anywhere; }
+.app .home-row-hit::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); }   /* the whole row is the click target */
+.app .home-row-main { display: grid; gap: var(--space-half); min-width: 0; flex: 1; justify-items: start; }
+.app .home-row-main strong { overflow-wrap: anywhere; }
+.app .home-row-meta { color: var(--neutral-600); font-size: var(--text-sm); }
+.app .home-ask { display: grid; grid-template-columns: minmax(0, 1fr); background: transparent; border: 0; box-shadow: none; padding: 0; }
+.app .home-ask-box { box-shadow: var(--shadow-sm); }
+.app .home-page { margin-inline: 0; }
+.app .home-suggestions .button { display: block; text-align: left; }
+.app .home-ask-bar .global-dataset-selector { order: 0; }
+.app .home-ask-bar .button { order: 1; margin-left: auto; }
+@media (max-width: 600px) { .app .home-ask-bar .button { width: 100%; margin-left: 0; justify-content: center; } }
+
+/* ===== PRODUCT-POLISH P1: Ask (chat style), Datasets (master-detail), shared page rhythm ===== */
+/* One left edge and one width for every page. */
+.app main#main-content > * { max-width: 64rem; }
+.app .ui-page-header { margin-bottom: var(--space-2); }
+
+/* Ask: one column, question first */
+.app .analyst-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-2); max-width: 56rem; }
+.app .analyst-conversation { display: grid; gap: var(--space-2); min-width: 0; }
+.app .analyst-conversation > * { min-width: 0; }
+.app .question-composer { padding: var(--space-2); gap: var(--space-1); border-radius: var(--radius-lg); }
+.app .question-composer textarea { border: 0; padding: 0; font-size: var(--text-lg); background: transparent; box-shadow: none; resize: vertical; min-height: 3.5rem; }
+.app .question-composer .composer-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-1); }
+.app .question-composer .composer-actions .global-dataset-selector { flex: 0 1 22rem; min-width: 0; }
+.app .question-composer .composer-actions .dataset-trigger { width: 100%; min-height: var(--tap-target); border-color: transparent; background: var(--neutral-100); }
+.app .question-composer .composer-actions > .button { margin-left: auto; min-height: var(--tap-target); }
+.app .composer-note { margin: 0; display: flex; align-items: center; gap: var(--space-half); color: var(--neutral-600); font-size: var(--text-sm); }
+.app .sharing-notice { border: 0; padding: 0; background: transparent; }
+.app .sharing-notice > summary, .app .type-settings > summary, .app .result-details > summary, .app .analyst-history > summary { list-style: none; cursor: pointer; color: var(--accent); font-size: var(--text-sm); font-weight: 500; padding: var(--space-half) 0; min-height: 0; border: 0; background: transparent; display: inline-flex; align-items: center; }
+.app .sharing-notice > summary::-webkit-details-marker, .app .type-settings > summary::-webkit-details-marker, .app .result-details > summary::-webkit-details-marker, .app .analyst-history > summary::-webkit-details-marker { display: none; }
+.app .sharing-notice > summary:hover, .app .type-settings > summary:hover, .app .result-details > summary:hover { text-decoration: underline; }
+.app .analyst-context { position: static; background: transparent; border: 0; padding: 0; box-shadow: none; display: block; }
+.app .analyst-context .type-settings { border: 0; padding: 0; background: transparent; }
+.app .analyst-context .type-settings[open] { border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-surface); padding: var(--space-2); }
+.app .question-heading { margin: 0; font-size: var(--text-xl); font-weight: 600; overflow-wrap: anywhere; }
+.app .analyst-result-card { padding: var(--space-3); display: grid; gap: var(--space-2); }
+.app .analyst-result-card .insight-heading { display: block; }
+.app .analyst-result-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); padding-top: var(--space-1); border-top: 1px solid var(--color-border); }
+.app .analyst-result-actions .analyst-feedback { display: inline-flex; gap: var(--space-half); }
+.app .analyst-result-actions .analyst-feedback .button { min-height: 0; padding: var(--space-half) var(--space-1); font-size: var(--text-sm); }
+.app .analyst-result-actions .viz-picker { margin-left: auto; display: inline-flex; align-items: center; gap: var(--space-1); font-size: var(--text-sm); color: var(--neutral-600); }
+.app .analyst-result-actions .viz-picker select { min-height: 0; padding: var(--space-half) var(--space-1); font-size: var(--text-sm); width: auto; }
+.app .result-details { border: 0; padding: 0; margin: 0; background: transparent; }
+.app .analyst-footnote { color: var(--neutral-600); font-size: var(--text-sm); }
+
+/* Datasets: clean table, no nested scroll box */
+.app .dataset-table-frame { max-height: none; overflow-y: visible; }
+.app .dataset-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); margin-bottom: var(--space-1); }
+.app .dataset-toolbar .show-archived { margin-left: auto; }
+.app .dataset-name-cell .status-chip, .app .dataset-name-cell .ui-chip { margin-left: var(--space-1); vertical-align: middle; }
+.app .dataset-health { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); color: var(--neutral-600); font-size: var(--text-sm); margin: 0; }
+.app .dataset-health p { margin: 0; }
+.app .dataset-health .health-count { color: var(--neutral-500); }
+.app .dataset-health .health-count.nonzero { color: var(--neutral-900); font-weight: 600; }
+.app .dataset-currency { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); color: var(--neutral-600); font-size: var(--text-sm); }
+.app .dataset-currency p { margin: 0; }
+.app .dataset-currency .button { min-height: 0; padding: var(--space-half) var(--space-1); font-size: var(--text-sm); }
+/* the editor's three bars become ONE toolbar row: Sort on the left, Edit mode on the right, version text muted underneath */
+.app .dataset-editor { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); }
+.app .dataset-editor > label { order: 1; margin-right: auto; display: inline-flex; align-items: center; gap: var(--space-1); font-size: var(--text-sm); }
+.app .dataset-editor > .edit-mode-toolbar { order: 2; margin-left: auto; display: inline-flex; gap: var(--space-1); }
+.app .dataset-editor > .editor-toolbar:not(.edit-mode-toolbar) { order: 3; flex-basis: 100%; color: var(--neutral-600); font-size: var(--text-sm); }
+.app .dataset-editor > .editor-toolbar:not(.edit-mode-toolbar) strong { font-weight: 400; }
+.app .dataset-editor > small { order: 3; color: var(--neutral-600); }
+.app .dataset-editor > .editor-scroll, .app .dataset-editor > .table-scroll, .app .dataset-editor > section, .app .dataset-editor > div:not(.editor-toolbar) { order: 4; flex-basis: 100%; min-width: 0; }
+@media (max-width: 600px) { .app .dataset-table .hide-narrow { display: none; } }
+.app .analyst-layout, .app .analyst-workspace > * { margin-inline: 0; }
+.app .analyst-conversation > .button { justify-self: start; }
+.app .detail-heading { display: flex; }
+.app .detail-heading .detail-name h2 { margin: 0; }
+.app .muted-date { color: var(--neutral-600); font-size: var(--text-sm); }
+.app .analyst-result-card { grid-template-columns: minmax(0, 1fr); }
+.app .analyst-result-card > * { min-width: 0; max-width: 100%; }
+@media (max-width: 600px) {
+  .app .dataset-toolbar { margin-bottom: 0; gap: var(--space-1); }
+  .app .dataset-health, .app .dataset-currency { gap: var(--space-half); }
+  .app .detail-panel { padding-block: var(--space-2); }
+  .app .detail-heading { margin-bottom: 0; }
+}
+.app .dataset-editor > .edit-mode-toolbar { flex: 0 0 auto; width: auto; }
+.app .dataset-editor > label { flex: 0 1 auto; min-width: 0; }
+.app .dataset-editor > label select { max-width: 11rem; }
+.app .dataset-editor > .editor-toolbar { padding: 0; border: 0; background: transparent; min-height: 0; margin: 0; }
+.app .dataset-editor > label select { max-width: 12rem; }
+.app .analyst-context .type-column-list, .app .type-column-list { max-height: none; overflow: visible; }
+.app .run-history { max-height: none; overflow: visible; }
+.app .home-sample-note { margin: 0; color: var(--neutral-600); font-size: var(--text-sm); }
+
+/* PRODUCT-POLISH P4 */
+.app .upload-progress { width: min(100%, 24rem); height: var(--space-1); accent-color: var(--accent); }
+.app .error-boundary { display: grid; gap: var(--space-1); justify-items: start; padding: var(--space-3); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); max-width: 40rem; }
+.app .error-boundary h2, .app .error-boundary p { margin: 0; }
+/* PRODUCT-POLISH P5: one logo */
+.app .brand { display: inline-flex; align-items: center; gap: var(--space-1); }
+.brand-logo { display: block; flex: none; }
+.auth-brand { display: inline-flex; align-items: center; gap: var(--space-1); }
+.brand-logo-bg { fill: var(--accent); }
+.brand-logo-mark { stroke: var(--color-surface); }
+
+/* P7: secondary panel next to Ask (past questions) and Datasets (Files). Wide: ~280px column. Narrow: a drawer. */
+.app .panel-layout { display: grid; grid-template-columns: 17.5rem minmax(0, 1fr); gap: var(--space-3); align-items: start; }
+.app .panel-layout.panel-collapsed { grid-template-columns: 2.75rem minmax(0, 1fr); }
+.app .panel-layout.panel-narrow { display: block; }
+.app .panel-narrow .panel-open { margin-bottom: var(--space-2); }
+.app .panel-main { min-width: 0; }
+.app .side-panel { position: sticky; top: var(--space-2); display: grid; gap: var(--space-2); max-height: calc(100vh - 7rem); overflow-y: auto; padding: var(--space-2); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); }
+.app .panel-collapsed .side-panel { padding: var(--space-half); }
+.app .panel-toggle, .app .icon-button { display: inline-flex; align-items: center; justify-content: center; min-width: var(--tap-target); min-height: var(--tap-target); padding: 0; border: 0; border-radius: var(--radius); background: transparent; color: var(--color-text-muted); cursor: pointer; }
+.app .panel-toggle { justify-self: end; }
+.app .panel-toggle:hover, .app .icon-button:hover:not(:disabled) { background: var(--neutral-100); color: var(--color-text); }
+.app .icon-button:disabled { opacity: 0.5; cursor: not-allowed; }
+.app .panel-primary { width: 100%; justify-content: center; }
+.app .panel-heading, .app .files-head h2 { display: flex; align-items: center; justify-content: space-between; margin: 0; font-size: var(--text-lg); }
+.app .panel-heading span { color: var(--color-text-subtle); font-size: var(--text-sm); font-weight: var(--weight-regular); }
+.app .ask-panel, .app .files-panel { display: grid; gap: var(--space-1h); min-width: 0; }
+.app .history-group { display: grid; gap: var(--space-half); }
+.app .history-group h3 { margin: var(--space-1) 0 0; color: var(--color-text-subtle); font-size: var(--text-sm); font-weight: var(--weight-bold); }
+.app .ask-panel .run-history { display: grid; gap: var(--space-half); }
+.app .ask-panel .history-item { display: grid; gap: var(--space-half); width: 100%; padding: var(--space-1) var(--space-1h); text-align: left; border: 1px solid transparent; border-radius: var(--radius); background: transparent; color: var(--color-text); cursor: pointer; }
+.app .ask-panel .history-item:hover:not(:disabled) { background: var(--neutral-50); }
+.app .ask-panel .history-item.chosen { background: var(--brand-50); border-color: var(--brand-300); }
+.app .ask-panel .history-item > span { overflow-wrap: anywhere; font-weight: var(--weight-medium); }
+.app .ask-panel .history-item small { color: var(--color-text-muted); font-size: var(--text-sm); }
+.app .files-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-1); }
+.app .files-tools { display: flex; gap: var(--space-half); }
+.app .files-project .project-trigger { width: 100%; }
+.app .files-panel .dataset-toolbar { display: grid; gap: var(--space-half); }
+.app .files-panel .dataset-table thead th:not(.dataset-check-cell), .app .files-panel .dataset-table .num, .app .files-panel .dataset-table .hide-narrow { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.app .files-panel .dataset-table { width: 100%; }
+.app .files-panel .dataset-table .dataset-actions-cell { width: var(--tap-target); min-width: 0; padding-inline: 0; }
+.app .files-panel .dataset-table .dataset-check-cell { width: var(--space-5); }
+.app .files-panel .dataset-name-cell { min-width: 0; width: 100%; }
+.app .files-panel .dataset-dims { display: block; color: var(--color-text-muted); font-size: var(--text-sm); }
+.app .files-panel .dataset-name-cell .dataset { max-width: 100%; text-align: left; overflow-wrap: anywhere; }
+.app .ask-panel .asked-count { white-space: nowrap; }
+.app .files-panel .dataset-table tr.selected { background: var(--brand-50); }
+.app .files-panel .dataset-full-name { overflow-wrap: anywhere; }
+.app .side-panel .panel-toggle { min-width: var(--space-4); min-height: var(--space-4); margin-bottom: calc(var(--space-1) * -1); }
+.app .panel-layout, .app .analyst-workspace > .panel-layout { min-width: 0; max-width: 100%; }
+.app .panel-main > * { min-width: 0; max-width: 100%; }
+@media (max-width: 959px) {
+  .app .panel-layout, .app .panel-layout.panel-collapsed { display: block; }
+  .app .panel-layout > .side-panel { display: none; }
+  .app .panel-layout > .side-panel.is-open { display: grid; position: fixed; inset: 0 auto 0 0; z-index: 60; width: min(22rem, 92vw); max-height: none; overflow-y: auto; align-content: start; border-radius: 0; box-shadow: var(--shadow-lg); }
+  .app .panel-backdrop { position: fixed; inset: 0; z-index: 59; border: 0; background: var(--color-overlay); cursor: default; }
+}
+.app .panel-close { justify-self: end; display: inline-flex; align-items: center; justify-content: center; min-width: var(--tap-target); min-height: var(--tap-target); border: 0; border-radius: var(--radius); background: transparent; color: var(--color-text-muted); cursor: pointer; }
+.app .panel-close:hover { background: var(--neutral-100); color: var(--color-text); }
+.app .panel-open { margin-bottom: var(--space-2); }
+.app .files-panel .ui-table-frame, .app .files-panel .table-scroll { overflow: visible; }
+.app .files-panel .ui-menu-panel { z-index: 5; }
+.app .files-panel .dataset-actions-cell { position: relative; z-index: 2; }
+.app .files-panel .dataset-table thead th.dataset-check-cell { display: flex; align-items: center; gap: var(--space-1); padding: var(--space-half) var(--space-1h); font-size: var(--text-sm); font-weight: var(--weight-regular); color: var(--color-text-muted); text-align: left; }
+.app .files-panel .dataset-table thead th.dataset-check-cell::after { content: "Select all"; }
+.app .panel-layout[hidden] { display: none; }
+.app .files-panel .dataset-table th.dataset-name-cell { min-width: 0; width: 100%; padding-inline: var(--space-1h); }
+.app .files-panel .dataset-table td.dataset-actions-cell { min-width: 0; width: var(--tap-target); padding-inline: 0; }
+.app .files-panel .ui-table-frame { max-width: 100%; }
+
+/* Predictions: "What each number means" (plain-language list under the metrics) */
+.ml-meanings dl { display: grid; gap: var(--space-2, 8px); margin: 0; }
+.ml-meanings dt { font-weight: 600; }
+.ml-meanings dd { margin: 0 0 var(--space-2, 8px); max-width: 70ch; }
+
+/* Predictions: plain reading of one prediction result */
+.ml-prediction-meaning { margin: var(--space-2, 8px) 0 var(--space-3, 16px); }
+.ml-prediction-meaning p { max-width: 70ch; margin: 0 0 var(--space-1, 4px); }
+
+/* Predictions: chart readings and prediction-form help */
+.ml-plot-reading { max-width: 70ch; margin: var(--space-1, 4px) 0 var(--space-2, 8px); }
+.ml-howto { margin: var(--space-2, 8px) 0; }
+.ml-howto dt { font-weight: 600; }
+.ml-howto dd { margin: 0 0 var(--space-1, 4px); max-width: 70ch; }
+.ml-plot-insight { font-weight: 500; }

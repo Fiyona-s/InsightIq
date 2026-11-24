@@ -1,0 +1,19 @@
+{
+  "uncompressed_bytes_same_snapshots": 62898176,
+  "uncompressed_mib": 59.984,
+  "phase4_prior_measured_bytes": 63422464,
+  "dataset": "disposable synthetic retail-shaped data, not original customer rows",
+  "rows": 2400,
+  "columns": 12,
+  "csv_bytes": 214981,
+  "revisions": 20,
+  "snapshot_limit": 20,
+  "snapshot_bytes": 8221228,
+  "snapshot_mib": 7.84,
+  "smallest_snapshot_bytes": 211063,
+  "largest_snapshot_bytes": 437055,
+  "live_duckdb_bytes": 3944448,
+  "all_snapshot_hashes_verified": true,
+  "live_ai_calls": 0,
+  "elapsed_seconds": 56.92
+}

@@ -1,0 +1,23 @@
+{
+  "changed_files_from_recovery_manifest": [
+    "frontend/playwright.analyst.config.ts",
+    "frontend/e2e/automl.spec.ts",
+    "frontend/e2e/phase9-smoke.spec.ts",
+    "frontend/e2e/00-phase3-navigation.spec.ts",
+    "frontend/src/workspace.css",
+    "frontend/src/components/AutoMLSummary.test.tsx",
+    "frontend/src/components/AutoMLStudio.tsx",
+    "frontend/src/components/AutoMLResults.tsx",
+    "frontend/src/components/AutoMLStudio.test.tsx",
+    "frontend/src/lib/automlPresentation.ts"
+  ],
+  "new_files": [
+    "frontend/e2e/12-product-stage6-models.spec.ts",
+    "frontend/scripts/product-stage6-readonly-review.mjs",
+    "docs/PRODUCT_STAGE6_REVIEW.md",
+    "docs/product-stage6/"
+  ],
+  "other_modified": [
+    "README.md"
+  ]
+}

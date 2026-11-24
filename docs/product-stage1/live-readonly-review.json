@@ -1,0 +1,34 @@
+{
+  "url": "http://localhost:8080",
+  "checks": [
+    {
+      "route": "overview",
+      "width": 1280,
+      "headingTop": 92.5,
+      "headerBottom": 68.5,
+      "selectorBottom": 59.5,
+      "documentOverflow": false
+    },
+    {
+      "route": "settings",
+      "width": 768,
+      "headingTop": 113.5,
+      "headerBottom": 89.5,
+      "selectorBottom": 80.5,
+      "documentOverflow": false
+    },
+    {
+      "route": "traces",
+      "width": 390,
+      "headingTop": 140.5,
+      "headerBottom": 116.5,
+      "selectorBottom": 107.5,
+      "documentOverflow": false
+    }
+  ],
+  "nonReadRequests": [],
+  "errors": [],
+  "preservedKPI": "₹83,79,680.76",
+  "duplicateBadges": 2,
+  "originalScreenshotsCreated": 0
+}

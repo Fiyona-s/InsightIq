@@ -1,0 +1,9 @@
+typecheck exit 0
+lint exit 0
+build exit 0
+unit exit 0
+backend exit 1
+e2e exit 0
+smoke exit 0
+e2e-hosted exit 0
+DONE

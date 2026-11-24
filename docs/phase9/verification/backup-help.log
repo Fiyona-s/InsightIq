@@ -1,0 +1,8 @@
+usage: backup_workspace.py [-h] [--container CONTAINER] [--api API]
+                           --destination DESTINATION
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --container CONTAINER
+  --api API
+  --destination DESTINATION

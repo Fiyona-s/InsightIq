@@ -1,0 +1,29 @@
+{
+  "new": [
+    "frontend/scripts/product-stage4-readonly-review.mjs",
+    "frontend/e2e/10-product-stage4-ask.spec.ts"
+  ],
+  "modified": [
+    "frontend/playwright.analyst.config.ts",
+    "frontend/e2e/analyst-phase2.spec.ts",
+    "frontend/e2e/01-phase4-datasets.spec.ts",
+    "frontend/e2e/phase4.spec.ts",
+    "frontend/e2e/08-product-stage2-home.spec.ts",
+    "frontend/e2e/analyst.spec.ts",
+    "frontend/e2e/dataset-editor.spec.ts",
+    "frontend/e2e/currency.spec.ts",
+    "frontend/e2e/02-phase5-knowledge.spec.ts",
+    "frontend/e2e/phase9-smoke.spec.ts",
+    "frontend/e2e/currency-legacy.spec.ts",
+    "frontend/e2e/ui.ts",
+    "frontend/e2e/03-phase6-dashboards.spec.ts",
+    "frontend/e2e/00-phase3-navigation.spec.ts",
+    "frontend/src/workspace.css",
+    "frontend/src/components/Phase3.test.tsx",
+    "frontend/src/components/Analyst.test.tsx",
+    "frontend/src/components/Analyst.tsx",
+    "frontend/src/components/AnalystResultCard.tsx",
+    "frontend/src/components/SaveChartDialog.tsx"
+  ],
+  "removed": []
+}

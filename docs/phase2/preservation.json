@@ -1,0 +1,41 @@
+{
+  "original_dataset_count": 13,
+  "current_dataset_count": 13,
+  "ids_original_names_row_counts_unchanged": true,
+  "original_catalog_tables_unchanged": {
+    "datasets": true,
+    "analyst_runs": true,
+    "knowledge_state": true,
+    "knowledge_examples": true,
+    "schema_migrations": true,
+    "benchmark_installs": true,
+    "dashboards": true,
+    "evaluation_jobs": true,
+    "saved_charts": true,
+    "ml_experiments": true,
+    "ml_models": true,
+    "ml_predictions": true,
+    "dataset_references": true,
+    "dataset_audit": true
+  },
+  "original_storage_files_checked": 97,
+  "original_storage_files_changed": [],
+  "new_dataset_columns": [],
+  "new_analyst_columns": [
+    "thread_id"
+  ],
+  "feedback_rows_on_original_workspace": 0,
+  "added_storage_files": [],
+  "migration_versions": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "lifecycle_actions_on_original_workspace": 0,
+  "manual_backup": "<project>/.backups/phase2-pre-migration-20261110T053537Z",
+  "automatic_backup_paths": [
+    "/data/backups/analyst-v5-2026-11-10T05-36-02.182476+00-00"
+  ]
+}

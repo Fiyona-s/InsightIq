@@ -1,0 +1,56 @@
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m<project>/frontend[39m
+
+ [32m✓[39m src/components/Phase3.test.tsx [2m([22m[2m11 tests[22m[2m)[22m[33m 498[2mms[22m[39m
+ [32m✓[39m src/components/DatasetWorkspace.test.tsx [2m([22m[2m16 tests[22m[2m)[22m[33m 648[2mms[22m[39m
+ [32m✓[39m src/App.test.tsx [2m([22m[2m6 tests[22m[2m)[22m[33m 681[2mms[22m[39m
+ [32m✓[39m src/components/KnowledgeEditor.test.tsx [2m([22m[2m3 tests[22m[2m)[22m[33m 857[2mms[22m[39m
+   [33m[2m✓[22m[39m adds visible required metric fields and saves metadata with explicit feedback without rewriting source currencies[33m 542[2mms[22m[39m
+ [32m✓[39m src/components/DatasetLifecycle.test.tsx [2m([22m[2m7 tests[22m[2m)[22m[33m 1132[2mms[22m[39m
+   [33m[2m✓[22m[39m renames inline, validates, warns on duplicates, and Escape cancels[33m 653[2mms[22m[39m
+ [32m✓[39m src/components/OfflineAndTraces.test.tsx [2m([22m[2m8 tests[22m[2m)[22m[33m 498[2mms[22m[39m
+ [32m✓[39m src/components/HomePage.test.tsx [2m([22m[2m6 tests[22m[2m)[22m[32m 300[2mms[22m[39m
+ [32m✓[39m src/components/Analyst.test.tsx [2m([22m[2m14 tests[22m[2m)[22m[33m 1504[2mms[22m[39m
+   [33m[2m✓[22m[39m submits a real API contract, polls, shows executed SQL and results[33m 596[2mms[22m[39m
+ [32m✓[39m src/components/KnowledgeReview.test.tsx [2m([22m[2m7 tests[22m[2m)[22m[33m 444[2mms[22m[39m
+ [32m✓[39m src/components/Phase4.test.tsx [2m([22m[2m14 tests[22m[2m)[22m[33m 1574[2mms[22m[39m
+   [33m[2m✓[22m[39m loads persisted dashboard output and saves resize and reorder changes[33m 498[2mms[22m[39m
+ [32m✓[39m src/Routes.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[33m 461[2mms[22m[39m
+   [33m[2m✓[22m[39m maps every sidebar module to its own page, opens on Home and keeps Admin tools hidden until switched on[33m 365[2mms[22m[39m
+ [32m✓[39m src/components/DashboardWorkspaceControls.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[33m 321[2mms[22m[39m
+ [32m✓[39m src/components/DatasetEditor.test.tsx [2m([22m[2m8 tests[22m[2m)[22m[33m 2055[2mms[22m[39m
+   [33m[2m✓[22m[39m clicks an existing preview cell, saves only its UUID update, refreshes version/profile and preserves leading zeros[33m 323[2mms[22m[39m
+   [33m[2m✓[22m[39m retains UUID-targeted edits across pagination and sorting in one batch[33m 561[2mms[22m[39m
+ [32m✓[39m src/components/EvaluationWorkspace.test.tsx [2m([22m[2m8 tests[22m[2m)[22m[33m 313[2mms[22m[39m
+ [32m✓[39m src/components/Phase3Navigation.test.tsx [2m([22m[2m11 tests[22m[2m)[22m[33m 355[2mms[22m[39m
+ [32m✓[39m src/lib/currencyControls.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[32m 199[2mms[22m[39m
+ [32m✓[39m src/components/ProjectsPage.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[33m 380[2mms[22m[39m
+ [32m✓[39m src/components/AnalystFeedback.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[32m 215[2mms[22m[39m
+ [32m✓[39m src/lib/finalPolish.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[32m 298[2mms[22m[39m
+ [32m✓[39m src/lib/activeDataset.test.tsx [2m([22m[2m15 tests[22m[2m)[22m[33m 313[2mms[22m[39m
+ [32m✓[39m src/components/EvaluationDiagnostics.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[32m 238[2mms[22m[39m
+ [32m✓[39m src/lib/analystPresentation.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/lib/displayNumber.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 22[2mms[22m[39m
+ [32m✓[39m src/components/WorkspaceSettings.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[32m 91[2mms[22m[39m
+ [32m✓[39m src/components/RunTraceDetails.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[32m 209[2mms[22m[39m
+ [32m✓[39m src/lib/formatters.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 26[2mms[22m[39m
+ [32m✓[39m src/components/AutoMLSummary.test.tsx [2m([22m[2m12 tests[22m[2m)[22m[32m 107[2mms[22m[39m
+ [32m✓[39m src/components/DatasetTabs.test.tsx [2m([22m[2m1 test[22m[2m)[22m[32m 120[2mms[22m[39m
+ [32m✓[39m src/lib/currency.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/styles/tokens.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32m✓[39m src/components/AutoMLStudio.test.tsx [2m([22m[2m11 tests[22m[2m)[22m[33m 3796[2mms[22m[39m
+   [33m[2m✓[22m[39m profiles data, excludes identifiers/outcomes, and requires target and feature availability confirmation[33m 546[2mms[22m[39m
+   [33m[2m✓[22m[39m submits confirmed configuration, polls actual job state and displays measured held-out results[33m 742[2mms[22m[39m
+   [33m[2m✓[22m[39m reports backend failures and permits a clear retry without showing invented model scores[33m 417[2mms[22m[39m
+   [33m[2m✓[22m[39m cancels a queued or running experiment and keeps terminal state explicit[33m 718[2mms[22m[39m
+   [33m[2m✓[22m[39m selects the completed model after a delayed registry refresh[33m 725[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m31 passed[39m[22m[90m (31)[39m
+[2m      Tests [22m [1m[32m221 passed[39m[22m[90m (221)[39m
+[2m   Start at [22m 20:45:09
+[2m   Duration [22m 4.60s[2m (tests 56%, environment 23%, setup 10%, import 8%, transform 2%)[22m
+
+[2m    Isolate [22m [33m31 workers spawned[39m[2m · ~321ms startup each (spawn + environment, per file)[22m
+[2m            [22m [2mat least ~785ms faster with [22m[33misolate: false[39m[2m — reuses workers across files instead of one per file[22m
+
+exit 0

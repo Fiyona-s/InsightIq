@@ -1,0 +1,10 @@
+import {chromium,expect} from '@playwright/test';
+import fs from 'node:fs';
+const browser=await chromium.launch({channel:'chrome'}),page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
+const mutations=[],errors=[];page.on('request',r=>{if(r.url().includes('/api/')&&!['GET','HEAD','OPTIONS'].includes(r.method()))mutations.push({method:r.method(),path:new URL(r.url()).pathname})});page.on('pageerror',e=>errors.push(e.message));
+const datasets=await(await page.request.get('http://localhost:8080/api/datasets?include_archived=true')).json();expect(datasets).toHaveLength(13);
+const before=await(await page.request.get('http://localhost:8080/api/automl/experiments')).json();
+await page.goto('http://localhost:8080/#automl');await expect(page.getByRole('navigation',{name:'Model workflow'})).toBeVisible();await expect(page.getByRole('heading',{name:'Dataset',exact:true})).toBeVisible();await expect(page.getByRole('heading',{name:'Dataset readiness',exact:true})).toBeVisible();await expect(page.getByLabel('ML dataset',{exact:true})).toHaveCount(0);await expect(page.getByRole('button',{name:'Train local models',exact:true})).toHaveCount(0);await page.waitForLoadState('networkidle');await page.screenshot({path:'../docs/phase7/live-readonly-automl.png',fullPage:true});
+await page.goto('http://localhost:8080/#dashboards');await expect(page.locator('.result-kpi strong')).toHaveText('₹83,79,680.76');await expect(page.getByRole('button',{name:'Convert Currency',exact:true}).first()).toBeVisible();
+const after=await(await page.request.get('http://localhost:8080/api/automl/experiments')).json();expect(after).toEqual(before);expect(mutations).toEqual([]);expect(errors).toEqual([]);
+fs.writeFileSync('../docs/phase7/live-readonly-review.json',JSON.stringify({url:'http://localhost:8080',datasetCount:13,experimentCount:before.length,experimentPayloadsUnchanged:true,trainingStarted:0,mutatingAPIRequests:mutations,browserErrors:errors,wizard:'Dataset step only; no original model selected or trained',preservedKPI:'₹83,79,680.76',convertCurrencyVisible:true},null,2));await browser.close();

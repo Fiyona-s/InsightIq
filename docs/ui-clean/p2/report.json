@@ -1,0 +1,137 @@
+[
+ {
+  "screen": "predictions",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "predictions",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "business-definitions",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "business-definitions",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "business-definitions",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "projects",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "projects",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "projects",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "ask-answer",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "ask-answer",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "ask-answer",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "ask-answer-details",
+  "width": 1280,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "ask-answer-details",
+  "width": 768,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ },
+ {
+  "screen": "ask-answer-details",
+  "width": 390,
+  "overflowFree": true,
+  "textUnder14pxCount": 0,
+  "nestedVerticalScrollBoxes": 0,
+  "nestedBoxes": [],
+  "axeViolations": []
+ }
+]
